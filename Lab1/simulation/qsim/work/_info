@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\Users\Peter\OneDrive\Documents\McGill 5\DSD\DSD-Labs\Lab1\simulation\qsim
 vg07_lab1
-Z1 IZSm4@?[K[1c>aGnTkUC143
+Z1 IY6fF?4ZCKZF[1<7kEd5<_3
 Z2 V64LVaaNm2X4bc`_0Rh00R3
-Z3 dC:\Users\Peter\OneDrive\Documents\McGill 5\DSD\DSD-Labs\Lab1\simulation\qsim
-Z4 w1506024710
+Z3 dC:\Users\peter\OneDrive\Documents\McGill 5\DSD\DSD-Labs\Lab1\simulation\qsim
+Z4 w1506110822
 Z5 8g07_lab1.vo
 Z6 Fg07_lab1.vo
 L0 31
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
+Z8 !s90 -work|work|g07_lab1.vo|
+Z9 o-work work -O0
 !i10b 1
-Z9 !s100 JUT=W6k=SfPN`IbZ2SMEH0
+Z10 !s100 CT;_G4zObQDS_1D^c]T651
 !s85 0
-Z10 !s108 1506024712.495000
-Z11 !s107 g07_lab1.vo|
-Z12 !s90 -work|work|g07_lab1.vo|
+Z11 !s108 1506110824.025000
+Z12 !s107 g07_lab1.vo|
 !s101 -O0
 vg07_lab1_vlg_check_tst
 !i10b 1
-!s100 VH@7YXJzkOLJmL76o[]Ui0
-I7917OkBgDd[88Dz6XJf`C1
-VC4ic;BbVJ:<fEAAY^3MEV0
+Z13 !s100 VH@7YXJzkOLJmL76o[]Ui0
+Z14 I7917OkBgDd[88Dz6XJf`C1
+Z15 VC4ic;BbVJ:<fEAAY^3MEV0
 R3
-Z13 w1506024709
-Z14 8g07_lab1.vt
-Z15 Fg07_lab1.vt
+Z16 w1506110821
+Z17 8g07_lab1.vt
+Z18 Fg07_lab1.vt
 L0 59
 R7
 r1
 !s85 0
 31
-Z16 !s108 1506024712.781000
-Z17 !s107 g07_lab1.vt|
-Z18 !s90 -work|work|g07_lab1.vt|
+Z19 !s108 1506110824.150000
+Z20 !s107 g07_lab1.vt|
+Z21 !s90 -work|work|g07_lab1.vt|
 !s101 -O0
-R8
+R9
 vg07_lab1_vlg_sample_tst
 !i10b 1
-!s100 WRXgg8h4W9LV6mNR0@ncP1
-I3k5MlBg5BEC<Ja7kS<G5A3
-VO[6dcIHEeoU0fe@SW<o723
+Z22 !s100 WRXgg8h4W9LV6mNR0@ncP1
+Z23 I3k5MlBg5BEC<Ja7kS<G5A3
+Z24 VO[6dcIHEeoU0fe@SW<o723
 R3
-R13
-R14
-R15
+R16
+R17
+R18
 L0 29
 R7
 r1
 !s85 0
 31
+R19
+R20
+R21
+!s101 -O0
+R9
+vg07_lab1_vlg_vec_tst
+!i10b 1
+Z25 !s100 CQz9SV1:9:dc5VWNhHQ]D0
+Z26 Ib7E>Z0>TR^AX<_ehYTWe_0
+Z27 VLe6[^3egYQPlEi=?_0WSZ2
+R3
 R16
 R17
 R18
-!s101 -O0
-R8
-vg07_lab1_vlg_vec_tst
-!i10b 1
-!s100 CQz9SV1:9:dc5VWNhHQ]D0
-Ib7E>Z0>TR^AX<_ehYTWe_0
-VLe6[^3egYQPlEi=?_0WSZ2
-R3
-R13
-R14
-R15
-L0 155
+Z28 L0 155
 R7
 r1
 !s85 0
 31
-R16
-R17
-R18
+R19
+R20
+R21
 !s101 -O0
-R8
+R9
