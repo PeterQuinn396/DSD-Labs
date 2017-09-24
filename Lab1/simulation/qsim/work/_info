@@ -16,14 +16,13 @@ r1
 31
 Z8 !s90 -work|work|g07_lab1.vo|
 Z9 o-work work -O0
-!i10b 1
 Z10 !s100 CT;_G4zObQDS_1D^c]T651
-!s85 0
 Z11 !s108 1506110824.025000
 Z12 !s107 g07_lab1.vo|
+!i10b 1
+!s85 0
 !s101 -O0
 vg07_lab1_vlg_check_tst
-!i10b 1
 Z13 !s100 VH@7YXJzkOLJmL76o[]Ui0
 Z14 I7917OkBgDd[88Dz6XJf`C1
 Z15 VC4ic;BbVJ:<fEAAY^3MEV0
@@ -34,15 +33,15 @@ Z18 Fg07_lab1.vt
 L0 59
 R7
 r1
-!s85 0
 31
 Z19 !s108 1506110824.150000
 Z20 !s107 g07_lab1.vt|
 Z21 !s90 -work|work|g07_lab1.vt|
-!s101 -O0
 R9
-vg07_lab1_vlg_sample_tst
 !i10b 1
+!s85 0
+!s101 -O0
+vg07_lab1_vlg_sample_tst
 Z22 !s100 WRXgg8h4W9LV6mNR0@ncP1
 Z23 I3k5MlBg5BEC<Ja7kS<G5A3
 Z24 VO[6dcIHEeoU0fe@SW<o723
@@ -53,15 +52,15 @@ R18
 L0 29
 R7
 r1
-!s85 0
 31
 R19
 R20
 R21
-!s101 -O0
 R9
-vg07_lab1_vlg_vec_tst
 !i10b 1
+!s85 0
+!s101 -O0
+vg07_lab1_vlg_vec_tst
 Z25 !s100 CQz9SV1:9:dc5VWNhHQ]D0
 Z26 Ib7E>Z0>TR^AX<_ehYTWe_0
 Z27 VLe6[^3egYQPlEi=?_0WSZ2
@@ -72,10 +71,91 @@ R18
 Z28 L0 155
 R7
 r1
-!s85 0
 31
 R19
 R20
 R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vg07_Modulo_13
+Z29 Ik1f2E]AVZ`7V72>V`RLVd0
+Z30 VQ4@<OLifJJQ;4dRo4Z?4R0
+Z31 dC:\Users\Peter\OneDrive\Documents\McGill 5\DSD\DSD-Labs\Lab1\simulation\qsim
+Z32 w1506281638
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z33 ng07_@modulo_13
+!i10b 1
+Z34 !s100 <M`fP43jfG5Tm5^9hka@g0
+!s85 0
+Z35 !s108 1506281640.424000
+R12
+!s101 -O0
+vg07_Modulo_13_vlg_check_tst
+!i10b 1
+!s100 IhVGm=5G^U7:6T^@H^jeF0
+IaT<kc>fnoeTG19k1ol?3e3
+VXeE6<9B4gg[jiGFDYU^1N2
+R31
+R32
+R17
+R18
+L0 57
+R7
+r1
+!s85 0
+31
+Z36 !s108 1506281640.788000
+Z37 !s107 g07_lab1.vt|
+R21
 !s101 -O0
 R9
+ng07_@modulo_13_vlg_check_tst
+vg07_Modulo_13_vlg_sample_tst
+!i10b 1
+!s100 5JTzCffbA8I=D^5H60kK>0
+I4eFHg]F]lm`zK7KB8JI@j0
+VE?[FeJ__AFVLmh7<`;0ig1
+R31
+R32
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R36
+R37
+R21
+!s101 -O0
+R9
+ng07_@modulo_13_vlg_sample_tst
+vg07_Modulo_13_vlg_vec_tst
+!i10b 1
+!s100 9OKo3n=@:CR=n83T1[@8I3
+I9JQYU=_oJSBJU^J7IW5=02
+VQ^O5Fd?]FQ]AOzL;cEnCn3
+R31
+R32
+R17
+R18
+L0 274
+R7
+r1
+!s85 0
+31
+R36
+R37
+R21
+!s101 -O0
+R9
+ng07_@modulo_13_vlg_vec_tst

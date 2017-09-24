@@ -18,26 +18,24 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/22/2017 16:07:01"
+// Generated on "09/24/2017 15:33:57"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    g07_lab1
+// Verilog Self-Checking Test Bench (with test vectors) for design :    g07_Modulo_13
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module g07_lab1_vlg_sample_tst(
+module g07_Modulo_13_vlg_sample_tst(
 	A,
-	B,
 	sampler_tx
 );
-input [6:0] A;
-input [6:0] B;
+input [5:0] A;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(A or B)
+always @(A)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -56,27 +54,33 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module g07_lab1_vlg_check_tst (
-	AeqB,
+module g07_Modulo_13_vlg_check_tst (
+	Amod13,
+	floor13,
 	sampler_rx
 );
-input  AeqB;
+input [3:0] Amod13;
+input [2:0] floor13;
 input sampler_rx;
 
-reg  AeqB_expected;
+reg [3:0] Amod13_expected;
+reg [2:0] floor13_expected;
 
-reg  AeqB_prev;
+reg [3:0] Amod13_prev;
+reg [2:0] floor13_prev;
 
-reg  AeqB_expected_prev;
+reg [3:0] Amod13_expected_prev;
+reg [2:0] floor13_expected_prev;
 
-reg  last_AeqB_exp;
+reg [3:0] last_Amod13_exp;
+reg [2:0] last_floor13_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:1] on_first_change ;
+reg [1:2] on_first_change ;
 
 
 initial
@@ -84,33 +88,70 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 1'b1;
+on_first_change = 2'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	AeqB_prev = AeqB;
+	Amod13_prev = Amod13;
+	floor13_prev = floor13;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	AeqB_expected_prev = AeqB_expected;
+	Amod13_expected_prev = Amod13_expected;
+	floor13_expected_prev = floor13_expected;
 end
 
 
-
-// expected AeqB
+// expected Amod13[ 3 ]
 initial
 begin
-	AeqB_expected = 1'bX;
-	AeqB_expected = #999000 1'b0;
+	Amod13_expected[3] = 1'bX;
+	Amod13_expected[3] = #999000 1'b0;
+end 
+// expected Amod13[ 2 ]
+initial
+begin
+	Amod13_expected[2] = 1'bX;
+	Amod13_expected[2] = #999000 1'b0;
+end 
+// expected Amod13[ 1 ]
+initial
+begin
+	Amod13_expected[1] = 1'bX;
+	Amod13_expected[1] = #999000 1'b0;
+end 
+// expected Amod13[ 0 ]
+initial
+begin
+	Amod13_expected[0] = 1'bX;
+	Amod13_expected[0] = #999000 1'b0;
+end 
+// expected floor13[ 2 ]
+initial
+begin
+	floor13_expected[2] = 1'bX;
+	floor13_expected[2] = #999000 1'b0;
+end 
+// expected floor13[ 1 ]
+initial
+begin
+	floor13_expected[1] = 1'bX;
+	floor13_expected[1] = #999000 1'b0;
+end 
+// expected floor13[ 0 ]
+initial
+begin
+	floor13_expected[0] = 1'bX;
+	floor13_expected[0] = #999000 1'b0;
 end 
 // generate trigger
-always @(AeqB_expected or AeqB)
+always @(Amod13_expected or Amod13 or floor13_expected or floor13)
 begin
 	trigger <= ~trigger;
 end
@@ -120,21 +161,99 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected AeqB = %b | ",AeqB_expected_prev);
-	$display("| real AeqB = %b | ",AeqB_prev);
+	$display("| expected Amod13 = %b | expected floor13 = %b | ",Amod13_expected_prev,floor13_expected_prev);
+	$display("| real Amod13 = %b | real floor13 = %b | ",Amod13_prev,floor13_prev);
 `endif
 	if (
-		( AeqB_expected_prev !== 1'bx ) && ( AeqB_prev !== AeqB_expected_prev )
-		&& ((AeqB_expected_prev !== last_AeqB_exp) ||
+		( Amod13_expected_prev[0] !== 1'bx ) && ( Amod13_prev[0] !== Amod13_expected_prev[0] )
+		&& ((Amod13_expected_prev[0] !== last_Amod13_exp[0]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port AeqB :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", AeqB_expected_prev);
-		$display ("     Real value = %b", AeqB_prev);
+		$display ("ERROR! Vector Mismatch for output port Amod13[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Amod13_expected_prev);
+		$display ("     Real value = %b", Amod13_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_AeqB_exp = AeqB_expected_prev;
+		last_Amod13_exp[0] = Amod13_expected_prev[0];
+	end
+	if (
+		( Amod13_expected_prev[1] !== 1'bx ) && ( Amod13_prev[1] !== Amod13_expected_prev[1] )
+		&& ((Amod13_expected_prev[1] !== last_Amod13_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Amod13[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Amod13_expected_prev);
+		$display ("     Real value = %b", Amod13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Amod13_exp[1] = Amod13_expected_prev[1];
+	end
+	if (
+		( Amod13_expected_prev[2] !== 1'bx ) && ( Amod13_prev[2] !== Amod13_expected_prev[2] )
+		&& ((Amod13_expected_prev[2] !== last_Amod13_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Amod13[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Amod13_expected_prev);
+		$display ("     Real value = %b", Amod13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Amod13_exp[2] = Amod13_expected_prev[2];
+	end
+	if (
+		( Amod13_expected_prev[3] !== 1'bx ) && ( Amod13_prev[3] !== Amod13_expected_prev[3] )
+		&& ((Amod13_expected_prev[3] !== last_Amod13_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Amod13[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Amod13_expected_prev);
+		$display ("     Real value = %b", Amod13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Amod13_exp[3] = Amod13_expected_prev[3];
+	end
+	if (
+		( floor13_expected_prev[0] !== 1'bx ) && ( floor13_prev[0] !== floor13_expected_prev[0] )
+		&& ((floor13_expected_prev[0] !== last_floor13_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port floor13[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", floor13_expected_prev);
+		$display ("     Real value = %b", floor13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_floor13_exp[0] = floor13_expected_prev[0];
+	end
+	if (
+		( floor13_expected_prev[1] !== 1'bx ) && ( floor13_prev[1] !== floor13_expected_prev[1] )
+		&& ((floor13_expected_prev[1] !== last_floor13_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port floor13[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", floor13_expected_prev);
+		$display ("     Real value = %b", floor13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_floor13_exp[1] = floor13_expected_prev[1];
+	end
+	if (
+		( floor13_expected_prev[2] !== 1'bx ) && ( floor13_prev[2] !== floor13_expected_prev[2] )
+		&& ((floor13_expected_prev[2] !== last_floor13_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port floor13[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", floor13_expected_prev);
+		$display ("     Real value = %b", floor13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_floor13_exp[2] = floor13_expected_prev[2];
 	end
 
 	trigger <= ~trigger;
@@ -152,165 +271,82 @@ $finish;
 end 
 endmodule
 
-module g07_lab1_vlg_vec_tst();
+module g07_Modulo_13_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [6:0] A;
-reg [6:0] B;
+reg [5:0] A;
 // wires                                               
-wire AeqB;
+wire [3:0] Amod13;
+wire [2:0] floor13;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-g07_lab1 i1 (
+g07_Modulo_13 i1 (
 // port map - connection between master ports and signals/registers   
 	.A(A),
-	.AeqB(AeqB),
-	.B(B)
+	.Amod13(Amod13),
+	.floor13(floor13)
 );
-// A[ 6 ]
+// A[ 5 ]
 initial
 begin
 	repeat(156)
 	begin
-		A[6] = 1'b0;
-		A[6] = #320000 1'b1;
-		# 320000;
-	end
-	A[6] = 1'b0;
-end 
-// A[ 5 ]
-initial
-begin
-	repeat(312)
-	begin
 		A[5] = 1'b0;
-		A[5] = #160000 1'b1;
-		# 160000;
+		A[5] = #320000 1'b1;
+		# 320000;
 	end
 	A[5] = 1'b0;
 end 
 // A[ 4 ]
-always
+initial
 begin
+	repeat(312)
+	begin
+		A[4] = 1'b0;
+		A[4] = #160000 1'b1;
+		# 160000;
+	end
 	A[4] = 1'b0;
-	A[4] = #80000 1'b1;
-	#80000;
 end 
 // A[ 3 ]
 always
 begin
 	A[3] = 1'b0;
-	A[3] = #40000 1'b1;
-	#40000;
+	A[3] = #80000 1'b1;
+	#80000;
 end 
 // A[ 2 ]
 always
 begin
 	A[2] = 1'b0;
-	A[2] = #20000 1'b1;
-	#20000;
+	A[2] = #40000 1'b1;
+	#40000;
 end 
 // A[ 1 ]
 always
 begin
 	A[1] = 1'b0;
-	A[1] = #10000 1'b1;
-	#10000;
+	A[1] = #20000 1'b1;
+	#20000;
 end 
 // A[ 0 ]
 always
 begin
 	A[0] = 1'b0;
-	A[0] = #5000 1'b1;
-	#5000;
-end 
-// B[ 6 ]
-initial
-begin
-	B[6] = 1'b0;
-	B[6] = #40960000 1'b1;
-	B[6] = #40960000 1'b0;
-end 
-// B[ 5 ]
-initial
-begin
-	repeat(2)
-	begin
-		B[5] = 1'b0;
-		B[5] = #20480000 1'b1;
-		# 20480000;
-	end
-	B[5] = 1'b0;
-end 
-// B[ 4 ]
-initial
-begin
-	repeat(4)
-	begin
-		B[4] = 1'b0;
-		B[4] = #10240000 1'b1;
-		# 10240000;
-	end
-	B[4] = 1'b0;
-	B[4] = #10240000 1'b1;
-end 
-// B[ 3 ]
-initial
-begin
-	repeat(9)
-	begin
-		B[3] = 1'b0;
-		B[3] = #5120000 1'b1;
-		# 5120000;
-	end
-	B[3] = 1'b0;
-	B[3] = #5120000 1'b1;
-end 
-// B[ 2 ]
-initial
-begin
-	repeat(19)
-	begin
-		B[2] = 1'b0;
-		B[2] = #2560000 1'b1;
-		# 2560000;
-	end
-	B[2] = 1'b0;
-	B[2] = #2560000 1'b1;
-end 
-// B[ 1 ]
-initial
-begin
-	repeat(39)
-	begin
-		B[1] = 1'b0;
-		B[1] = #1280000 1'b1;
-		# 1280000;
-	end
-	B[1] = 1'b0;
-end 
-// B[ 0 ]
-initial
-begin
-	repeat(78)
-	begin
-		B[0] = 1'b0;
-		B[0] = #640000 1'b1;
-		# 640000;
-	end
-	B[0] = 1'b0;
+	A[0] = #10000 1'b1;
+	#10000;
 end 
 
-g07_lab1_vlg_sample_tst tb_sample (
+g07_Modulo_13_vlg_sample_tst tb_sample (
 	.A(A),
-	.B(B),
 	.sampler_tx(sampler)
 );
 
-g07_lab1_vlg_check_tst tb_out(
-	.AeqB(AeqB),
+g07_Modulo_13_vlg_check_tst tb_out(
+	.Amod13(Amod13),
+	.floor13(floor13),
 	.sampler_rx(sampler)
 );
 endmodule
