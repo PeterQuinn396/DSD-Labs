@@ -1,6 +1,4 @@
 # DSD-Labs
-initial commit
-
 
 Labs for ECSE 323 Digital System Design
 
