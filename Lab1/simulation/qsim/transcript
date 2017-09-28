@@ -2,49 +2,28 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g07_Modulo_13
+# -- Compiling module g07_adder
 # 
 # Top level modules:
-# 	g07_Modulo_13
+# 	g07_adder
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module g07_Modulo_13_vlg_sample_tst
-# -- Compiling module g07_Modulo_13_vlg_check_tst
-# -- Compiling module g07_Modulo_13_vlg_vec_tst
+# -- Compiling module g07_adder_vlg_sample_tst
+# -- Compiling module g07_adder_vlg_check_tst
+# -- Compiling module g07_adder_vlg_vec_tst
 # 
 # Top level modules:
-# 	g07_Modulo_13_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g07_Modulo_13_vlg_vec_tst 
-# Loading work.g07_Modulo_13_vlg_vec_tst
-# Loading work.g07_Modulo_13
+# 	g07_adder_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g07_adder_vlg_vec_tst 
+# Loading work.g07_adder_vlg_vec_tst
+# Loading work.g07_adder
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
 # Loading cycloneii_ver.cycloneii_lcell_comb
-# Loading work.g07_Modulo_13_vlg_sample_tst
-# Loading work.g07_Modulo_13_vlg_check_tst
+# Loading work.g07_adder_vlg_sample_tst
+# Loading work.g07_adder_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port Amod13[0] :: @time = 1000000.000 ps
-#      Expected value = 0000
-#      Real value = 1001
-# ERROR! Vector Mismatch for output port Amod13[3] :: @time = 1000000.000 ps
-#      Expected value = 0000
-#      Real value = 1001
-# ERROR! Vector Mismatch for output port floor13[1] :: @time = 1000000.000 ps
-#      Expected value = 000
-#      Real value = 010
-# ERROR! Vector Mismatch for output port Amod13[1] :: @time = 1010000.000 ps
-#      Expected value = 0000
-#      Real value = 1010
-# ERROR! Vector Mismatch for output port Amod13[2] :: @time = 1030000.000 ps
-#      Expected value = 0000
-#      Real value = 1100
-# ERROR! Vector Mismatch for output port floor13[0] :: @time = 1040000.000 ps
-#      Expected value = 000
-#      Real value = 011
-# ERROR! Vector Mismatch for output port floor13[2] :: @time = 1170000.000 ps
-#      Expected value = 000
-#      Real value = 100
-#           7 mismatched vectors : Simulation failed !
-# ** Note: $finish    : g07_lab1.vt(270)
-#    Time: 100 us  Iteration: 0  Instance: /g07_Modulo_13_vlg_vec_tst/tb_out
+# Simulation passed !
+# ** Note: $finish    : g07_lab1.vt(304)
+#    Time: 1 us  Iteration: 0  Instance: /g07_adder_vlg_vec_tst/tb_out

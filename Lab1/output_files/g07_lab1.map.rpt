@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g07_lab1
-Sun Sep 24 15:29:39 2017
+Thu Sep 28 14:39:39 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 24 15:29:39 2017      ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 28 14:39:39 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; g07_lab1                                   ;
-; Top-level Entity Name              ; g07_Modulo_13                              ;
+; Top-level Entity Name              ; g07_adder                                  ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 15                                         ;
-;     Total combinational functions  ; 15                                         ;
+; Total logic elements               ; 21                                         ;
+;     Total combinational functions  ; 21                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 13                                         ;
+; Total pins                         ; 26                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C20F484C7       ;                    ;
-; Top-level entity name                                                      ; g07_Modulo_13      ; g07_lab1           ;
+; Top-level entity name                                                      ; g07_adder          ; g07_lab1           ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,60 +161,54 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 ; g07_fullAdder.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab1/g07_fullAdder.bdf ;         ;
 ; g07_adder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab1/g07_adder.bdf     ;         ;
-; g07_Modulo_13.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab1/g07_Modulo_13.bdf ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 15    ;
-;                                             ;       ;
-; Total combinational functions               ; 15    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 8     ;
-;     -- 3 input functions                    ; 5     ;
-;     -- <=2 input functions                  ; 2     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 15    ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 13    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; A[4]  ;
-; Maximum fan-out                             ; 9     ;
-; Total fan-out                               ; 58    ;
-; Average fan-out                             ; 2.07  ;
-+---------------------------------------------+-------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 21                         ;
+;                                             ;                            ;
+; Total combinational functions               ; 21                         ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 9                          ;
+;     -- 3 input functions                    ; 8                          ;
+;     -- <=2 input functions                  ; 4                          ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 21                         ;
+;     -- arithmetic mode                      ; 0                          ;
+;                                             ;                            ;
+; Total registers                             ; 0                          ;
+;     -- Dedicated logic registers            ; 0                          ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 26                         ;
+; Embedded Multiplier 9-bit elements          ; 0                          ;
+; Maximum fan-out node                        ; g07_fullAdder:inst|inst4~0 ;
+; Maximum fan-out                             ; 3                          ;
+; Total fan-out                               ; 77                         ;
+; Average fan-out                             ; 1.64                       ;
++---------------------------------------------+----------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
-; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Library Name ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
-; |g07_Modulo_13              ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |g07_Modulo_13                                     ;              ;
-;    |g07_adder:inst3|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst3                     ;              ;
-;       |g07_fullAdder:inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst3|g07_fullAdder:inst2 ;              ;
-;    |g07_adder:inst4|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst4                     ;              ;
-;       |g07_fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst4|g07_fullAdder:inst1 ;              ;
-;    |g07_adder:inst5|        ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst5                     ;              ;
-;       |g07_fullAdder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst5|g07_fullAdder:inst1 ;              ;
-;       |g07_fullAdder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst5|g07_fullAdder:inst2 ;              ;
-;       |g07_fullAdder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst5|g07_fullAdder:inst3 ;              ;
-;       |g07_fullAdder:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst5|g07_fullAdder:inst  ;              ;
-;    |g07_adder:inst|         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst                      ;              ;
-;       |g07_fullAdder:inst5| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst|g07_fullAdder:inst5  ;              ;
-;       |g07_fullAdder:inst6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst|g07_fullAdder:inst6  ;              ;
-;       |g07_fullAdder:inst7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_Modulo_13|g07_adder:inst|g07_fullAdder:inst7  ;              ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
+; |g07_adder                 ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |g07_adder                     ;              ;
+;    |g07_fullAdder:inst1|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst1 ;              ;
+;    |g07_fullAdder:inst2|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst2 ;              ;
+;    |g07_fullAdder:inst3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst3 ;              ;
+;    |g07_fullAdder:inst4|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst4 ;              ;
+;    |g07_fullAdder:inst5|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst5 ;              ;
+;    |g07_fullAdder:inst6|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst6 ;              ;
+;    |g07_fullAdder:inst7|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst7 ;              ;
+;    |g07_fullAdder:inst|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_adder|g07_fullAdder:inst  ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -248,7 +242,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Sep 24 15:29:36 2017
+    Info: Processing started: Thu Sep 28 14:39:35 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g07_lab1 -c g07_lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file g07_comp7.bdf
@@ -261,19 +255,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file g07_add
     Info (12023): Found entity 1: g07_adder
 Info (12021): Found 1 design units, including 1 entities, in source file g07_modulo_13.bdf
     Info (12023): Found entity 1: g07_Modulo_13
-Info (12127): Elaborating entity "g07_Modulo_13" for the top level hierarchy
-Info (12128): Elaborating entity "g07_adder" for hierarchy "g07_adder:inst5"
-Info (12128): Elaborating entity "g07_fullAdder" for hierarchy "g07_adder:inst5|g07_fullAdder:inst7"
+Info (12127): Elaborating entity "g07_adder" for the top level hierarchy
+Info (12128): Elaborating entity "g07_fullAdder" for hierarchy "g07_fullAdder:inst7"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 15 logic cells
+Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 21 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 490 megabytes
-    Info: Processing ended: Sun Sep 24 15:29:39 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 488 megabytes
+    Info: Processing ended: Thu Sep 28 14:39:39 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 
