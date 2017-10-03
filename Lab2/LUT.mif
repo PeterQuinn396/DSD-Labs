@@ -1,0 +1,77 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=64;
+DEPTH=64;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0   :   000FFFFFFFFFFFFF;
+	1   :   000FFFFFFFFFFFFE;
+	2   :   000FFFFFFFFFFFFC;
+	3   :   000FFFFFFFFFFFF8;
+	4   :   000FFFFFFFFFFFF0;
+	5   :   000FFFFFFFFFFFE0;
+	6   :   000FFFFFFFFFFFC0;
+	7   :   000FFFFFFFFFFF80;
+	8   :   000FFFFFFFFFFF00;
+	9   :   000FFFFFFFFFFE00;
+	10  :   000FFFFFFFFFFC00;
+	11  :   000FFFFFFFFFF800;
+	12  :   000FFFFFFFFFF000;
+	13  :   000FFFFFFFFFE000;
+	14  :   000FFFFFFFFFC000;
+	15  :   000FFFFFFFFF8000;
+	16  :   000FFFFFFFFF0000;
+	17  :   000FFFFFFFFE0000;
+	18  :   000FFFFFFFFC0000;
+	19  :   000FFFFFFFF80000;
+	20  :   000FFFFFFFF00000;
+	21  :   000FFFFFFFE00000;
+	22  :   000FFFFFFFC00000;
+	23  :   000FFFFFFF800000;
+	24  :   000FFFFFFF000000;
+	25  :   000FFFFFFE000000;
+	26  :   000FFFFFFC000000;
+	27  :   000FFFFFF8000000;
+	28  :   000FFFFFF0000000;
+	29  :   000FFFFFE0000000;
+	30  :   000FFFFFC0000000;
+	31  :   000FFFFF80000000;
+	32  :   000FFFFF00000000;
+	33  :   000FFFFE00000000;
+	34  :   000FFFFC00000000;
+	35  :   000FFFF800000000;
+	36  :   000FFFF000000000;
+	37  :   000FFFE000000000;
+	38  :   000FFFC000000000;
+	39  :   000FFF8000000000;
+	40  :   000FFF0000000000;
+	41  :   000FFE0000000000;
+	42  :   000FFC0000000000;
+	43  :   000FF80000000000;
+	44  :   000FF00000000000;
+	45  :   000FE00000000000;
+	46  :   000FC00000000000;
+	47  :   000F800000000000;
+	48  :   000F000000000000;
+	49  :   000E000000000000;
+	50  :   000C000000000000;
+	51  :   0008000000000000;
+	[52..63]  :   0000000000000000;
+END;
