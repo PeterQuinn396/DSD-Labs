@@ -18,6 +18,6 @@ end component;
 
 begin
 
-lut1: lut port map (address => N, q => P_EN,clock =>clk);
+lut1: lut port map (address => N, q => P_EN,clock =>clk); --implement the LUT using the lpm ROM
 
 end architecture g07_pop_enable_arc;

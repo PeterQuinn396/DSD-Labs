@@ -42,16 +42,16 @@ begin
 
 GND <= (others=>'0'); --set zeros to use later
 
-temp1 <= (seed(15 downto 0) & GND(15 downto 0));
-temp2 <= (seed(30 downto 0) & GND (0));
+temp1 <= (seed(15 downto 0) & GND(15 downto 0)); --seed<<16
+temp2 <= (seed(30 downto 0) & GND (0));				--seed<<1
 
 
 
-u1: add32 port map (dataa=>temp1,datab=>temp2,result=>S1);
+u1: add32 port map (dataa=>temp1,datab=>temp2,result=>S1); --add seed<<16 and seed<<1
 
-u2: add32 port map (dataa=>S1,datab=>seed,result=>S2);
+u2: add32 port map (dataa=>S1,datab=>seed,result=>S2); --add the previous sum to seed
 
-rand <= (GND(0) & S2(30 downto 0));
+rand <= (GND(0) & S2(30 downto 0)); --take mod 2^31 by replacing the MSB with 0
 
 end architecture g07_RANDU_arch;
 

@@ -165,7 +165,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1296 88 1472 104)
+	(rect 1288 88 1464 104)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "num[5..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
@@ -254,7 +254,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -364,7 +364,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -474,7 +474,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -584,7 +584,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -694,7 +694,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -804,7 +804,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -914,7 +914,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1024,7 +1024,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1134,7 +1134,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1244,7 +1244,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1354,7 +1354,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1464,7 +1464,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1574,7 +1574,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1684,7 +1684,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1794,7 +1794,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1904,7 +1904,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2014,7 +2014,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2124,7 +2124,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2234,7 +2234,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2344,7 +2344,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2454,7 +2454,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2564,7 +2564,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2674,7 +2674,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2784,7 +2784,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2894,7 +2894,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3004,7 +3004,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3114,7 +3114,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3224,7 +3224,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3334,7 +3334,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3444,7 +3444,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3554,7 +3554,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3664,7 +3664,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3774,7 +3774,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3884,7 +3884,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3994,7 +3994,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4104,7 +4104,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4214,7 +4214,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4324,7 +4324,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4434,7 +4434,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4544,7 +4544,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4654,7 +4654,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4764,7 +4764,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4874,7 +4874,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4984,7 +4984,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5094,7 +5094,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5158,7 +5158,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5206,7 +5206,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5254,7 +5254,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5302,7 +5302,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5350,7 +5350,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5398,7 +5398,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5446,7 +5446,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5494,7 +5494,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5542,7 +5542,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5590,7 +5590,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5638,7 +5638,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5686,7 +5686,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5734,7 +5734,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5782,7 +5782,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5830,7 +5830,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5878,7 +5878,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5926,7 +5926,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5974,7 +5974,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6022,7 +6022,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6070,7 +6070,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6118,7 +6118,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6166,7 +6166,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6214,7 +6214,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6262,7 +6262,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6310,7 +6310,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6358,7 +6358,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6406,7 +6406,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6454,7 +6454,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6502,7 +6502,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6550,7 +6550,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6598,7 +6598,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6646,7 +6646,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6694,7 +6694,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6742,7 +6742,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6790,7 +6790,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6838,7 +6838,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6886,7 +6886,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6934,7 +6934,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6982,7 +6982,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7030,7 +7030,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7078,7 +7078,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7126,7 +7126,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7174,7 +7174,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7222,7 +7222,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7270,7 +7270,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7318,7 +7318,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7366,7 +7366,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7414,7 +7414,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7462,7 +7462,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7510,7 +7510,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7558,7 +7558,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7669,7 +7669,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7779,7 +7779,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7889,7 +7889,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7999,7 +7999,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8109,7 +8109,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8180,7 +8180,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1024 120 1152 216)
+	(rect 1024 104 1152 200)
 	(text "lpm_compare52" (rect 18 0 126 16)(font "Arial" (font_size 10)))
 	(text "inst17" (rect 8 80 37 92)(font "Arial" ))
 	(port
@@ -8215,7 +8215,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -128 408 -80 440)
+	(rect -88 408 -40 440)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst70" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -8229,7 +8229,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 32 16)(pt 48 16))
 	)
 	(drawing
@@ -8239,7 +8239,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -128 448 -80 480)
+	(rect -88 448 -40 480)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst72" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -8253,7 +8253,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 32 16)(pt 48 16))
 	)
 	(drawing
@@ -8263,7 +8263,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -128 488 -80 520)
+	(rect -88 488 -40 520)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst76" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -8277,7 +8277,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 32 16)(pt 48 16))
 	)
 	(drawing
@@ -8287,7 +8287,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -128 528 -80 560)
+	(rect -88 528 -40 560)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst77" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -8301,7 +8301,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 32 16)(pt 48 16))
 	)
 	(drawing
@@ -9264,7 +9264,7 @@ applicable agreement for further details.
 		(pt 176 32)
 		(output)
 		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "P_EN[51..0]" (rect 105 27 155 39)(font "Arial" ))
+		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(drawing
@@ -13893,11 +13893,6 @@ applicable agreement for further details.
 	(pt 1256 48)
 )
 (connector
-	(text "full" (rect 1160 160 1175 172)(font "Arial" ))
-	(pt 1152 176)
-	(pt 1200 176)
-)
-(connector
 	(text "empty" (rect 1160 16 1191 28)(font "Arial" ))
 	(pt 1152 32)
 	(pt 1200 32)
@@ -13909,21 +13904,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "num[5..0]" (rect 976 152 1023 164)(font "Arial" ))
-	(pt 968 168)
-	(pt 1024 168)
-	(bus)
-)
-(connector
 	(text "empty" (rect 1264 56 1295 68)(font "Arial" ))
 	(pt 1288 72)
 	(pt 1256 72)
-)
-(connector
-	(text "num[5..0]" (rect 1264 80 1311 92)(font "Arial" ))
-	(pt 1296 96)
-	(pt 1256 96)
-	(bus)
 )
 (connector
 	(text "P_EN[51..0]" (rect 78 64 138 76)(font "Arial" ))
@@ -13974,11 +13957,6 @@ applicable agreement for further details.
 	(pt -336 520)
 )
 (connector
-	(text "sset[0]" (rect -72 408 -38 420)(font "Arial" ))
-	(pt -80 424)
-	(pt -56 424)
-)
-(connector
 	(text "value[5..0]" (rect 1248 -8 1301 4)(font "Arial" ))
 	(pt 1256 16)
 	(pt 1288 16)
@@ -13988,22 +13966,6 @@ applicable agreement for further details.
 	(text "P_EN_address[5..0]" (rect -239 64 -140 76)(font "Arial" ))
 	(pt -152 80)
 	(pt -272 80)
-	(bus)
-)
-(connector
-	(text "updown" (rect -72 448 -36 460)(font "Arial" ))
-	(pt -80 464)
-	(pt -56 464)
-)
-(connector
-	(text "sel[0]" (rect -79 488 -52 500)(font "Arial" ))
-	(pt -56 504)
-	(pt -80 504)
-)
-(connector
-	(text "P_EN_address[5..0]" (rect -62 528 37 540)(font "Arial" ))
-	(pt -80 544)
-	(pt -56 544)
 	(bus)
 )
 (connector
@@ -14104,11 +14066,6 @@ applicable agreement for further details.
 	(pt -872 160)
 )
 (connector
-	(text "clk" (rect -872 176 -858 188)(font "Arial" ))
-	(pt -872 192)
-	(pt -848 192)
-)
-(connector
 	(text "enable" (rect -872 112 -841 124)(font "Arial" ))
 	(pt -872 128)
 	(pt -856 128)
@@ -14120,51 +14077,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "mode[1..0]" (rect -872 48 -819 60)(font "Arial" ))
-	(pt -872 64)
-	(pt -848 64)
-	(bus)
-)
-(connector
-	(text "data[5..0]" (rect -872 16 -825 28)(font "Arial" ))
-	(pt -872 32)
-	(pt -848 32)
-	(bus)
-)
-(connector
 	(text "OP_chkd[8..0]" (rect -256 456 -186 468)(font "Arial" ))
 	(pt -264 472)
 	(pt -232 472)
-	(bus)
-)
-(connector
-	(text "NOOP[8..0]" (rect -784 24 -727 36)(font "Arial" ))
-	(pt -696 40)
-	(pt -792 40)
-	(bus)
-)
-(connector
-	(text "NOOP[8..0]" (rect -784 144 -727 156)(font "Arial" ))
-	(pt -696 160)
-	(pt -792 160)
-	(bus)
-)
-(connector
-	(text "NOOP[8..0]" (rect -488 464 -431 476)(font "Arial" ))
-	(pt -408 480)
-	(pt -496 480)
-	(bus)
-)
-(connector
-	(text "OP[8..0]" (rect -496 448 -455 460)(font "Arial" ))
-	(pt -504 464)
-	(pt -408 464)
-	(bus)
-)
-(connector
-	(text "NOOP[8..0]" (rect -928 232 -871 244)(font "Arial" ))
-	(pt -936 248)
-	(pt -864 248)
 	(bus)
 )
 (connector
@@ -14180,72 +14095,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "INIT[8..0]" (rect -928 416 -881 428)(font "Arial" ))
-	(pt -936 432)
-	(pt -872 432)
-	(bus)
-)
-(connector
-	(text "OP_chkd[8]" (rect -192 408 -135 420)(font "Arial" ))
-	(pt -168 424)
-	(pt -128 424)
-)
-(connector
-	(text "OP_chkd[7]" (rect -192 440 -135 452)(font "Arial" ))
-	(pt -128 464)
-	(pt -168 464)
-)
-(connector
-	(text "OP_chkd[6]" (rect -200 488 -143 500)(font "Arial" ))
-	(pt -128 504)
-	(pt -168 504)
-)
-(connector
-	(text "OP_chkd[5..0]" (rect -200 520 -130 532)(font "Arial" ))
-	(pt -168 544)
-	(pt -128 544)
-	(bus)
-)
-(connector
 	(text "OP[8..0]" (rect -456 304 -415 316)(font "Arial" ))
 	(pt -464 320)
 	(pt -440 320)
-	(bus)
-)
-(connector
-	(text "INIT[8..0]" (rect -712 280 -665 292)(font "Arial" ))
-	(pt -608 296)
-	(pt -720 296)
-	(bus)
-)
-(connector
-	(text "POP_chkd[8..0]" (rect -712 296 -635 308)(font "Arial" ))
-	(pt -608 312)
-	(pt -720 312)
-	(bus)
-)
-(connector
-	(text "PUSH_chkd[8..0]" (rect -712 312 -626 324)(font "Arial" ))
-	(pt -608 328)
-	(pt -720 328)
-	(bus)
-)
-(connector
-	(text "NOOP[8..0]" (rect -712 328 -655 340)(font "Arial" ))
-	(pt -608 344)
-	(pt -720 344)
-	(bus)
-)
-(connector
-	(text "POP_chkd[8..0]" (rect -551 152 -474 164)(font "Arial" ))
-	(pt -552 168)
-	(pt -512 168)
-	(bus)
-)
-(connector
-	(text "PUSH_chkd[8..0]" (rect -544 32 -458 44)(font "Arial" ))
-	(pt -552 48)
-	(pt -512 48)
 	(bus)
 )
 (connector
@@ -14287,6 +14139,247 @@ applicable agreement for further details.
 	(text "aclr[0]" (rect 512 206 524 236)(font "Arial" )(vertical))
 	(pt 528 240)
 	(pt 528 256)
+)
+(connector
+	(text "clk" (rect 416 168 430 180)(font "Arial" ))
+	(pt 440 184)
+	(pt 408 184)
+)
+(connector
+	(text "clk" (rect 408 376 422 388)(font "Arial" ))
+	(pt 440 392)
+	(pt 400 392)
+)
+(connector
+	(text "clk" (rect 384 568 398 580)(font "Arial" ))
+	(pt 448 584)
+	(pt 376 584)
+)
+(connector
+	(pt 400 808)
+	(pt 400 800)
+)
+(connector
+	(text "clk" (rect 408 792 422 804)(font "Arial" ))
+	(pt 448 808)
+	(pt 400 808)
+)
+(connector
+	(text "clk" (rect -872 176 -858 188)(font "Arial" ))
+	(pt -856 192)
+	(pt -872 192)
+)
+(connector
+	(text "mode[1..0]" (rect -872 48 -819 60)(font "Arial" ))
+	(pt -856 64)
+	(pt -872 64)
+	(bus)
+)
+(connector
+	(text "data[5..0]" (rect -872 16 -825 28)(font "Arial" ))
+	(pt -856 32)
+	(pt -872 32)
+	(bus)
+)
+(connector
+	(text "num[5..0]" (rect 1256 80 1303 92)(font "Arial" ))
+	(pt 1256 96)
+	(pt 1288 96)
+	(bus)
+)
+(connector
+	(text "full" (rect 1160 144 1175 156)(font "Arial" ))
+	(pt 1152 160)
+	(pt 1200 160)
+)
+(connector
+	(text "num[5..0]" (rect 976 136 1023 148)(font "Arial" ))
+	(pt 968 152)
+	(pt 1024 152)
+	(bus)
+)
+(connector
+	(text "clk" (rect -176 240 -162 252)(font "Arial" ))
+	(pt -144 256)
+	(pt -184 256)
+)
+(connector
+	(text "clk" (rect -184 80 -170 92)(font "Arial" ))
+	(pt -152 96)
+	(pt -192 96)
+)
+(connector
+	(text "OP[8..0]" (rect -496 448 -455 460)(font "Arial" ))
+	(pt -440 464)
+	(pt -408 464)
+	(bus)
+)
+(connector
+	(pt -440 464)
+	(pt -440 320)
+	(bus)
+)
+(connector
+	(text "NOOP[8..0]" (rect -784 144 -727 156)(font "Arial" ))
+	(pt -816 160)
+	(pt -696 160)
+	(bus)
+)
+(connector
+	(pt -816 248)
+	(pt -936 248)
+	(bus)
+)
+(connector
+	(text "NOOP[8..0]" (rect -784 24 -727 36)(font "Arial" ))
+	(pt -816 40)
+	(pt -696 40)
+	(bus)
+)
+(connector
+	(pt -816 40)
+	(pt -816 160)
+	(bus)
+)
+(connector
+	(text "NOOP[8..0]" (rect -488 464 -431 476)(font "Arial" ))
+	(pt -408 480)
+	(pt -816 480)
+	(bus)
+)
+(connector
+	(pt -816 160)
+	(pt -816 248)
+	(bus)
+)
+(connector
+	(text "NOOP[8..0]" (rect -704 328 -647 340)(font "Arial" ))
+	(pt -816 344)
+	(pt -608 344)
+	(bus)
+)
+(connector
+	(pt -816 248)
+	(pt -816 344)
+	(bus)
+)
+(connector
+	(pt -816 344)
+	(pt -816 480)
+	(bus)
+)
+(connector
+	(text "POP_chkd[8..0]" (rect -551 152 -474 164)(font "Arial" ))
+	(pt -528 168)
+	(pt -552 168)
+	(bus)
+)
+(connector
+	(pt -528 240)
+	(pt -528 168)
+	(bus)
+)
+(connector
+	(pt -752 240)
+	(pt -528 240)
+	(bus)
+)
+(connector
+	(pt -752 240)
+	(pt -752 312)
+	(bus)
+)
+(connector
+	(text "POP_chkd[8..0]" (rect -712 296 -635 308)(font "Arial" ))
+	(pt -752 312)
+	(pt -608 312)
+	(bus)
+)
+(connector
+	(text "PUSH_chkd[8..0]" (rect -544 32 -458 44)(font "Arial" ))
+	(pt -480 48)
+	(pt -552 48)
+	(bus)
+)
+(connector
+	(pt -480 48)
+	(pt -480 248)
+	(bus)
+)
+(connector
+	(text "PUSH_chkd[8..0]" (rect -712 312 -626 324)(font "Arial" ))
+	(pt -608 328)
+	(pt -744 328)
+	(bus)
+)
+(connector
+	(pt -480 248)
+	(pt -744 248)
+	(bus)
+)
+(connector
+	(pt -744 328)
+	(pt -744 248)
+	(bus)
+)
+(connector
+	(text "INIT[8..0]" (rect -712 280 -665 292)(font "Arial" ))
+	(pt -608 296)
+	(pt -840 296)
+	(bus)
+)
+(connector
+	(text "INIT[8..0]" (rect -976 416 -929 428)(font "Arial" ))
+	(pt -936 432)
+	(pt -840 432)
+	(bus)
+)
+(connector
+	(pt -840 296)
+	(pt -840 432)
+	(bus)
+)
+(connector
+	(text "sset[0]" (rect -32 408 2 420)(font "Arial" ))
+	(pt -40 424)
+	(pt -16 424)
+)
+(connector
+	(text "updown" (rect -32 448 4 460)(font "Arial" ))
+	(pt -40 464)
+	(pt -16 464)
+)
+(connector
+	(text "sel[0]" (rect -39 488 -12 500)(font "Arial" ))
+	(pt -16 504)
+	(pt -40 504)
+)
+(connector
+	(text "P_EN_address[5..0]" (rect -22 528 77 540)(font "Arial" ))
+	(pt -40 544)
+	(pt -16 544)
+	(bus)
+)
+(connector
+	(text "OP_chkd[8]" (rect -152 408 -95 420)(font "Arial" ))
+	(pt -128 424)
+	(pt -88 424)
+)
+(connector
+	(text "OP_chkd[7]" (rect -152 440 -95 452)(font "Arial" ))
+	(pt -128 464)
+	(pt -88 464)
+)
+(connector
+	(text "OP_chkd[6]" (rect -160 488 -103 500)(font "Arial" ))
+	(pt -128 504)
+	(pt -88 504)
+)
+(connector
+	(text "OP_chkd[5..0]" (rect -160 520 -90 532)(font "Arial" ))
+	(pt -128 544)
+	(pt -88 544)
+	(bus)
 )
 (junction (pt 632 392))
 (junction (pt 640 1016))
@@ -14341,3 +14434,6 @@ applicable agreement for further details.
 (junction (pt 672 808))
 (junction (pt 784 10800))
 (junction (pt 664 184))
+(junction (pt -816 248))
+(junction (pt -816 160))
+(junction (pt -816 344))
