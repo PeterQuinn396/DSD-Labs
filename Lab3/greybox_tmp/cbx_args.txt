@@ -6,5 +6,6 @@ LPM_TYPE=LPM_COUNTER
 LPM_WIDTH=22
 DEVICE_FAMILY="Cyclone II"
 clock
+cnt_en
 sset
 q
