@@ -1,6 +1,6 @@
 Flow report for g07_lab2
-Wed Oct 25 18:51:59 2017
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Thu Oct 26 15:29:17 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 25 18:51:59 2017      ;
-; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
-; Revision Name                      ; g07_lab2                                   ;
-; Top-level Entity Name              ; g07_pop_enable                             ;
-; Family                             ; Cyclone II                                 ;
-; Device                             ; EP2C20F484C7                               ;
-; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 59                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 3,328                                      ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Thu Oct 26 15:29:17 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; g07_lab2                                        ;
+; Top-level Entity Name              ; g07_7_segment_decoder                           ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C20F484C7                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 18                                              ;
+;     Total combinational functions  ; 18                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 12                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,38 +64,38 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/25/2017 18:45:25 ;
+; Start date & time ; 10/26/2017 15:28:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g07_lab2            ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                              ;
-+-------------------------------------+---------------------------------------+---------------+----------------+----------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name    ; Section Id     ;
-+-------------------------------------+---------------------------------------+---------------+----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53447162514629.150897152503036        ; --            ; --             ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --             ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --             ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --             ; --             ;
-; IP_TOOL_NAME                        ; LPM_ADD_SUB                           ; --            ; --             ; --             ;
-; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --             ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --             ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --             ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --             ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --             ; --             ;
-; MISC_FILE                           ; add32.cmp                             ; --            ; --             ; --             ;
-; MISC_FILE                           ; LUT_inst.vhd                          ; --            ; --             ; --             ;
-; MISC_FILE                           ; LUT.cmp                               ; --            ; --             ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; g07_pop_enable ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; g07_pop_enable ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; g07_pop_enable ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --             ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --             ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --             ; --             ;
-; TOP_LEVEL_ENTITY                    ; g07_pop_enable                        ; g07_lab2      ; --             ; --             ;
-+-------------------------------------+---------------------------------------+---------------+----------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                     ;
++-------------------------------------+---------------------------------------+---------------+-----------------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name           ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-----------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 220964053626007.150904612408964       ; --            ; --                    ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --                    ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --                    ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --                    ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                           ; --            ; --                    ; --             ;
+; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --                    ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --                    ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --                    ; --             ;
+; MISC_FILE                           ; add32.cmp                             ; --            ; --                    ; --             ;
+; MISC_FILE                           ; LUT_inst.vhd                          ; --            ; --                    ; --             ;
+; MISC_FILE                           ; LUT.cmp                               ; --            ; --                    ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; g07_7_segment_decoder ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; g07_7_segment_decoder ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; g07_7_segment_decoder ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --                    ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --                    ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --                    ; --             ;
+; TOP_LEVEL_ENTITY                    ; g07_7_segment_decoder                 ; g07_lab2      ; --                    ; --             ;
++-------------------------------------+---------------------------------------+---------------+-----------------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -103,10 +103,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 533 MB              ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 406 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 406 MB              ; 00:00:01                           ;
-; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 514 MB              ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 409 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 409 MB              ; 00:00:03                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,9 +115,9 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-N267BTG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-N267BTG  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-N267BTG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; GarethPeters     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; GarethPeters     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; GarethPeters     ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -125,7 +125,7 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off g07_lab2 -c g07_lab2
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab2 -c g07_lab2 --vector_source="C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab2/g07_POPEN_test.vwf" --testbench_file=./simulation/qsim/g07_lab2.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab2 -c g07_lab2 --vector_source=D:/Gareth/Documents/GitHub/DSD-Labs/Lab2/g07_7_segment_decoder_test.vwf --testbench_file=./simulation/qsim/g07_lab2.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog g07_lab2 -c g07_lab2
 
 

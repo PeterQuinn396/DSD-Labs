@@ -3,7 +3,7 @@ $comment
 		vcd file g07_lab2.msim.vcd -direction
 $end
 $date
-	Wed Oct 25 18:52:03 2017
+	Thu Oct 26 15:29:22 2017
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,977 +11,634 @@ $end
 $timescale
 	1ps
 $end
-$scope module g07_pop_enable_vlg_vec_tst $end
-$var reg 1 ! clk $end
-$var reg 6 " N [5:0] $end
-$var wire 1 # P_EN [51] $end
-$var wire 1 $ P_EN [50] $end
-$var wire 1 % P_EN [49] $end
-$var wire 1 & P_EN [48] $end
-$var wire 1 ' P_EN [47] $end
-$var wire 1 ( P_EN [46] $end
-$var wire 1 ) P_EN [45] $end
-$var wire 1 * P_EN [44] $end
-$var wire 1 + P_EN [43] $end
-$var wire 1 , P_EN [42] $end
-$var wire 1 - P_EN [41] $end
-$var wire 1 . P_EN [40] $end
-$var wire 1 / P_EN [39] $end
-$var wire 1 0 P_EN [38] $end
-$var wire 1 1 P_EN [37] $end
-$var wire 1 2 P_EN [36] $end
-$var wire 1 3 P_EN [35] $end
-$var wire 1 4 P_EN [34] $end
-$var wire 1 5 P_EN [33] $end
-$var wire 1 6 P_EN [32] $end
-$var wire 1 7 P_EN [31] $end
-$var wire 1 8 P_EN [30] $end
-$var wire 1 9 P_EN [29] $end
-$var wire 1 : P_EN [28] $end
-$var wire 1 ; P_EN [27] $end
-$var wire 1 < P_EN [26] $end
-$var wire 1 = P_EN [25] $end
-$var wire 1 > P_EN [24] $end
-$var wire 1 ? P_EN [23] $end
-$var wire 1 @ P_EN [22] $end
-$var wire 1 A P_EN [21] $end
-$var wire 1 B P_EN [20] $end
-$var wire 1 C P_EN [19] $end
-$var wire 1 D P_EN [18] $end
-$var wire 1 E P_EN [17] $end
-$var wire 1 F P_EN [16] $end
-$var wire 1 G P_EN [15] $end
-$var wire 1 H P_EN [14] $end
-$var wire 1 I P_EN [13] $end
-$var wire 1 J P_EN [12] $end
-$var wire 1 K P_EN [11] $end
-$var wire 1 L P_EN [10] $end
-$var wire 1 M P_EN [9] $end
-$var wire 1 N P_EN [8] $end
-$var wire 1 O P_EN [7] $end
-$var wire 1 P P_EN [6] $end
-$var wire 1 Q P_EN [5] $end
-$var wire 1 R P_EN [4] $end
-$var wire 1 S P_EN [3] $end
-$var wire 1 T P_EN [2] $end
-$var wire 1 U P_EN [1] $end
-$var wire 1 V P_EN [0] $end
-$var wire 1 W sampler $end
+$scope module g07_7_segment_decoder_vlg_vec_tst $end
+$var reg 4 ! code [3:0] $end
+$var reg 1 " mode $end
+$var wire 1 # segments_out [6] $end
+$var wire 1 $ segments_out [5] $end
+$var wire 1 % segments_out [4] $end
+$var wire 1 & segments_out [3] $end
+$var wire 1 ' segments_out [2] $end
+$var wire 1 ( segments_out [1] $end
+$var wire 1 ) segments_out [0] $end
+$var wire 1 * sampler $end
 $scope module i1 $end
-$var wire 1 X gnd $end
-$var wire 1 Y vcc $end
-$var wire 1 Z unknown $end
-$var tri1 1 [ devclrn $end
-$var tri1 1 \ devpor $end
-$var tri1 1 ] devoe $end
-$var wire 1 ^ clk~combout $end
-$var wire 1 _ N~combout [5] $end
-$var wire 1 ` N~combout [4] $end
-$var wire 1 a N~combout [3] $end
-$var wire 1 b N~combout [2] $end
-$var wire 1 c N~combout [1] $end
-$var wire 1 d N~combout [0] $end
-$var wire 1 e lut1|altsyncram_component|auto_generated|q_a [51] $end
-$var wire 1 f lut1|altsyncram_component|auto_generated|q_a [50] $end
-$var wire 1 g lut1|altsyncram_component|auto_generated|q_a [49] $end
-$var wire 1 h lut1|altsyncram_component|auto_generated|q_a [48] $end
-$var wire 1 i lut1|altsyncram_component|auto_generated|q_a [47] $end
-$var wire 1 j lut1|altsyncram_component|auto_generated|q_a [46] $end
-$var wire 1 k lut1|altsyncram_component|auto_generated|q_a [45] $end
-$var wire 1 l lut1|altsyncram_component|auto_generated|q_a [44] $end
-$var wire 1 m lut1|altsyncram_component|auto_generated|q_a [43] $end
-$var wire 1 n lut1|altsyncram_component|auto_generated|q_a [42] $end
-$var wire 1 o lut1|altsyncram_component|auto_generated|q_a [41] $end
-$var wire 1 p lut1|altsyncram_component|auto_generated|q_a [40] $end
-$var wire 1 q lut1|altsyncram_component|auto_generated|q_a [39] $end
-$var wire 1 r lut1|altsyncram_component|auto_generated|q_a [38] $end
-$var wire 1 s lut1|altsyncram_component|auto_generated|q_a [37] $end
-$var wire 1 t lut1|altsyncram_component|auto_generated|q_a [36] $end
-$var wire 1 u lut1|altsyncram_component|auto_generated|q_a [35] $end
-$var wire 1 v lut1|altsyncram_component|auto_generated|q_a [34] $end
-$var wire 1 w lut1|altsyncram_component|auto_generated|q_a [33] $end
-$var wire 1 x lut1|altsyncram_component|auto_generated|q_a [32] $end
-$var wire 1 y lut1|altsyncram_component|auto_generated|q_a [31] $end
-$var wire 1 z lut1|altsyncram_component|auto_generated|q_a [30] $end
-$var wire 1 { lut1|altsyncram_component|auto_generated|q_a [29] $end
-$var wire 1 | lut1|altsyncram_component|auto_generated|q_a [28] $end
-$var wire 1 } lut1|altsyncram_component|auto_generated|q_a [27] $end
-$var wire 1 ~ lut1|altsyncram_component|auto_generated|q_a [26] $end
-$var wire 1 !! lut1|altsyncram_component|auto_generated|q_a [25] $end
-$var wire 1 "! lut1|altsyncram_component|auto_generated|q_a [24] $end
-$var wire 1 #! lut1|altsyncram_component|auto_generated|q_a [23] $end
-$var wire 1 $! lut1|altsyncram_component|auto_generated|q_a [22] $end
-$var wire 1 %! lut1|altsyncram_component|auto_generated|q_a [21] $end
-$var wire 1 &! lut1|altsyncram_component|auto_generated|q_a [20] $end
-$var wire 1 '! lut1|altsyncram_component|auto_generated|q_a [19] $end
-$var wire 1 (! lut1|altsyncram_component|auto_generated|q_a [18] $end
-$var wire 1 )! lut1|altsyncram_component|auto_generated|q_a [17] $end
-$var wire 1 *! lut1|altsyncram_component|auto_generated|q_a [16] $end
-$var wire 1 +! lut1|altsyncram_component|auto_generated|q_a [15] $end
-$var wire 1 ,! lut1|altsyncram_component|auto_generated|q_a [14] $end
-$var wire 1 -! lut1|altsyncram_component|auto_generated|q_a [13] $end
-$var wire 1 .! lut1|altsyncram_component|auto_generated|q_a [12] $end
-$var wire 1 /! lut1|altsyncram_component|auto_generated|q_a [11] $end
-$var wire 1 0! lut1|altsyncram_component|auto_generated|q_a [10] $end
-$var wire 1 1! lut1|altsyncram_component|auto_generated|q_a [9] $end
-$var wire 1 2! lut1|altsyncram_component|auto_generated|q_a [8] $end
-$var wire 1 3! lut1|altsyncram_component|auto_generated|q_a [7] $end
-$var wire 1 4! lut1|altsyncram_component|auto_generated|q_a [6] $end
-$var wire 1 5! lut1|altsyncram_component|auto_generated|q_a [5] $end
-$var wire 1 6! lut1|altsyncram_component|auto_generated|q_a [4] $end
-$var wire 1 7! lut1|altsyncram_component|auto_generated|q_a [3] $end
-$var wire 1 8! lut1|altsyncram_component|auto_generated|q_a [2] $end
-$var wire 1 9! lut1|altsyncram_component|auto_generated|q_a [1] $end
-$var wire 1 :! lut1|altsyncram_component|auto_generated|q_a [0] $end
-$var wire 1 ;! lut1|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
-$var wire 1 <! lut1|altsyncram_component|auto_generated|ram_block1a1_PORTADATAOUT_bus [0] $end
-$var wire 1 =! lut1|altsyncram_component|auto_generated|ram_block1a2_PORTADATAOUT_bus [0] $end
-$var wire 1 >! lut1|altsyncram_component|auto_generated|ram_block1a3_PORTADATAOUT_bus [0] $end
-$var wire 1 ?! lut1|altsyncram_component|auto_generated|ram_block1a4_PORTADATAOUT_bus [0] $end
-$var wire 1 @! lut1|altsyncram_component|auto_generated|ram_block1a5_PORTADATAOUT_bus [0] $end
-$var wire 1 A! lut1|altsyncram_component|auto_generated|ram_block1a6_PORTADATAOUT_bus [0] $end
-$var wire 1 B! lut1|altsyncram_component|auto_generated|ram_block1a7_PORTADATAOUT_bus [0] $end
-$var wire 1 C! lut1|altsyncram_component|auto_generated|ram_block1a8_PORTADATAOUT_bus [0] $end
-$var wire 1 D! lut1|altsyncram_component|auto_generated|ram_block1a9_PORTADATAOUT_bus [0] $end
-$var wire 1 E! lut1|altsyncram_component|auto_generated|ram_block1a10_PORTADATAOUT_bus [0] $end
-$var wire 1 F! lut1|altsyncram_component|auto_generated|ram_block1a11_PORTADATAOUT_bus [0] $end
-$var wire 1 G! lut1|altsyncram_component|auto_generated|ram_block1a12_PORTADATAOUT_bus [0] $end
-$var wire 1 H! lut1|altsyncram_component|auto_generated|ram_block1a13_PORTADATAOUT_bus [0] $end
-$var wire 1 I! lut1|altsyncram_component|auto_generated|ram_block1a14_PORTADATAOUT_bus [0] $end
-$var wire 1 J! lut1|altsyncram_component|auto_generated|ram_block1a15_PORTADATAOUT_bus [0] $end
-$var wire 1 K! lut1|altsyncram_component|auto_generated|ram_block1a16_PORTADATAOUT_bus [0] $end
-$var wire 1 L! lut1|altsyncram_component|auto_generated|ram_block1a17_PORTADATAOUT_bus [0] $end
-$var wire 1 M! lut1|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus [0] $end
-$var wire 1 N! lut1|altsyncram_component|auto_generated|ram_block1a19_PORTADATAOUT_bus [0] $end
-$var wire 1 O! lut1|altsyncram_component|auto_generated|ram_block1a20_PORTADATAOUT_bus [0] $end
-$var wire 1 P! lut1|altsyncram_component|auto_generated|ram_block1a21_PORTADATAOUT_bus [0] $end
-$var wire 1 Q! lut1|altsyncram_component|auto_generated|ram_block1a22_PORTADATAOUT_bus [0] $end
-$var wire 1 R! lut1|altsyncram_component|auto_generated|ram_block1a23_PORTADATAOUT_bus [0] $end
-$var wire 1 S! lut1|altsyncram_component|auto_generated|ram_block1a24_PORTADATAOUT_bus [0] $end
-$var wire 1 T! lut1|altsyncram_component|auto_generated|ram_block1a25_PORTADATAOUT_bus [0] $end
-$var wire 1 U! lut1|altsyncram_component|auto_generated|ram_block1a26_PORTADATAOUT_bus [0] $end
-$var wire 1 V! lut1|altsyncram_component|auto_generated|ram_block1a27_PORTADATAOUT_bus [0] $end
-$var wire 1 W! lut1|altsyncram_component|auto_generated|ram_block1a28_PORTADATAOUT_bus [0] $end
-$var wire 1 X! lut1|altsyncram_component|auto_generated|ram_block1a29_PORTADATAOUT_bus [0] $end
-$var wire 1 Y! lut1|altsyncram_component|auto_generated|ram_block1a30_PORTADATAOUT_bus [0] $end
-$var wire 1 Z! lut1|altsyncram_component|auto_generated|ram_block1a31_PORTADATAOUT_bus [0] $end
-$var wire 1 [! lut1|altsyncram_component|auto_generated|ram_block1a32_PORTADATAOUT_bus [0] $end
-$var wire 1 \! lut1|altsyncram_component|auto_generated|ram_block1a33_PORTADATAOUT_bus [0] $end
-$var wire 1 ]! lut1|altsyncram_component|auto_generated|ram_block1a34_PORTADATAOUT_bus [0] $end
-$var wire 1 ^! lut1|altsyncram_component|auto_generated|ram_block1a35_PORTADATAOUT_bus [0] $end
-$var wire 1 _! lut1|altsyncram_component|auto_generated|ram_block1a36_PORTADATAOUT_bus [0] $end
-$var wire 1 `! lut1|altsyncram_component|auto_generated|ram_block1a37_PORTADATAOUT_bus [0] $end
-$var wire 1 a! lut1|altsyncram_component|auto_generated|ram_block1a38_PORTADATAOUT_bus [0] $end
-$var wire 1 b! lut1|altsyncram_component|auto_generated|ram_block1a39_PORTADATAOUT_bus [0] $end
-$var wire 1 c! lut1|altsyncram_component|auto_generated|ram_block1a40_PORTADATAOUT_bus [0] $end
-$var wire 1 d! lut1|altsyncram_component|auto_generated|ram_block1a41_PORTADATAOUT_bus [0] $end
-$var wire 1 e! lut1|altsyncram_component|auto_generated|ram_block1a42_PORTADATAOUT_bus [0] $end
-$var wire 1 f! lut1|altsyncram_component|auto_generated|ram_block1a43_PORTADATAOUT_bus [0] $end
-$var wire 1 g! lut1|altsyncram_component|auto_generated|ram_block1a44_PORTADATAOUT_bus [0] $end
-$var wire 1 h! lut1|altsyncram_component|auto_generated|ram_block1a45_PORTADATAOUT_bus [0] $end
-$var wire 1 i! lut1|altsyncram_component|auto_generated|ram_block1a46_PORTADATAOUT_bus [0] $end
-$var wire 1 j! lut1|altsyncram_component|auto_generated|ram_block1a47_PORTADATAOUT_bus [0] $end
-$var wire 1 k! lut1|altsyncram_component|auto_generated|ram_block1a48_PORTADATAOUT_bus [0] $end
-$var wire 1 l! lut1|altsyncram_component|auto_generated|ram_block1a49_PORTADATAOUT_bus [0] $end
-$var wire 1 m! lut1|altsyncram_component|auto_generated|ram_block1a50_PORTADATAOUT_bus [0] $end
-$var wire 1 n! lut1|altsyncram_component|auto_generated|ram_block1a51_PORTADATAOUT_bus [0] $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 mode~combout $end
+$var wire 1 2 Mux6~0_combout $end
+$var wire 1 3 Mux6~1_combout $end
+$var wire 1 4 Mux6~2_combout $end
+$var wire 1 5 Mux5~0_combout $end
+$var wire 1 6 Mux5~1_combout $end
+$var wire 1 7 Mux4~0_combout $end
+$var wire 1 8 Mux4~1_combout $end
+$var wire 1 9 Mux3~0_combout $end
+$var wire 1 : Mux3~1_combout $end
+$var wire 1 ; Mux3~2_combout $end
+$var wire 1 < Mux2~0_combout $end
+$var wire 1 = Mux2~1_combout $end
+$var wire 1 > Mux2~2_combout $end
+$var wire 1 ? Mux1~0_combout $end
+$var wire 1 @ Mux1~1_combout $end
+$var wire 1 A Mux0~0_combout $end
+$var wire 1 B Mux0~1_combout $end
+$var wire 1 C Mux0~2_combout $end
+$var wire 1 D code~combout [3] $end
+$var wire 1 E code~combout [2] $end
+$var wire 1 F code~combout [1] $end
+$var wire 1 G code~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0!
-b0 "
-0V
-0U
-0T
-0S
-0R
-0Q
-0P
-0O
-0N
-0M
-0L
-0K
-0J
-0I
-0H
-0G
-0F
-0E
-0D
-0C
-0B
-0A
-0@
-0?
-0>
-0=
-0<
-0;
-0:
-09
-08
-07
-06
-05
-04
-03
-02
-01
-00
-0/
-0.
-0-
-0,
-0+
-0*
+b0 !
+0"
 0)
 0(
 0'
 0&
 0%
 0$
-0#
-xW
-0X
-1Y
-xZ
-1[
-1\
-1]
-0^
-0d
-0c
-0b
-0a
-0`
-0_
-0:!
-09!
-08!
-07!
-06!
-05!
-04!
-03!
-02!
-01!
-00!
-0/!
-0.!
-0-!
-0,!
-0+!
-0*!
-0)!
-0(!
-0'!
-0&!
-0%!
-0$!
-0#!
-0"!
-0!!
-0~
-0}
-0|
-0{
-0z
-0y
-0x
-0w
-0v
-0u
-0t
-0s
-0r
-0q
-0p
-0o
-0n
-0m
-0l
-0k
-0j
-0i
-0h
-0g
-0f
-0e
-0;!
-0<!
-0=!
-0>!
-0?!
-0@!
-0A!
-0B!
-0C!
-0D!
-0E!
-0F!
-0G!
-0H!
-0I!
-0J!
-0K!
-0L!
-0M!
-0N!
-0O!
-0P!
-0Q!
-0R!
-0S!
-0T!
-0U!
-0V!
-0W!
-0X!
-0Y!
-0Z!
-0[!
-0\!
-0]!
-0^!
-0_!
-0`!
-0a!
-0b!
-0c!
-0d!
-0e!
-0f!
-0g!
-0h!
-0i!
-0j!
-0k!
-0l!
-0m!
-0n!
+1#
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+1C
+0G
+0F
+0E
+0D
 $end
 #10000
-1!
-1^
-0W
-#10001
-1n!
-1m!
-1l!
-1k!
-1j!
-1i!
-1h!
-1g!
-1f!
-1e!
-1d!
-1c!
-1b!
-1a!
-1`!
-1_!
-1^!
-1]!
-1\!
-1[!
-1Z!
-1Y!
-1X!
-1W!
-1V!
-1U!
-1T!
-1S!
-1R!
-1Q!
-1P!
-1O!
-1N!
-1M!
-1L!
-1K!
-1J!
-1I!
-1H!
-1G!
-1F!
-1E!
-1D!
-1C!
-1B!
-1A!
-1@!
-1?!
-1>!
-1=!
-1<!
-1;!
-1e
-1f
-1g
-1h
-1i
-1j
-1k
-1l
-1m
-1n
-1o
-1p
-1q
-1r
-1s
-1t
-1u
-1v
-1w
-1x
-1y
-1z
-1{
-1|
-1}
-1~
-1!!
-1"!
-1#!
-1$!
-1%!
-1&!
-1'!
-1(!
-1)!
-1*!
-1+!
-1,!
-1-!
-1.!
-1/!
-10!
-11!
-12!
-13!
-14!
-15!
-16!
-17!
-18!
-19!
-1:!
+b1 !
+1G
+0*
+1?
+1=
+1<
+1:
+19
+15
+13
+1@
+1>
+1;
+14
+1$
+1%
+1&
+1)
+#20000
+b11 !
+b10 !
+0G
+1F
+1*
+1B
+0=
+0<
+09
+17
+03
+0C
+0>
+0;
+18
+04
+0#
+0%
+0&
+1'
+0)
+#30000
+b11 !
+1G
+0*
+1=
+0:
+07
+16
+05
+12
+1>
+08
+06
+1(
+1%
+0'
+0(
+#40000
+b111 !
+b101 !
+b100 !
+0G
+0F
+1E
+1*
+0?
+13
+02
+1;
+0@
+14
+1&
+0$
+1)
+#50000
+b101 !
+1G
+0*
+1:
+19
+15
+03
+12
+0;
+16
+04
+0&
+1(
+0)
+#60000
+b111 !
+b110 !
+0G
+1F
+1*
+1A
+0=
+09
+17
+02
+0>
+0%
+#70000
+b111 !
+1G
+0*
+0B
+0A
+1?
+1=
+0:
+07
+05
+1C
+1@
+1>
+1;
+06
 1#
 1$
 1%
 1&
+0(
+#80000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+0G
+0F
+0E
+1D
+1*
+1B
+0@
+0?
+0=
+1:
+15
+0;
+0>
+0C
+0$
+0&
+0%
+0#
+#90000
+b1001 !
+1G
+0*
+1A
+1@
+1?
+1=
+1<
+17
+05
+13
+0@
+1>
+1$
+0$
+1%
+#100000
+b1011 !
+b1010 !
+0G
+1F
+1*
+0=
+0<
+19
+07
+15
+03
+0>
+1;
+0%
+1&
+#110000
+b1011 !
+1G
+0*
+0A
+1=
+0:
+09
+16
+12
+0;
+14
+1(
+0&
+1)
+#120000
+b1111 !
+b1101 !
+b1100 !
+0G
+0F
+1E
+1*
+0B
+0?
+1:
+13
+02
+1;
+18
+1C
+0;
+04
+1&
+1'
+1#
+0&
+0)
+#130000
+b1101 !
+1G
+0*
+1B
+1@
+17
+05
+03
+12
+0C
+08
+06
+14
+1$
+0#
+0'
+0(
+1)
+#140000
+b1111 !
+b1110 !
+0G
+1F
+1*
+0@
+0=
+19
+07
+15
+02
+18
+16
+04
+0$
 1'
 1(
-1)
-1*
-1+
-1,
-1-
-1.
-1/
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-1:
-1;
-1<
-1=
-1>
-1?
-1@
-1A
-1B
-1C
-1D
-1E
-1F
-1G
-1H
-1I
-1J
-1K
-1L
-1M
-1N
-1O
-1P
-1Q
-1R
-1S
-1T
-1U
-1V
-#20000
-0!
-0^
-1W
-#30000
-1!
-1^
-0W
-#40000
-0!
-0^
-1W
-#50000
-1!
-1^
-0W
-#60000
-0!
-0^
-1W
-#70000
-1!
-1^
-0W
-#80000
-0!
-0^
-1W
-#90000
-1!
-1^
-0W
-#100000
-b1 "
-0!
-1d
-0^
-1W
-#110000
-1!
-1^
-0W
-#110001
-0;!
-0:!
-0V
-#120000
-0!
-0^
-1W
-#130000
-1!
-1^
-0W
-#140000
-0!
-0^
-1W
+0)
 #150000
-1!
-1^
-0W
+b1111 !
+1G
+0*
+1@
+1?
+1=
+0:
+09
+0@
+1;
+1$
+0$
+1&
 #160000
-0!
-0^
-1W
+1"
+b111 !
+b11 !
+b1 !
+b0 !
+11
+0G
+0F
+0E
+0D
+1*
+1@
+0?
+0=
+1<
+1:
+19
+0B
+06
+0;
+08
+1>
+0@
+0>
+1;
+1$
+0(
+0&
+0'
+1%
+0$
+0%
+1&
 #170000
-1!
-1^
-0W
+b1 !
+1G
+0*
+1?
+0<
+09
+17
+1@
+0;
+18
+1$
+0&
+1'
 #180000
-0!
-0^
-1W
+b11 !
+b10 !
+0G
+1F
+1*
+1B
+1=
+0:
+07
+05
+12
+1>
+08
+1%
+0'
 #190000
-1!
-1^
-0W
+b11 !
+1G
+0*
+0?
+1:
+19
+13
+0@
+1;
+14
+0$
+1&
+1)
 #200000
-b11 "
-b10 "
-0!
-0d
-1c
-0^
-1W
+b111 !
+b101 !
+b100 !
+0G
+0F
+1E
+1*
+15
+03
+0;
+16
+04
+0&
+1(
+0)
 #210000
-1!
-1^
-0W
-#210001
-0<!
-09!
-0U
+b101 !
+1G
+0*
+0=
+1<
+09
+17
+0>
+0%
 #220000
-0!
-0^
-1W
+b111 !
+b110 !
+0G
+1F
+1*
+1A
+1?
+1=
+0:
+07
+05
+1C
+1@
+1>
+1;
+06
+1#
+1$
+1%
+1&
+0(
 #230000
-1!
-1^
-0W
+b111 !
+1G
+0*
+0B
+0A
+0?
+0=
+1:
+19
+0C
+0@
+0>
+0;
+0#
+0$
+0%
+0&
 #240000
-0!
-0^
-1W
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+0G
+0F
+0E
+1D
+1*
+1B
+0:
+09
+17
+02
+1;
+1>
+14
+0;
+04
+1&
+1%
+1)
+0&
+0)
 #250000
-1!
-1^
-0W
+b1001 !
+1G
+0*
+1A
+1@
+1?
+0<
+07
+15
+1C
+0@
+0>
+1$
+1#
+0$
+0%
 #260000
-0!
-0^
-1W
+b1011 !
+b1010 !
+0G
+1F
+1*
+1@
+1=
+12
+14
+1$
+1)
 #270000
-1!
-1^
-0W
+b1011 !
+1G
+0*
+0A
+0@
+0?
+16
+13
+0C
+1@
+0$
+1(
+0#
+1$
 #280000
-0!
-0^
-1W
+b1111 !
+b1101 !
+b1100 !
+0G
+0F
+1E
+1*
+0B
+0@
+17
+05
+03
+1;
+18
+08
+06
+0$
+1&
+1'
+0'
+0(
 #290000
-1!
-1^
-0W
+b1101 !
+1G
+0*
+1B
+1@
+0=
+1<
+07
+15
+1>
+18
+16
+1$
+1%
+1'
+1(
 #300000
-b11 "
-0!
-1d
-0^
-1W
+b1111 !
+b1110 !
+0G
+1F
+1*
+0@
+1?
+1=
+1@
+0$
+1$
 #310000
-1!
-1^
-0W
-#310001
-0=!
-08!
-0T
+b1111 !
+1G
+0*
+0@
+0?
+0=
+1@
+0$
+1$
 #320000
-0!
-0^
-1W
-#330000
-1!
-1^
-0W
-#340000
-0!
-0^
-1W
-#350000
-1!
-1^
-0W
-#360000
-0!
-0^
-1W
-#370000
-1!
-1^
-0W
-#380000
-0!
-0^
-1W
-#390000
-1!
-1^
-0W
-#400000
-b111 "
-b101 "
-b100 "
-0!
-0d
-0c
-1b
-0^
-1W
-#410000
-1!
-1^
-0W
-#410001
-0>!
-07!
-0S
-#420000
-0!
-0^
-1W
-#430000
-1!
-1^
-0W
-#440000
-0!
-0^
-1W
-#450000
-1!
-1^
-0W
-#460000
-0!
-0^
-1W
-#470000
-1!
-1^
-0W
-#480000
-0!
-0^
-1W
-#490000
-1!
-1^
-0W
-#500000
-b101 "
-0!
-1d
-0^
-1W
-#510000
-1!
-1^
-0W
-#510001
-0?!
-06!
-0R
-#520000
-0!
-0^
-1W
-#530000
-1!
-1^
-0W
-#540000
-0!
-0^
-1W
-#550000
-1!
-1^
-0W
-#560000
-0!
-0^
-1W
-#570000
-1!
-1^
-0W
-#580000
-0!
-0^
-1W
-#590000
-1!
-1^
-0W
-#600000
-b111 "
-b110 "
-0!
-0d
-1c
-0^
-1W
-#610000
-1!
-1^
-0W
-#610001
-0@!
-05!
-0Q
-#620000
-0!
-0^
-1W
-#630000
-1!
-1^
-0W
-#640000
-0!
-0^
-1W
-#650000
-1!
-1^
-0W
-#660000
-0!
-0^
-1W
-#670000
-1!
-1^
-0W
-#680000
-0!
-0^
-1W
-#690000
-1!
-1^
-0W
-#700000
-b111 "
-0!
-1d
-0^
-1W
-#710000
-1!
-1^
-0W
-#710001
-0A!
-04!
-0P
-#720000
-0!
-0^
-1W
-#730000
-1!
-1^
-0W
-#740000
-0!
-0^
-1W
-#750000
-1!
-1^
-0W
-#760000
-0!
-0^
-1W
-#770000
-1!
-1^
-0W
-#780000
-0!
-0^
-1W
-#790000
-1!
-1^
-0W
-#800000
-b1111 "
-b1011 "
-b1001 "
-b1000 "
-0!
-0d
-0c
-0b
-1a
-0^
-1W
-#810000
-1!
-1^
-0W
-#810001
-0B!
-03!
-0O
-#820000
-0!
-0^
-1W
-#830000
-1!
-1^
-0W
-#840000
-0!
-0^
-1W
-#850000
-1!
-1^
-0W
-#860000
-0!
-0^
-1W
-#870000
-1!
-1^
-0W
-#880000
-0!
-0^
-1W
-#890000
-1!
-1^
-0W
-#900000
-b1001 "
-0!
-1d
-0^
-1W
-#910000
-1!
-1^
-0W
-#910001
-0C!
-02!
-0N
-#920000
-0!
-0^
-1W
-#930000
-1!
-1^
-0W
-#940000
-0!
-0^
-1W
-#950000
-1!
-1^
-0W
-#960000
-0!
-0^
-1W
-#970000
-1!
-1^
-0W
-#980000
-0!
-0^
-1W
-#990000
-1!
-1^
-0W
-#1000000

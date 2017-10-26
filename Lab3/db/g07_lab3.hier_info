@@ -9,19 +9,74 @@ num[5] <= lpm_counter_stack:inst83.q[5]
 enable => lpm_mux2:inst64.sel
 empty <= lpm_compare0:inst1.aeb
 address[0] => lpm_mux2:inst60.data0x[0]
+address[0] => lpm_mux_valueSelect:inst78.sel[0]
 address[1] => lpm_mux2:inst60.data0x[1]
+address[1] => lpm_mux_valueSelect:inst78.sel[1]
 address[2] => lpm_mux2:inst60.data0x[2]
+address[2] => lpm_mux_valueSelect:inst78.sel[2]
 address[3] => lpm_mux2:inst60.data0x[3]
+address[3] => lpm_mux_valueSelect:inst78.sel[3]
 address[4] => lpm_mux2:inst60.data0x[4]
+address[4] => lpm_mux_valueSelect:inst78.sel[4]
 address[5] => lpm_mux2:inst60.data0x[5]
+address[5] => lpm_mux_valueSelect:inst78.sel[5]
 mode[0] => lpm_mux4:inst65.sel[0]
 mode[1] => lpm_mux4:inst65.sel[1]
-value[0] <= lpm_mux_valueSelect:inst78.result[0]
-value[1] <= lpm_mux_valueSelect:inst78.result[1]
-value[2] <= lpm_mux_valueSelect:inst78.result[2]
-value[3] <= lpm_mux_valueSelect:inst78.result[3]
-value[4] <= lpm_mux_valueSelect:inst78.result[4]
-value[5] <= lpm_mux_valueSelect:inst78.result[5]
+clk => lpm_counter_stack:inst83.clock
+clk => g07_pop_enable:inst104.clk
+clk => LPM_FF:inst10.clock
+clk => LPM_FF:inst2.clock
+clk => LPM_FF:inst3.clock
+clk => LPM_FF:inst20.clock
+clk => LPM_FF:inst4.clock
+clk => LPM_FF:inst5.clock
+clk => LPM_FF:inst24.clock
+clk => LPM_FF:inst6.clock
+clk => LPM_FF:inst7.clock
+clk => LPM_FF:inst28.clock
+clk => LPM_FF:inst8.clock
+clk => LPM_FF:inst9.clock
+clk => LPM_FF:inst32.clock
+clk => LPM_FF:inst_0.clock
+clk => LPM_FF:inst11.clock
+clk => LPM_FF:inst36.clock
+clk => LPM_FF:inst12.clock
+clk => LPM_FF:inst13.clock
+clk => LPM_FF:inst40.clock
+clk => LPM_FF:inst14.clock
+clk => LPM_FF:inst15.clock
+clk => LPM_FF:inst44.clock
+clk => LPM_FF:inst16.clock
+clk => LPM_FF:inst45.clock
+clk => LPM_FF:inst49.clock
+clk => LPM_FF:inst50.clock
+clk => LPM_FF:inst51.clock
+clk => LPM_FF:inst55.clock
+clk => LPM_FF:inst56.clock
+clk => LPM_FF:inst57.clock
+clk => LPM_FF:inst61.clock
+clk => LPM_FF:inst62.clock
+clk => LPM_FF:inst63.clock
+clk => LPM_FF:inst67.clock
+clk => LPM_FF:inst68.clock
+clk => LPM_FF:inst69.clock
+clk => LPM_FF:inst73.clock
+clk => LPM_FF:inst74.clock
+clk => LPM_FF:inst75.clock
+clk => LPM_FF:inst79.clock
+clk => LPM_FF:inst80.clock
+clk => LPM_FF:inst81.clock
+clk => LPM_FF:inst85.clock
+clk => LPM_FF:inst86.clock
+clk => LPM_FF:inst87.clock
+clk => LPM_FF:inst91.clock
+clk => LPM_FF:inst92.clock
+clk => LPM_FF:inst93.clock
+clk => LPM_FF:inst97.clock
+clk => LPM_FF:inst99.clock
+clk => LPM_FF:inst100.clock
+clk => LPM_FF:inst101.clock
+reset => lpm_counter_stack:inst83.aclr
 reset => LPM_FF:inst10.aclr
 reset => LPM_FF:inst2.aclr
 reset => LPM_FF:inst3.aclr
@@ -73,13 +128,18 @@ reset => LPM_FF:inst97.aclr
 reset => LPM_FF:inst99.aclr
 reset => LPM_FF:inst100.aclr
 reset => LPM_FF:inst101.aclr
-data5 => BUSMUX:inst18.dataa[5]
-data4 => BUSMUX:inst18.dataa[4]
-data3 => BUSMUX:inst18.dataa[3]
-data2 => BUSMUX:inst18.dataa[2]
-data1 => BUSMUX:inst18.dataa[1]
-data0 => BUSMUX:inst18.dataa[0]
-clk => ~NO_FANOUT~
+value[0] <= lpm_mux_valueSelect:inst78.result[0]
+value[1] <= lpm_mux_valueSelect:inst78.result[1]
+value[2] <= lpm_mux_valueSelect:inst78.result[2]
+value[3] <= lpm_mux_valueSelect:inst78.result[3]
+value[4] <= lpm_mux_valueSelect:inst78.result[4]
+value[5] <= lpm_mux_valueSelect:inst78.result[5]
+dataIn[0] => BUSMUX:inst18.dataa[0]
+dataIn[1] => BUSMUX:inst18.dataa[1]
+dataIn[2] => BUSMUX:inst18.dataa[2]
+dataIn[3] => BUSMUX:inst18.dataa[3]
+dataIn[4] => BUSMUX:inst18.dataa[4]
+dataIn[5] => BUSMUX:inst18.dataa[5]
 
 
 |g07_stack52|lpm_compare52:inst17
@@ -756,7 +816,7 @@ result[2] <= <GND>
 result[3] <= <GND>
 result[4] <= <GND>
 result[5] <= <GND>
-result[6] <= <VCC>
+result[6] <= <GND>
 result[7] <= <VCC>
 result[8] <= <GND>
 
@@ -926,7 +986,7 @@ result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
 
 |g07_stack52|lpm_constant_POP:inst95|lpm_constant:LPM_CONSTANT_component
 result[0] <= <VCC>
-result[1] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
 
 
@@ -943,12 +1003,12 @@ result[8] <= lpm_constant:LPM_CONSTANT_component.result[8]
 
 
 |g07_stack52|lpm_constant_INIT:inst98|lpm_constant:LPM_CONSTANT_component
-result[0] <= <GND>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
-result[5] <= <GND>
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <VCC>
 result[6] <= <GND>
 result[7] <= <GND>
 result[8] <= <VCC>
@@ -5397,7 +5457,7 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst10|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
@@ -7007,8 +7067,8 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst6|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
 result[3] <= <GND>
 result[4] <= <GND>
 result[5] <= <GND>
@@ -7139,10 +7199,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst7|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -7275,7 +7335,7 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -7405,10 +7465,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst8|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -7539,9 +7599,9 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst9|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -7671,10 +7731,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst32|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -7806,8 +7866,8 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 |g07_stack52|LPM_FF:inst_0|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -7937,10 +7997,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst11|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -8071,9 +8131,9 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst36|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
 result[5] <= <GND>
 
@@ -8203,11 +8263,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst12|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -8340,7 +8400,7 @@ result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -8469,11 +8529,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst40|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -8603,10 +8663,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst14|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -8735,11 +8795,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst15|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
-result[2] <= <GND>
+result[2] <= <VCC>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -8870,9 +8930,9 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 |g07_stack52|LPM_FF:inst44|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
-result[2] <= <GND>
+result[2] <= <VCC>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9001,11 +9061,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst16|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9135,10 +9195,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst45|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
 result[3] <= <GND>
-result[4] <= <GND>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9267,11 +9327,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst49|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9403,8 +9463,8 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9533,11 +9593,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst51|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9667,10 +9727,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst55|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9799,11 +9859,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst56|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -9934,9 +9994,9 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 |g07_stack52|LPM_FF:inst57|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -10065,11 +10125,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst61|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -10199,10 +10259,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst62|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
 result[5] <= <GND>
 
 
@@ -10331,12 +10391,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst63|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst39
@@ -10469,7 +10529,7 @@ result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst121
@@ -10597,12 +10657,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst68|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst41
@@ -10731,11 +10791,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst69|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst122
@@ -10863,12 +10923,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst73|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
-result[2] <= <GND>
+result[2] <= <VCC>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst42
@@ -10998,10 +11058,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 |g07_stack52|LPM_FF:inst74|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
-result[2] <= <GND>
+result[2] <= <VCC>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst123
@@ -11129,12 +11189,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst75|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst43
@@ -11263,11 +11323,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst79|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
 result[3] <= <GND>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst124
@@ -11395,12 +11455,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst80|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst46
@@ -11531,9 +11591,9 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst125
@@ -11661,12 +11721,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst85|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst47
@@ -11795,11 +11855,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst86|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
-result[3] <= <GND>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst126
@@ -11927,12 +11987,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst87|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst48
@@ -12062,10 +12122,10 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 |g07_stack52|LPM_FF:inst91|lpm_constant:sc
 result[0] <= <VCC>
 result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst127
@@ -12193,12 +12253,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst92|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst52
@@ -12327,11 +12387,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst93|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
 result[4] <= <GND>
-result[5] <= <GND>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst128
@@ -12459,12 +12519,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst97|lpm_constant:sc
-result[0] <= <VCC>
+result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
-result[5] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst53
@@ -12596,8 +12656,8 @@ result[0] <= <VCC>
 result[1] <= <GND>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
-result[5] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst129
@@ -12725,12 +12785,12 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_stack52|LPM_FF:inst100|lpm_constant:sc
-result[0] <= <VCC>
-result[1] <= <GND>
+result[0] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
-result[5] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst54
@@ -12859,11 +12919,11 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 |g07_stack52|LPM_FF:inst101|lpm_constant:sc
 result[0] <= <VCC>
-result[1] <= <GND>
+result[1] <= <VCC>
 result[2] <= <GND>
 result[3] <= <GND>
-result[4] <= <GND>
-result[5] <= <GND>
+result[4] <= <VCC>
+result[5] <= <VCC>
 
 
 |g07_stack52|BUSMUX:inst58

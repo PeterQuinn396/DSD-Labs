@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="g07_lab2">
-		<CBX_INST_ENTRY INSTANCE_NAME="|g07_pop_enable|LUT:lut1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7q71.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

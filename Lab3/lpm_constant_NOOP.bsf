@@ -27,11 +27,11 @@ applicable agreement for further details.
 		(pt 112 24)
 		(output)
 		(text "result[8..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
-		(text "47" (rect 69 12 91 35)(font "Arial" (font_size 8)))
+		(text "63" (rect 79 16 91 31)(font "Arial" (font_size 8)))
 		(line (pt 112 24)(pt 96 24)(line_width 3))
 	)
 	(drawing
-		(text "9" (rect 93 21 195 63)(font "Arial" ))
+		(text "9" (rect 97 25 199 64)(font "Arial" ))
 		(line (pt 106 20)(pt 98 28))
 		(line (pt 16 16)(pt 16 32))
 		(line (pt 16 16)(pt 96 16))
