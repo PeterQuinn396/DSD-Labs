@@ -64,3 +64,4 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name BDF_FILE g07_lab3_testbed.bdf
 set_global_assignment -name QIP_FILE lpm_counter_bounce.qip
 set_global_assignment -name QIP_FILE lpm_compare_bounce.qip
+set_global_assignment -name QIP_FILE lpm_compare199999.qip

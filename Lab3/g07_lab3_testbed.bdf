@@ -199,7 +199,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 112 232 176 312)
+	(rect 128 232 192 312)
 	(text "SRFF" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 68 26 80)(font "Arial" ))
 	(port
@@ -307,6 +307,41 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 	)
 )
+(symbol
+	(rect 424 360 552 456)
+	(text "lpm_compare199999" (rect 9 0 150 16)(font "Arial" (font_size 10)))
+	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "dataa[21..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[21..0]" (rect 20 36 87 50)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 128 56)
+		(output)
+		(text "aeb" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "aeb" (rect 74 44 95 58)(font "Arial" (font_size 8)))
+		(line (pt 128 56)(pt 112 56))
+	)
+	(drawing
+		(text "datab[]=199995" (rect 20 52 108 66)(font "Arial" (font_size 8)))
+		(text "compare" (rect 37 21 79 33)(font "Arial" ))
+		(line (pt 16 16)(pt 16 80))
+		(line (pt 16 16)(pt 112 16))
+		(line (pt 16 80)(pt 112 80))
+		(line (pt 112 16)(pt 112 80))
+		(line (pt 0 0)(pt 129 0))
+		(line (pt 129 0)(pt 129 98))
+		(line (pt 0 98)(pt 129 98))
+		(line (pt 0 0)(pt 0 98))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)
 (connector
 	(pt 1216 344)
 	(pt 1264 344)
@@ -324,11 +359,6 @@ applicable agreement for further details.
 (connector
 	(pt 584 344)
 	(pt 584 384)
-)
-(connector
-	(pt 408 304)
-	(pt 424 304)
-	(bus)
 )
 (connector
 	(text "LED2[6..0]" (rect 1488 328 1541 340)(font "Arial" ))
@@ -363,14 +393,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 112 288)
-	(pt 88 288)
-)
-(connector
-	(pt 176 256)
-	(pt 208 256)
-)
-(connector
 	(pt 256 280)
 	(pt 264 280)
 )
@@ -380,27 +402,8 @@ applicable agreement for further details.
 	(pt 256 280)
 )
 (connector
-	(pt 208 256)
-	(pt 208 312)
-)
-(connector
 	(pt 208 312)
 	(pt 264 312)
-)
-(connector
-	(text "clk" (rect 112 256 126 268)(font "Arial" ))
-	(pt 112 272)
-	(pt 104 272)
-)
-(connector
-	(text "btnPshd" (rect 56 240 96 252)(font "Arial" ))
-	(pt 112 256)
-	(pt 48 256)
-)
-(connector
-	(text "clk" (rect 88 348 100 362)(font "Arial" )(vertical))
-	(pt 104 272)
-	(pt 104 376)
 )
 (connector
 	(text "clk" (rect 560 404 572 418)(font "Arial" )(vertical))
@@ -412,24 +415,8 @@ applicable agreement for further details.
 	(pt 576 328)
 )
 (connector
-	(pt 88 288)
-	(pt 88 472)
-)
-(connector
 	(pt 88 472)
 	(pt 560 472)
-)
-(connector
-	(pt 560 472)
-	(pt 560 312)
-)
-(connector
-	(pt 552 312)
-	(pt 560 312)
-)
-(connector
-	(pt 560 312)
-	(pt 592 312)
 )
 (connector
 	(pt 680 384)
@@ -447,8 +434,71 @@ applicable agreement for further details.
 	(pt 680 312)
 	(pt 704 312)
 )
-(junction (pt 560 312))
+(connector
+	(pt 552 312)
+	(pt 592 312)
+)
+(connector
+	(pt 560 416)
+	(pt 552 416)
+)
+(connector
+	(pt 560 416)
+	(pt 560 472)
+)
+(connector
+	(pt 424 408)
+	(pt 416 408)
+	(bus)
+)
+(connector
+	(pt 416 408)
+	(pt 416 304)
+	(bus)
+)
+(connector
+	(pt 408 304)
+	(pt 416 304)
+	(bus)
+)
+(connector
+	(pt 416 304)
+	(pt 424 304)
+	(bus)
+)
+(connector
+	(pt 208 312)
+	(pt 208 256)
+)
+(connector
+	(text "clk" (rect 88 348 100 362)(font "Arial" )(vertical))
+	(pt 104 376)
+	(pt 104 272)
+)
+(connector
+	(pt 88 472)
+	(pt 88 288)
+)
+(connector
+	(text "btnPshd" (rect 72 240 112 252)(font "Arial" ))
+	(pt 64 256)
+	(pt 128 256)
+)
+(connector
+	(pt 88 288)
+	(pt 128 288)
+)
+(connector
+	(text "clk" (rect 128 256 142 268)(font "Arial" ))
+	(pt 104 272)
+	(pt 128 272)
+)
+(connector
+	(pt 192 256)
+	(pt 208 256)
+)
 (junction (pt 680 312))
+(junction (pt 416 304))
 (text "Debouncing Unit" (rect 424 136 516 150)(font "Arial" (color 85 255 0)(font_size 8)))
 (text "Stack52 goes here" (rect 784 248 891 262)(font "Arial" (color 255 255 0)(font_size 8)))
 (rectangle (rect 408 128 520 160)(fill (color 170 0 0)))
