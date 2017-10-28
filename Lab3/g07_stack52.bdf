@@ -82,6 +82,7 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -1104 168 -1048 184))
 )
 (pin
 	(input)
@@ -98,6 +99,7 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -1104 200 -1048 216))
 )
 (pin
 	(input)
@@ -4181,35 +4183,6 @@ applicable agreement for further details.
 		(line (pt 44 80)(pt 68 64))
 	)
 	(annotation_block (parameter)(rect 296 10664 424 10692))
-)
-(symbol
-	(rect -152 48 24 128)
-	(text "g07_pop_enable" (rect 5 0 84 12)(font "Arial" ))
-	(text "inst104" (rect 8 64 43 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "N[5..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "N[5..0]" (rect 21 27 55 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 43 35 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 176 32)
-		(output)
-		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 160 64))
-	)
 )
 (symbol
 	(rect -296 224 -248 256)
@@ -9407,6 +9380,35 @@ applicable agreement for further details.
 		(line (pt 24 88)(pt 16 96))
 	)
 	(annotation_block (parameter)(rect 640 2296 790 2366))
+)
+(symbol
+	(rect -152 48 24 128)
+	(text "g07_pop_enable" (rect 5 0 84 12)(font "Arial" ))
+	(text "inst104a" (rect 8 64 49 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "N[5..0]" (rect 0 0 34 12)(font "Arial" ))
+		(text "N[5..0]" (rect 21 27 55 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 43 35 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 64))
+	)
 )
 (connector
 	(pt 688 1912)
