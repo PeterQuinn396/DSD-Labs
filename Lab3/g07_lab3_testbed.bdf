@@ -74,7 +74,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 176 256 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "adr0" (rect 5 0 27 12)(font "Arial" ))
+	(text "adr0" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -91,7 +91,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 200 256 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "adr1" (rect 5 0 27 12)(font "Arial" ))
+	(text "adr1" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -108,7 +108,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 224 256 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "adr2" (rect 5 0 27 12)(font "Arial" ))
+	(text "adr2" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -125,7 +125,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 248 256 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "adr3" (rect 5 0 27 12)(font "Arial" ))
+	(text "adr3" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -142,7 +142,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 272 256 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "adr4" (rect 5 0 27 12)(font "Arial" ))
+	(text "adr4" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -159,7 +159,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 296 256 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "adr5" (rect 5 0 27 12)(font "Arial" ))
+	(text "adr5" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -176,7 +176,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 360 256 376)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "mode0" (rect 5 0 39 12)(font "Arial" ))
+	(text "mode0" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -193,7 +193,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 384 256 400)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "mode1" (rect 5 0 39 12)(font "Arial" ))
+	(text "mode1" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -270,35 +270,6 @@ applicable agreement for further details.
 		(line (pt 78 4)(pt 82 8))
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
-	)
-)
-(symbol
-	(rect 976 248 1144 344)
-	(text "g07_Modulo_13" (rect 5 0 94 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[5..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "A[5..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 168 32)
-		(output)
-		(text "floor13[2..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
-		(text "floor13[2..0]" (rect 79 27 147 41)(font "Arial" (font_size 8)))
-		(line (pt 168 32)(pt 152 32)(line_width 3))
-	)
-	(port
-		(pt 168 48)
-		(output)
-		(text "Amod13[3..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
-		(text "Amod13[3..0]" (rect 72 43 147 57)(font "Arial" (font_size 8)))
-		(line (pt 168 48)(pt 152 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 152 80))
 	)
 )
 (symbol
@@ -513,18 +484,47 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 976 248 1144 344)
+	(text "g07_Modulo_13" (rect 5 0 94 14)(font "Arial" (font_size 8)))
+	(text "instb" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[5..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "A[5..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "floor13[2..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "floor13[2..0]" (rect 79 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "Amod13[3..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "Amod13[3..0]" (rect 72 43 147 57)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 80))
+	)
+)
+(symbol
 	(rect 520 72 632 120)
-	(text "lpm_constant42" (rect 2 0 110 16)(font "Arial" (font_size 10)))
+	(text "lpm_constant42_fix" (rect 2 0 134 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 32 25 44)(font "Arial" ))
 	(port
 		(pt 112 24)
 		(output)
-		(text "result[7..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "result[5..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
 		(text "42" (rect 69 12 83 26)(font "Arial" (font_size 8)))
 		(line (pt 112 24)(pt 96 24)(line_width 3))
 	)
 	(drawing
-		(text "8" (rect 93 21 98 33)(font "Arial" ))
+		(text "6" (rect 93 21 98 33)(font "Arial" ))
 		(line (pt 106 20)(pt 98 28))
 		(line (pt 16 16)(pt 16 32))
 		(line (pt 16 16)(pt 96 16))
