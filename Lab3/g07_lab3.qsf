@@ -68,13 +68,9 @@ set_global_assignment -name BDF_FILE g07_debouncer.bdf
 set_global_assignment -name QIP_FILE lpm_counter_bounce1.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE g07_debouncer_test.vwf
 set_global_assignment -name QIP_FILE lpm_compare_bounce0.qip
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab3/g07_debouncer_test.vwf"
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_J2 -to LED1[1]
-set_location_assignment PIN_J1 -to LED1[0]
+set_location_assignment PIN_J1 -to LED1[1]
+set_location_assignment PIN_J2 -to LED1[0]
 set_location_assignment PIN_H2 -to LED1[2]
 set_location_assignment PIN_H1 -to LED1[3]
 set_location_assignment PIN_F1 -to LED1[5]
@@ -90,17 +86,26 @@ set_location_assignment PIN_D2 -to LED2[5]
 set_location_assignment PIN_L1 -to clk
 set_location_assignment PIN_R22 -to reset
 set_location_assignment PIN_R21 -to button
-set_location_assignment PIN_L22 -to mode0
-set_location_assignment PIN_L21 -to mode1
-set_location_assignment PIN_L2 -to adr5
-set_location_assignment PIN_M1 -to adr4
-set_location_assignment PIN_M2 -to adr3
-set_location_assignment PIN_U11 -to adr2
-set_location_assignment PIN_U12 -to adr1
-set_location_assignment PIN_W12 -to adr0
 set_global_assignment -name QIP_FILE output_files/lpm_constant42.qip
 set_global_assignment -name QIP_FILE lpm_constant42.qip
 set_global_assignment -name QIP_FILE lpm_constant42_fix.qip
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_location_assignment PIN_U22 -to gled
 set_location_assignment PIN_R20 -to rled
+set_location_assignment PIN_Y21 -to activeLED
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/debounce_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/stack_test.vwf
+set_location_assignment PIN_L2 -to adr[5]
+set_location_assignment PIN_W12 -to adr[0]
+set_location_assignment PIN_M1 -to adr[4]
+set_location_assignment PIN_M2 -to adr[3]
+set_location_assignment PIN_U12 -to adr[1]
+set_location_assignment PIN_U11 -to adr[2]
+set_location_assignment PIN_L22 -to mode[0]
+set_location_assignment PIN_L21 -to mode[1]
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/testbed_test.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab3/output_files/stack_test.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name CDF_FILE output_files/done.cdf
