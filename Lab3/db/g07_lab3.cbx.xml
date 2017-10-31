@@ -63,19 +63,18 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst74|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_a94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst92|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ia4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|lpm_mux4:inst65|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_b3e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_qp14.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst57|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ba4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst75|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_b94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst93|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ja4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_aoc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_tbi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst_0|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_5a4.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst110|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst79|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_c94.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst97|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_f94.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst111|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst120|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst21|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst30|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst100|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_h94.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst10|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_h84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst112|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst22|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst20|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_k84.tdf"/>
@@ -91,6 +90,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst116|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst26|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst24|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_n84.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter" CBX_FILE_NAME="cntr_02j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst108|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst126|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst18|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
@@ -108,6 +108,8 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst45|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_294.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst63|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_594.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst81|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_e94.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_rqf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter" CBX_FILE_NAME="cntr_gui.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst48|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst28|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_q84.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|lpm_constant_PUSH:inst96|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_jh6.tdf"/>
@@ -122,6 +124,11 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|lpm_counter_stack:inst83|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_p5j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst69|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_894.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst87|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_ga4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter" CBX_FILE_NAME="cntr_sbi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|lpm_constant_INIT:inst98|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_ch6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst111|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|BUSMUX:inst21|LPM_MUX:$00000" CBX_FILE_NAME="mux_qmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst100|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_h94.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|g07_lab3_testbed|g07_stack52:inst5|LPM_FF:inst10|lpm_constant:sc" CBX_FILE_NAME="lpm_constant_h84.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

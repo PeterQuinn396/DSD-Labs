@@ -182,22 +182,6 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
-(pin
-	(output)
-	(rect -168 632 8 648)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "sset_test" (rect 90 0 136 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
 (symbol
 	(rect 440 304 616 448)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
@@ -7391,7 +7375,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 688 6040 838 6110))
 )
 (symbol
-	(rect 512 5920 688 6064)
+	(rect 512 5904 688 6048)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
 	(text "inst56" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
@@ -7498,10 +7482,10 @@ applicable agreement for further details.
 		(line (pt 16 80)(pt 24 88))
 		(line (pt 24 88)(pt 16 96))
 	)
-	(annotation_block (parameter)(rect 688 5848 838 5918))
+	(annotation_block (parameter)(rect 688 5832 838 5902))
 )
 (symbol
-	(rect 512 5712 688 5856)
+	(rect 512 5688 688 5832)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
 	(text "inst55" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
@@ -7608,7 +7592,7 @@ applicable agreement for further details.
 		(line (pt 16 80)(pt 24 88))
 		(line (pt 24 88)(pt 16 96))
 	)
-	(annotation_block (parameter)(rect 688 5640 838 5710))
+	(annotation_block (parameter)(rect 688 5616 838 5686))
 )
 (symbol
 	(rect 504 5488 680 5632)
@@ -9678,16 +9662,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 736 5656)
-	(pt 736 5800)
-	(bus)
-)
-(connector
-	(pt 736 5800)
-	(pt 736 5896)
-	(bus)
-)
-(connector
 	(pt 712 5472)
 	(pt 712 5576)
 	(bus)
@@ -11003,11 +10977,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 512 5784)
-	(pt 344 5784)
-	(bus)
-)
-(connector
 	(pt 168 5800)
 	(pt 168 5880)
 	(bus)
@@ -11043,11 +11012,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 512 5992)
-	(pt 344 5992)
-	(bus)
-)
-(connector
 	(pt 200 6008)
 	(pt 200 6096)
 	(bus)
@@ -11055,16 +11019,6 @@ applicable agreement for further details.
 (connector
 	(pt 200 6096)
 	(pt 720 6096)
-	(bus)
-)
-(connector
-	(pt 704 5880)
-	(pt 704 6008)
-	(bus)
-)
-(connector
-	(pt 704 6008)
-	(pt 704 6080)
 	(bus)
 )
 (connector
@@ -12196,20 +12150,6 @@ applicable agreement for further details.
 	(pt 368 5592)
 )
 (connector
-	(text "P_EN[27]" (rect 392 5800 439 5812)(font "Arial" ))
-	(pt 512 5816)
-	(pt 384 5816)
-)
-(connector
-	(pt 384 6024)
-	(pt 384 6032)
-)
-(connector
-	(text "P_EN[28]" (rect 392 6008 439 6020)(font "Arial" ))
-	(pt 512 6024)
-	(pt 384 6024)
-)
-(connector
 	(pt 384 6216)
 	(pt 384 6224)
 )
@@ -12539,20 +12479,6 @@ applicable agreement for further details.
 	(text "sset[0]" (rect 424 6136 458 6148)(font "Arial" ))
 	(pt 512 6152)
 	(pt 416 6152)
-)
-(connector
-	(pt 416 5960)
-	(pt 416 5952)
-)
-(connector
-	(text "sset[0]" (rect 424 5944 458 5956)(font "Arial" ))
-	(pt 512 5960)
-	(pt 416 5960)
-)
-(connector
-	(text "sset[0]" (rect 448 5736 482 5748)(font "Arial" ))
-	(pt 512 5752)
-	(pt 440 5752)
 )
 (connector
 	(text "sset[0]" (rect 400 5512 434 5524)(font "Arial" ))
@@ -12978,15 +12904,6 @@ applicable agreement for further details.
 	(text "aclr[0]" (rect 576 5598 588 5628)(font "Arial" )(vertical))
 	(pt 592 5632)
 	(pt 592 5640)
-)
-(connector
-	(pt 600 5864)
-	(pt 648 5864)
-)
-(connector
-	(text "aclr[0]" (rect 584 5822 596 5852)(font "Arial" )(vertical))
-	(pt 600 5856)
-	(pt 600 5864)
 )
 (connector
 	(pt 600 6272)
@@ -13502,20 +13419,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "data27[5..0]" (rect 696 5784 755 5796)(font "Arial" ))
-	(pt 688 5800)
-	(pt 736 5800)
-	(bus)
-)
-(connector
 	(pt 704 6008)
 	(pt 856 6008)
-	(bus)
-)
-(connector
-	(text "data28[5..0]" (rect 696 5992 755 6004)(font "Arial" ))
-	(pt 688 6008)
-	(pt 704 6008)
 	(bus)
 )
 (connector
@@ -14674,16 +14579,6 @@ applicable agreement for further details.
 	(pt 448 5576)
 )
 (connector
-	(text "clk" (rect 456 5784 470 5796)(font "Arial" ))
-	(pt 512 5800)
-	(pt 448 5800)
-)
-(connector
-	(text "clk" (rect 448 5992 462 6004)(font "Arial" ))
-	(pt 512 6008)
-	(pt 440 6008)
-)
-(connector
 	(text "clk" (rect 448 6184 462 6196)(font "Arial" ))
 	(pt 512 6200)
 	(pt 440 6200)
@@ -14821,15 +14716,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -240 640)
-	(pt -240 632)
-)
-(connector
-	(text "sset[0]" (rect -232 624 -198 636)(font "Arial" ))
-	(pt -168 640)
-	(pt -240 640)
-)
-(connector
 	(pt 16 424)
 	(pt 16 376)
 )
@@ -14887,6 +14773,134 @@ applicable agreement for further details.
 	(pt 136 552)
 	(pt 152 552)
 )
+(connector
+	(pt 352 5784)
+	(pt 352 5760)
+	(bus)
+)
+(connector
+	(pt 344 5784)
+	(pt 352 5784)
+	(bus)
+)
+(connector
+	(pt 352 5760)
+	(pt 512 5760)
+	(bus)
+)
+(connector
+	(text "P_EN[27]" (rect 392 5776 439 5788)(font "Arial" ))
+	(pt 512 5792)
+	(pt 384 5792)
+)
+(connector
+	(text "sset[0]" (rect 448 5712 482 5724)(font "Arial" ))
+	(pt 512 5728)
+	(pt 440 5728)
+)
+(connector
+	(text "data27[5..0]" (rect 696 5760 755 5772)(font "Arial" ))
+	(pt 736 5776)
+	(pt 688 5776)
+	(bus)
+)
+(connector
+	(text "clk" (rect 456 5760 470 5772)(font "Arial" ))
+	(pt 512 5776)
+	(pt 448 5776)
+)
+(connector
+	(pt 736 5800)
+	(pt 736 5896)
+	(bus)
+)
+(connector
+	(pt 736 5656)
+	(pt 736 5776)
+	(bus)
+)
+(connector
+	(pt 736 5776)
+	(pt 736 5800)
+	(bus)
+)
+(connector
+	(pt 648 5864)
+	(pt 600 5864)
+)
+(connector
+	(text "aclr[0]" (rect 584 5830 596 5860)(font "Arial" )(vertical))
+	(pt 600 5832)
+	(pt 600 5864)
+)
+(connector
+	(pt 352 5992)
+	(pt 352 5976)
+	(bus)
+)
+(connector
+	(pt 344 5992)
+	(pt 352 5992)
+	(bus)
+)
+(connector
+	(pt 352 5976)
+	(pt 512 5976)
+	(bus)
+)
+(connector
+	(pt 384 6032)
+	(pt 384 6008)
+)
+(connector
+	(text "P_EN[28]" (rect 392 5992 439 6004)(font "Arial" ))
+	(pt 384 6008)
+	(pt 512 6008)
+)
+(connector
+	(pt 416 5952)
+	(pt 416 5944)
+)
+(connector
+	(text "sset[0]" (rect 424 5928 458 5940)(font "Arial" ))
+	(pt 416 5944)
+	(pt 512 5944)
+)
+(connector
+	(text "data28[5..0]" (rect 696 5976 755 5988)(font "Arial" ))
+	(pt 704 5992)
+	(pt 688 5992)
+	(bus)
+)
+(connector
+	(text "clk" (rect 448 5976 462 5988)(font "Arial" ))
+	(pt 512 5992)
+	(pt 440 5992)
+)
+(connector
+	(pt 704 6008)
+	(pt 704 6080)
+	(bus)
+)
+(connector
+	(pt 704 5880)
+	(pt 704 5992)
+	(bus)
+)
+(connector
+	(pt 704 5992)
+	(pt 704 6008)
+	(bus)
+)
+(connector
+	(pt 632 6088)
+	(pt 600 6088)
+)
+(connector
+	(text "aclr[0]" (rect 584 6038 596 6068)(font "Arial" )(vertical))
+	(pt 600 6048)
+	(pt 600 6088)
+)
 (junction (pt 632 392))
 (junction (pt 640 1016))
 (junction (pt 648 584))
@@ -14943,3 +14957,5 @@ applicable agreement for further details.
 (junction (pt -816 160))
 (junction (pt -816 344))
 (junction (pt -816 256))
+(junction (pt 736 5776))
+(junction (pt 704 5992))
