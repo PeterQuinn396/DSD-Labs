@@ -18,6 +18,10 @@
 # Loading work.g07_stack52
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_jtag
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
@@ -25,21 +29,49 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading work.g07_stack52_vlg_sample_tst
 # Loading work.g07_stack52_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from g07_lab3_v.sdo
+# ** Warning: (vsim-3017) g07_lab3.vt(465): [TFMPC] - Too few port connections. Expected 14, found 10.
+# 
+#         Region: /g07_stack52_vlg_vec_tst/i1
+# ** Warning: (vsim-3722) g07_lab3.vt(465): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# 
+# ** Warning: (vsim-3722) g07_lab3.vt(465): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# 
+# ** Warning: (vsim-3722) g07_lab3.vt(465): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# 
+# ** Warning: (vsim-3722) g07_lab3.vt(465): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# 
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from g07_lab3_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst File: g07_lab3.vt
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Gareth  Hostname: GARETHPETERS  ProcessID: 2544
 # 
-#           Attempting to use alternate WLF file "./wlftaxbzf6".
+#           Attempting to use alternate WLF file "./wlft0q5v5c".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftaxbzf6
+#           Using alternate file: ./wlft0q5v5c
 # 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:112857 ps, datain:112990 ps, 286 ps );
+#    Time: 112990 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/i1/\auto_signaltap_0|acq_trigger_in_reg[9] 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:112857 ps, datain:112992 ps, 286 ps );
+#    Time: 112992 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/i1/\auto_signaltap_0|acq_data_in_reg[9] 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:112853 ps, datain:113016 ps, 286 ps );
+#    Time: 113016 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/i1/inst88
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:112847 ps, datain:113034 ps, 286 ps );
+#    Time: 113034 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/i1/\auto_signaltap_0|acq_data_in_reg[8] 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:952857 ps, datain:952990 ps, 286 ps );
+#    Time: 952990 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/i1/\auto_signaltap_0|acq_trigger_in_reg[9] 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:952857 ps, datain:952992 ps, 286 ps );
+#    Time: 952992 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/i1/\auto_signaltap_0|acq_data_in_reg[9] 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:952847 ps, datain:953034 ps, 286 ps );
+#    Time: 953034 ps  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/i1/\auto_signaltap_0|acq_data_in_reg[8] 
 # Simulation passed !
-# ** Note: $finish    : g07_lab3.vt(444)
-#    Time: 90 us  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/tb_out
+# ** Note: $finish    : g07_lab3.vt(431)
+#    Time: 2 us  Iteration: 0  Instance: /g07_stack52_vlg_vec_tst/tb_out

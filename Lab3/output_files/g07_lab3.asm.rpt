@@ -1,5 +1,5 @@
 Assembler report for g07_lab3
-Tue Oct 31 18:16:57 2017
+Fri Nov 10 13:05:17 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -39,9 +39,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 31 18:16:57 2017 ;
+; Assembler Status      ; Successful - Fri Nov 10 13:05:17 2017 ;
 ; Revision Name         ; g07_lab3                              ;
-; Top-level Entity Name ; g07_lab3_testbed                      ;
+; Top-level Entity Name ; g07_stack52                           ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C20F484C7                          ;
 +-----------------------+---------------------------------------+
@@ -105,8 +105,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                     ;
 +----------------+-----------------------------------------------------------------------------+
 ; Device         ; EP2C20F484C7                                                                ;
-; JTAG usercode  ; 0x0029253B                                                                  ;
-; Checksum       ; 0x0029253B                                                                  ;
+; JTAG usercode  ; 0x00284D04                                                                  ;
+; Checksum       ; 0x00284D04                                                                  ;
 +----------------+-----------------------------------------------------------------------------+
 
 
@@ -117,8 +117,8 @@ applicable agreement for further details.
 +--------------------+-------------------------------------------------------------------------+
 ; Device             ; EPCS16                                                                  ;
 ; JTAG usercode      ; 0x00000000                                                              ;
-; Checksum           ; 0x1DC05976                                                              ;
-; Compression Ratio  ; 2                                                                       ;
+; Checksum           ; 0x1DC60831                                                              ;
+; Compression Ratio  ; 3                                                                       ;
 +--------------------+-------------------------------------------------------------------------+
 
 
@@ -128,14 +128,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 31 18:16:50 2017
+    Info: Processing started: Fri Nov 10 13:05:08 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off g07_lab3 -c g07_lab3
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 465 megabytes
-    Info: Processing ended: Tue Oct 31 18:16:57 2017
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Processing ended: Fri Nov 10 13:05:17 2017
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:08
 
 
