@@ -14,9 +14,9 @@
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus II 64-Bit"
--- VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
+-- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "11/15/2017 17:40:45"
+-- DATE "11/15/2017 18:51:44"
 
 -- 
 -- Device: Altera EP2C20F484C7 Package FBGA484
@@ -134,9 +134,9 @@ SIGNAL \LessThan1~2_combout\ : std_logic;
 SIGNAL \ace~3_combout\ : std_logic;
 SIGNAL \legal_play~2_combout\ : std_logic;
 SIGNAL \Add1~0_combout\ : std_logic;
-SIGNAL \play_pile_top_card~combout\ : std_logic_vector(5 DOWNTO 0);
-SIGNAL \card_play~combout\ : std_logic_vector(5 DOWNTO 0);
 SIGNAL new_sum_int : std_logic_vector(5 DOWNTO 0);
+SIGNAL \card_play~combout\ : std_logic_vector(5 DOWNTO 0);
+SIGNAL \play_pile_top_card~combout\ : std_logic_vector(5 DOWNTO 0);
 
 BEGIN
 

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab4
-Wed Nov 15 17:40:06 2017
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Wed Nov 15 18:51:26 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -41,24 +41,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 15 17:40:06 2017      ;
-; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
-; Revision Name                      ; Lab4                                       ;
-; Top-level Entity Name              ; g07_rules                                  ;
-; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 51                                         ;
-;     Total combinational functions  ; 51                                         ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 19                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Nov 15 18:51:26 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Lab4                                            ;
+; Top-level Entity Name              ; g07_rules                                       ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 51                                              ;
+;     Total combinational functions  ; 51                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 19                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -146,33 +146,27 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
-; g07_rules.vhd                    ; yes             ; User VHDL File                           ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4/g07_rules.vhd     ;         ;
-; g07_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4/g07_modulo_13.bdf ;         ;
-; g07_adder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4/g07_adder.bdf     ;         ;
-; g07_fulladder.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4/g07_fulladder.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
+; g07_rules.vhd                    ; yes             ; User VHDL File                           ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_rules.vhd     ;         ;
+; g07_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_modulo_13.bdf ;         ;
+; g07_adder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_adder.bdf     ;         ;
+; g07_fulladder.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_fulladder.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -210,17 +204,17 @@ applicable agreement for further details.
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
-; |g07_rules                     ; 51 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |g07_rules                                                      ;              ;
-;    |g07_Modulo_13:u1|          ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1                                     ;              ;
-;       |g07_adder:inst4|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst4                     ;              ;
-;          |g07_fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1 ;              ;
-;       |g07_adder:inst5|        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5                     ;              ;
-;          |g07_fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1 ;              ;
-;          |g07_fullAdder:inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2 ;              ;
-;       |g07_adder:inst|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst                      ;              ;
-;          |g07_fullAdder:inst5| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5  ;              ;
-;          |g07_fullAdder:inst6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6  ;              ;
-;          |g07_fullAdder:inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7  ;              ;
+; |g07_rules                     ; 51 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |g07_rules                                                      ; work         ;
+;    |g07_Modulo_13:u1|          ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1                                     ; work         ;
+;       |g07_adder:inst4|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst4                     ; work         ;
+;          |g07_fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1 ; work         ;
+;       |g07_adder:inst5|        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5                     ; work         ;
+;          |g07_fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1 ; work         ;
+;          |g07_fullAdder:inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2 ; work         ;
+;       |g07_adder:inst|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst                      ; work         ;
+;          |g07_fullAdder:inst5| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5  ; work         ;
+;          |g07_fullAdder:inst6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6  ; work         ;
+;          |g07_fullAdder:inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7  ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -285,7 +279,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -294,10 +288,15 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 15 17:39:56 2017
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 15 18:51:20 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /documents/github/dsd-labs/lab3/g07_stack52.bdf
+    Info (12023): Found entity 1: g07_stack52
+Info (12021): Found 2 design units, including 1 entities, in source file /documents/github/dsd-labs/lab2/g07_randu.vhd
+    Info (12022): Found design unit 1: g07_RANDU-g07_RANDU_arch
+    Info (12023): Found entity 1: g07_RANDU
 Info (12021): Found 2 design units, including 1 entities, in source file g07_rules.vhd
     Info (12022): Found design unit 1: g07_rules-g07_rules_arch
     Info (12023): Found entity 1: g07_rules
@@ -310,6 +309,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file modn.vh
 Info (12021): Found 2 design units, including 1 entities, in source file g07_dealer_fsm.vhd
     Info (12022): Found design unit 1: g07_dealer_FSM-g07_dealer_FSM_arch
     Info (12023): Found entity 1: g07_dealer_FSM
+Info (12021): Found 1 design units, including 1 entities, in source file g07_dealer_testbed.bdf
+    Info (12023): Found entity 1: g07_dealer_testbed
+Info (12021): Found 2 design units, including 1 entities, in source file /documents/github/dsd-labs/lab3/lpm_divide0.vhd
+    Info (12022): Found design unit 1: lpm_divide0-SYN
+    Info (12023): Found entity 1: lpm_divide0
 Info (12127): Elaborating entity "g07_rules" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at g07_rules.vhd(29): object "new_card_suit" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at g07_rules.vhd(52): signal "new_card_value_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -343,10 +347,10 @@ Info (21057): Implemented 70 device resources after synthesis - the final resour
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 51 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 520 megabytes
-    Info: Processing ended: Wed Nov 15 17:40:06 2017
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:05
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 524 megabytes
+    Info: Processing ended: Wed Nov 15 18:51:26 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:02
 
 
