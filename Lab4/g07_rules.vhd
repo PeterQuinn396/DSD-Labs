@@ -59,7 +59,6 @@ end process
 isLegalPlay process
 
 begin
-legal_play<='1'; 
 if (new_card_value_int+old_card_value_int>21)then 
 	legal_play <= '0';
 	sum <= new_card_value_int+old_card_value_int;
@@ -70,6 +69,7 @@ elsif (new_card_value_int=1 or old_card_value_int=1) then --check for an ace
 			
 			sum <= new_card_value_int+old_card_value_int+10;
 		else legal_play<=1	
+else legal_play<='1'; 
 
 
 end process
