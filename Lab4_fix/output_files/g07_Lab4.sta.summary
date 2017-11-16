@@ -1,0 +1,29 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'old_sum[0]'
+Slack : -7.751
+TNS   : -7.751
+
+Type  : Slow Model Hold 'old_sum[0]'
+Slack : -23.250
+TNS   : -23.250
+
+Type  : Slow Model Minimum Pulse Width 'old_sum[0]'
+Slack : -21.893
+TNS   : -1217.097
+
+Type  : Fast Model Setup 'old_sum[0]'
+Slack : -2.394
+TNS   : -2.394
+
+Type  : Fast Model Hold 'old_sum[0]'
+Slack : -8.141
+TNS   : -8.141
+
+Type  : Fast Model Minimum Pulse Width 'old_sum[0]'
+Slack : -7.293
+TNS   : -374.792
+
+------------------------------------------------------------

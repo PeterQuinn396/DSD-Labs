@@ -1,0 +1,1489 @@
+TimeQuest Timing Analyzer report for g07_Lab4
+Thu Nov 16 15:55:52 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'old_sum[0]'
+ 12. Slow Model Hold: 'old_sum[0]'
+ 13. Slow Model Minimum Pulse Width: 'old_sum[0]'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'old_sum[0]'
+ 26. Fast Model Hold: 'old_sum[0]'
+ 27. Fast Model Minimum Pulse Width: 'old_sum[0]'
+ 28. Setup Times
+ 29. Hold Times
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Progagation Delay
+ 40. Minimum Progagation Delay
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; g07_Lab4                                           ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C20F484C7                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                 ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; old_sum[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { old_sum[0] } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+
+
++-------------------------------------------------------------------+
+; Slow Model Fmax Summary                                           ;
++----------+-----------------+------------+-------------------------+
+; Fmax     ; Restricted Fmax ; Clock Name ; Note                    ;
++----------+-----------------+------------+-------------------------+
+; 60.6 MHz ; 21.51 MHz       ; old_sum[0] ; limit due to hold check ;
++----------+-----------------+------------+-------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------+
+; Slow Model Setup Summary            ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; old_sum[0] ; -7.751 ; -7.751        ;
++------------+--------+---------------+
+
+
++--------------------------------------+
+; Slow Model Hold Summary              ;
++------------+---------+---------------+
+; Clock      ; Slack   ; End Point TNS ;
++------------+---------+---------------+
+; old_sum[0] ; -23.250 ; -23.250       ;
++------------+---------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++------------+---------+-----------------+
+; Clock      ; Slack   ; End Point TNS   ;
++------------+---------+-----------------+
+; old_sum[0] ; -21.893 ; -1217.097       ;
++------------+---------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'old_sum[0]'                                                                                            ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -7.751 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.500        ; 4.433      ; 11.539     ;
+; -7.476 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.500        ; 4.708      ; 11.539     ;
+; -7.251 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 1.000        ; 4.433      ; 11.539     ;
+; -6.976 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 1.000        ; 4.708      ; 11.539     ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'old_sum[0]'                                                                                              ;
++---------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node  ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -23.250 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.000        ; 26.903     ; 3.653      ;
+; -23.173 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.000        ; 26.826     ; 3.653      ;
+; -22.750 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; -0.500       ; 26.903     ; 3.653      ;
+; -22.673 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; -0.500       ; 26.826     ; 3.653      ;
++---------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'old_sum[0]'                                                                                 ;
++---------+--------------+----------------+------------------+------------+------------+---------------------------------------+
+; Slack   ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                                ;
++---------+--------------+----------------+------------------+------------+------------+---------------------------------------+
+; -21.893 ; -21.893      ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; g07_rules:inst|new_sum_int[0]         ;
+; -21.893 ; -21.893      ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; g07_rules:inst|new_sum_int[0]         ;
+; -21.893 ; -21.893      ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_sum_int[0]|datac             ;
+; -21.893 ; -21.893      ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_sum_int[0]|datac             ;
+; -21.893 ; -21.893      ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[3]~0|combout                 ;
+; -21.893 ; -21.893      ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[3]~0|combout                 ;
+; -21.695 ; -21.695      ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; g07_rules:inst|new_sum_int[0]         ;
+; -21.695 ; -21.695      ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; g07_rules:inst|new_sum_int[0]         ;
+; -21.695 ; -21.695      ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_sum_int[0]|datac             ;
+; -21.695 ; -21.695      ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_sum_int[0]|datac             ;
+; -21.695 ; -21.695      ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[3]~0|combout                 ;
+; -21.695 ; -21.695      ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[3]~0|combout                 ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~10|cin                      ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~10|cin                      ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~10|combout                  ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~10|combout                  ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~2|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~2|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~4|cin                       ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~4|cin                       ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~4|combout                   ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~4|combout                   ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~4|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~4|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~6|cin                       ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~6|cin                       ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~6|combout                   ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~6|combout                   ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~6|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~6|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~8|cin                       ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~8|cin                       ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~8|combout                   ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~8|combout                   ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~8|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~8|cout                      ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_sum_int[5]~8|datac           ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_sum_int[5]~8|datac           ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_sum_int~7|datad              ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_sum_int~7|datad              ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[2]~2|datac                   ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[2]~2|datac                   ;
+; -7.820  ; -7.820       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[3]~1|datac                   ;
+; -7.820  ; -7.820       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[3]~1|datac                   ;
+; -7.463  ; -7.463       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~2|combout                   ;
+; -7.463  ; -7.463       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~2|combout                   ;
+; -7.463  ; -7.463       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[1]~3|datad                   ;
+; -7.463  ; -7.463       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[1]~3|datad                   ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~0|cout                      ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~0|cout                      ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~0|datab                     ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~0|datab                     ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~2|cin                       ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~2|cin                       ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Equal2~0|combout                 ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Equal2~0|combout                 ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Equal2~0|datab                   ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Equal2~0|datab                   ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|ace~2|datac                      ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|ace~2|datac                      ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_card_value_int[0]~20|combout ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_card_value_int[0]~20|combout ;
+; -7.131  ; -7.131       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[3]~0|datac                   ;
+; -7.131  ; -7.131       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[3]~0|datac                   ;
+; -7.058  ; -7.058       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~6|combout                   ;
+; -7.058  ; -7.058       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~6|combout                   ;
+; -7.058  ; -7.058       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[3]~1|datac                   ;
+; -7.058  ; -7.058       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[3]~1|datac                   ;
+; -7.042  ; -7.042       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~2|datab                     ;
+; -7.042  ; -7.042       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~2|datab                     ;
+; -7.042  ; -7.042       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_card_value_int[1]~21|combout ;
+; -7.042  ; -7.042       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_card_value_int[1]~21|combout ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~10|cin                      ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~10|cin                      ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~10|combout                  ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~10|combout                  ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~6|cout                      ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~6|cout                      ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~8|cin                       ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~8|cin                       ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~8|combout                   ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~8|combout                   ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~8|cout                      ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~8|cout                      ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_sum_int[5]~8|datac           ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_sum_int[5]~8|datac           ;
+; -6.701  ; -6.701       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_sum_int~7|datad              ;
+; -6.701  ; -6.701       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_sum_int~7|datad              ;
+; -6.457  ; -6.457       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~6|datab                     ;
+; -6.457  ; -6.457       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~6|datab                     ;
+; -6.457  ; -6.457       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|ace~2|datad                      ;
+; -6.457  ; -6.457       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|ace~2|datad                      ;
+; -6.457  ; -6.457       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_card_value_int[3]~23|combout ;
+; -6.457  ; -6.457       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_card_value_int[3]~23|combout ;
+; -6.457  ; -6.457       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[3]~0|datad                   ;
+; -6.457  ; -6.457       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[3]~0|datad                   ;
+; -6.397  ; -6.397       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Equal2~0|combout                 ;
+; -6.397  ; -6.397       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Equal2~0|combout                 ;
+; -6.397  ; -6.397       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|ace~2|datac                      ;
+; -6.397  ; -6.397       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|ace~2|datac                      ;
++---------+--------------+----------------+------------------+------------+------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; old_sum[*]   ; old_sum[0] ; 14.154 ; 14.154 ; Rise       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 7.976  ; 7.976  ; Rise       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 14.060 ; 14.060 ; Rise       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 12.220 ; 12.220 ; Rise       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 13.719 ; 13.719 ; Rise       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 14.154 ; 14.154 ; Rise       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 13.839 ; 13.839 ; Rise       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 3.581  ; 3.581  ; Rise       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 3.581  ; 3.581  ; Rise       ; old_sum[0]      ;
+; old_sum[*]   ; old_sum[0] ; 14.429 ; 14.429 ; Fall       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 8.251  ; 8.251  ; Fall       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 14.335 ; 14.335 ; Fall       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 12.495 ; 12.495 ; Fall       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 13.994 ; 13.994 ; Fall       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 14.429 ; 14.429 ; Fall       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 14.114 ; 14.114 ; Fall       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 3.856  ; 3.856  ; Fall       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 3.856  ; 3.856  ; Fall       ; old_sum[0]      ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; old_sum[*]   ; old_sum[0] ; 23.250 ; 23.250 ; Rise       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 23.250 ; 23.250 ; Rise       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 16.432 ; 16.432 ; Rise       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 18.019 ; 18.019 ; Rise       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 16.540 ; 16.540 ; Rise       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 18.168 ; 18.168 ; Rise       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 16.701 ; 16.701 ; Rise       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 19.759 ; 19.759 ; Rise       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 19.759 ; 19.759 ; Rise       ; old_sum[0]      ;
+; old_sum[*]   ; old_sum[0] ; 23.173 ; 23.173 ; Fall       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 23.173 ; 23.173 ; Fall       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 16.355 ; 16.355 ; Fall       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 17.942 ; 17.942 ; Fall       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 16.463 ; 16.463 ; Fall       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 18.091 ; 18.091 ; Fall       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 16.624 ; 16.624 ; Fall       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 19.682 ; 19.682 ; Fall       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 19.682 ; 19.682 ; Fall       ; old_sum[0]      ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; legal_play  ; old_sum[0] ; 46.256 ; 46.256 ; Rise       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 41.298 ; 41.298 ; Rise       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 30.592 ; 30.592 ; Rise       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 35.119 ; 35.119 ; Rise       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 37.406 ; 37.406 ; Rise       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 39.110 ; 39.110 ; Rise       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 41.298 ; 41.298 ; Rise       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 33.380 ; 33.380 ; Rise       ; old_sum[0]      ;
+; legal_play  ; old_sum[0] ; 46.179 ; 46.179 ; Fall       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 41.221 ; 41.221 ; Fall       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 30.515 ; 30.515 ; Fall       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 35.042 ; 35.042 ; Fall       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 37.329 ; 37.329 ; Fall       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 39.033 ; 39.033 ; Fall       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 41.221 ; 41.221 ; Fall       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 33.303 ; 33.303 ; Fall       ; old_sum[0]      ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; legal_play  ; old_sum[0] ; 8.221 ; 8.221 ; Rise       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 7.804 ; 7.804 ; Rise       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 8.397 ; 8.397 ; Rise       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 7.804 ; 7.804 ; Rise       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 8.500 ; 8.500 ; Rise       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 8.463 ; 8.463 ; Rise       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 8.421 ; 8.421 ; Rise       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 8.313 ; 8.313 ; Rise       ; old_sum[0]      ;
+; legal_play  ; old_sum[0] ; 8.221 ; 8.221 ; Fall       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 7.804 ; 7.804 ; Fall       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 8.122 ; 8.122 ; Fall       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 7.804 ; 7.804 ; Fall       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 8.500 ; 8.500 ; Fall       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 8.463 ; 8.463 ; Fall       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 8.421 ; 8.421 ; Fall       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 8.313 ; 8.313 ; Fall       ; old_sum[0]      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------+
+; Propagation Delay                                             ;
++-------------+-------------+--------+--------+--------+--------+
+; Input Port  ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++-------------+-------------+--------+--------+--------+--------+
+; old_sum[1]  ; legal_play  ; 36.920 ; 36.920 ; 36.920 ; 36.920 ;
+; old_sum[1]  ; new_sum[1]  ; 35.442 ; 35.442 ; 35.442 ; 35.442 ;
+; old_sum[1]  ; new_sum[2]  ; 36.021 ; 36.021 ; 36.021 ; 36.021 ;
+; old_sum[1]  ; new_sum[3]  ; 35.462 ; 35.462 ; 35.462 ; 35.462 ;
+; old_sum[1]  ; new_sum[4]  ; 35.623 ; 35.623 ; 35.623 ; 35.623 ;
+; old_sum[1]  ; new_sum[5]  ; 35.723 ; 35.723 ; 35.723 ; 35.723 ;
+; old_sum[2]  ; legal_play  ; 35.080 ; 35.080 ; 35.080 ; 35.080 ;
+; old_sum[2]  ; new_sum[1]  ; 33.602 ; 33.602 ; 33.602 ; 33.602 ;
+; old_sum[2]  ; new_sum[2]  ; 34.181 ; 34.181 ; 34.181 ; 34.181 ;
+; old_sum[2]  ; new_sum[3]  ; 33.622 ; 33.622 ; 33.622 ; 33.622 ;
+; old_sum[2]  ; new_sum[4]  ; 33.783 ; 33.783 ; 33.783 ; 33.783 ;
+; old_sum[2]  ; new_sum[5]  ; 33.883 ; 33.883 ; 33.883 ; 33.883 ;
+; old_sum[3]  ; legal_play  ; 36.579 ; 36.579 ; 36.579 ; 36.579 ;
+; old_sum[3]  ; new_sum[1]  ; 35.101 ; 35.101 ; 35.101 ; 35.101 ;
+; old_sum[3]  ; new_sum[2]  ; 35.680 ; 35.680 ; 35.680 ; 35.680 ;
+; old_sum[3]  ; new_sum[3]  ; 35.121 ; 35.121 ; 35.121 ; 35.121 ;
+; old_sum[3]  ; new_sum[4]  ; 35.282 ; 35.282 ; 35.282 ; 35.282 ;
+; old_sum[3]  ; new_sum[5]  ; 35.382 ; 35.382 ; 35.382 ; 35.382 ;
+; old_sum[4]  ; legal_play  ; 37.014 ; 37.014 ; 37.014 ; 37.014 ;
+; old_sum[4]  ; new_sum[1]  ; 35.536 ; 35.536 ; 35.536 ; 35.536 ;
+; old_sum[4]  ; new_sum[2]  ; 36.115 ; 36.115 ; 36.115 ; 36.115 ;
+; old_sum[4]  ; new_sum[3]  ; 35.556 ; 35.556 ; 35.556 ; 35.556 ;
+; old_sum[4]  ; new_sum[4]  ; 35.717 ; 35.717 ; 35.717 ; 35.717 ;
+; old_sum[4]  ; new_sum[5]  ; 35.817 ; 35.817 ; 35.817 ; 35.817 ;
+; old_sum[5]  ; legal_play  ; 36.699 ; 36.699 ; 36.699 ; 36.699 ;
+; old_sum[5]  ; new_sum[1]  ; 35.221 ; 35.221 ; 35.221 ; 35.221 ;
+; old_sum[5]  ; new_sum[2]  ; 35.800 ; 35.800 ; 35.800 ; 35.800 ;
+; old_sum[5]  ; new_sum[3]  ; 35.241 ; 35.241 ; 35.241 ; 35.241 ;
+; old_sum[5]  ; new_sum[4]  ; 35.402 ; 35.402 ; 35.402 ; 35.402 ;
+; old_sum[5]  ; new_sum[5]  ; 35.502 ; 35.502 ; 35.502 ; 35.502 ;
+; top_card[0] ; legal_play  ; 25.975 ; 25.975 ; 25.975 ; 25.975 ;
+; top_card[0] ; new_sum[1]  ; 24.497 ; 24.497 ; 24.497 ; 24.497 ;
+; top_card[0] ; new_sum[2]  ; 25.433 ; 25.433 ; 25.433 ; 25.433 ;
+; top_card[0] ; new_sum[3]  ; 24.861 ; 24.861 ; 24.861 ; 24.861 ;
+; top_card[0] ; new_sum[4]  ; 24.678 ; 24.678 ; 24.678 ; 24.678 ;
+; top_card[0] ; new_sum[5]  ; 24.778 ; 24.778 ; 24.778 ; 24.778 ;
+; top_card[1] ; legal_play  ; 26.139 ; 26.139 ; 26.139 ; 26.139 ;
+; top_card[1] ; new_sum[1]  ; 24.661 ; 24.661 ; 24.661 ; 24.661 ;
+; top_card[1] ; new_sum[2]  ; 25.244 ; 25.244 ; 25.244 ; 25.244 ;
+; top_card[1] ; new_sum[3]  ; 24.681 ; 24.681 ; 24.681 ; 24.681 ;
+; top_card[1] ; new_sum[4]  ; 24.842 ; 24.842 ; 24.842 ; 24.842 ;
+; top_card[1] ; new_sum[5]  ; 24.942 ; 24.942 ; 24.942 ; 24.942 ;
+; top_card[2] ; legal_play  ; 25.929 ; 25.929 ; 25.929 ; 25.929 ;
+; top_card[2] ; new_sum[1]  ; 24.219 ; 24.219 ; 24.219 ; 24.219 ;
+; top_card[2] ; new_sum[2]  ; 25.124 ; 25.124 ; 25.124 ; 25.124 ;
+; top_card[2] ; new_sum[3]  ; 24.598 ; 24.598 ; 24.598 ; 24.598 ;
+; top_card[2] ; new_sum[4]  ; 24.759 ; 24.759 ; 24.759 ; 24.759 ;
+; top_card[2] ; new_sum[5]  ; 24.732 ; 24.732 ; 24.732 ; 24.732 ;
+; top_card[3] ; legal_play  ; 25.799 ; 25.799 ; 25.799 ; 25.799 ;
+; top_card[3] ; new_sum[1]  ; 22.354 ; 22.354 ; 22.354 ; 22.354 ;
+; top_card[3] ; new_sum[2]  ; 24.641 ; 24.641 ; 24.641 ; 24.641 ;
+; top_card[3] ; new_sum[3]  ; 24.468 ; 24.468 ; 24.468 ; 24.468 ;
+; top_card[3] ; new_sum[4]  ; 24.629 ; 24.629 ; 24.629 ; 24.629 ;
+; top_card[3] ; new_sum[5]  ; 24.602 ; 24.602 ; 24.602 ; 24.602 ;
+; top_card[4] ; legal_play  ; 25.654 ; 25.654 ; 25.654 ; 25.654 ;
+; top_card[4] ; new_sum[1]  ; 19.980 ; 19.980 ; 19.980 ; 19.980 ;
+; top_card[4] ; new_sum[2]  ; 22.267 ; 22.267 ; 22.267 ; 22.267 ;
+; top_card[4] ; new_sum[3]  ; 23.971 ; 23.971 ; 23.971 ; 23.971 ;
+; top_card[4] ; new_sum[4]  ; 24.484 ; 24.484 ; 24.484 ; 24.484 ;
+; top_card[4] ; new_sum[5]  ; 24.457 ; 24.457 ; 24.457 ; 24.457 ;
+; top_card[5] ; legal_play  ; 22.780 ; 22.780 ; 22.780 ; 22.780 ;
+; top_card[5] ; new_sum[1]  ; 11.643 ; 11.643 ; 11.643 ; 11.643 ;
+; top_card[5] ; new_sum[2]  ; 13.930 ; 13.930 ; 13.930 ; 13.930 ;
+; top_card[5] ; new_sum[3]  ; 15.634 ; 15.634 ; 15.634 ; 15.634 ;
+; top_card[5] ; new_sum[4]  ; 17.822 ; 17.822 ; 17.822 ; 17.822 ;
+; top_card[5] ; new_sum[5]  ; 9.904  ;        ;        ; 9.904  ;
++-------------+-------------+--------+--------+--------+--------+
+
+
++---------------------------------------------------------------+
+; Minimum Propagation Delay                                     ;
++-------------+-------------+--------+--------+--------+--------+
+; Input Port  ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++-------------+-------------+--------+--------+--------+--------+
+; old_sum[1]  ; legal_play  ; 12.722 ; 12.722 ; 12.722 ; 12.722 ;
+; old_sum[1]  ; new_sum[1]  ; 12.623 ; 12.623 ; 12.623 ; 12.623 ;
+; old_sum[1]  ; new_sum[2]  ; 13.501 ; 13.501 ; 13.501 ; 13.501 ;
+; old_sum[1]  ; new_sum[3]  ; 13.345 ; 13.345 ; 13.345 ; 13.345 ;
+; old_sum[1]  ; new_sum[4]  ; 13.158 ; 13.158 ; 13.158 ; 13.158 ;
+; old_sum[1]  ; new_sum[5]  ; 12.814 ; 12.814 ; 12.814 ; 12.814 ;
+; old_sum[2]  ; legal_play  ; 12.683 ; 12.683 ; 12.683 ; 12.683 ;
+; old_sum[2]  ; new_sum[1]  ; 12.609 ; 12.609 ; 12.609 ; 12.609 ;
+; old_sum[2]  ; new_sum[2]  ; 13.375 ; 13.375 ; 13.375 ; 13.375 ;
+; old_sum[2]  ; new_sum[3]  ; 13.182 ; 13.182 ; 13.182 ; 13.182 ;
+; old_sum[2]  ; new_sum[4]  ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; old_sum[2]  ; new_sum[5]  ; 12.801 ; 12.801 ; 12.801 ; 12.801 ;
+; old_sum[3]  ; legal_play  ; 13.158 ; 13.158 ; 13.158 ; 13.158 ;
+; old_sum[3]  ; new_sum[1]  ; 13.084 ; 13.084 ; 13.084 ; 13.084 ;
+; old_sum[3]  ; new_sum[2]  ; 14.079 ; 14.079 ; 14.079 ; 14.079 ;
+; old_sum[3]  ; new_sum[3]  ; 13.657 ; 13.657 ; 13.657 ; 13.657 ;
+; old_sum[3]  ; new_sum[4]  ; 13.619 ; 13.619 ; 13.619 ; 13.619 ;
+; old_sum[3]  ; new_sum[5]  ; 13.276 ; 13.276 ; 13.276 ; 13.276 ;
+; old_sum[4]  ; legal_play  ; 13.035 ; 13.035 ; 13.035 ; 13.035 ;
+; old_sum[4]  ; new_sum[1]  ; 12.886 ; 12.886 ; 12.886 ; 12.886 ;
+; old_sum[4]  ; new_sum[2]  ; 13.582 ; 13.582 ; 13.582 ; 13.582 ;
+; old_sum[4]  ; new_sum[3]  ; 13.545 ; 13.545 ; 13.545 ; 13.545 ;
+; old_sum[4]  ; new_sum[4]  ; 13.471 ; 13.471 ; 13.471 ; 13.471 ;
+; old_sum[4]  ; new_sum[5]  ; 13.127 ; 13.127 ; 13.127 ; 13.127 ;
+; old_sum[5]  ; legal_play  ; 12.528 ; 12.528 ; 12.528 ; 12.528 ;
+; old_sum[5]  ; new_sum[1]  ; 12.454 ; 12.454 ; 12.454 ; 12.454 ;
+; old_sum[5]  ; new_sum[2]  ; 13.449 ; 13.449 ; 13.449 ; 13.449 ;
+; old_sum[5]  ; new_sum[3]  ; 13.027 ; 13.027 ; 13.027 ; 13.027 ;
+; old_sum[5]  ; new_sum[4]  ; 12.989 ; 12.989 ; 12.989 ; 12.989 ;
+; old_sum[5]  ; new_sum[5]  ; 12.646 ; 12.646 ; 12.646 ; 12.646 ;
+; top_card[0] ; legal_play  ; 13.637 ; 13.637 ; 13.637 ; 13.637 ;
+; top_card[0] ; new_sum[1]  ; 11.263 ; 11.263 ; 11.263 ; 11.263 ;
+; top_card[0] ; new_sum[2]  ; 11.959 ; 11.959 ; 11.959 ; 11.959 ;
+; top_card[0] ; new_sum[3]  ; 11.922 ; 11.922 ; 11.922 ; 11.922 ;
+; top_card[0] ; new_sum[4]  ; 11.880 ; 11.880 ; 11.880 ; 11.880 ;
+; top_card[0] ; new_sum[5]  ; 13.081 ; 13.081 ; 13.081 ; 13.081 ;
+; top_card[1] ; legal_play  ; 13.686 ; 13.686 ; 13.686 ; 13.686 ;
+; top_card[1] ; new_sum[1]  ; 11.074 ; 11.074 ; 11.074 ; 11.074 ;
+; top_card[1] ; new_sum[2]  ; 12.123 ; 12.123 ; 12.123 ; 12.123 ;
+; top_card[1] ; new_sum[3]  ; 12.086 ; 12.086 ; 12.086 ; 12.086 ;
+; top_card[1] ; new_sum[4]  ; 12.044 ; 12.044 ; 12.044 ; 12.044 ;
+; top_card[1] ; new_sum[5]  ; 12.892 ; 12.892 ; 12.892 ; 12.892 ;
+; top_card[2] ; legal_play  ; 13.718 ; 13.718 ; 13.718 ; 13.718 ;
+; top_card[2] ; new_sum[1]  ; 14.702 ; 14.702 ; 14.702 ; 14.702 ;
+; top_card[2] ; new_sum[2]  ; 11.681 ; 11.681 ; 11.681 ; 11.681 ;
+; top_card[2] ; new_sum[3]  ; 12.003 ; 12.003 ; 12.003 ; 12.003 ;
+; top_card[2] ; new_sum[4]  ; 11.961 ; 11.961 ; 11.961 ; 11.961 ;
+; top_card[2] ; new_sum[5]  ; 13.196 ; 13.196 ; 13.196 ; 13.196 ;
+; top_card[3] ; legal_play  ; 13.235 ; 13.235 ; 13.235 ; 13.235 ;
+; top_card[3] ; new_sum[1]  ; 14.219 ; 14.219 ; 14.219 ; 14.219 ;
+; top_card[3] ; new_sum[2]  ; 15.214 ; 15.214 ; 15.214 ; 15.214 ;
+; top_card[3] ; new_sum[3]  ; 11.520 ; 11.520 ; 11.520 ; 11.520 ;
+; top_card[3] ; new_sum[4]  ; 11.831 ; 11.831 ; 11.831 ; 11.831 ;
+; top_card[3] ; new_sum[5]  ; 13.214 ; 13.214 ; 13.214 ; 13.214 ;
+; top_card[4] ; legal_play  ; 13.394 ; 13.394 ; 13.394 ; 13.394 ;
+; top_card[4] ; new_sum[1]  ; 14.378 ; 14.378 ; 14.378 ; 14.378 ;
+; top_card[4] ; new_sum[2]  ; 15.373 ; 15.373 ; 15.373 ; 15.373 ;
+; top_card[4] ; new_sum[3]  ; 15.100 ; 15.100 ; 15.100 ; 15.100 ;
+; top_card[4] ; new_sum[4]  ; 11.334 ; 11.334 ; 11.334 ; 11.334 ;
+; top_card[4] ; new_sum[5]  ; 13.413 ; 13.413 ; 13.413 ; 13.413 ;
+; top_card[5] ; legal_play  ; 11.101 ; 14.080 ; 14.080 ; 11.101 ;
+; top_card[5] ; new_sum[1]  ; 11.643 ; 11.643 ; 11.643 ; 11.643 ;
+; top_card[5] ; new_sum[2]  ; 12.638 ; 12.638 ; 12.638 ; 12.638 ;
+; top_card[5] ; new_sum[3]  ; 12.365 ; 12.365 ; 12.365 ; 12.365 ;
+; top_card[5] ; new_sum[4]  ; 12.178 ; 12.178 ; 12.178 ; 12.178 ;
+; top_card[5] ; new_sum[5]  ; 9.904  ;        ;        ; 9.904  ;
++-------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------+
+; Fast Model Setup Summary            ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; old_sum[0] ; -2.394 ; -2.394        ;
++------------+--------+---------------+
+
+
++-------------------------------------+
+; Fast Model Hold Summary             ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; old_sum[0] ; -8.141 ; -8.141        ;
++------------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++------------+--------+------------------+
+; Clock      ; Slack  ; End Point TNS    ;
++------------+--------+------------------+
+; old_sum[0] ; -7.293 ; -374.792         ;
++------------+--------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'old_sum[0]'                                                                                            ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.394 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.500        ; 1.827      ; 4.330      ;
+; -2.301 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.500        ; 1.920      ; 4.330      ;
+; -1.894 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 1.000        ; 1.827      ; 4.330      ;
+; -1.801 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 1.000        ; 1.920      ; 4.330      ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'old_sum[0]'                                                                                             ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -8.141 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.000        ; 9.681      ; 1.540      ;
+; -8.080 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; 0.000        ; 9.620      ; 1.540      ;
+; -7.641 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; -0.500       ; 9.681      ; 1.540      ;
+; -7.580 ; old_sum[0] ; g07_rules:inst|new_sum_int[0] ; old_sum[0]   ; old_sum[0]  ; -0.500       ; 9.620      ; 1.540      ;
++--------+------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'old_sum[0]'                                                                                ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                                ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------+
+; -7.293 ; -7.293       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; g07_rules:inst|new_sum_int[0]         ;
+; -7.293 ; -7.293       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; g07_rules:inst|new_sum_int[0]         ;
+; -7.293 ; -7.293       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_sum_int[0]|datac             ;
+; -7.293 ; -7.293       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_sum_int[0]|datac             ;
+; -7.293 ; -7.293       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[3]~0|combout                 ;
+; -7.293 ; -7.293       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[3]~0|combout                 ;
+; -7.261 ; -7.261       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; g07_rules:inst|new_sum_int[0]         ;
+; -7.261 ; -7.261       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; g07_rules:inst|new_sum_int[0]         ;
+; -7.261 ; -7.261       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_sum_int[0]|datac             ;
+; -7.261 ; -7.261       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_sum_int[0]|datac             ;
+; -7.261 ; -7.261       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[3]~0|combout                 ;
+; -7.261 ; -7.261       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[3]~0|combout                 ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~10|cin                      ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~10|cin                      ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~10|combout                  ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~10|combout                  ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~2|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~2|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~4|cin                       ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~4|cin                       ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~4|combout                   ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~4|combout                   ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~4|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~4|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~6|cin                       ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~6|cin                       ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~6|combout                   ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~6|combout                   ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~6|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~6|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~8|cin                       ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~8|cin                       ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~8|combout                   ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~8|combout                   ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~8|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~8|cout                      ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_sum_int[5]~8|datac           ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_sum_int[5]~8|datac           ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_sum_int~7|datad              ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_sum_int~7|datad              ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[2]~2|datac                   ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[2]~2|datac                   ;
+; -2.454 ; -2.454       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[3]~1|datac                   ;
+; -2.454 ; -2.454       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[3]~1|datac                   ;
+; -2.351 ; -2.351       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~2|combout                   ;
+; -2.351 ; -2.351       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~2|combout                   ;
+; -2.351 ; -2.351       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[1]~3|datad                   ;
+; -2.351 ; -2.351       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[1]~3|datad                   ;
+; -2.197 ; -2.197       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Equal2~0|combout                 ;
+; -2.197 ; -2.197       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Equal2~0|combout                 ;
+; -2.197 ; -2.197       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|ace~2|datac                      ;
+; -2.197 ; -2.197       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|ace~2|datac                      ;
+; -2.197 ; -2.197       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|sum[3]~0|datac                   ;
+; -2.197 ; -2.197       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|sum[3]~0|datac                   ;
+; -2.196 ; -2.196       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~0|cout                      ;
+; -2.196 ; -2.196       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~0|cout                      ;
+; -2.196 ; -2.196       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~0|datab                     ;
+; -2.196 ; -2.196       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~0|datab                     ;
+; -2.196 ; -2.196       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~2|cin                       ;
+; -2.196 ; -2.196       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~2|cin                       ;
+; -2.196 ; -2.196       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Equal2~0|datab                   ;
+; -2.196 ; -2.196       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Equal2~0|datab                   ;
+; -2.196 ; -2.196       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_card_value_int[0]~20|combout ;
+; -2.196 ; -2.196       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_card_value_int[0]~20|combout ;
+; -2.195 ; -2.195       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~6|combout                   ;
+; -2.195 ; -2.195       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~6|combout                   ;
+; -2.195 ; -2.195       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[3]~1|datac                   ;
+; -2.195 ; -2.195       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[3]~1|datac                   ;
+; -2.176 ; -2.176       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~2|datab                     ;
+; -2.176 ; -2.176       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~2|datab                     ;
+; -2.176 ; -2.176       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_card_value_int[1]~21|combout ;
+; -2.176 ; -2.176       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_card_value_int[1]~21|combout ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~10|cin                      ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~10|cin                      ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~10|combout                  ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~10|combout                  ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~6|cout                      ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~6|cout                      ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~8|cin                       ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~8|cin                       ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|Add1~8|combout                   ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|Add1~8|combout                   ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~8|cout                      ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~8|cout                      ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_sum_int[5]~8|datac           ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_sum_int[5]~8|datac           ;
+; -2.092 ; -2.092       ; 0.000          ; High Pulse Width ; old_sum[0] ; Fall       ; inst|new_sum_int~7|datad              ;
+; -2.092 ; -2.092       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Fall       ; inst|new_sum_int~7|datad              ;
+; -1.966 ; -1.966       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Equal2~0|combout                 ;
+; -1.966 ; -1.966       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Equal2~0|combout                 ;
+; -1.966 ; -1.966       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|ace~2|datac                      ;
+; -1.966 ; -1.966       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|ace~2|datac                      ;
+; -1.966 ; -1.966       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|sum[3]~0|datac                   ;
+; -1.966 ; -1.966       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|sum[3]~0|datac                   ;
+; -1.965 ; -1.965       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|Add1~6|datab                     ;
+; -1.965 ; -1.965       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|Add1~6|datab                     ;
+; -1.965 ; -1.965       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|ace~2|datad                      ;
+; -1.965 ; -1.965       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|ace~2|datad                      ;
+; -1.965 ; -1.965       ; 0.000          ; High Pulse Width ; old_sum[0] ; Rise       ; inst|new_card_value_int[3]~23|combout ;
+; -1.965 ; -1.965       ; 0.000          ; Low Pulse Width  ; old_sum[0] ; Rise       ; inst|new_card_value_int[3]~23|combout ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; old_sum[*]   ; old_sum[0] ; 5.892 ; 5.892 ; Rise       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 2.801 ; 2.801 ; Rise       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 5.845 ; 5.845 ; Rise       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 5.230 ; 5.230 ; Rise       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 5.723 ; 5.723 ; Rise       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 5.892 ; 5.892 ; Rise       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 5.764 ; 5.764 ; Rise       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 2.127 ; 2.127 ; Rise       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 2.127 ; 2.127 ; Rise       ; old_sum[0]      ;
+; old_sum[*]   ; old_sum[0] ; 5.985 ; 5.985 ; Fall       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 2.894 ; 2.894 ; Fall       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 5.938 ; 5.938 ; Fall       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 5.323 ; 5.323 ; Fall       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 5.816 ; 5.816 ; Fall       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 5.985 ; 5.985 ; Fall       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 5.857 ; 5.857 ; Fall       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 2.220 ; 2.220 ; Fall       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 2.220 ; 2.220 ; Fall       ; old_sum[0]      ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; old_sum[*]   ; old_sum[0] ; 8.141 ; 8.141 ; Rise       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 8.141 ; 8.141 ; Rise       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 4.831 ; 4.831 ; Rise       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 5.355 ; 5.355 ; Rise       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 4.868 ; 4.868 ; Rise       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 5.421 ; 5.421 ; Rise       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 4.930 ; 4.930 ; Rise       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 6.025 ; 6.025 ; Rise       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 6.025 ; 6.025 ; Rise       ; old_sum[0]      ;
+; old_sum[*]   ; old_sum[0] ; 8.080 ; 8.080 ; Fall       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 8.080 ; 8.080 ; Fall       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 4.770 ; 4.770 ; Fall       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 5.294 ; 5.294 ; Fall       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 4.807 ; 4.807 ; Fall       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 5.360 ; 5.360 ; Fall       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 4.869 ; 4.869 ; Fall       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 5.964 ; 5.964 ; Fall       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 5.964 ; 5.964 ; Fall       ; old_sum[0]      ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; legal_play  ; old_sum[0] ; 16.959 ; 16.959 ; Rise       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 15.232 ; 15.232 ; Rise       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 11.467 ; 11.467 ; Rise       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 13.096 ; 13.096 ; Rise       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 13.906 ; 13.906 ; Rise       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 14.485 ; 14.485 ; Rise       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 15.232 ; 15.232 ; Rise       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 12.467 ; 12.467 ; Rise       ; old_sum[0]      ;
+; legal_play  ; old_sum[0] ; 16.898 ; 16.898 ; Fall       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 15.171 ; 15.171 ; Fall       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 11.406 ; 11.406 ; Fall       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 13.035 ; 13.035 ; Fall       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 13.845 ; 13.845 ; Fall       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 14.424 ; 14.424 ; Fall       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 15.171 ; 15.171 ; Fall       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 12.406 ; 12.406 ; Fall       ; old_sum[0]      ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; legal_play  ; old_sum[0] ; 3.668 ; 3.668 ; Rise       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 3.464 ; 3.464 ; Rise       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 3.706 ; 3.706 ; Rise       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 3.464 ; 3.464 ; Rise       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 3.741 ; 3.741 ; Rise       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 3.748 ; 3.748 ; Rise       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 3.746 ; 3.746 ; Rise       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 3.662 ; 3.662 ; Rise       ; old_sum[0]      ;
+; legal_play  ; old_sum[0] ; 3.668 ; 3.668 ; Fall       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 3.464 ; 3.464 ; Fall       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 3.613 ; 3.613 ; Fall       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 3.464 ; 3.464 ; Fall       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 3.741 ; 3.741 ; Fall       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 3.748 ; 3.748 ; Fall       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 3.746 ; 3.746 ; Fall       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 3.662 ; 3.662 ; Fall       ; old_sum[0]      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------+
+; Propagation Delay                                             ;
++-------------+-------------+--------+--------+--------+--------+
+; Input Port  ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++-------------+-------------+--------+--------+--------+--------+
+; old_sum[1]  ; legal_play  ; 14.640 ; 14.640 ; 14.640 ; 14.640 ;
+; old_sum[1]  ; new_sum[1]  ; 14.082 ; 14.082 ; 14.082 ; 14.082 ;
+; old_sum[1]  ; new_sum[2]  ; 14.328 ; 14.328 ; 14.328 ; 14.328 ;
+; old_sum[1]  ; new_sum[3]  ; 14.150 ; 14.150 ; 14.150 ; 14.150 ;
+; old_sum[1]  ; new_sum[4]  ; 14.208 ; 14.208 ; 14.208 ; 14.208 ;
+; old_sum[1]  ; new_sum[5]  ; 14.189 ; 14.189 ; 14.189 ; 14.189 ;
+; old_sum[2]  ; legal_play  ; 14.025 ; 14.025 ; 14.025 ; 14.025 ;
+; old_sum[2]  ; new_sum[1]  ; 13.467 ; 13.467 ; 13.467 ; 13.467 ;
+; old_sum[2]  ; new_sum[2]  ; 13.713 ; 13.713 ; 13.713 ; 13.713 ;
+; old_sum[2]  ; new_sum[3]  ; 13.535 ; 13.535 ; 13.535 ; 13.535 ;
+; old_sum[2]  ; new_sum[4]  ; 13.593 ; 13.593 ; 13.593 ; 13.593 ;
+; old_sum[2]  ; new_sum[5]  ; 13.574 ; 13.574 ; 13.574 ; 13.574 ;
+; old_sum[3]  ; legal_play  ; 14.518 ; 14.518 ; 14.518 ; 14.518 ;
+; old_sum[3]  ; new_sum[1]  ; 13.960 ; 13.960 ; 13.960 ; 13.960 ;
+; old_sum[3]  ; new_sum[2]  ; 14.206 ; 14.206 ; 14.206 ; 14.206 ;
+; old_sum[3]  ; new_sum[3]  ; 14.028 ; 14.028 ; 14.028 ; 14.028 ;
+; old_sum[3]  ; new_sum[4]  ; 14.086 ; 14.086 ; 14.086 ; 14.086 ;
+; old_sum[3]  ; new_sum[5]  ; 14.067 ; 14.067 ; 14.067 ; 14.067 ;
+; old_sum[4]  ; legal_play  ; 14.687 ; 14.687 ; 14.687 ; 14.687 ;
+; old_sum[4]  ; new_sum[1]  ; 14.129 ; 14.129 ; 14.129 ; 14.129 ;
+; old_sum[4]  ; new_sum[2]  ; 14.375 ; 14.375 ; 14.375 ; 14.375 ;
+; old_sum[4]  ; new_sum[3]  ; 14.197 ; 14.197 ; 14.197 ; 14.197 ;
+; old_sum[4]  ; new_sum[4]  ; 14.255 ; 14.255 ; 14.255 ; 14.255 ;
+; old_sum[4]  ; new_sum[5]  ; 14.236 ; 14.236 ; 14.236 ; 14.236 ;
+; old_sum[5]  ; legal_play  ; 14.559 ; 14.559 ; 14.559 ; 14.559 ;
+; old_sum[5]  ; new_sum[1]  ; 14.001 ; 14.001 ; 14.001 ; 14.001 ;
+; old_sum[5]  ; new_sum[2]  ; 14.247 ; 14.247 ; 14.247 ; 14.247 ;
+; old_sum[5]  ; new_sum[3]  ; 14.069 ; 14.069 ; 14.069 ; 14.069 ;
+; old_sum[5]  ; new_sum[4]  ; 14.127 ; 14.127 ; 14.127 ; 14.127 ;
+; old_sum[5]  ; new_sum[5]  ; 14.108 ; 14.108 ; 14.108 ; 14.108 ;
+; top_card[0] ; legal_play  ; 10.760 ; 10.760 ; 10.760 ; 10.760 ;
+; top_card[0] ; new_sum[1]  ; 10.202 ; 10.202 ; 10.202 ; 10.202 ;
+; top_card[0] ; new_sum[2]  ; 10.551 ; 10.551 ; 10.551 ; 10.551 ;
+; top_card[0] ; new_sum[3]  ; 10.341 ; 10.341 ; 10.341 ; 10.341 ;
+; top_card[0] ; new_sum[4]  ; 10.328 ; 10.328 ; 10.328 ; 10.328 ;
+; top_card[0] ; new_sum[5]  ; 10.309 ; 10.309 ; 10.309 ; 10.309 ;
+; top_card[1] ; legal_play  ; 10.811 ; 10.811 ; 10.811 ; 10.811 ;
+; top_card[1] ; new_sum[1]  ; 10.253 ; 10.253 ; 10.253 ; 10.253 ;
+; top_card[1] ; new_sum[2]  ; 10.497 ; 10.497 ; 10.497 ; 10.497 ;
+; top_card[1] ; new_sum[3]  ; 10.321 ; 10.321 ; 10.321 ; 10.321 ;
+; top_card[1] ; new_sum[4]  ; 10.379 ; 10.379 ; 10.379 ; 10.379 ;
+; top_card[1] ; new_sum[5]  ; 10.360 ; 10.360 ; 10.360 ; 10.360 ;
+; top_card[2] ; legal_play  ; 10.756 ; 10.756 ; 10.756 ; 10.756 ;
+; top_card[2] ; new_sum[1]  ; 10.098 ; 10.098 ; 10.098 ; 10.098 ;
+; top_card[2] ; new_sum[2]  ; 10.436 ; 10.436 ; 10.436 ; 10.436 ;
+; top_card[2] ; new_sum[3]  ; 10.266 ; 10.266 ; 10.266 ; 10.266 ;
+; top_card[2] ; new_sum[4]  ; 10.324 ; 10.324 ; 10.324 ; 10.324 ;
+; top_card[2] ; new_sum[5]  ; 10.305 ; 10.305 ; 10.305 ; 10.305 ;
+; top_card[3] ; legal_play  ; 10.704 ; 10.704 ; 10.704 ; 10.704 ;
+; top_card[3] ; new_sum[1]  ; 9.469  ; 9.469  ; 9.469  ; 9.469  ;
+; top_card[3] ; new_sum[2]  ; 10.279 ; 10.279 ; 10.279 ; 10.279 ;
+; top_card[3] ; new_sum[3]  ; 10.214 ; 10.214 ; 10.214 ; 10.214 ;
+; top_card[3] ; new_sum[4]  ; 10.272 ; 10.272 ; 10.272 ; 10.272 ;
+; top_card[3] ; new_sum[5]  ; 10.253 ; 10.253 ; 10.253 ; 10.253 ;
+; top_card[4] ; legal_play  ; 10.644 ; 10.644 ; 10.644 ; 10.644 ;
+; top_card[4] ; new_sum[1]  ; 8.662  ; 8.662  ; 8.662  ; 8.662  ;
+; top_card[4] ; new_sum[2]  ; 9.472  ; 9.472  ; 9.472  ; 9.472  ;
+; top_card[4] ; new_sum[3]  ; 10.051 ; 10.051 ; 10.051 ; 10.051 ;
+; top_card[4] ; new_sum[4]  ; 10.212 ; 10.212 ; 10.212 ; 10.212 ;
+; top_card[4] ; new_sum[5]  ; 10.193 ; 10.193 ; 10.193 ; 10.193 ;
+; top_card[5] ; legal_play  ; 9.581  ; 9.581  ; 9.581  ; 9.581  ;
+; top_card[5] ; new_sum[1]  ; 5.718  ; 5.718  ; 5.718  ; 5.718  ;
+; top_card[5] ; new_sum[2]  ; 6.528  ; 6.528  ; 6.528  ; 6.528  ;
+; top_card[5] ; new_sum[3]  ; 7.107  ; 7.107  ; 7.107  ; 7.107  ;
+; top_card[5] ; new_sum[4]  ; 7.854  ; 7.854  ; 7.854  ; 7.854  ;
+; top_card[5] ; new_sum[5]  ; 5.089  ;        ;        ; 5.089  ;
++-------------+-------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; old_sum[1]  ; legal_play  ; 6.120 ; 6.120 ; 6.120 ; 6.120 ;
+; old_sum[1]  ; new_sum[1]  ; 6.066 ; 6.066 ; 6.066 ; 6.066 ;
+; old_sum[1]  ; new_sum[2]  ; 6.416 ; 6.416 ; 6.416 ; 6.416 ;
+; old_sum[1]  ; new_sum[3]  ; 6.337 ; 6.337 ; 6.337 ; 6.337 ;
+; old_sum[1]  ; new_sum[4]  ; 6.270 ; 6.270 ; 6.270 ; 6.270 ;
+; old_sum[1]  ; new_sum[5]  ; 6.114 ; 6.114 ; 6.114 ; 6.114 ;
+; old_sum[2]  ; legal_play  ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; old_sum[2]  ; new_sum[1]  ; 6.116 ; 6.116 ; 6.116 ; 6.116 ;
+; old_sum[2]  ; new_sum[2]  ; 6.389 ; 6.389 ; 6.389 ; 6.389 ;
+; old_sum[2]  ; new_sum[3]  ; 6.322 ; 6.322 ; 6.322 ; 6.322 ;
+; old_sum[2]  ; new_sum[4]  ; 6.320 ; 6.320 ; 6.320 ; 6.320 ;
+; old_sum[2]  ; new_sum[5]  ; 6.166 ; 6.166 ; 6.166 ; 6.166 ;
+; old_sum[3]  ; legal_play  ; 6.291 ; 6.291 ; 6.291 ; 6.291 ;
+; old_sum[3]  ; new_sum[1]  ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
+; old_sum[3]  ; new_sum[2]  ; 6.615 ; 6.615 ; 6.615 ; 6.615 ;
+; old_sum[3]  ; new_sum[3]  ; 6.451 ; 6.451 ; 6.451 ; 6.451 ;
+; old_sum[3]  ; new_sum[4]  ; 6.449 ; 6.449 ; 6.449 ; 6.449 ;
+; old_sum[3]  ; new_sum[5]  ; 6.295 ; 6.295 ; 6.295 ; 6.295 ;
+; old_sum[4]  ; legal_play  ; 6.259 ; 6.259 ; 6.259 ; 6.259 ;
+; old_sum[4]  ; new_sum[1]  ; 6.184 ; 6.184 ; 6.184 ; 6.184 ;
+; old_sum[4]  ; new_sum[2]  ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
+; old_sum[4]  ; new_sum[3]  ; 6.468 ; 6.468 ; 6.468 ; 6.468 ;
+; old_sum[4]  ; new_sum[4]  ; 6.409 ; 6.409 ; 6.409 ; 6.409 ;
+; old_sum[4]  ; new_sum[5]  ; 6.253 ; 6.253 ; 6.253 ; 6.253 ;
+; old_sum[5]  ; legal_play  ; 6.070 ; 6.070 ; 6.070 ; 6.070 ;
+; old_sum[5]  ; new_sum[1]  ; 6.024 ; 6.024 ; 6.024 ; 6.024 ;
+; old_sum[5]  ; new_sum[2]  ; 6.394 ; 6.394 ; 6.394 ; 6.394 ;
+; old_sum[5]  ; new_sum[3]  ; 6.230 ; 6.230 ; 6.230 ; 6.230 ;
+; old_sum[5]  ; new_sum[4]  ; 6.228 ; 6.228 ; 6.228 ; 6.228 ;
+; old_sum[5]  ; new_sum[5]  ; 6.074 ; 6.074 ; 6.074 ; 6.074 ;
+; top_card[0] ; legal_play  ; 6.478 ; 6.478 ; 6.478 ; 6.478 ;
+; top_card[0] ; new_sum[1]  ; 5.582 ; 5.582 ; 5.582 ; 5.582 ;
+; top_card[0] ; new_sum[2]  ; 5.859 ; 5.859 ; 5.859 ; 5.859 ;
+; top_card[0] ; new_sum[3]  ; 5.866 ; 5.866 ; 5.866 ; 5.866 ;
+; top_card[0] ; new_sum[4]  ; 5.864 ; 5.864 ; 5.864 ; 5.864 ;
+; top_card[0] ; new_sum[5]  ; 6.203 ; 6.203 ; 6.203 ; 6.203 ;
+; top_card[1] ; legal_play  ; 6.471 ; 6.471 ; 6.471 ; 6.471 ;
+; top_card[1] ; new_sum[1]  ; 5.528 ; 5.528 ; 5.528 ; 5.528 ;
+; top_card[1] ; new_sum[2]  ; 5.910 ; 5.910 ; 5.910 ; 5.910 ;
+; top_card[1] ; new_sum[3]  ; 5.917 ; 5.917 ; 5.917 ; 5.917 ;
+; top_card[1] ; new_sum[4]  ; 5.915 ; 5.915 ; 5.915 ; 5.915 ;
+; top_card[1] ; new_sum[5]  ; 6.149 ; 6.149 ; 6.149 ; 6.149 ;
+; top_card[2] ; legal_play  ; 6.474 ; 6.474 ; 6.474 ; 6.474 ;
+; top_card[2] ; new_sum[1]  ; 6.796 ; 6.796 ; 6.796 ; 6.796 ;
+; top_card[2] ; new_sum[2]  ; 5.755 ; 5.755 ; 5.755 ; 5.755 ;
+; top_card[2] ; new_sum[3]  ; 5.862 ; 5.862 ; 5.862 ; 5.862 ;
+; top_card[2] ; new_sum[4]  ; 5.860 ; 5.860 ; 5.860 ; 5.860 ;
+; top_card[2] ; new_sum[5]  ; 6.280 ; 6.280 ; 6.280 ; 6.280 ;
+; top_card[3] ; legal_play  ; 6.317 ; 6.317 ; 6.317 ; 6.317 ;
+; top_card[3] ; new_sum[1]  ; 6.639 ; 6.639 ; 6.639 ; 6.639 ;
+; top_card[3] ; new_sum[2]  ; 7.009 ; 7.009 ; 7.009 ; 7.009 ;
+; top_card[3] ; new_sum[3]  ; 5.705 ; 5.705 ; 5.705 ; 5.705 ;
+; top_card[3] ; new_sum[4]  ; 5.808 ; 5.808 ; 5.808 ; 5.808 ;
+; top_card[3] ; new_sum[5]  ; 6.282 ; 6.282 ; 6.282 ; 6.282 ;
+; top_card[4] ; legal_play  ; 6.376 ; 6.376 ; 6.376 ; 6.376 ;
+; top_card[4] ; new_sum[1]  ; 6.698 ; 6.698 ; 6.698 ; 6.698 ;
+; top_card[4] ; new_sum[2]  ; 7.068 ; 7.068 ; 7.068 ; 7.068 ;
+; top_card[4] ; new_sum[3]  ; 6.969 ; 6.969 ; 6.969 ; 6.969 ;
+; top_card[4] ; new_sum[4]  ; 5.645 ; 5.645 ; 5.645 ; 5.645 ;
+; top_card[4] ; new_sum[5]  ; 6.341 ; 6.341 ; 6.341 ; 6.341 ;
+; top_card[5] ; legal_play  ; 5.540 ; 6.601 ; 6.601 ; 5.540 ;
+; top_card[5] ; new_sum[1]  ; 5.718 ; 5.718 ; 5.718 ; 5.718 ;
+; top_card[5] ; new_sum[2]  ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; top_card[5] ; new_sum[3]  ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; top_card[5] ; new_sum[4]  ; 5.922 ; 5.922 ; 5.922 ; 5.922 ;
+; top_card[5] ; new_sum[5]  ; 5.089 ;       ;       ; 5.089 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+--------+---------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+---------+----------+---------+---------------------+
+; Worst-case Slack ; -7.751 ; -23.250 ; N/A      ; N/A     ; -21.893             ;
+;  old_sum[0]      ; -7.751 ; -23.250 ; N/A      ; N/A     ; -21.893             ;
+; Design-wide TNS  ; -7.751 ; -23.25  ; 0.0      ; 0.0     ; -1217.097           ;
+;  old_sum[0]      ; -7.751 ; -23.250 ; N/A      ; N/A     ; -1217.097           ;
++------------------+--------+---------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; old_sum[*]   ; old_sum[0] ; 14.154 ; 14.154 ; Rise       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 7.976  ; 7.976  ; Rise       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 14.060 ; 14.060 ; Rise       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 12.220 ; 12.220 ; Rise       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 13.719 ; 13.719 ; Rise       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 14.154 ; 14.154 ; Rise       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 13.839 ; 13.839 ; Rise       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 3.581  ; 3.581  ; Rise       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 3.581  ; 3.581  ; Rise       ; old_sum[0]      ;
+; old_sum[*]   ; old_sum[0] ; 14.429 ; 14.429 ; Fall       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 8.251  ; 8.251  ; Fall       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 14.335 ; 14.335 ; Fall       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 12.495 ; 12.495 ; Fall       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 13.994 ; 13.994 ; Fall       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 14.429 ; 14.429 ; Fall       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 14.114 ; 14.114 ; Fall       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 3.856  ; 3.856  ; Fall       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 3.856  ; 3.856  ; Fall       ; old_sum[0]      ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; old_sum[*]   ; old_sum[0] ; 23.250 ; 23.250 ; Rise       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 23.250 ; 23.250 ; Rise       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 16.432 ; 16.432 ; Rise       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 18.019 ; 18.019 ; Rise       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 16.540 ; 16.540 ; Rise       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 18.168 ; 18.168 ; Rise       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 16.701 ; 16.701 ; Rise       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 19.759 ; 19.759 ; Rise       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 19.759 ; 19.759 ; Rise       ; old_sum[0]      ;
+; old_sum[*]   ; old_sum[0] ; 23.173 ; 23.173 ; Fall       ; old_sum[0]      ;
+;  old_sum[0]  ; old_sum[0] ; 23.173 ; 23.173 ; Fall       ; old_sum[0]      ;
+;  old_sum[1]  ; old_sum[0] ; 16.355 ; 16.355 ; Fall       ; old_sum[0]      ;
+;  old_sum[2]  ; old_sum[0] ; 17.942 ; 17.942 ; Fall       ; old_sum[0]      ;
+;  old_sum[3]  ; old_sum[0] ; 16.463 ; 16.463 ; Fall       ; old_sum[0]      ;
+;  old_sum[4]  ; old_sum[0] ; 18.091 ; 18.091 ; Fall       ; old_sum[0]      ;
+;  old_sum[5]  ; old_sum[0] ; 16.624 ; 16.624 ; Fall       ; old_sum[0]      ;
+; top_card[*]  ; old_sum[0] ; 19.682 ; 19.682 ; Fall       ; old_sum[0]      ;
+;  top_card[0] ; old_sum[0] ; 19.682 ; 19.682 ; Fall       ; old_sum[0]      ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; legal_play  ; old_sum[0] ; 46.256 ; 46.256 ; Rise       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 41.298 ; 41.298 ; Rise       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 30.592 ; 30.592 ; Rise       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 35.119 ; 35.119 ; Rise       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 37.406 ; 37.406 ; Rise       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 39.110 ; 39.110 ; Rise       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 41.298 ; 41.298 ; Rise       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 33.380 ; 33.380 ; Rise       ; old_sum[0]      ;
+; legal_play  ; old_sum[0] ; 46.179 ; 46.179 ; Fall       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 41.221 ; 41.221 ; Fall       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 30.515 ; 30.515 ; Fall       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 35.042 ; 35.042 ; Fall       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 37.329 ; 37.329 ; Fall       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 39.033 ; 39.033 ; Fall       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 41.221 ; 41.221 ; Fall       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 33.303 ; 33.303 ; Fall       ; old_sum[0]      ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; legal_play  ; old_sum[0] ; 3.668 ; 3.668 ; Rise       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 3.464 ; 3.464 ; Rise       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 3.706 ; 3.706 ; Rise       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 3.464 ; 3.464 ; Rise       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 3.741 ; 3.741 ; Rise       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 3.748 ; 3.748 ; Rise       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 3.746 ; 3.746 ; Rise       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 3.662 ; 3.662 ; Rise       ; old_sum[0]      ;
+; legal_play  ; old_sum[0] ; 3.668 ; 3.668 ; Fall       ; old_sum[0]      ;
+; new_sum[*]  ; old_sum[0] ; 3.464 ; 3.464 ; Fall       ; old_sum[0]      ;
+;  new_sum[0] ; old_sum[0] ; 3.613 ; 3.613 ; Fall       ; old_sum[0]      ;
+;  new_sum[1] ; old_sum[0] ; 3.464 ; 3.464 ; Fall       ; old_sum[0]      ;
+;  new_sum[2] ; old_sum[0] ; 3.741 ; 3.741 ; Fall       ; old_sum[0]      ;
+;  new_sum[3] ; old_sum[0] ; 3.748 ; 3.748 ; Fall       ; old_sum[0]      ;
+;  new_sum[4] ; old_sum[0] ; 3.746 ; 3.746 ; Fall       ; old_sum[0]      ;
+;  new_sum[5] ; old_sum[0] ; 3.662 ; 3.662 ; Fall       ; old_sum[0]      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------+
+; Progagation Delay                                             ;
++-------------+-------------+--------+--------+--------+--------+
+; Input Port  ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++-------------+-------------+--------+--------+--------+--------+
+; old_sum[1]  ; legal_play  ; 36.920 ; 36.920 ; 36.920 ; 36.920 ;
+; old_sum[1]  ; new_sum[1]  ; 35.442 ; 35.442 ; 35.442 ; 35.442 ;
+; old_sum[1]  ; new_sum[2]  ; 36.021 ; 36.021 ; 36.021 ; 36.021 ;
+; old_sum[1]  ; new_sum[3]  ; 35.462 ; 35.462 ; 35.462 ; 35.462 ;
+; old_sum[1]  ; new_sum[4]  ; 35.623 ; 35.623 ; 35.623 ; 35.623 ;
+; old_sum[1]  ; new_sum[5]  ; 35.723 ; 35.723 ; 35.723 ; 35.723 ;
+; old_sum[2]  ; legal_play  ; 35.080 ; 35.080 ; 35.080 ; 35.080 ;
+; old_sum[2]  ; new_sum[1]  ; 33.602 ; 33.602 ; 33.602 ; 33.602 ;
+; old_sum[2]  ; new_sum[2]  ; 34.181 ; 34.181 ; 34.181 ; 34.181 ;
+; old_sum[2]  ; new_sum[3]  ; 33.622 ; 33.622 ; 33.622 ; 33.622 ;
+; old_sum[2]  ; new_sum[4]  ; 33.783 ; 33.783 ; 33.783 ; 33.783 ;
+; old_sum[2]  ; new_sum[5]  ; 33.883 ; 33.883 ; 33.883 ; 33.883 ;
+; old_sum[3]  ; legal_play  ; 36.579 ; 36.579 ; 36.579 ; 36.579 ;
+; old_sum[3]  ; new_sum[1]  ; 35.101 ; 35.101 ; 35.101 ; 35.101 ;
+; old_sum[3]  ; new_sum[2]  ; 35.680 ; 35.680 ; 35.680 ; 35.680 ;
+; old_sum[3]  ; new_sum[3]  ; 35.121 ; 35.121 ; 35.121 ; 35.121 ;
+; old_sum[3]  ; new_sum[4]  ; 35.282 ; 35.282 ; 35.282 ; 35.282 ;
+; old_sum[3]  ; new_sum[5]  ; 35.382 ; 35.382 ; 35.382 ; 35.382 ;
+; old_sum[4]  ; legal_play  ; 37.014 ; 37.014 ; 37.014 ; 37.014 ;
+; old_sum[4]  ; new_sum[1]  ; 35.536 ; 35.536 ; 35.536 ; 35.536 ;
+; old_sum[4]  ; new_sum[2]  ; 36.115 ; 36.115 ; 36.115 ; 36.115 ;
+; old_sum[4]  ; new_sum[3]  ; 35.556 ; 35.556 ; 35.556 ; 35.556 ;
+; old_sum[4]  ; new_sum[4]  ; 35.717 ; 35.717 ; 35.717 ; 35.717 ;
+; old_sum[4]  ; new_sum[5]  ; 35.817 ; 35.817 ; 35.817 ; 35.817 ;
+; old_sum[5]  ; legal_play  ; 36.699 ; 36.699 ; 36.699 ; 36.699 ;
+; old_sum[5]  ; new_sum[1]  ; 35.221 ; 35.221 ; 35.221 ; 35.221 ;
+; old_sum[5]  ; new_sum[2]  ; 35.800 ; 35.800 ; 35.800 ; 35.800 ;
+; old_sum[5]  ; new_sum[3]  ; 35.241 ; 35.241 ; 35.241 ; 35.241 ;
+; old_sum[5]  ; new_sum[4]  ; 35.402 ; 35.402 ; 35.402 ; 35.402 ;
+; old_sum[5]  ; new_sum[5]  ; 35.502 ; 35.502 ; 35.502 ; 35.502 ;
+; top_card[0] ; legal_play  ; 25.975 ; 25.975 ; 25.975 ; 25.975 ;
+; top_card[0] ; new_sum[1]  ; 24.497 ; 24.497 ; 24.497 ; 24.497 ;
+; top_card[0] ; new_sum[2]  ; 25.433 ; 25.433 ; 25.433 ; 25.433 ;
+; top_card[0] ; new_sum[3]  ; 24.861 ; 24.861 ; 24.861 ; 24.861 ;
+; top_card[0] ; new_sum[4]  ; 24.678 ; 24.678 ; 24.678 ; 24.678 ;
+; top_card[0] ; new_sum[5]  ; 24.778 ; 24.778 ; 24.778 ; 24.778 ;
+; top_card[1] ; legal_play  ; 26.139 ; 26.139 ; 26.139 ; 26.139 ;
+; top_card[1] ; new_sum[1]  ; 24.661 ; 24.661 ; 24.661 ; 24.661 ;
+; top_card[1] ; new_sum[2]  ; 25.244 ; 25.244 ; 25.244 ; 25.244 ;
+; top_card[1] ; new_sum[3]  ; 24.681 ; 24.681 ; 24.681 ; 24.681 ;
+; top_card[1] ; new_sum[4]  ; 24.842 ; 24.842 ; 24.842 ; 24.842 ;
+; top_card[1] ; new_sum[5]  ; 24.942 ; 24.942 ; 24.942 ; 24.942 ;
+; top_card[2] ; legal_play  ; 25.929 ; 25.929 ; 25.929 ; 25.929 ;
+; top_card[2] ; new_sum[1]  ; 24.219 ; 24.219 ; 24.219 ; 24.219 ;
+; top_card[2] ; new_sum[2]  ; 25.124 ; 25.124 ; 25.124 ; 25.124 ;
+; top_card[2] ; new_sum[3]  ; 24.598 ; 24.598 ; 24.598 ; 24.598 ;
+; top_card[2] ; new_sum[4]  ; 24.759 ; 24.759 ; 24.759 ; 24.759 ;
+; top_card[2] ; new_sum[5]  ; 24.732 ; 24.732 ; 24.732 ; 24.732 ;
+; top_card[3] ; legal_play  ; 25.799 ; 25.799 ; 25.799 ; 25.799 ;
+; top_card[3] ; new_sum[1]  ; 22.354 ; 22.354 ; 22.354 ; 22.354 ;
+; top_card[3] ; new_sum[2]  ; 24.641 ; 24.641 ; 24.641 ; 24.641 ;
+; top_card[3] ; new_sum[3]  ; 24.468 ; 24.468 ; 24.468 ; 24.468 ;
+; top_card[3] ; new_sum[4]  ; 24.629 ; 24.629 ; 24.629 ; 24.629 ;
+; top_card[3] ; new_sum[5]  ; 24.602 ; 24.602 ; 24.602 ; 24.602 ;
+; top_card[4] ; legal_play  ; 25.654 ; 25.654 ; 25.654 ; 25.654 ;
+; top_card[4] ; new_sum[1]  ; 19.980 ; 19.980 ; 19.980 ; 19.980 ;
+; top_card[4] ; new_sum[2]  ; 22.267 ; 22.267 ; 22.267 ; 22.267 ;
+; top_card[4] ; new_sum[3]  ; 23.971 ; 23.971 ; 23.971 ; 23.971 ;
+; top_card[4] ; new_sum[4]  ; 24.484 ; 24.484 ; 24.484 ; 24.484 ;
+; top_card[4] ; new_sum[5]  ; 24.457 ; 24.457 ; 24.457 ; 24.457 ;
+; top_card[5] ; legal_play  ; 22.780 ; 22.780 ; 22.780 ; 22.780 ;
+; top_card[5] ; new_sum[1]  ; 11.643 ; 11.643 ; 11.643 ; 11.643 ;
+; top_card[5] ; new_sum[2]  ; 13.930 ; 13.930 ; 13.930 ; 13.930 ;
+; top_card[5] ; new_sum[3]  ; 15.634 ; 15.634 ; 15.634 ; 15.634 ;
+; top_card[5] ; new_sum[4]  ; 17.822 ; 17.822 ; 17.822 ; 17.822 ;
+; top_card[5] ; new_sum[5]  ; 9.904  ;        ;        ; 9.904  ;
++-------------+-------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; old_sum[1]  ; legal_play  ; 6.120 ; 6.120 ; 6.120 ; 6.120 ;
+; old_sum[1]  ; new_sum[1]  ; 6.066 ; 6.066 ; 6.066 ; 6.066 ;
+; old_sum[1]  ; new_sum[2]  ; 6.416 ; 6.416 ; 6.416 ; 6.416 ;
+; old_sum[1]  ; new_sum[3]  ; 6.337 ; 6.337 ; 6.337 ; 6.337 ;
+; old_sum[1]  ; new_sum[4]  ; 6.270 ; 6.270 ; 6.270 ; 6.270 ;
+; old_sum[1]  ; new_sum[5]  ; 6.114 ; 6.114 ; 6.114 ; 6.114 ;
+; old_sum[2]  ; legal_play  ; 6.162 ; 6.162 ; 6.162 ; 6.162 ;
+; old_sum[2]  ; new_sum[1]  ; 6.116 ; 6.116 ; 6.116 ; 6.116 ;
+; old_sum[2]  ; new_sum[2]  ; 6.389 ; 6.389 ; 6.389 ; 6.389 ;
+; old_sum[2]  ; new_sum[3]  ; 6.322 ; 6.322 ; 6.322 ; 6.322 ;
+; old_sum[2]  ; new_sum[4]  ; 6.320 ; 6.320 ; 6.320 ; 6.320 ;
+; old_sum[2]  ; new_sum[5]  ; 6.166 ; 6.166 ; 6.166 ; 6.166 ;
+; old_sum[3]  ; legal_play  ; 6.291 ; 6.291 ; 6.291 ; 6.291 ;
+; old_sum[3]  ; new_sum[1]  ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
+; old_sum[3]  ; new_sum[2]  ; 6.615 ; 6.615 ; 6.615 ; 6.615 ;
+; old_sum[3]  ; new_sum[3]  ; 6.451 ; 6.451 ; 6.451 ; 6.451 ;
+; old_sum[3]  ; new_sum[4]  ; 6.449 ; 6.449 ; 6.449 ; 6.449 ;
+; old_sum[3]  ; new_sum[5]  ; 6.295 ; 6.295 ; 6.295 ; 6.295 ;
+; old_sum[4]  ; legal_play  ; 6.259 ; 6.259 ; 6.259 ; 6.259 ;
+; old_sum[4]  ; new_sum[1]  ; 6.184 ; 6.184 ; 6.184 ; 6.184 ;
+; old_sum[4]  ; new_sum[2]  ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
+; old_sum[4]  ; new_sum[3]  ; 6.468 ; 6.468 ; 6.468 ; 6.468 ;
+; old_sum[4]  ; new_sum[4]  ; 6.409 ; 6.409 ; 6.409 ; 6.409 ;
+; old_sum[4]  ; new_sum[5]  ; 6.253 ; 6.253 ; 6.253 ; 6.253 ;
+; old_sum[5]  ; legal_play  ; 6.070 ; 6.070 ; 6.070 ; 6.070 ;
+; old_sum[5]  ; new_sum[1]  ; 6.024 ; 6.024 ; 6.024 ; 6.024 ;
+; old_sum[5]  ; new_sum[2]  ; 6.394 ; 6.394 ; 6.394 ; 6.394 ;
+; old_sum[5]  ; new_sum[3]  ; 6.230 ; 6.230 ; 6.230 ; 6.230 ;
+; old_sum[5]  ; new_sum[4]  ; 6.228 ; 6.228 ; 6.228 ; 6.228 ;
+; old_sum[5]  ; new_sum[5]  ; 6.074 ; 6.074 ; 6.074 ; 6.074 ;
+; top_card[0] ; legal_play  ; 6.478 ; 6.478 ; 6.478 ; 6.478 ;
+; top_card[0] ; new_sum[1]  ; 5.582 ; 5.582 ; 5.582 ; 5.582 ;
+; top_card[0] ; new_sum[2]  ; 5.859 ; 5.859 ; 5.859 ; 5.859 ;
+; top_card[0] ; new_sum[3]  ; 5.866 ; 5.866 ; 5.866 ; 5.866 ;
+; top_card[0] ; new_sum[4]  ; 5.864 ; 5.864 ; 5.864 ; 5.864 ;
+; top_card[0] ; new_sum[5]  ; 6.203 ; 6.203 ; 6.203 ; 6.203 ;
+; top_card[1] ; legal_play  ; 6.471 ; 6.471 ; 6.471 ; 6.471 ;
+; top_card[1] ; new_sum[1]  ; 5.528 ; 5.528 ; 5.528 ; 5.528 ;
+; top_card[1] ; new_sum[2]  ; 5.910 ; 5.910 ; 5.910 ; 5.910 ;
+; top_card[1] ; new_sum[3]  ; 5.917 ; 5.917 ; 5.917 ; 5.917 ;
+; top_card[1] ; new_sum[4]  ; 5.915 ; 5.915 ; 5.915 ; 5.915 ;
+; top_card[1] ; new_sum[5]  ; 6.149 ; 6.149 ; 6.149 ; 6.149 ;
+; top_card[2] ; legal_play  ; 6.474 ; 6.474 ; 6.474 ; 6.474 ;
+; top_card[2] ; new_sum[1]  ; 6.796 ; 6.796 ; 6.796 ; 6.796 ;
+; top_card[2] ; new_sum[2]  ; 5.755 ; 5.755 ; 5.755 ; 5.755 ;
+; top_card[2] ; new_sum[3]  ; 5.862 ; 5.862 ; 5.862 ; 5.862 ;
+; top_card[2] ; new_sum[4]  ; 5.860 ; 5.860 ; 5.860 ; 5.860 ;
+; top_card[2] ; new_sum[5]  ; 6.280 ; 6.280 ; 6.280 ; 6.280 ;
+; top_card[3] ; legal_play  ; 6.317 ; 6.317 ; 6.317 ; 6.317 ;
+; top_card[3] ; new_sum[1]  ; 6.639 ; 6.639 ; 6.639 ; 6.639 ;
+; top_card[3] ; new_sum[2]  ; 7.009 ; 7.009 ; 7.009 ; 7.009 ;
+; top_card[3] ; new_sum[3]  ; 5.705 ; 5.705 ; 5.705 ; 5.705 ;
+; top_card[3] ; new_sum[4]  ; 5.808 ; 5.808 ; 5.808 ; 5.808 ;
+; top_card[3] ; new_sum[5]  ; 6.282 ; 6.282 ; 6.282 ; 6.282 ;
+; top_card[4] ; legal_play  ; 6.376 ; 6.376 ; 6.376 ; 6.376 ;
+; top_card[4] ; new_sum[1]  ; 6.698 ; 6.698 ; 6.698 ; 6.698 ;
+; top_card[4] ; new_sum[2]  ; 7.068 ; 7.068 ; 7.068 ; 7.068 ;
+; top_card[4] ; new_sum[3]  ; 6.969 ; 6.969 ; 6.969 ; 6.969 ;
+; top_card[4] ; new_sum[4]  ; 5.645 ; 5.645 ; 5.645 ; 5.645 ;
+; top_card[4] ; new_sum[5]  ; 6.341 ; 6.341 ; 6.341 ; 6.341 ;
+; top_card[5] ; legal_play  ; 5.540 ; 6.601 ; 6.601 ; 5.540 ;
+; top_card[5] ; new_sum[1]  ; 5.718 ; 5.718 ; 5.718 ; 5.718 ;
+; top_card[5] ; new_sum[2]  ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; top_card[5] ; new_sum[3]  ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; top_card[5] ; new_sum[4]  ; 5.922 ; 5.922 ; 5.922 ; 5.922 ;
+; top_card[5] ; new_sum[5]  ; 5.089 ;       ;       ; 5.089 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++---------------------------------------------------------------------+
+; Setup Transfers                                                     ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; old_sum[0] ; old_sum[0] ; 32       ; 32       ; 32       ; 32       ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Hold Transfers                                                      ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; old_sum[0] ; old_sum[0] ; 32       ; 32       ; 32       ; 32       ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 78    ; 78   ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 79    ; 79   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Nov 16 15:55:49 2017
+Info: Command: quartus_sta g07_Lab4 -c g07_Lab4
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'g07_Lab4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name old_sum[0] old_sum[0]
+Warning (332125): Found combinational loop of 59 nodes
+    Warning (332126): Node "inst|Add2~1|datab"
+    Warning (332126): Node "inst|Add2~1|cout"
+    Warning (332126): Node "inst|Add2~2|cin"
+    Warning (332126): Node "inst|Add2~2|combout"
+    Warning (332126): Node "inst|sum[2]~2|datad"
+    Warning (332126): Node "inst|sum[2]~2|combout"
+    Warning (332126): Node "inst|ace~1|datab"
+    Warning (332126): Node "inst|ace~1|combout"
+    Warning (332126): Node "inst|ace~3|dataa"
+    Warning (332126): Node "inst|ace~3|combout"
+    Warning (332126): Node "inst|ace~2|datab"
+    Warning (332126): Node "inst|ace~2|combout"
+    Warning (332126): Node "inst|ace~3|datac"
+    Warning (332126): Node "inst|sum[3]~0|datab"
+    Warning (332126): Node "inst|sum[3]~0|combout"
+    Warning (332126): Node "inst|new_sum_int[5]~8|datab"
+    Warning (332126): Node "inst|new_sum_int[5]~8|combout"
+    Warning (332126): Node "inst|ace~0|datad"
+    Warning (332126): Node "inst|ace~0|combout"
+    Warning (332126): Node "inst|ace~1|dataa"
+    Warning (332126): Node "inst|Add2~8|datad"
+    Warning (332126): Node "inst|Add2~8|combout"
+    Warning (332126): Node "inst|new_sum_int[5]~8|datad"
+    Warning (332126): Node "inst|LessThan1~1|dataa"
+    Warning (332126): Node "inst|LessThan1~1|combout"
+    Warning (332126): Node "inst|LessThan1~2|datac"
+    Warning (332126): Node "inst|LessThan1~2|combout"
+    Warning (332126): Node "inst|sum[3]~0|dataa"
+    Warning (332126): Node "inst|ace~0|datab"
+    Warning (332126): Node "inst|ace~3|datab"
+    Warning (332126): Node "inst|new_sum_int~7|datac"
+    Warning (332126): Node "inst|new_sum_int~7|combout"
+    Warning (332126): Node "inst|ace~0|dataa"
+    Warning (332126): Node "inst|LessThan1~2|datab"
+    Warning (332126): Node "inst|Add2~6|dataa"
+    Warning (332126): Node "inst|Add2~6|cout"
+    Warning (332126): Node "inst|Add2~8|cin"
+    Warning (332126): Node "inst|Add2~6|combout"
+    Warning (332126): Node "inst|new_sum_int~7|dataa"
+    Warning (332126): Node "inst|LessThan1~1|datab"
+    Warning (332126): Node "inst|sum[3]~1|datab"
+    Warning (332126): Node "inst|sum[3]~1|combout"
+    Warning (332126): Node "inst|ace~1|datac"
+    Warning (332126): Node "inst|Add2~4|dataa"
+    Warning (332126): Node "inst|Add2~4|cout"
+    Warning (332126): Node "inst|Add2~6|cin"
+    Warning (332126): Node "inst|Add2~4|combout"
+    Warning (332126): Node "inst|sum[3]~1|datad"
+    Warning (332126): Node "inst|LessThan1~2|datad"
+    Warning (332126): Node "inst|sum[2]~2|datab"
+    Warning (332126): Node "inst|sum[1]~3|datac"
+    Warning (332126): Node "inst|sum[1]~3|combout"
+    Warning (332126): Node "inst|sum[1]~3|datab"
+    Warning (332126): Node "inst|ace~1|datad"
+    Warning (332126): Node "inst|LessThan1~1|datad"
+    Warning (332126): Node "inst|LessThan1~1|datac"
+    Warning (332126): Node "inst|Add2~2|datab"
+    Warning (332126): Node "inst|Add2~2|cout"
+    Warning (332126): Node "inst|Add2~4|cin"
+Warning (332125): Found combinational loop of 22 nodes
+    Warning (332126): Node "inst|new_card_value_int[0]~20|combout"
+    Warning (332126): Node "inst|Equal0~0|datac"
+    Warning (332126): Node "inst|Equal0~0|combout"
+    Warning (332126): Node "inst|new_card_value_int[1]~21|datab"
+    Warning (332126): Node "inst|new_card_value_int[1]~21|combout"
+    Warning (332126): Node "inst|LessThan0~0|datad"
+    Warning (332126): Node "inst|LessThan0~0|combout"
+    Warning (332126): Node "inst|new_card_value_int[0]~20|dataa"
+    Warning (332126): Node "inst|new_card_value_int[3]~23|datac"
+    Warning (332126): Node "inst|new_card_value_int[3]~23|combout"
+    Warning (332126): Node "inst|Equal0~0|dataa"
+    Warning (332126): Node "inst|LessThan0~0|dataa"
+    Warning (332126): Node "inst|new_card_value_int[2]~22|datac"
+    Warning (332126): Node "inst|new_card_value_int[2]~22|combout"
+    Warning (332126): Node "inst|Equal0~0|datab"
+    Warning (332126): Node "inst|LessThan0~0|datab"
+    Warning (332126): Node "inst|new_card_value_int[1]~21|datac"
+    Warning (332126): Node "inst|Equal0~0|datad"
+    Warning (332126): Node "inst|new_card_value_int[3]~23|datab"
+    Warning (332126): Node "inst|new_card_value_int[2]~22|datab"
+    Warning (332126): Node "inst|new_card_value_int[0]~20|datab"
+    Warning (332126): Node "inst|LessThan0~0|datac"
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: inst|Add0~1  from: datac  to: combout
+    Info (332098): Cell: inst|Add0~1  from: datad  to: combout
+    Info (332098): Cell: inst|Add0~2  from: dataa  to: combout
+    Info (332098): Cell: inst|Add0~2  from: datab  to: combout
+    Info (332098): Cell: inst|Add0~2  from: datac  to: combout
+    Info (332098): Cell: inst|Add0~2  from: datad  to: combout
+    Info (332098): Cell: inst|Add0~3  from: datab  to: combout
+    Info (332098): Cell: inst|Add0~3  from: datac  to: combout
+    Info (332098): Cell: inst|Add0~3  from: datad  to: combout
+    Info (332098): Cell: inst|Add1~0  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~2  from: cin  to: combout
+    Info (332098): Cell: inst|Add1~2  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~4  from: cin  to: combout
+    Info (332098): Cell: inst|Add1~4  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~6  from: cin  to: combout
+    Info (332098): Cell: inst|Add1~6  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~8  from: cin  to: combout
+    Info (332098): From: inst|ace~2|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|ace~2|datad  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|new_card_value_int[0]~20|datac  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_card_value_int[0]~20|datad  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_card_value_int[1]~21|datad  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_card_value_int[2]~22|datad  to: inst|new_card_value_int[3]~23|combout
+    Info (332098): Cell: inst|new_card_value_int[3]~14  from: datad  to: combout
+    Info (332098): Cell: inst|new_card_value_int[3]~18  from: datad  to: combout
+    Info (332098): From: inst|new_card_value_int[3]~23|datad  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_sum_int[5]~8|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|new_sum_int~7|datad  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[1]~3|datad  to: inst|sum[3]~1|combout
+    Info (332098): From: inst|sum[2]~2|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[3]~0|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[3]~0|datad  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[3]~1|datac  to: inst|sum[1]~3|combout
+    Info (332098): Cell: inst|u1|inst4|inst1|inst2  from: datad  to: combout
+    Info (332098): Cell: inst|u1|inst5|inst2|inst1~0  from: datad  to: combout
+    Info (332098): Cell: inst|u1|inst|inst6|inst1  from: datad  to: combout
+    Info (332098): Cell: inst|u1|inst|inst7|inst1~0  from: datad  to: combout
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -7.751
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -7.751        -7.751 old_sum[0] 
+Info (332146): Worst-case hold slack is -23.250
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -23.250       -23.250 old_sum[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -21.893
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -21.893     -1217.097 old_sum[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: inst|Add0~1  from: datac  to: combout
+    Info (332098): Cell: inst|Add0~1  from: datad  to: combout
+    Info (332098): Cell: inst|Add0~2  from: dataa  to: combout
+    Info (332098): Cell: inst|Add0~2  from: datab  to: combout
+    Info (332098): Cell: inst|Add0~2  from: datac  to: combout
+    Info (332098): Cell: inst|Add0~2  from: datad  to: combout
+    Info (332098): Cell: inst|Add0~3  from: datab  to: combout
+    Info (332098): Cell: inst|Add0~3  from: datac  to: combout
+    Info (332098): Cell: inst|Add0~3  from: datad  to: combout
+    Info (332098): Cell: inst|Add1~0  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~2  from: cin  to: combout
+    Info (332098): Cell: inst|Add1~2  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~4  from: cin  to: combout
+    Info (332098): Cell: inst|Add1~4  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~6  from: cin  to: combout
+    Info (332098): Cell: inst|Add1~6  from: datab  to: combout
+    Info (332098): Cell: inst|Add1~8  from: cin  to: combout
+    Info (332098): From: inst|ace~2|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|ace~2|datad  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|new_card_value_int[0]~20|datac  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_card_value_int[0]~20|datad  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_card_value_int[1]~21|datad  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_card_value_int[2]~22|datad  to: inst|new_card_value_int[3]~23|combout
+    Info (332098): Cell: inst|new_card_value_int[3]~14  from: datad  to: combout
+    Info (332098): Cell: inst|new_card_value_int[3]~18  from: datad  to: combout
+    Info (332098): From: inst|new_card_value_int[3]~23|datad  to: inst|new_card_value_int[2]~22|combout
+    Info (332098): From: inst|new_sum_int[5]~8|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|new_sum_int~7|datad  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[1]~3|datad  to: inst|sum[3]~1|combout
+    Info (332098): From: inst|sum[2]~2|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[3]~0|datac  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[3]~0|datad  to: inst|sum[1]~3|combout
+    Info (332098): From: inst|sum[3]~1|datac  to: inst|sum[1]~3|combout
+    Info (332098): Cell: inst|u1|inst4|inst1|inst2  from: datad  to: combout
+    Info (332098): Cell: inst|u1|inst5|inst2|inst1~0  from: datad  to: combout
+    Info (332098): Cell: inst|u1|inst|inst6|inst1  from: datad  to: combout
+    Info (332098): Cell: inst|u1|inst|inst7|inst1~0  from: datad  to: combout
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.394
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.394        -2.394 old_sum[0] 
+Info (332146): Worst-case hold slack is -8.141
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -8.141        -8.141 old_sum[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -7.293
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -7.293      -374.792 old_sum[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 87 warnings
+    Info: Peak virtual memory: 502 megabytes
+    Info: Processing ended: Thu Nov 16 15:55:52 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

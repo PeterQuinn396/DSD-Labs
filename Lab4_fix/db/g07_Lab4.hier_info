@@ -1,0 +1,662 @@
+|g07_testing
+legal_play <= g07_rules:inst.legal_play
+old_sum[0] => g07_rules:inst.card_play[0]
+old_sum[1] => g07_rules:inst.card_play[1]
+old_sum[2] => g07_rules:inst.card_play[2]
+old_sum[3] => g07_rules:inst.card_play[3]
+old_sum[4] => g07_rules:inst.card_play[4]
+old_sum[5] => g07_rules:inst.card_play[5]
+top_card[0] => g07_rules:inst.play_pile_top_card[0]
+top_card[1] => g07_rules:inst.play_pile_top_card[1]
+top_card[2] => g07_rules:inst.play_pile_top_card[2]
+top_card[3] => g07_rules:inst.play_pile_top_card[3]
+top_card[4] => g07_rules:inst.play_pile_top_card[4]
+top_card[5] => g07_rules:inst.play_pile_top_card[5]
+new_sum[0] <= g07_rules:inst.sum[0]
+new_sum[1] <= g07_rules:inst.sum[1]
+new_sum[2] <= g07_rules:inst.sum[2]
+new_sum[3] <= g07_rules:inst.sum[3]
+new_sum[4] <= g07_rules:inst.sum[4]
+new_sum[5] <= g07_rules:inst.sum[5]
+
+
+|g07_testing|g07_rules:inst
+play_pile_top_card[0] => Add1.IN10
+play_pile_top_card[1] => Add1.IN9
+play_pile_top_card[2] => Add1.IN8
+play_pile_top_card[3] => Add1.IN7
+play_pile_top_card[4] => Add1.IN6
+play_pile_top_card[5] => legal_play~0.DATAA
+play_pile_top_card[5] => new_sum_int~0.OUTPUTSELECT
+play_pile_top_card[5] => new_sum_int~1.OUTPUTSELECT
+play_pile_top_card[5] => new_sum_int~2.OUTPUTSELECT
+play_pile_top_card[5] => new_sum_int~3.OUTPUTSELECT
+play_pile_top_card[5] => new_ace~0.DATAB
+card_play[0] => g07_Modulo_13:u1.A[0]
+card_play[1] => g07_Modulo_13:u1.A[1]
+card_play[2] => g07_Modulo_13:u1.A[2]
+card_play[3] => g07_Modulo_13:u1.A[3]
+card_play[4] => g07_Modulo_13:u1.A[4]
+card_play[5] => g07_Modulo_13:u1.A[5]
+legal_play <= legal_play~1.DB_MAX_OUTPUT_PORT_TYPE
+sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= new_sum_int~11.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= new_sum_int~10.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= new_sum_int~9.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= new_sum_int~8.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= new_ace~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1
+Amod13[0] <= ans[0].DB_MAX_OUTPUT_PORT_TYPE
+Amod13[1] <= ans[1].DB_MAX_OUTPUT_PORT_TYPE
+Amod13[2] <= ans[2].DB_MAX_OUTPUT_PORT_TYPE
+Amod13[3] <= ans[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => g07_adder:inst5.A[0]
+A[0] => g07_adder:inst.A[2]
+A[0] => g07_adder:inst.B[0]
+A[1] => g07_adder:inst5.A[1]
+A[1] => g07_adder:inst.A[3]
+A[1] => g07_adder:inst.B[1]
+A[2] => g07_adder:inst5.A[2]
+A[2] => g07_adder:inst.A[4]
+A[2] => g07_adder:inst.B[2]
+A[3] => g07_adder:inst5.A[3]
+A[3] => g07_adder:inst.A[5]
+A[3] => g07_adder:inst.B[3]
+A[4] => g07_adder:inst5.A[4]
+A[4] => g07_adder:inst.A[6]
+A[4] => g07_adder:inst.B[4]
+A[5] => g07_adder:inst5.A[5]
+A[5] => g07_adder:inst.A[7]
+A[5] => g07_adder:inst.B[5]
+floor13[0] <= S[6].DB_MAX_OUTPUT_PORT_TYPE
+floor13[1] <= S[7].DB_MAX_OUTPUT_PORT_TYPE
+floor13[2] <= Cout[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5
+Cout <= g07_fullAdder:inst7.Cout
+A[0] => g07_fullAdder:inst.A
+A[1] => g07_fullAdder:inst1.A
+A[2] => g07_fullAdder:inst2.A
+A[3] => g07_fullAdder:inst3.A
+A[4] => g07_fullAdder:inst4.A
+A[5] => g07_fullAdder:inst5.A
+A[6] => g07_fullAdder:inst6.A
+A[7] => g07_fullAdder:inst7.A
+B[0] => g07_fullAdder:inst.B
+B[1] => g07_fullAdder:inst1.B
+B[2] => g07_fullAdder:inst2.B
+B[3] => g07_fullAdder:inst3.B
+B[4] => g07_fullAdder:inst4.B
+B[5] => g07_fullAdder:inst5.B
+B[6] => g07_fullAdder:inst6.B
+B[7] => g07_fullAdder:inst7.B
+Cin => g07_fullAdder:inst.Cin
+S[0] <= g07_fullAdder:inst.S
+S[1] <= g07_fullAdder:inst1.S
+S[2] <= g07_fullAdder:inst2.S
+S[3] <= g07_fullAdder:inst3.S
+S[4] <= g07_fullAdder:inst4.S
+S[5] <= g07_fullAdder:inst5.S
+S[6] <= g07_fullAdder:inst6.S
+S[7] <= g07_fullAdder:inst7.S
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst6
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4
+Cout <= g07_fullAdder:inst7.Cout
+A[0] => g07_fullAdder:inst.A
+A[1] => g07_fullAdder:inst1.A
+A[2] => g07_fullAdder:inst2.A
+A[3] => g07_fullAdder:inst3.A
+A[4] => g07_fullAdder:inst4.A
+A[5] => g07_fullAdder:inst5.A
+A[6] => g07_fullAdder:inst6.A
+A[7] => g07_fullAdder:inst7.A
+B[0] => g07_fullAdder:inst.B
+B[1] => g07_fullAdder:inst1.B
+B[2] => g07_fullAdder:inst2.B
+B[3] => g07_fullAdder:inst3.B
+B[4] => g07_fullAdder:inst4.B
+B[5] => g07_fullAdder:inst5.B
+B[6] => g07_fullAdder:inst6.B
+B[7] => g07_fullAdder:inst7.B
+Cin => g07_fullAdder:inst.Cin
+S[0] <= g07_fullAdder:inst.S
+S[1] <= g07_fullAdder:inst1.S
+S[2] <= g07_fullAdder:inst2.S
+S[3] <= g07_fullAdder:inst3.S
+S[4] <= g07_fullAdder:inst4.S
+S[5] <= g07_fullAdder:inst5.S
+S[6] <= g07_fullAdder:inst6.S
+S[7] <= g07_fullAdder:inst7.S
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst6
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3
+Cout <= g07_fullAdder:inst7.Cout
+A[0] => g07_fullAdder:inst.A
+A[1] => g07_fullAdder:inst1.A
+A[2] => g07_fullAdder:inst2.A
+A[3] => g07_fullAdder:inst3.A
+A[4] => g07_fullAdder:inst4.A
+A[5] => g07_fullAdder:inst5.A
+A[6] => g07_fullAdder:inst6.A
+A[7] => g07_fullAdder:inst7.A
+B[0] => g07_fullAdder:inst.B
+B[1] => g07_fullAdder:inst1.B
+B[2] => g07_fullAdder:inst2.B
+B[3] => g07_fullAdder:inst3.B
+B[4] => g07_fullAdder:inst4.B
+B[5] => g07_fullAdder:inst5.B
+B[6] => g07_fullAdder:inst6.B
+B[7] => g07_fullAdder:inst7.B
+Cin => g07_fullAdder:inst.Cin
+S[0] <= g07_fullAdder:inst.S
+S[1] <= g07_fullAdder:inst1.S
+S[2] <= g07_fullAdder:inst2.S
+S[3] <= g07_fullAdder:inst3.S
+S[4] <= g07_fullAdder:inst4.S
+S[5] <= g07_fullAdder:inst5.S
+S[6] <= g07_fullAdder:inst6.S
+S[7] <= g07_fullAdder:inst7.S
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst6
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1
+Cout <= g07_fullAdder:inst7.Cout
+A[0] => g07_fullAdder:inst.A
+A[1] => g07_fullAdder:inst1.A
+A[2] => g07_fullAdder:inst2.A
+A[3] => g07_fullAdder:inst3.A
+A[4] => g07_fullAdder:inst4.A
+A[5] => g07_fullAdder:inst5.A
+A[6] => g07_fullAdder:inst6.A
+A[7] => g07_fullAdder:inst7.A
+B[0] => g07_fullAdder:inst.B
+B[1] => g07_fullAdder:inst1.B
+B[2] => g07_fullAdder:inst2.B
+B[3] => g07_fullAdder:inst3.B
+B[4] => g07_fullAdder:inst4.B
+B[5] => g07_fullAdder:inst5.B
+B[6] => g07_fullAdder:inst6.B
+B[7] => g07_fullAdder:inst7.B
+Cin => g07_fullAdder:inst.Cin
+S[0] <= g07_fullAdder:inst.S
+S[1] <= g07_fullAdder:inst1.S
+S[2] <= g07_fullAdder:inst2.S
+S[3] <= g07_fullAdder:inst3.S
+S[4] <= g07_fullAdder:inst4.S
+S[5] <= g07_fullAdder:inst5.S
+S[6] <= g07_fullAdder:inst6.S
+S[7] <= g07_fullAdder:inst7.S
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst6
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst1|g07_fullAdder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst
+Cout <= g07_fullAdder:inst7.Cout
+A[0] => g07_fullAdder:inst.A
+A[1] => g07_fullAdder:inst1.A
+A[2] => g07_fullAdder:inst2.A
+A[3] => g07_fullAdder:inst3.A
+A[4] => g07_fullAdder:inst4.A
+A[5] => g07_fullAdder:inst5.A
+A[6] => g07_fullAdder:inst6.A
+A[7] => g07_fullAdder:inst7.A
+B[0] => g07_fullAdder:inst.B
+B[1] => g07_fullAdder:inst1.B
+B[2] => g07_fullAdder:inst2.B
+B[3] => g07_fullAdder:inst3.B
+B[4] => g07_fullAdder:inst4.B
+B[5] => g07_fullAdder:inst5.B
+B[6] => g07_fullAdder:inst6.B
+B[7] => g07_fullAdder:inst7.B
+Cin => g07_fullAdder:inst.Cin
+S[0] <= g07_fullAdder:inst.S
+S[1] <= g07_fullAdder:inst1.S
+S[2] <= g07_fullAdder:inst2.S
+S[3] <= g07_fullAdder:inst3.S
+S[4] <= g07_fullAdder:inst4.S
+S[5] <= g07_fullAdder:inst5.S
+S[6] <= g07_fullAdder:inst6.S
+S[7] <= g07_fullAdder:inst7.S
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
