@@ -14,13 +14,13 @@ end g07_dealer_FSM;
 
 architecture g07_dealer_FSM_arch of g07_dealer_FSM is
 	TYPE state_signal IS (WAIT_LOW,WAIT_HIGH,ENABLE_STACK);
-	Signal state: state_signal;
+	signal state: state_signal;
 begin
 	update: process(clock,reset)
 	begin
 		if reset = '1' then
 			state<= WAIT_LOW;
-		elsif clock = '1' then
+		elsif clock'EVENT and clock = '1' then
 			case state is
 			when WAIT_LOW =>
 				if request_deal = '0' then state<= WAIT_HIGH; end if;

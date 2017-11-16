@@ -1,0 +1,356 @@
+Analysis & Synthesis report for Lab4
+Wed Nov 15 18:57:19 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Nov 15 18:57:19 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Lab4                                            ;
+; Top-level Entity Name              ; g07_rules                                       ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 51                                              ;
+;     Total combinational functions  ; 51                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 19                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C20F484C7       ;                    ;
+; Top-level entity name                                                      ; g07_rules          ; Lab4               ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
+; g07_rules.vhd                    ; yes             ; User VHDL File                           ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_rules.vhd     ;         ;
+; g07_modulo_13.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_modulo_13.bdf ;         ;
+; g07_adder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_adder.bdf     ;         ;
+; g07_fulladder.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; K:/Documents/GitHub/DSD-Labs/Lab4/g07_fulladder.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 51           ;
+;                                             ;              ;
+; Total combinational functions               ; 51           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 24           ;
+;     -- 3 input functions                    ; 17           ;
+;     -- <=2 input functions                  ; 10           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 42           ;
+;     -- arithmetic mode                      ; 9            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 19           ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+; Maximum fan-out node                        ; card_play[4] ;
+; Maximum fan-out                             ; 11           ;
+; Total fan-out                               ; 171          ;
+; Average fan-out                             ; 2.44         ;
++---------------------------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; |g07_rules                     ; 51 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |g07_rules                                                      ; work         ;
+;    |g07_Modulo_13:u1|          ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1                                     ; work         ;
+;       |g07_adder:inst4|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst4                     ; work         ;
+;          |g07_fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1 ; work         ;
+;       |g07_adder:inst5|        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5                     ; work         ;
+;          |g07_fullAdder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1 ; work         ;
+;          |g07_fullAdder:inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2 ; work         ;
+;       |g07_adder:inst|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst                      ; work         ;
+;          |g07_fullAdder:inst5| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5  ; work         ;
+;          |g07_fullAdder:inst6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6  ; work         ;
+;          |g07_fullAdder:inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_rules|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7  ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; new_sum_int[0]                                     ; new_sum_int         ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; sum[5]~0                                               ;   ;
+; legal_play~1                                           ;   ;
+; new_card_value_int~1                                   ;   ;
+; new_card_value_int[3]~2                                ;   ;
+; new_sum_int~4                                          ;   ;
+; new_sum_int~5                                          ;   ;
+; new_sum_int~6                                          ;   ;
+; sum[4]~1                                               ;   ;
+; LessThan1~0                                            ;   ;
+; Number of logic cells representing combinational loops ; 9 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g07_rules|new_card_value_int[3] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |g07_rules|new_sum_int           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 15 18:57:16 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /documents/github/dsd-labs/lab3/g07_stack52.bdf
+    Info (12023): Found entity 1: g07_stack52
+Info (12021): Found 2 design units, including 1 entities, in source file /documents/github/dsd-labs/lab2/g07_randu.vhd
+    Info (12022): Found design unit 1: g07_RANDU-g07_RANDU_arch
+    Info (12023): Found entity 1: g07_RANDU
+Info (12021): Found 2 design units, including 1 entities, in source file g07_rules.vhd
+    Info (12022): Found design unit 1: g07_rules-g07_rules_arch
+    Info (12023): Found entity 1: g07_rules
+Info (12021): Found 2 design units, including 1 entities, in source file add_card_values.vhd
+    Info (12022): Found design unit 1: add_card_values-SYN
+    Info (12023): Found entity 1: add_card_values
+Info (12021): Found 2 design units, including 1 entities, in source file modn.vhd
+    Info (12022): Found design unit 1: modn-SYN
+    Info (12023): Found entity 1: modN
+Info (12021): Found 2 design units, including 1 entities, in source file g07_dealer_fsm.vhd
+    Info (12022): Found design unit 1: g07_dealer_FSM-g07_dealer_FSM_arch
+    Info (12023): Found entity 1: g07_dealer_FSM
+Info (12021): Found 1 design units, including 1 entities, in source file g07_dealer_testbed.bdf
+    Info (12023): Found entity 1: g07_dealer_testbed
+Info (12021): Found 2 design units, including 1 entities, in source file /documents/github/dsd-labs/lab3/lpm_divide0.vhd
+    Info (12022): Found design unit 1: lpm_divide0-SYN
+    Info (12023): Found entity 1: lpm_divide0
+Info (12127): Elaborating entity "g07_rules" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at g07_rules.vhd(29): object "new_card_suit" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(52): signal "new_card_value_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(54): signal "new_card_value_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(60): signal "old_sum_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(60): signal "new_card_value_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(64): signal "new_sum_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(66): signal "new_card_value_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(66): signal "old_sum_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(67): signal "new_sum_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(70): signal "new_card_value_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(71): signal "new_sum_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(74): signal "ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(75): signal "new_sum_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(85): signal "ace" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(85): signal "new_sum_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at g07_rules.vhd(45): inferring latch(es) for signal or variable "new_sum_int", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "new_sum_int[0]" at g07_rules.vhd(45)
+Warning (12125): Using design file g07_modulo_13.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: g07_Modulo_13
+Info (12128): Elaborating entity "g07_Modulo_13" for hierarchy "g07_Modulo_13:u1"
+Warning (12125): Using design file g07_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: g07_adder
+Info (12128): Elaborating entity "g07_adder" for hierarchy "g07_Modulo_13:u1|g07_adder:inst5"
+Warning (12125): Using design file g07_fulladder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: g07_fullAdder
+Info (12128): Elaborating entity "g07_fullAdder" for hierarchy "g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst7"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 51 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 540 megabytes
+    Info: Processing ended: Wed Nov 15 18:57:19 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
