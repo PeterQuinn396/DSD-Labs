@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Lab4
-Wed Nov 15 18:57:30 2017
+Thu Nov 16 15:49:37 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,42 +16,36 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Setup: 'card_play[0]'
- 12. Slow Model Hold: 'card_play[0]'
- 13. Slow Model Minimum Pulse Width: 'card_play[0]'
+ 11. Slow Model Setup: 'clock'
+ 12. Slow Model Hold: 'clock'
+ 13. Slow Model Minimum Pulse Width: 'clock'
  14. Setup Times
  15. Hold Times
  16. Clock to Output Times
  17. Minimum Clock to Output Times
- 18. Propagation Delay
- 19. Minimum Propagation Delay
- 20. Fast Model Setup Summary
- 21. Fast Model Hold Summary
- 22. Fast Model Recovery Summary
- 23. Fast Model Removal Summary
- 24. Fast Model Minimum Pulse Width Summary
- 25. Fast Model Setup: 'card_play[0]'
- 26. Fast Model Hold: 'card_play[0]'
- 27. Fast Model Minimum Pulse Width: 'card_play[0]'
- 28. Setup Times
- 29. Hold Times
- 30. Clock to Output Times
- 31. Minimum Clock to Output Times
- 32. Propagation Delay
- 33. Minimum Propagation Delay
- 34. Multicorner Timing Analysis Summary
- 35. Setup Times
- 36. Hold Times
- 37. Clock to Output Times
- 38. Minimum Clock to Output Times
- 39. Progagation Delay
- 40. Minimum Progagation Delay
- 41. Setup Transfers
- 42. Hold Transfers
- 43. Report TCCS
- 44. Report RSKM
- 45. Unconstrained Paths
- 46. TimeQuest Timing Analyzer Messages
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'clock'
+ 24. Fast Model Hold: 'clock'
+ 25. Fast Model Minimum Pulse Width: 'clock'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
 
 
 
@@ -98,41 +92,41 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                     ;
-+--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
-; Clock Name   ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets          ;
-+--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
-; card_play[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { card_play[0] } ;
-+--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
-+----------------------------------------------------------------------+
-; Slow Model Fmax Summary                                              ;
-+-----------+-----------------+--------------+-------------------------+
-; Fmax      ; Restricted Fmax ; Clock Name   ; Note                    ;
-+-----------+-----------------+--------------+-------------------------+
-; 57.43 MHz ; 21.2 MHz        ; card_play[0] ; limit due to hold check ;
-+-----------+-----------------+--------------+-------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                    ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name ; Note                                                          ;
++-------------+-----------------+------------+---------------------------------------------------------------+
+; 1150.75 MHz ; 380.08 MHz      ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
++-------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+---------------------------------------+
-; Slow Model Setup Summary              ;
-+--------------+--------+---------------+
-; Clock        ; Slack  ; End Point TNS ;
-+--------------+--------+---------------+
-; card_play[0] ; -8.207 ; -8.207        ;
-+--------------+--------+---------------+
++-------------------------------+
+; Slow Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.131 ; 0.000         ;
++-------+-------+---------------+
 
 
-+----------------------------------------+
-; Slow Model Hold Summary                ;
-+--------------+---------+---------------+
-; Clock        ; Slack   ; End Point TNS ;
-+--------------+---------+---------------+
-; card_play[0] ; -23.584 ; -23.584       ;
-+--------------+---------+---------------+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.445 ; 0.000         ;
++-------+-------+---------------+
 
 
 -------------------------------
@@ -149,409 +143,118 @@ No paths to report.
 
 +----------------------------------------+
 ; Slow Model Minimum Pulse Width Summary ;
-+--------------+---------+---------------+
-; Clock        ; Slack   ; End Point TNS ;
-+--------------+---------+---------------+
-; card_play[0] ; -22.471 ; -1261.807     ;
-+--------------+---------+---------------+
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clock ; -1.631 ; -5.297                ;
++-------+--------+-----------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Slow Model Setup: 'card_play[0]'                                                                              ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; Slack  ; From Node    ; To Node        ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; -8.207 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.500        ; 4.306      ; 11.966     ;
-; -7.947 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.500        ; 4.566      ; 11.966     ;
-; -7.707 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 1.000        ; 4.306      ; 11.966     ;
-; -7.447 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 1.000        ; 4.566      ; 11.966     ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock'                                                                                             ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; 0.131 ; state.ENABLE_STACK ; state.WAIT_LOW     ; clock        ; clock       ; 1.000        ; 0.000      ; 0.907      ;
+; 0.137 ; state.WAIT_HIGH    ; state.ENABLE_STACK ; clock        ; clock       ; 1.000        ; 0.000      ; 0.901      ;
+; 0.141 ; state.WAIT_LOW     ; state.WAIT_HIGH    ; clock        ; clock       ; 1.000        ; 0.000      ; 0.897      ;
+; 0.307 ; state.WAIT_LOW     ; state.WAIT_LOW     ; clock        ; clock       ; 1.000        ; 0.000      ; 0.731      ;
+; 0.307 ; state.WAIT_HIGH    ; state.WAIT_HIGH    ; clock        ; clock       ; 1.000        ; 0.000      ; 0.731      ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Slow Model Hold: 'card_play[0]'                                                                                ;
-+---------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; Slack   ; From Node    ; To Node        ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
-+---------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; -23.584 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.000        ; 27.328     ; 3.744      ;
-; -23.533 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.000        ; 27.277     ; 3.744      ;
-; -23.084 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; -0.500       ; 27.328     ; 3.744      ;
-; -23.033 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; -0.500       ; 27.277     ; 3.744      ;
-+---------+--------------+----------------+--------------+--------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock'                                                                                              ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; 0.445 ; state.WAIT_LOW     ; state.WAIT_LOW     ; clock        ; clock       ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; state.WAIT_HIGH    ; state.WAIT_HIGH    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.731      ;
+; 0.611 ; state.WAIT_LOW     ; state.WAIT_HIGH    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.897      ;
+; 0.615 ; state.WAIT_HIGH    ; state.ENABLE_STACK ; clock        ; clock       ; 0.000        ; 0.000      ; 0.901      ;
+; 0.621 ; state.ENABLE_STACK ; state.WAIT_LOW     ; clock        ; clock       ; 0.000        ; 0.000      ; 0.907      ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'card_play[0]'                                                                            ;
-+---------+--------------+----------------+------------------+--------------+------------+----------------------------------+
-; Slack   ; Actual Width ; Required Width ; Type             ; Clock        ; Clock Edge ; Target                           ;
-+---------+--------------+----------------+------------------+--------------+------------+----------------------------------+
-; -22.471 ; -22.471      ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int[0]                   ;
-; -22.471 ; -22.471      ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int[0]                   ;
-; -22.471 ; -22.471      ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int[0]|datad             ;
-; -22.471 ; -22.471      ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int[0]|datad             ;
-; -22.471 ; -22.471      ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~7|combout            ;
-; -22.471 ; -22.471      ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~7|combout            ;
-; -22.262 ; -22.262      ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int[0]                   ;
-; -22.262 ; -22.262      ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int[0]                   ;
-; -22.262 ; -22.262      ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int[0]|datad             ;
-; -22.262 ; -22.262      ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int[0]|datad             ;
-; -22.262 ; -22.262      ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~7|combout            ;
-; -22.262 ; -22.262      ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~7|combout            ;
-; -8.138  ; -8.138       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Equal2~0|combout                 ;
-; -8.138  ; -8.138       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Equal2~0|combout                 ;
-; -8.138  ; -8.138       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; ace~2|datac                      ;
-; -8.138  ; -8.138       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; ace~2|datac                      ;
-; -8.138  ; -8.138       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~7|datac              ;
-; -8.138  ; -8.138       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~7|datac              ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~0|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~0|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~0|datab                     ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~0|datab                     ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~10|cin                      ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~10|cin                      ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~10|combout                  ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~10|combout                  ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~2|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~2|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~2|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~2|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~2|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~2|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~4|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~4|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~4|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~4|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~4|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~4|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~6|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~6|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~6|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~6|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~6|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~6|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~8|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~8|cin                       ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~8|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~8|combout                   ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~8|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~8|cout                      ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Equal2~0|dataa                   ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Equal2~0|dataa                   ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_card_value_int[0]~20|combout ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_card_value_int[0]~20|combout ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int[5]~12|datad          ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int[5]~12|datad          ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~10|datad             ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~10|datad             ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~11|datad             ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~11|datad             ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~8|datad              ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~8|datad              ;
-; -7.722  ; -7.722       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~9|datad              ;
-; -7.722  ; -7.722       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~9|datad              ;
-; -7.035  ; -7.035       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Equal2~0|combout                 ;
-; -7.035  ; -7.035       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Equal2~0|combout                 ;
-; -7.035  ; -7.035       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; ace~2|datac                      ;
-; -7.035  ; -7.035       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; ace~2|datac                      ;
-; -7.035  ; -7.035       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~7|datac              ;
-; -7.035  ; -7.035       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~7|datac              ;
-; -7.011  ; -7.011       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~6|combout                   ;
-; -7.011  ; -7.011       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~6|combout                   ;
-; -7.011  ; -7.011       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~10|datad             ;
-; -7.011  ; -7.011       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~10|datad             ;
-; -6.768  ; -6.768       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~2|datab                     ;
-; -6.768  ; -6.768       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~2|datab                     ;
-; -6.768  ; -6.768       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_card_value_int[1]~21|combout ;
-; -6.768  ; -6.768       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_card_value_int[1]~21|combout ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~10|cin                      ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~10|cin                      ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~10|combout                  ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~10|combout                  ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~6|cout                      ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~6|cout                      ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~8|cin                       ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~8|cin                       ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~8|combout                   ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~8|combout                   ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~8|cout                      ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~8|cout                      ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int[5]~12|datad          ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int[5]~12|datad          ;
-; -6.654  ; -6.654       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~11|datad             ;
-; -6.654  ; -6.654       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~11|datad             ;
-; -6.181  ; -6.181       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~4|combout                   ;
-; -6.181  ; -6.181       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~4|combout                   ;
-; -6.181  ; -6.181       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~9|datad              ;
-; -6.181  ; -6.181       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~9|datad              ;
-; -6.091  ; -6.091       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~4|datab                     ;
-; -6.091  ; -6.091       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~4|datab                     ;
-+---------+--------------+----------------+------------------+--------------+------------+----------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; -1.631 ; 1.000        ; 2.631          ; Port Rate        ; clock ; Rise       ; clock                  ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clock ; Rise       ; state.ENABLE_STACK     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clock ; Rise       ; state.ENABLE_STACK     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clock ; Rise       ; state.WAIT_HIGH        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_HIGH        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clock ; Rise       ; state.WAIT_LOW         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_LOW         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; state.ENABLE_STACK|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; state.ENABLE_STACK|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; state.WAIT_HIGH|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_HIGH|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; state.WAIT_LOW|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_LOW|clk     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Setup Times                                                                            ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; Data Port              ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; card_play[*]           ; card_play[0] ; 14.193 ; 14.193 ; Rise       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 8.447  ; 8.447  ; Rise       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 13.659 ; 13.659 ; Rise       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 12.942 ; 12.942 ; Rise       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 13.480 ; 13.480 ; Rise       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 14.113 ; 14.113 ; Rise       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 14.193 ; 14.193 ; Rise       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 3.735  ; 3.735  ; Rise       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 3.735  ; 3.735  ; Rise       ; card_play[0]    ;
-; card_play[*]           ; card_play[0] ; 14.453 ; 14.453 ; Fall       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 8.707  ; 8.707  ; Fall       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 13.919 ; 13.919 ; Fall       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 13.202 ; 13.202 ; Fall       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 13.740 ; 13.740 ; Fall       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 14.373 ; 14.373 ; Fall       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 14.453 ; 14.453 ; Fall       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 3.995  ; 3.995  ; Fall       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 3.995  ; 3.995  ; Fall       ; card_play[0]    ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-
-
-+----------------------------------------------------------------------------------------+
-; Hold Times                                                                             ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; Data Port              ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; card_play[*]           ; card_play[0] ; 23.584 ; 23.584 ; Rise       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 23.584 ; 23.584 ; Rise       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 17.257 ; 17.257 ; Rise       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 17.969 ; 17.969 ; Rise       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 17.433 ; 17.433 ; Rise       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 18.469 ; 18.469 ; Rise       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 16.718 ; 16.718 ; Rise       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 20.074 ; 20.074 ; Rise       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 20.074 ; 20.074 ; Rise       ; card_play[0]    ;
-; card_play[*]           ; card_play[0] ; 23.533 ; 23.533 ; Fall       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 23.533 ; 23.533 ; Fall       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 17.206 ; 17.206 ; Fall       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 17.918 ; 17.918 ; Fall       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 17.382 ; 17.382 ; Fall       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 18.418 ; 18.418 ; Fall       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 16.667 ; 16.667 ; Fall       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 20.023 ; 20.023 ; Fall       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 20.023 ; 20.023 ; Fall       ; card_play[0]    ;
-+------------------------+--------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; request_deal ; clock      ; 3.442 ; 3.442 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +----------------------------------------------------------------------------+
-; Clock to Output Times                                                      ;
-+------------+--------------+--------+--------+------------+-----------------+
-; Data Port  ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+------------+--------------+--------+--------+------------+-----------------+
-; legal_play ; card_play[0] ; 47.936 ; 47.936 ; Rise       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 43.393 ; 43.393 ; Rise       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 31.531 ; 31.531 ; Rise       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 36.959 ; 36.959 ; Rise       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 38.866 ; 38.866 ; Rise       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 41.286 ; 41.286 ; Rise       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 43.393 ; 43.393 ; Rise       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 34.733 ; 34.733 ; Rise       ; card_play[0]    ;
-; legal_play ; card_play[0] ; 47.885 ; 47.885 ; Fall       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 43.342 ; 43.342 ; Fall       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 31.480 ; 31.480 ; Fall       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 36.908 ; 36.908 ; Fall       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 38.815 ; 38.815 ; Fall       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 41.235 ; 41.235 ; Fall       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 43.342 ; 43.342 ; Fall       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 34.682 ; 34.682 ; Fall       ; card_play[0]    ;
-+------------+--------------+--------+--------+------------+-----------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; request_deal ; clock      ; -3.106 ; -3.106 ; Rise       ; clock           ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; stack_enable ; clock      ; 6.537 ; 6.537 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +--------------------------------------------------------------------------+
 ; Minimum Clock to Output Times                                            ;
-+------------+--------------+-------+-------+------------+-----------------+
-; Data Port  ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------+--------------+-------+-------+------------+-----------------+
-; legal_play ; card_play[0] ; 7.487 ; 7.487 ; Rise       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 7.969 ; 7.969 ; Rise       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 8.769 ; 8.769 ; Rise       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 7.969 ; 7.969 ; Rise       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 8.052 ; 8.052 ; Rise       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 8.418 ; 8.418 ; Rise       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 8.504 ; 8.504 ; Rise       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 8.300 ; 8.300 ; Rise       ; card_play[0]    ;
-; legal_play ; card_play[0] ; 7.487 ; 7.487 ; Fall       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 7.969 ; 7.969 ; Fall       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 8.509 ; 8.509 ; Fall       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 7.969 ; 7.969 ; Fall       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 8.052 ; 8.052 ; Fall       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 8.418 ; 8.418 ; Fall       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 8.504 ; 8.504 ; Fall       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 8.300 ; 8.300 ; Fall       ; card_play[0]    ;
-+------------+--------------+-------+-------+------------+-----------------+
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; stack_enable ; clock      ; 6.537 ; 6.537 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Propagation Delay                                                       ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; Input Port            ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; card_play[1]          ; legal_play  ; 36.469 ; 36.469 ; 36.469 ; 36.469 ;
-; card_play[1]          ; sum[1]      ; 34.801 ; 34.801 ; 34.801 ; 34.801 ;
-; card_play[1]          ; sum[2]      ; 35.003 ; 35.003 ; 35.003 ; 35.003 ;
-; card_play[1]          ; sum[3]      ; 35.053 ; 35.053 ; 35.053 ; 35.053 ;
-; card_play[1]          ; sum[4]      ; 34.649 ; 34.649 ; 34.649 ; 34.649 ;
-; card_play[1]          ; sum[5]      ; 35.638 ; 35.638 ; 35.638 ; 35.638 ;
-; card_play[2]          ; legal_play  ; 35.752 ; 35.752 ; 35.752 ; 35.752 ;
-; card_play[2]          ; sum[1]      ; 34.084 ; 34.084 ; 34.084 ; 34.084 ;
-; card_play[2]          ; sum[2]      ; 34.286 ; 34.286 ; 34.286 ; 34.286 ;
-; card_play[2]          ; sum[3]      ; 34.336 ; 34.336 ; 34.336 ; 34.336 ;
-; card_play[2]          ; sum[4]      ; 33.932 ; 33.932 ; 33.932 ; 33.932 ;
-; card_play[2]          ; sum[5]      ; 34.921 ; 34.921 ; 34.921 ; 34.921 ;
-; card_play[3]          ; legal_play  ; 36.290 ; 36.290 ; 36.290 ; 36.290 ;
-; card_play[3]          ; sum[1]      ; 34.622 ; 34.622 ; 34.622 ; 34.622 ;
-; card_play[3]          ; sum[2]      ; 34.824 ; 34.824 ; 34.824 ; 34.824 ;
-; card_play[3]          ; sum[3]      ; 34.874 ; 34.874 ; 34.874 ; 34.874 ;
-; card_play[3]          ; sum[4]      ; 34.470 ; 34.470 ; 34.470 ; 34.470 ;
-; card_play[3]          ; sum[5]      ; 35.459 ; 35.459 ; 35.459 ; 35.459 ;
-; card_play[4]          ; legal_play  ; 36.923 ; 36.923 ; 36.923 ; 36.923 ;
-; card_play[4]          ; sum[1]      ; 35.255 ; 35.255 ; 35.255 ; 35.255 ;
-; card_play[4]          ; sum[2]      ; 35.457 ; 35.457 ; 35.457 ; 35.457 ;
-; card_play[4]          ; sum[3]      ; 35.507 ; 35.507 ; 35.507 ; 35.507 ;
-; card_play[4]          ; sum[4]      ; 35.103 ; 35.103 ; 35.103 ; 35.103 ;
-; card_play[4]          ; sum[5]      ; 36.092 ; 36.092 ; 36.092 ; 36.092 ;
-; card_play[5]          ; legal_play  ; 37.003 ; 37.003 ; 37.003 ; 37.003 ;
-; card_play[5]          ; sum[1]      ; 35.335 ; 35.335 ; 35.335 ; 35.335 ;
-; card_play[5]          ; sum[2]      ; 35.537 ; 35.537 ; 35.537 ; 35.537 ;
-; card_play[5]          ; sum[3]      ; 35.587 ; 35.587 ; 35.587 ; 35.587 ;
-; card_play[5]          ; sum[4]      ; 35.183 ; 35.183 ; 35.183 ; 35.183 ;
-; card_play[5]          ; sum[5]      ; 36.172 ; 36.172 ; 36.172 ; 36.172 ;
-; play_pile_top_card[0] ; legal_play  ; 26.513 ; 26.513 ; 26.513 ; 26.513 ;
-; play_pile_top_card[0] ; sum[1]      ; 24.845 ; 24.845 ; 24.845 ; 24.845 ;
-; play_pile_top_card[0] ; sum[2]      ; 25.047 ; 25.047 ; 25.047 ; 25.047 ;
-; play_pile_top_card[0] ; sum[3]      ; 25.097 ; 25.097 ; 25.097 ; 25.097 ;
-; play_pile_top_card[0] ; sum[4]      ; 24.693 ; 24.693 ; 24.693 ; 24.693 ;
-; play_pile_top_card[0] ; sum[5]      ; 25.682 ; 25.682 ; 25.682 ; 25.682 ;
-; play_pile_top_card[1] ; legal_play  ; 26.436 ; 26.436 ; 26.436 ; 26.436 ;
-; play_pile_top_card[1] ; sum[1]      ; 24.772 ; 24.772 ; 24.772 ; 24.772 ;
-; play_pile_top_card[1] ; sum[2]      ; 24.625 ; 24.625 ; 24.625 ; 24.625 ;
-; play_pile_top_card[1] ; sum[3]      ; 25.024 ; 25.024 ; 25.024 ; 25.024 ;
-; play_pile_top_card[1] ; sum[4]      ; 24.620 ; 24.620 ; 24.620 ; 24.620 ;
-; play_pile_top_card[1] ; sum[5]      ; 25.609 ; 25.609 ; 25.609 ; 25.609 ;
-; play_pile_top_card[2] ; legal_play  ; 26.280 ; 26.280 ; 26.280 ; 26.280 ;
-; play_pile_top_card[2] ; sum[1]      ; 24.611 ; 24.611 ; 24.611 ; 24.611 ;
-; play_pile_top_card[2] ; sum[2]      ; 24.814 ; 24.814 ; 24.814 ; 24.814 ;
-; play_pile_top_card[2] ; sum[3]      ; 25.213 ; 25.213 ; 25.213 ; 25.213 ;
-; play_pile_top_card[2] ; sum[4]      ; 24.809 ; 24.809 ; 24.809 ; 24.809 ;
-; play_pile_top_card[2] ; sum[5]      ; 25.448 ; 25.448 ; 25.448 ; 25.448 ;
-; play_pile_top_card[3] ; legal_play  ; 26.020 ; 26.020 ; 26.020 ; 26.020 ;
-; play_pile_top_card[3] ; sum[1]      ; 22.458 ; 22.458 ; 22.458 ; 22.458 ;
-; play_pile_top_card[3] ; sum[2]      ; 24.365 ; 24.365 ; 24.365 ; 24.365 ;
-; play_pile_top_card[3] ; sum[3]      ; 25.117 ; 25.117 ; 25.117 ; 25.117 ;
-; play_pile_top_card[3] ; sum[4]      ; 24.713 ; 24.713 ; 24.713 ; 24.713 ;
-; play_pile_top_card[3] ; sum[5]      ; 25.136 ; 25.136 ; 25.136 ; 25.136 ;
-; play_pile_top_card[4] ; legal_play  ; 25.545 ; 25.545 ; 25.545 ; 25.545 ;
-; play_pile_top_card[4] ; sum[1]      ; 20.048 ; 20.048 ; 20.048 ; 20.048 ;
-; play_pile_top_card[4] ; sum[2]      ; 21.955 ; 21.955 ; 21.955 ; 21.955 ;
-; play_pile_top_card[4] ; sum[3]      ; 24.375 ; 24.375 ; 24.375 ; 24.375 ;
-; play_pile_top_card[4] ; sum[4]      ; 24.323 ; 24.323 ; 24.323 ; 24.323 ;
-; play_pile_top_card[4] ; sum[5]      ; 24.718 ; 24.718 ; 24.718 ; 24.718 ;
-; play_pile_top_card[5] ; legal_play  ; 23.531 ; 23.531 ; 23.531 ; 23.531 ;
-; play_pile_top_card[5] ; sum[1]      ; 12.554 ; 12.554 ; 12.554 ; 12.554 ;
-; play_pile_top_card[5] ; sum[2]      ; 14.461 ; 14.461 ; 14.461 ; 14.461 ;
-; play_pile_top_card[5] ; sum[3]      ; 16.881 ; 16.881 ; 16.881 ; 16.881 ;
-; play_pile_top_card[5] ; sum[4]      ; 18.988 ; 18.988 ; 18.988 ; 18.988 ;
-; play_pile_top_card[5] ; sum[5]      ; 10.328 ;        ;        ; 10.328 ;
-+-----------------------+-------------+--------+--------+--------+--------+
++-------------------------------+
+; Fast Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.640 ; 0.000         ;
++-------+-------+---------------+
 
 
-+-------------------------------------------------------------------------+
-; Minimum Propagation Delay                                               ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; Input Port            ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; card_play[1]          ; legal_play  ; 11.872 ; 11.872 ; 11.872 ; 11.872 ;
-; card_play[1]          ; sum[1]      ; 12.598 ; 12.598 ; 12.598 ; 12.598 ;
-; card_play[1]          ; sum[2]      ; 12.819 ; 12.819 ; 12.819 ; 12.819 ;
-; card_play[1]          ; sum[3]      ; 13.086 ; 13.086 ; 13.086 ; 13.086 ;
-; card_play[1]          ; sum[4]      ; 13.079 ; 13.079 ; 13.079 ; 13.079 ;
-; card_play[1]          ; sum[5]      ; 12.685 ; 12.685 ; 12.685 ; 12.685 ;
-; card_play[2]          ; legal_play  ; 12.819 ; 12.819 ; 12.819 ; 12.819 ;
-; card_play[2]          ; sum[1]      ; 13.343 ; 13.343 ; 13.343 ; 13.343 ;
-; card_play[2]          ; sum[2]      ; 13.529 ; 13.529 ; 13.529 ; 13.529 ;
-; card_play[2]          ; sum[3]      ; 13.653 ; 13.653 ; 13.653 ; 13.653 ;
-; card_play[2]          ; sum[4]      ; 13.646 ; 13.646 ; 13.646 ; 13.646 ;
-; card_play[2]          ; sum[5]      ; 13.241 ; 13.241 ; 13.241 ; 13.241 ;
-; card_play[3]          ; legal_play  ; 12.350 ; 12.350 ; 12.350 ; 12.350 ;
-; card_play[3]          ; sum[1]      ; 12.874 ; 12.874 ; 12.874 ; 12.874 ;
-; card_play[3]          ; sum[2]      ; 13.060 ; 13.060 ; 13.060 ; 13.060 ;
-; card_play[3]          ; sum[3]      ; 13.184 ; 13.184 ; 13.184 ; 13.184 ;
-; card_play[3]          ; sum[4]      ; 13.177 ; 13.177 ; 13.177 ; 13.177 ;
-; card_play[3]          ; sum[5]      ; 12.772 ; 12.772 ; 12.772 ; 12.772 ;
-; card_play[4]          ; legal_play  ; 12.368 ; 12.368 ; 12.368 ; 12.368 ;
-; card_play[4]          ; sum[1]      ; 13.084 ; 13.084 ; 13.084 ; 13.084 ;
-; card_play[4]          ; sum[2]      ; 13.022 ; 13.022 ; 13.022 ; 13.022 ;
-; card_play[4]          ; sum[3]      ; 13.435 ; 13.435 ; 13.435 ; 13.435 ;
-; card_play[4]          ; sum[4]      ; 13.428 ; 13.428 ; 13.428 ; 13.428 ;
-; card_play[4]          ; sum[5]      ; 13.023 ; 13.023 ; 13.023 ; 13.023 ;
-; card_play[5]          ; legal_play  ; 12.241 ; 12.241 ; 12.241 ; 12.241 ;
-; card_play[5]          ; sum[1]      ; 12.765 ; 12.765 ; 12.765 ; 12.765 ;
-; card_play[5]          ; sum[2]      ; 12.951 ; 12.951 ; 12.951 ; 12.951 ;
-; card_play[5]          ; sum[3]      ; 13.075 ; 13.075 ; 13.075 ; 13.075 ;
-; card_play[5]          ; sum[4]      ; 13.068 ; 13.068 ; 13.068 ; 13.068 ;
-; card_play[5]          ; sum[5]      ; 12.663 ; 12.663 ; 12.663 ; 12.663 ;
-; play_pile_top_card[0] ; legal_play  ; 13.081 ; 13.081 ; 13.081 ; 13.081 ;
-; play_pile_top_card[0] ; sum[1]      ; 11.447 ; 11.447 ; 11.447 ; 11.447 ;
-; play_pile_top_card[0] ; sum[2]      ; 11.530 ; 11.530 ; 11.530 ; 11.530 ;
-; play_pile_top_card[0] ; sum[3]      ; 11.896 ; 11.896 ; 11.896 ; 11.896 ;
-; play_pile_top_card[0] ; sum[4]      ; 11.982 ; 11.982 ; 11.982 ; 11.982 ;
-; play_pile_top_card[0] ; sum[5]      ; 13.088 ; 13.088 ; 13.088 ; 13.088 ;
-; play_pile_top_card[1] ; legal_play  ; 13.008 ; 13.008 ; 13.008 ; 13.008 ;
-; play_pile_top_card[1] ; sum[1]      ; 11.021 ; 11.021 ; 11.021 ; 11.021 ;
-; play_pile_top_card[1] ; sum[2]      ; 11.457 ; 11.457 ; 11.457 ; 11.457 ;
-; play_pile_top_card[1] ; sum[3]      ; 11.823 ; 11.823 ; 11.823 ; 11.823 ;
-; play_pile_top_card[1] ; sum[4]      ; 11.909 ; 11.909 ; 11.909 ; 11.909 ;
-; play_pile_top_card[1] ; sum[5]      ; 13.015 ; 13.015 ; 13.015 ; 13.015 ;
-; play_pile_top_card[2] ; legal_play  ; 13.197 ; 13.197 ; 13.197 ; 13.197 ;
-; play_pile_top_card[2] ; sum[1]      ; 14.695 ; 14.695 ; 14.695 ; 14.695 ;
-; play_pile_top_card[2] ; sum[2]      ; 11.296 ; 11.296 ; 11.296 ; 11.296 ;
-; play_pile_top_card[2] ; sum[3]      ; 12.012 ; 12.012 ; 12.012 ; 12.012 ;
-; play_pile_top_card[2] ; sum[4]      ; 12.098 ; 12.098 ; 12.098 ; 12.098 ;
-; play_pile_top_card[2] ; sum[5]      ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
-; play_pile_top_card[3] ; legal_play  ; 12.748 ; 12.748 ; 12.748 ; 12.748 ;
-; play_pile_top_card[3] ; sum[1]      ; 14.246 ; 14.246 ; 14.246 ; 14.246 ;
-; play_pile_top_card[3] ; sum[2]      ; 14.432 ; 14.432 ; 14.432 ; 14.432 ;
-; play_pile_top_card[3] ; sum[3]      ; 11.563 ; 11.563 ; 11.563 ; 11.563 ;
-; play_pile_top_card[3] ; sum[4]      ; 12.002 ; 12.002 ; 12.002 ; 12.002 ;
-; play_pile_top_card[3] ; sum[5]      ; 12.755 ; 12.755 ; 12.755 ; 12.755 ;
-; play_pile_top_card[4] ; legal_play  ; 12.854 ; 12.854 ; 12.854 ; 12.854 ;
-; play_pile_top_card[4] ; sum[1]      ; 14.352 ; 14.352 ; 14.352 ; 14.352 ;
-; play_pile_top_card[4] ; sum[2]      ; 14.538 ; 14.538 ; 14.538 ; 14.538 ;
-; play_pile_top_card[4] ; sum[3]      ; 14.662 ; 14.662 ; 14.662 ; 14.662 ;
-; play_pile_top_card[4] ; sum[4]      ; 11.260 ; 11.260 ; 11.260 ; 11.260 ;
-; play_pile_top_card[4] ; sum[5]      ; 12.861 ; 12.861 ; 12.861 ; 12.861 ;
-; play_pile_top_card[5] ; legal_play  ; 11.155 ; 14.049 ; 14.049 ; 11.155 ;
-; play_pile_top_card[5] ; sum[1]      ; 12.554 ; 12.554 ; 12.554 ; 12.554 ;
-; play_pile_top_card[5] ; sum[2]      ; 12.740 ; 12.740 ; 12.740 ; 12.740 ;
-; play_pile_top_card[5] ; sum[3]      ; 12.864 ; 12.864 ; 12.864 ; 12.864 ;
-; play_pile_top_card[5] ; sum[4]      ; 12.857 ; 12.857 ; 12.857 ; 12.857 ;
-; play_pile_top_card[5] ; sum[5]      ; 10.328 ;        ;        ; 10.328 ;
-+-----------------------+-------------+--------+--------+--------+--------+
-
-
-+---------------------------------------+
-; Fast Model Setup Summary              ;
-+--------------+--------+---------------+
-; Clock        ; Slack  ; End Point TNS ;
-+--------------+--------+---------------+
-; card_play[0] ; -2.609 ; -2.609        ;
-+--------------+--------+---------------+
-
-
-+---------------------------------------+
-; Fast Model Hold Summary               ;
-+--------------+--------+---------------+
-; Clock        ; Slack  ; End Point TNS ;
-+--------------+--------+---------------+
-; card_play[0] ; -8.284 ; -8.284        ;
-+--------------+--------+---------------+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.215 ; 0.000         ;
++-------+-------+---------------+
 
 
 -------------------------------
@@ -568,670 +271,167 @@ No paths to report.
 
 +----------------------------------------+
 ; Fast Model Minimum Pulse Width Summary ;
-+--------------+--------+----------------+
-; Clock        ; Slack  ; End Point TNS  ;
-+--------------+--------+----------------+
-; card_play[0] ; -7.594 ; -393.292       ;
-+--------------+--------+----------------+
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clock ; -1.380 ; -4.380                ;
++-------+--------+-----------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Fast Model Setup: 'card_play[0]'                                                                              ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; Slack  ; From Node    ; To Node        ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; -2.609 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.500        ; 1.743      ; 4.497      ;
-; -2.495 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.500        ; 1.857      ; 4.497      ;
-; -2.109 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 1.000        ; 1.743      ; 4.497      ;
-; -1.995 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 1.000        ; 1.857      ; 4.497      ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock'                                                                                             ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; 0.640 ; state.ENABLE_STACK ; state.WAIT_LOW     ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.642 ; state.WAIT_HIGH    ; state.ENABLE_STACK ; clock        ; clock       ; 1.000        ; 0.000      ; 0.390      ;
+; 0.645 ; state.WAIT_LOW     ; state.WAIT_HIGH    ; clock        ; clock       ; 1.000        ; 0.000      ; 0.387      ;
+; 0.665 ; state.WAIT_LOW     ; state.WAIT_LOW     ; clock        ; clock       ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; state.WAIT_HIGH    ; state.WAIT_HIGH    ; clock        ; clock       ; 1.000        ; 0.000      ; 0.367      ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Fast Model Hold: 'card_play[0]'                                                                               ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; Slack  ; From Node    ; To Node        ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
-; -8.284 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.000        ; 9.844      ; 1.560      ;
-; -8.277 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; 0.000        ; 9.837      ; 1.560      ;
-; -7.784 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; -0.500       ; 9.844      ; 1.560      ;
-; -7.777 ; card_play[0] ; new_sum_int[0] ; card_play[0] ; card_play[0] ; -0.500       ; 9.837      ; 1.560      ;
-+--------+--------------+----------------+--------------+--------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock'                                                                                              ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; state.WAIT_LOW     ; state.WAIT_LOW     ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; state.WAIT_HIGH    ; state.WAIT_HIGH    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.235 ; state.WAIT_LOW     ; state.WAIT_HIGH    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.387      ;
+; 0.238 ; state.WAIT_HIGH    ; state.ENABLE_STACK ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.240 ; state.ENABLE_STACK ; state.WAIT_LOW     ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'card_play[0]'                                                                           ;
-+--------+--------------+----------------+------------------+--------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock        ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+--------------+------------+----------------------------------+
-; -7.594 ; -7.594       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int[0]                   ;
-; -7.594 ; -7.594       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int[0]                   ;
-; -7.594 ; -7.594       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int[0]|datad             ;
-; -7.594 ; -7.594       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int[0]|datad             ;
-; -7.594 ; -7.594       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~7|combout            ;
-; -7.594 ; -7.594       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~7|combout            ;
-; -7.487 ; -7.487       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int[0]                   ;
-; -7.487 ; -7.487       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int[0]                   ;
-; -7.487 ; -7.487       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int[0]|datad             ;
-; -7.487 ; -7.487       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int[0]|datad             ;
-; -7.487 ; -7.487       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~7|combout            ;
-; -7.487 ; -7.487       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~7|combout            ;
-; -2.619 ; -2.619       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Equal2~0|combout                 ;
-; -2.619 ; -2.619       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Equal2~0|combout                 ;
-; -2.619 ; -2.619       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; ace~2|datac                      ;
-; -2.619 ; -2.619       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; ace~2|datac                      ;
-; -2.619 ; -2.619       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~7|datac              ;
-; -2.619 ; -2.619       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~7|datac              ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~0|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~0|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~0|datab                     ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~0|datab                     ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~10|cin                      ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~10|cin                      ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~10|combout                  ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~10|combout                  ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~2|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~2|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~2|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~2|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~2|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~2|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~4|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~4|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~4|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~4|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~4|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~4|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~6|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~6|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~6|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~6|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~6|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~6|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~8|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~8|cin                       ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~8|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~8|combout                   ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~8|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~8|cout                      ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Equal2~0|dataa                   ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Equal2~0|dataa                   ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_card_value_int[0]~20|combout ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_card_value_int[0]~20|combout ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int[5]~12|datad          ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int[5]~12|datad          ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~10|datad             ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~10|datad             ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~11|datad             ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~11|datad             ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~8|datad              ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~8|datad              ;
-; -2.437 ; -2.437       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~9|datad              ;
-; -2.437 ; -2.437       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~9|datad              ;
-; -2.219 ; -2.219       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Equal2~0|combout                 ;
-; -2.219 ; -2.219       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Equal2~0|combout                 ;
-; -2.219 ; -2.219       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; ace~2|datac                      ;
-; -2.219 ; -2.219       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; ace~2|datac                      ;
-; -2.219 ; -2.219       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~7|datac              ;
-; -2.219 ; -2.219       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~7|datac              ;
-; -2.183 ; -2.183       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~6|combout                   ;
-; -2.183 ; -2.183       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~6|combout                   ;
-; -2.183 ; -2.183       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int~10|datad             ;
-; -2.183 ; -2.183       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int~10|datad             ;
-; -2.096 ; -2.096       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~2|datab                     ;
-; -2.096 ; -2.096       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~2|datab                     ;
-; -2.096 ; -2.096       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_card_value_int[1]~21|combout ;
-; -2.096 ; -2.096       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_card_value_int[1]~21|combout ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~10|cin                      ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~10|cin                      ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~10|combout                  ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~10|combout                  ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~6|cout                      ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~6|cout                      ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~8|cin                       ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~8|cin                       ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~8|combout                   ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~8|combout                   ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~8|cout                      ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~8|cout                      ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; new_sum_int[5]~12|datad          ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; new_sum_int[5]~12|datad          ;
-; -2.080 ; -2.080       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~11|datad             ;
-; -2.080 ; -2.080       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~11|datad             ;
-; -1.879 ; -1.879       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; Add1~4|combout                   ;
-; -1.879 ; -1.879       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; Add1~4|combout                   ;
-; -1.879 ; -1.879       ; 0.000          ; High Pulse Width ; card_play[0] ; Fall       ; new_sum_int~9|datad              ;
-; -1.879 ; -1.879       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Fall       ; new_sum_int~9|datad              ;
-; -1.872 ; -1.872       ; 0.000          ; High Pulse Width ; card_play[0] ; Rise       ; Add1~4|datab                     ;
-; -1.872 ; -1.872       ; 0.000          ; Low Pulse Width  ; card_play[0] ; Rise       ; Add1~4|datab                     ;
-+--------+--------------+----------------+------------------+--------------+------------+----------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock ; Rise       ; clock                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; state.ENABLE_STACK     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; state.ENABLE_STACK     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; state.WAIT_HIGH        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_HIGH        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; state.WAIT_LOW         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_LOW         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; state.ENABLE_STACK|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; state.ENABLE_STACK|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; state.WAIT_HIGH|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_HIGH|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; state.WAIT_LOW|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; state.WAIT_LOW|clk     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Setup Times                                                                          ;
-+------------------------+--------------+-------+-------+------------+-----------------+
-; Data Port              ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------------+--------------+-------+-------+------------+-----------------+
-; card_play[*]           ; card_play[0] ; 5.918 ; 5.918 ; Rise       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 2.995 ; 2.995 ; Rise       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 5.722 ; 5.722 ; Rise       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 5.477 ; 5.477 ; Rise       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 5.672 ; 5.672 ; Rise       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 5.871 ; 5.871 ; Rise       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 5.918 ; 5.918 ; Rise       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 2.177 ; 2.177 ; Rise       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 2.177 ; 2.177 ; Rise       ; card_play[0]    ;
-; card_play[*]           ; card_play[0] ; 6.032 ; 6.032 ; Fall       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 3.109 ; 3.109 ; Fall       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 5.836 ; 5.836 ; Fall       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 5.591 ; 5.591 ; Fall       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 5.786 ; 5.786 ; Fall       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 5.985 ; 5.985 ; Fall       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 6.032 ; 6.032 ; Fall       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 2.291 ; 2.291 ; Fall       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 2.291 ; 2.291 ; Fall       ; card_play[0]    ;
-+------------------------+--------------+-------+-------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Hold Times                                                                           ;
-+------------------------+--------------+-------+-------+------------+-----------------+
-; Data Port              ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------------+--------------+-------+-------+------------+-----------------+
-; card_play[*]           ; card_play[0] ; 8.284 ; 8.284 ; Rise       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 8.284 ; 8.284 ; Rise       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 5.154 ; 5.154 ; Rise       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 5.394 ; 5.394 ; Rise       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 5.204 ; 5.204 ; Rise       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 5.573 ; 5.573 ; Rise       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 4.961 ; 4.961 ; Rise       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 6.165 ; 6.165 ; Rise       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 6.165 ; 6.165 ; Rise       ; card_play[0]    ;
-; card_play[*]           ; card_play[0] ; 8.277 ; 8.277 ; Fall       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 8.277 ; 8.277 ; Fall       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 5.147 ; 5.147 ; Fall       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 5.387 ; 5.387 ; Fall       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 5.197 ; 5.197 ; Fall       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 5.566 ; 5.566 ; Fall       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 4.954 ; 4.954 ; Fall       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 6.158 ; 6.158 ; Fall       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 6.158 ; 6.158 ; Fall       ; card_play[0]    ;
-+------------------------+--------------+-------+-------+------------+-----------------+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; request_deal ; clock      ; 1.592 ; 1.592 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +----------------------------------------------------------------------------+
-; Clock to Output Times                                                      ;
-+------------+--------------+--------+--------+------------+-----------------+
-; Data Port  ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+------------+--------------+--------+--------+------------+-----------------+
-; legal_play ; card_play[0] ; 17.545 ; 17.545 ; Rise       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 15.936 ; 15.936 ; Rise       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 11.802 ; 11.802 ; Rise       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 13.721 ; 13.721 ; Rise       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 14.376 ; 14.376 ; Rise       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 15.221 ; 15.221 ; Rise       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 15.936 ; 15.936 ; Rise       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 12.948 ; 12.948 ; Rise       ; card_play[0]    ;
-; legal_play ; card_play[0] ; 17.538 ; 17.538 ; Fall       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 15.929 ; 15.929 ; Fall       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 11.795 ; 11.795 ; Fall       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 13.714 ; 13.714 ; Fall       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 14.369 ; 14.369 ; Fall       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 15.214 ; 15.214 ; Fall       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 15.929 ; 15.929 ; Fall       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 12.941 ; 12.941 ; Fall       ; card_play[0]    ;
-+------------+--------------+--------+--------+------------+-----------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; request_deal ; clock      ; -1.465 ; -1.465 ; Rise       ; clock           ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; stack_enable ; clock      ; 3.577 ; 3.577 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +--------------------------------------------------------------------------+
 ; Minimum Clock to Output Times                                            ;
-+------------+--------------+-------+-------+------------+-----------------+
-; Data Port  ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------+--------------+-------+-------+------------+-----------------+
-; legal_play ; card_play[0] ; 3.352 ; 3.352 ; Rise       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 3.494 ; 3.494 ; Rise       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 3.815 ; 3.815 ; Rise       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 3.494 ; 3.494 ; Rise       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 3.535 ; 3.535 ; Rise       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 3.689 ; 3.689 ; Rise       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 3.729 ; 3.729 ; Rise       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 3.618 ; 3.618 ; Rise       ; card_play[0]    ;
-; legal_play ; card_play[0] ; 3.352 ; 3.352 ; Fall       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 3.494 ; 3.494 ; Fall       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 3.701 ; 3.701 ; Fall       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 3.494 ; 3.494 ; Fall       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 3.535 ; 3.535 ; Fall       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 3.689 ; 3.689 ; Fall       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 3.729 ; 3.729 ; Fall       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 3.618 ; 3.618 ; Fall       ; card_play[0]    ;
-+------------+--------------+-------+-------+------------+-----------------+
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; stack_enable ; clock      ; 3.577 ; 3.577 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Propagation Delay                                                       ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; Input Port            ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; card_play[1]          ; legal_play  ; 14.461 ; 14.461 ; 14.461 ; 14.461 ;
-; card_play[1]          ; sum[1]      ; 13.871 ; 13.871 ; 13.871 ; 13.871 ;
-; card_play[1]          ; sum[2]      ; 13.961 ; 13.961 ; 13.961 ; 13.961 ;
-; card_play[1]          ; sum[3]      ; 14.005 ; 14.005 ; 14.005 ; 14.005 ;
-; card_play[1]          ; sum[4]      ; 13.844 ; 13.844 ; 13.844 ; 13.844 ;
-; card_play[1]          ; sum[5]      ; 14.166 ; 14.166 ; 14.166 ; 14.166 ;
-; card_play[2]          ; legal_play  ; 14.216 ; 14.216 ; 14.216 ; 14.216 ;
-; card_play[2]          ; sum[1]      ; 13.626 ; 13.626 ; 13.626 ; 13.626 ;
-; card_play[2]          ; sum[2]      ; 13.716 ; 13.716 ; 13.716 ; 13.716 ;
-; card_play[2]          ; sum[3]      ; 13.760 ; 13.760 ; 13.760 ; 13.760 ;
-; card_play[2]          ; sum[4]      ; 13.599 ; 13.599 ; 13.599 ; 13.599 ;
-; card_play[2]          ; sum[5]      ; 13.921 ; 13.921 ; 13.921 ; 13.921 ;
-; card_play[3]          ; legal_play  ; 14.411 ; 14.411 ; 14.411 ; 14.411 ;
-; card_play[3]          ; sum[1]      ; 13.821 ; 13.821 ; 13.821 ; 13.821 ;
-; card_play[3]          ; sum[2]      ; 13.911 ; 13.911 ; 13.911 ; 13.911 ;
-; card_play[3]          ; sum[3]      ; 13.955 ; 13.955 ; 13.955 ; 13.955 ;
-; card_play[3]          ; sum[4]      ; 13.794 ; 13.794 ; 13.794 ; 13.794 ;
-; card_play[3]          ; sum[5]      ; 14.116 ; 14.116 ; 14.116 ; 14.116 ;
-; card_play[4]          ; legal_play  ; 14.610 ; 14.610 ; 14.610 ; 14.610 ;
-; card_play[4]          ; sum[1]      ; 14.020 ; 14.020 ; 14.020 ; 14.020 ;
-; card_play[4]          ; sum[2]      ; 14.110 ; 14.110 ; 14.110 ; 14.110 ;
-; card_play[4]          ; sum[3]      ; 14.154 ; 14.154 ; 14.154 ; 14.154 ;
-; card_play[4]          ; sum[4]      ; 13.993 ; 13.993 ; 13.993 ; 13.993 ;
-; card_play[4]          ; sum[5]      ; 14.315 ; 14.315 ; 14.315 ; 14.315 ;
-; card_play[5]          ; legal_play  ; 14.657 ; 14.657 ; 14.657 ; 14.657 ;
-; card_play[5]          ; sum[1]      ; 14.067 ; 14.067 ; 14.067 ; 14.067 ;
-; card_play[5]          ; sum[2]      ; 14.157 ; 14.157 ; 14.157 ; 14.157 ;
-; card_play[5]          ; sum[3]      ; 14.201 ; 14.201 ; 14.201 ; 14.201 ;
-; card_play[5]          ; sum[4]      ; 14.040 ; 14.040 ; 14.040 ; 14.040 ;
-; card_play[5]          ; sum[5]      ; 14.362 ; 14.362 ; 14.362 ; 14.362 ;
-; play_pile_top_card[0] ; legal_play  ; 10.918 ; 10.918 ; 10.918 ; 10.918 ;
-; play_pile_top_card[0] ; sum[1]      ; 10.328 ; 10.328 ; 10.328 ; 10.328 ;
-; play_pile_top_card[0] ; sum[2]      ; 10.418 ; 10.418 ; 10.418 ; 10.418 ;
-; play_pile_top_card[0] ; sum[3]      ; 10.462 ; 10.462 ; 10.462 ; 10.462 ;
-; play_pile_top_card[0] ; sum[4]      ; 10.301 ; 10.301 ; 10.301 ; 10.301 ;
-; play_pile_top_card[0] ; sum[5]      ; 10.623 ; 10.623 ; 10.623 ; 10.623 ;
-; play_pile_top_card[1] ; legal_play  ; 10.888 ; 10.888 ; 10.888 ; 10.888 ;
-; play_pile_top_card[1] ; sum[1]      ; 10.298 ; 10.298 ; 10.298 ; 10.298 ;
-; play_pile_top_card[1] ; sum[2]      ; 10.283 ; 10.283 ; 10.283 ; 10.283 ;
-; play_pile_top_card[1] ; sum[3]      ; 10.432 ; 10.432 ; 10.432 ; 10.432 ;
-; play_pile_top_card[1] ; sum[4]      ; 10.271 ; 10.271 ; 10.271 ; 10.271 ;
-; play_pile_top_card[1] ; sum[5]      ; 10.593 ; 10.593 ; 10.593 ; 10.593 ;
-; play_pile_top_card[2] ; legal_play  ; 10.845 ; 10.845 ; 10.845 ; 10.845 ;
-; play_pile_top_card[2] ; sum[1]      ; 10.255 ; 10.255 ; 10.255 ; 10.255 ;
-; play_pile_top_card[2] ; sum[2]      ; 10.324 ; 10.324 ; 10.324 ; 10.324 ;
-; play_pile_top_card[2] ; sum[3]      ; 10.494 ; 10.494 ; 10.494 ; 10.494 ;
-; play_pile_top_card[2] ; sum[4]      ; 10.333 ; 10.333 ; 10.333 ; 10.333 ;
-; play_pile_top_card[2] ; sum[5]      ; 10.550 ; 10.550 ; 10.550 ; 10.550 ;
-; play_pile_top_card[3] ; legal_play  ; 10.779 ; 10.779 ; 10.779 ; 10.779 ;
-; play_pile_top_card[3] ; sum[1]      ; 9.522  ; 9.522  ; 9.522  ; 9.522  ;
-; play_pile_top_card[3] ; sum[2]      ; 10.177 ; 10.177 ; 10.177 ; 10.177 ;
-; play_pile_top_card[3] ; sum[3]      ; 10.452 ; 10.452 ; 10.452 ; 10.452 ;
-; play_pile_top_card[3] ; sum[4]      ; 10.291 ; 10.291 ; 10.291 ; 10.291 ;
-; play_pile_top_card[3] ; sum[5]      ; 10.446 ; 10.446 ; 10.446 ; 10.446 ;
-; play_pile_top_card[4] ; legal_play  ; 10.593 ; 10.593 ; 10.593 ; 10.593 ;
-; play_pile_top_card[4] ; sum[1]      ; 8.701  ; 8.701  ; 8.701  ; 8.701  ;
-; play_pile_top_card[4] ; sum[2]      ; 9.356  ; 9.356  ; 9.356  ; 9.356  ;
-; play_pile_top_card[4] ; sum[3]      ; 10.201 ; 10.201 ; 10.201 ; 10.201 ;
-; play_pile_top_card[4] ; sum[4]      ; 10.143 ; 10.143 ; 10.143 ; 10.143 ;
-; play_pile_top_card[4] ; sum[5]      ; 10.298 ; 10.298 ; 10.298 ; 10.298 ;
-; play_pile_top_card[5] ; legal_play  ; 9.877  ; 9.877  ; 9.877  ; 9.877  ;
-; play_pile_top_card[5] ; sum[1]      ; 6.053  ; 6.053  ; 6.053  ; 6.053  ;
-; play_pile_top_card[5] ; sum[2]      ; 6.708  ; 6.708  ; 6.708  ; 6.708  ;
-; play_pile_top_card[5] ; sum[3]      ; 7.553  ; 7.553  ; 7.553  ; 7.553  ;
-; play_pile_top_card[5] ; sum[4]      ; 8.268  ; 8.268  ; 8.268  ; 8.268  ;
-; play_pile_top_card[5] ; sum[5]      ; 5.280  ;        ;        ; 5.280  ;
-+-----------------------+-------------+--------+--------+--------+--------+
++-----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                         ;
++------------------+-------+-------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 0.131 ; 0.215 ; N/A      ; N/A     ; -1.631              ;
+;  clock           ; 0.131 ; 0.215 ; N/A      ; N/A     ; -1.631              ;
+; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; -5.297              ;
+;  clock           ; 0.000 ; 0.000 ; N/A      ; N/A     ; -5.297              ;
++------------------+-------+-------+----------+---------+---------------------+
 
 
-+---------------------------------------------------------------------+
-; Minimum Propagation Delay                                           ;
-+-----------------------+-------------+-------+-------+-------+-------+
-; Input Port            ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+-----------------------+-------------+-------+-------+-------+-------+
-; card_play[1]          ; legal_play  ; 5.809 ; 5.809 ; 5.809 ; 5.809 ;
-; card_play[1]          ; sum[1]      ; 6.064 ; 6.064 ; 6.064 ; 6.064 ;
-; card_play[1]          ; sum[2]      ; 6.119 ; 6.119 ; 6.119 ; 6.119 ;
-; card_play[1]          ; sum[3]      ; 6.253 ; 6.253 ; 6.253 ; 6.253 ;
-; card_play[1]          ; sum[4]      ; 6.252 ; 6.252 ; 6.252 ; 6.252 ;
-; card_play[1]          ; sum[5]      ; 6.075 ; 6.075 ; 6.075 ; 6.075 ;
-; card_play[2]          ; legal_play  ; 6.137 ; 6.137 ; 6.137 ; 6.137 ;
-; card_play[2]          ; sum[1]      ; 6.322 ; 6.322 ; 6.322 ; 6.322 ;
-; card_play[2]          ; sum[2]      ; 6.404 ; 6.404 ; 6.404 ; 6.404 ;
-; card_play[2]          ; sum[3]      ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
-; card_play[2]          ; sum[4]      ; 6.460 ; 6.460 ; 6.460 ; 6.460 ;
-; card_play[2]          ; sum[5]      ; 6.276 ; 6.276 ; 6.276 ; 6.276 ;
-; card_play[3]          ; legal_play  ; 5.966 ; 5.966 ; 5.966 ; 5.966 ;
-; card_play[3]          ; sum[1]      ; 6.151 ; 6.151 ; 6.151 ; 6.151 ;
-; card_play[3]          ; sum[2]      ; 6.233 ; 6.233 ; 6.233 ; 6.233 ;
-; card_play[3]          ; sum[3]      ; 6.290 ; 6.290 ; 6.290 ; 6.290 ;
-; card_play[3]          ; sum[4]      ; 6.289 ; 6.289 ; 6.289 ; 6.289 ;
-; card_play[3]          ; sum[5]      ; 6.105 ; 6.105 ; 6.105 ; 6.105 ;
-; card_play[4]          ; legal_play  ; 5.984 ; 5.984 ; 5.984 ; 5.984 ;
-; card_play[4]          ; sum[1]      ; 6.205 ; 6.205 ; 6.205 ; 6.205 ;
-; card_play[4]          ; sum[2]      ; 6.191 ; 6.191 ; 6.191 ; 6.191 ;
-; card_play[4]          ; sum[3]      ; 6.380 ; 6.380 ; 6.380 ; 6.380 ;
-; card_play[4]          ; sum[4]      ; 6.379 ; 6.379 ; 6.379 ; 6.379 ;
-; card_play[4]          ; sum[5]      ; 6.195 ; 6.195 ; 6.195 ; 6.195 ;
-; card_play[5]          ; legal_play  ; 5.946 ; 5.946 ; 5.946 ; 5.946 ;
-; card_play[5]          ; sum[1]      ; 6.131 ; 6.131 ; 6.131 ; 6.131 ;
-; card_play[5]          ; sum[2]      ; 6.213 ; 6.213 ; 6.213 ; 6.213 ;
-; card_play[5]          ; sum[3]      ; 6.270 ; 6.270 ; 6.270 ; 6.270 ;
-; card_play[5]          ; sum[4]      ; 6.269 ; 6.269 ; 6.269 ; 6.269 ;
-; card_play[5]          ; sum[5]      ; 6.085 ; 6.085 ; 6.085 ; 6.085 ;
-; play_pile_top_card[0] ; legal_play  ; 6.219 ; 6.219 ; 6.219 ; 6.219 ;
-; play_pile_top_card[0] ; sum[1]      ; 5.615 ; 5.615 ; 5.615 ; 5.615 ;
-; play_pile_top_card[0] ; sum[2]      ; 5.656 ; 5.656 ; 5.656 ; 5.656 ;
-; play_pile_top_card[0] ; sum[3]      ; 5.810 ; 5.810 ; 5.810 ; 5.810 ;
-; play_pile_top_card[0] ; sum[4]      ; 5.850 ; 5.850 ; 5.850 ; 5.850 ;
-; play_pile_top_card[0] ; sum[5]      ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; play_pile_top_card[1] ; legal_play  ; 6.189 ; 6.189 ; 6.189 ; 6.189 ;
-; play_pile_top_card[1] ; sum[1]      ; 5.480 ; 5.480 ; 5.480 ; 5.480 ;
-; play_pile_top_card[1] ; sum[2]      ; 5.626 ; 5.626 ; 5.626 ; 5.626 ;
-; play_pile_top_card[1] ; sum[3]      ; 5.780 ; 5.780 ; 5.780 ; 5.780 ;
-; play_pile_top_card[1] ; sum[4]      ; 5.820 ; 5.820 ; 5.820 ; 5.820 ;
-; play_pile_top_card[1] ; sum[5]      ; 6.187 ; 6.187 ; 6.187 ; 6.187 ;
-; play_pile_top_card[2] ; legal_play  ; 6.251 ; 6.251 ; 6.251 ; 6.251 ;
-; play_pile_top_card[2] ; sum[1]      ; 6.773 ; 6.773 ; 6.773 ; 6.773 ;
-; play_pile_top_card[2] ; sum[2]      ; 5.583 ; 5.583 ; 5.583 ; 5.583 ;
-; play_pile_top_card[2] ; sum[3]      ; 5.842 ; 5.842 ; 5.842 ; 5.842 ;
-; play_pile_top_card[2] ; sum[4]      ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
-; play_pile_top_card[2] ; sum[5]      ; 6.235 ; 6.235 ; 6.235 ; 6.235 ;
-; play_pile_top_card[3] ; legal_play  ; 6.104 ; 6.104 ; 6.104 ; 6.104 ;
-; play_pile_top_card[3] ; sum[1]      ; 6.626 ; 6.626 ; 6.626 ; 6.626 ;
-; play_pile_top_card[3] ; sum[2]      ; 6.708 ; 6.708 ; 6.708 ; 6.708 ;
-; play_pile_top_card[3] ; sum[3]      ; 5.695 ; 5.695 ; 5.695 ; 5.695 ;
-; play_pile_top_card[3] ; sum[4]      ; 5.840 ; 5.840 ; 5.840 ; 5.840 ;
-; play_pile_top_card[3] ; sum[5]      ; 6.102 ; 6.102 ; 6.102 ; 6.102 ;
-; play_pile_top_card[4] ; legal_play  ; 6.147 ; 6.147 ; 6.147 ; 6.147 ;
-; play_pile_top_card[4] ; sum[1]      ; 6.669 ; 6.669 ; 6.669 ; 6.669 ;
-; play_pile_top_card[4] ; sum[2]      ; 6.751 ; 6.751 ; 6.751 ; 6.751 ;
-; play_pile_top_card[4] ; sum[3]      ; 6.808 ; 6.808 ; 6.808 ; 6.808 ;
-; play_pile_top_card[4] ; sum[4]      ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
-; play_pile_top_card[4] ; sum[5]      ; 6.145 ; 6.145 ; 6.145 ; 6.145 ;
-; play_pile_top_card[5] ; legal_play  ; 5.575 ; 6.601 ; 6.601 ; 5.575 ;
-; play_pile_top_card[5] ; sum[1]      ; 6.053 ; 6.053 ; 6.053 ; 6.053 ;
-; play_pile_top_card[5] ; sum[2]      ; 6.135 ; 6.135 ; 6.135 ; 6.135 ;
-; play_pile_top_card[5] ; sum[3]      ; 6.192 ; 6.192 ; 6.192 ; 6.192 ;
-; play_pile_top_card[5] ; sum[4]      ; 6.191 ; 6.191 ; 6.191 ; 6.191 ;
-; play_pile_top_card[5] ; sum[5]      ; 5.280 ;       ;       ; 5.280 ;
-+-----------------------+-------------+-------+-------+-------+-------+
-
-
-+--------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                            ;
-+------------------+--------+---------+----------+---------+---------------------+
-; Clock            ; Setup  ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+--------+---------+----------+---------+---------------------+
-; Worst-case Slack ; -8.207 ; -23.584 ; N/A      ; N/A     ; -22.471             ;
-;  card_play[0]    ; -8.207 ; -23.584 ; N/A      ; N/A     ; -22.471             ;
-; Design-wide TNS  ; -8.207 ; -23.584 ; 0.0      ; 0.0     ; -1261.807           ;
-;  card_play[0]    ; -8.207 ; -23.584 ; N/A      ; N/A     ; -1261.807           ;
-+------------------+--------+---------+----------+---------+---------------------+
-
-
-+----------------------------------------------------------------------------------------+
-; Setup Times                                                                            ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; Data Port              ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; card_play[*]           ; card_play[0] ; 14.193 ; 14.193 ; Rise       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 8.447  ; 8.447  ; Rise       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 13.659 ; 13.659 ; Rise       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 12.942 ; 12.942 ; Rise       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 13.480 ; 13.480 ; Rise       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 14.113 ; 14.113 ; Rise       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 14.193 ; 14.193 ; Rise       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 3.735  ; 3.735  ; Rise       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 3.735  ; 3.735  ; Rise       ; card_play[0]    ;
-; card_play[*]           ; card_play[0] ; 14.453 ; 14.453 ; Fall       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 8.707  ; 8.707  ; Fall       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 13.919 ; 13.919 ; Fall       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 13.202 ; 13.202 ; Fall       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 13.740 ; 13.740 ; Fall       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 14.373 ; 14.373 ; Fall       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 14.453 ; 14.453 ; Fall       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 3.995  ; 3.995  ; Fall       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 3.995  ; 3.995  ; Fall       ; card_play[0]    ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-
-
-+----------------------------------------------------------------------------------------+
-; Hold Times                                                                             ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; Data Port              ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+------------------------+--------------+--------+--------+------------+-----------------+
-; card_play[*]           ; card_play[0] ; 23.584 ; 23.584 ; Rise       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 23.584 ; 23.584 ; Rise       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 17.257 ; 17.257 ; Rise       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 17.969 ; 17.969 ; Rise       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 17.433 ; 17.433 ; Rise       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 18.469 ; 18.469 ; Rise       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 16.718 ; 16.718 ; Rise       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 20.074 ; 20.074 ; Rise       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 20.074 ; 20.074 ; Rise       ; card_play[0]    ;
-; card_play[*]           ; card_play[0] ; 23.533 ; 23.533 ; Fall       ; card_play[0]    ;
-;  card_play[0]          ; card_play[0] ; 23.533 ; 23.533 ; Fall       ; card_play[0]    ;
-;  card_play[1]          ; card_play[0] ; 17.206 ; 17.206 ; Fall       ; card_play[0]    ;
-;  card_play[2]          ; card_play[0] ; 17.918 ; 17.918 ; Fall       ; card_play[0]    ;
-;  card_play[3]          ; card_play[0] ; 17.382 ; 17.382 ; Fall       ; card_play[0]    ;
-;  card_play[4]          ; card_play[0] ; 18.418 ; 18.418 ; Fall       ; card_play[0]    ;
-;  card_play[5]          ; card_play[0] ; 16.667 ; 16.667 ; Fall       ; card_play[0]    ;
-; play_pile_top_card[*]  ; card_play[0] ; 20.023 ; 20.023 ; Fall       ; card_play[0]    ;
-;  play_pile_top_card[0] ; card_play[0] ; 20.023 ; 20.023 ; Fall       ; card_play[0]    ;
-+------------------------+--------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; request_deal ; clock      ; 3.442 ; 3.442 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +----------------------------------------------------------------------------+
-; Clock to Output Times                                                      ;
-+------------+--------------+--------+--------+------------+-----------------+
-; Data Port  ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+------------+--------------+--------+--------+------------+-----------------+
-; legal_play ; card_play[0] ; 47.936 ; 47.936 ; Rise       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 43.393 ; 43.393 ; Rise       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 31.531 ; 31.531 ; Rise       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 36.959 ; 36.959 ; Rise       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 38.866 ; 38.866 ; Rise       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 41.286 ; 41.286 ; Rise       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 43.393 ; 43.393 ; Rise       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 34.733 ; 34.733 ; Rise       ; card_play[0]    ;
-; legal_play ; card_play[0] ; 47.885 ; 47.885 ; Fall       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 43.342 ; 43.342 ; Fall       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 31.480 ; 31.480 ; Fall       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 36.908 ; 36.908 ; Fall       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 38.815 ; 38.815 ; Fall       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 41.235 ; 41.235 ; Fall       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 43.342 ; 43.342 ; Fall       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 34.682 ; 34.682 ; Fall       ; card_play[0]    ;
-+------------+--------------+--------+--------+------------+-----------------+
+; Hold Times                                                                 ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; request_deal ; clock      ; -1.465 ; -1.465 ; Rise       ; clock           ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; stack_enable ; clock      ; 6.537 ; 6.537 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +--------------------------------------------------------------------------+
 ; Minimum Clock to Output Times                                            ;
-+------------+--------------+-------+-------+------------+-----------------+
-; Data Port  ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------+--------------+-------+-------+------------+-----------------+
-; legal_play ; card_play[0] ; 3.352 ; 3.352 ; Rise       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 3.494 ; 3.494 ; Rise       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 3.815 ; 3.815 ; Rise       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 3.494 ; 3.494 ; Rise       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 3.535 ; 3.535 ; Rise       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 3.689 ; 3.689 ; Rise       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 3.729 ; 3.729 ; Rise       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 3.618 ; 3.618 ; Rise       ; card_play[0]    ;
-; legal_play ; card_play[0] ; 3.352 ; 3.352 ; Fall       ; card_play[0]    ;
-; sum[*]     ; card_play[0] ; 3.494 ; 3.494 ; Fall       ; card_play[0]    ;
-;  sum[0]    ; card_play[0] ; 3.701 ; 3.701 ; Fall       ; card_play[0]    ;
-;  sum[1]    ; card_play[0] ; 3.494 ; 3.494 ; Fall       ; card_play[0]    ;
-;  sum[2]    ; card_play[0] ; 3.535 ; 3.535 ; Fall       ; card_play[0]    ;
-;  sum[3]    ; card_play[0] ; 3.689 ; 3.689 ; Fall       ; card_play[0]    ;
-;  sum[4]    ; card_play[0] ; 3.729 ; 3.729 ; Fall       ; card_play[0]    ;
-;  sum[5]    ; card_play[0] ; 3.618 ; 3.618 ; Fall       ; card_play[0]    ;
-+------------+--------------+-------+-------+------------+-----------------+
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; stack_enable ; clock      ; 3.577 ; 3.577 ; Rise       ; clock           ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Progagation Delay                                                       ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; Input Port            ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+-----------------------+-------------+--------+--------+--------+--------+
-; card_play[1]          ; legal_play  ; 36.469 ; 36.469 ; 36.469 ; 36.469 ;
-; card_play[1]          ; sum[1]      ; 34.801 ; 34.801 ; 34.801 ; 34.801 ;
-; card_play[1]          ; sum[2]      ; 35.003 ; 35.003 ; 35.003 ; 35.003 ;
-; card_play[1]          ; sum[3]      ; 35.053 ; 35.053 ; 35.053 ; 35.053 ;
-; card_play[1]          ; sum[4]      ; 34.649 ; 34.649 ; 34.649 ; 34.649 ;
-; card_play[1]          ; sum[5]      ; 35.638 ; 35.638 ; 35.638 ; 35.638 ;
-; card_play[2]          ; legal_play  ; 35.752 ; 35.752 ; 35.752 ; 35.752 ;
-; card_play[2]          ; sum[1]      ; 34.084 ; 34.084 ; 34.084 ; 34.084 ;
-; card_play[2]          ; sum[2]      ; 34.286 ; 34.286 ; 34.286 ; 34.286 ;
-; card_play[2]          ; sum[3]      ; 34.336 ; 34.336 ; 34.336 ; 34.336 ;
-; card_play[2]          ; sum[4]      ; 33.932 ; 33.932 ; 33.932 ; 33.932 ;
-; card_play[2]          ; sum[5]      ; 34.921 ; 34.921 ; 34.921 ; 34.921 ;
-; card_play[3]          ; legal_play  ; 36.290 ; 36.290 ; 36.290 ; 36.290 ;
-; card_play[3]          ; sum[1]      ; 34.622 ; 34.622 ; 34.622 ; 34.622 ;
-; card_play[3]          ; sum[2]      ; 34.824 ; 34.824 ; 34.824 ; 34.824 ;
-; card_play[3]          ; sum[3]      ; 34.874 ; 34.874 ; 34.874 ; 34.874 ;
-; card_play[3]          ; sum[4]      ; 34.470 ; 34.470 ; 34.470 ; 34.470 ;
-; card_play[3]          ; sum[5]      ; 35.459 ; 35.459 ; 35.459 ; 35.459 ;
-; card_play[4]          ; legal_play  ; 36.923 ; 36.923 ; 36.923 ; 36.923 ;
-; card_play[4]          ; sum[1]      ; 35.255 ; 35.255 ; 35.255 ; 35.255 ;
-; card_play[4]          ; sum[2]      ; 35.457 ; 35.457 ; 35.457 ; 35.457 ;
-; card_play[4]          ; sum[3]      ; 35.507 ; 35.507 ; 35.507 ; 35.507 ;
-; card_play[4]          ; sum[4]      ; 35.103 ; 35.103 ; 35.103 ; 35.103 ;
-; card_play[4]          ; sum[5]      ; 36.092 ; 36.092 ; 36.092 ; 36.092 ;
-; card_play[5]          ; legal_play  ; 37.003 ; 37.003 ; 37.003 ; 37.003 ;
-; card_play[5]          ; sum[1]      ; 35.335 ; 35.335 ; 35.335 ; 35.335 ;
-; card_play[5]          ; sum[2]      ; 35.537 ; 35.537 ; 35.537 ; 35.537 ;
-; card_play[5]          ; sum[3]      ; 35.587 ; 35.587 ; 35.587 ; 35.587 ;
-; card_play[5]          ; sum[4]      ; 35.183 ; 35.183 ; 35.183 ; 35.183 ;
-; card_play[5]          ; sum[5]      ; 36.172 ; 36.172 ; 36.172 ; 36.172 ;
-; play_pile_top_card[0] ; legal_play  ; 26.513 ; 26.513 ; 26.513 ; 26.513 ;
-; play_pile_top_card[0] ; sum[1]      ; 24.845 ; 24.845 ; 24.845 ; 24.845 ;
-; play_pile_top_card[0] ; sum[2]      ; 25.047 ; 25.047 ; 25.047 ; 25.047 ;
-; play_pile_top_card[0] ; sum[3]      ; 25.097 ; 25.097 ; 25.097 ; 25.097 ;
-; play_pile_top_card[0] ; sum[4]      ; 24.693 ; 24.693 ; 24.693 ; 24.693 ;
-; play_pile_top_card[0] ; sum[5]      ; 25.682 ; 25.682 ; 25.682 ; 25.682 ;
-; play_pile_top_card[1] ; legal_play  ; 26.436 ; 26.436 ; 26.436 ; 26.436 ;
-; play_pile_top_card[1] ; sum[1]      ; 24.772 ; 24.772 ; 24.772 ; 24.772 ;
-; play_pile_top_card[1] ; sum[2]      ; 24.625 ; 24.625 ; 24.625 ; 24.625 ;
-; play_pile_top_card[1] ; sum[3]      ; 25.024 ; 25.024 ; 25.024 ; 25.024 ;
-; play_pile_top_card[1] ; sum[4]      ; 24.620 ; 24.620 ; 24.620 ; 24.620 ;
-; play_pile_top_card[1] ; sum[5]      ; 25.609 ; 25.609 ; 25.609 ; 25.609 ;
-; play_pile_top_card[2] ; legal_play  ; 26.280 ; 26.280 ; 26.280 ; 26.280 ;
-; play_pile_top_card[2] ; sum[1]      ; 24.611 ; 24.611 ; 24.611 ; 24.611 ;
-; play_pile_top_card[2] ; sum[2]      ; 24.814 ; 24.814 ; 24.814 ; 24.814 ;
-; play_pile_top_card[2] ; sum[3]      ; 25.213 ; 25.213 ; 25.213 ; 25.213 ;
-; play_pile_top_card[2] ; sum[4]      ; 24.809 ; 24.809 ; 24.809 ; 24.809 ;
-; play_pile_top_card[2] ; sum[5]      ; 25.448 ; 25.448 ; 25.448 ; 25.448 ;
-; play_pile_top_card[3] ; legal_play  ; 26.020 ; 26.020 ; 26.020 ; 26.020 ;
-; play_pile_top_card[3] ; sum[1]      ; 22.458 ; 22.458 ; 22.458 ; 22.458 ;
-; play_pile_top_card[3] ; sum[2]      ; 24.365 ; 24.365 ; 24.365 ; 24.365 ;
-; play_pile_top_card[3] ; sum[3]      ; 25.117 ; 25.117 ; 25.117 ; 25.117 ;
-; play_pile_top_card[3] ; sum[4]      ; 24.713 ; 24.713 ; 24.713 ; 24.713 ;
-; play_pile_top_card[3] ; sum[5]      ; 25.136 ; 25.136 ; 25.136 ; 25.136 ;
-; play_pile_top_card[4] ; legal_play  ; 25.545 ; 25.545 ; 25.545 ; 25.545 ;
-; play_pile_top_card[4] ; sum[1]      ; 20.048 ; 20.048 ; 20.048 ; 20.048 ;
-; play_pile_top_card[4] ; sum[2]      ; 21.955 ; 21.955 ; 21.955 ; 21.955 ;
-; play_pile_top_card[4] ; sum[3]      ; 24.375 ; 24.375 ; 24.375 ; 24.375 ;
-; play_pile_top_card[4] ; sum[4]      ; 24.323 ; 24.323 ; 24.323 ; 24.323 ;
-; play_pile_top_card[4] ; sum[5]      ; 24.718 ; 24.718 ; 24.718 ; 24.718 ;
-; play_pile_top_card[5] ; legal_play  ; 23.531 ; 23.531 ; 23.531 ; 23.531 ;
-; play_pile_top_card[5] ; sum[1]      ; 12.554 ; 12.554 ; 12.554 ; 12.554 ;
-; play_pile_top_card[5] ; sum[2]      ; 14.461 ; 14.461 ; 14.461 ; 14.461 ;
-; play_pile_top_card[5] ; sum[3]      ; 16.881 ; 16.881 ; 16.881 ; 16.881 ;
-; play_pile_top_card[5] ; sum[4]      ; 18.988 ; 18.988 ; 18.988 ; 18.988 ;
-; play_pile_top_card[5] ; sum[5]      ; 10.328 ;        ;        ; 10.328 ;
-+-----------------------+-------------+--------+--------+--------+--------+
-
-
-+---------------------------------------------------------------------+
-; Minimum Progagation Delay                                           ;
-+-----------------------+-------------+-------+-------+-------+-------+
-; Input Port            ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+-----------------------+-------------+-------+-------+-------+-------+
-; card_play[1]          ; legal_play  ; 5.809 ; 5.809 ; 5.809 ; 5.809 ;
-; card_play[1]          ; sum[1]      ; 6.064 ; 6.064 ; 6.064 ; 6.064 ;
-; card_play[1]          ; sum[2]      ; 6.119 ; 6.119 ; 6.119 ; 6.119 ;
-; card_play[1]          ; sum[3]      ; 6.253 ; 6.253 ; 6.253 ; 6.253 ;
-; card_play[1]          ; sum[4]      ; 6.252 ; 6.252 ; 6.252 ; 6.252 ;
-; card_play[1]          ; sum[5]      ; 6.075 ; 6.075 ; 6.075 ; 6.075 ;
-; card_play[2]          ; legal_play  ; 6.137 ; 6.137 ; 6.137 ; 6.137 ;
-; card_play[2]          ; sum[1]      ; 6.322 ; 6.322 ; 6.322 ; 6.322 ;
-; card_play[2]          ; sum[2]      ; 6.404 ; 6.404 ; 6.404 ; 6.404 ;
-; card_play[2]          ; sum[3]      ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
-; card_play[2]          ; sum[4]      ; 6.460 ; 6.460 ; 6.460 ; 6.460 ;
-; card_play[2]          ; sum[5]      ; 6.276 ; 6.276 ; 6.276 ; 6.276 ;
-; card_play[3]          ; legal_play  ; 5.966 ; 5.966 ; 5.966 ; 5.966 ;
-; card_play[3]          ; sum[1]      ; 6.151 ; 6.151 ; 6.151 ; 6.151 ;
-; card_play[3]          ; sum[2]      ; 6.233 ; 6.233 ; 6.233 ; 6.233 ;
-; card_play[3]          ; sum[3]      ; 6.290 ; 6.290 ; 6.290 ; 6.290 ;
-; card_play[3]          ; sum[4]      ; 6.289 ; 6.289 ; 6.289 ; 6.289 ;
-; card_play[3]          ; sum[5]      ; 6.105 ; 6.105 ; 6.105 ; 6.105 ;
-; card_play[4]          ; legal_play  ; 5.984 ; 5.984 ; 5.984 ; 5.984 ;
-; card_play[4]          ; sum[1]      ; 6.205 ; 6.205 ; 6.205 ; 6.205 ;
-; card_play[4]          ; sum[2]      ; 6.191 ; 6.191 ; 6.191 ; 6.191 ;
-; card_play[4]          ; sum[3]      ; 6.380 ; 6.380 ; 6.380 ; 6.380 ;
-; card_play[4]          ; sum[4]      ; 6.379 ; 6.379 ; 6.379 ; 6.379 ;
-; card_play[4]          ; sum[5]      ; 6.195 ; 6.195 ; 6.195 ; 6.195 ;
-; card_play[5]          ; legal_play  ; 5.946 ; 5.946 ; 5.946 ; 5.946 ;
-; card_play[5]          ; sum[1]      ; 6.131 ; 6.131 ; 6.131 ; 6.131 ;
-; card_play[5]          ; sum[2]      ; 6.213 ; 6.213 ; 6.213 ; 6.213 ;
-; card_play[5]          ; sum[3]      ; 6.270 ; 6.270 ; 6.270 ; 6.270 ;
-; card_play[5]          ; sum[4]      ; 6.269 ; 6.269 ; 6.269 ; 6.269 ;
-; card_play[5]          ; sum[5]      ; 6.085 ; 6.085 ; 6.085 ; 6.085 ;
-; play_pile_top_card[0] ; legal_play  ; 6.219 ; 6.219 ; 6.219 ; 6.219 ;
-; play_pile_top_card[0] ; sum[1]      ; 5.615 ; 5.615 ; 5.615 ; 5.615 ;
-; play_pile_top_card[0] ; sum[2]      ; 5.656 ; 5.656 ; 5.656 ; 5.656 ;
-; play_pile_top_card[0] ; sum[3]      ; 5.810 ; 5.810 ; 5.810 ; 5.810 ;
-; play_pile_top_card[0] ; sum[4]      ; 5.850 ; 5.850 ; 5.850 ; 5.850 ;
-; play_pile_top_card[0] ; sum[5]      ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; play_pile_top_card[1] ; legal_play  ; 6.189 ; 6.189 ; 6.189 ; 6.189 ;
-; play_pile_top_card[1] ; sum[1]      ; 5.480 ; 5.480 ; 5.480 ; 5.480 ;
-; play_pile_top_card[1] ; sum[2]      ; 5.626 ; 5.626 ; 5.626 ; 5.626 ;
-; play_pile_top_card[1] ; sum[3]      ; 5.780 ; 5.780 ; 5.780 ; 5.780 ;
-; play_pile_top_card[1] ; sum[4]      ; 5.820 ; 5.820 ; 5.820 ; 5.820 ;
-; play_pile_top_card[1] ; sum[5]      ; 6.187 ; 6.187 ; 6.187 ; 6.187 ;
-; play_pile_top_card[2] ; legal_play  ; 6.251 ; 6.251 ; 6.251 ; 6.251 ;
-; play_pile_top_card[2] ; sum[1]      ; 6.773 ; 6.773 ; 6.773 ; 6.773 ;
-; play_pile_top_card[2] ; sum[2]      ; 5.583 ; 5.583 ; 5.583 ; 5.583 ;
-; play_pile_top_card[2] ; sum[3]      ; 5.842 ; 5.842 ; 5.842 ; 5.842 ;
-; play_pile_top_card[2] ; sum[4]      ; 5.882 ; 5.882 ; 5.882 ; 5.882 ;
-; play_pile_top_card[2] ; sum[5]      ; 6.235 ; 6.235 ; 6.235 ; 6.235 ;
-; play_pile_top_card[3] ; legal_play  ; 6.104 ; 6.104 ; 6.104 ; 6.104 ;
-; play_pile_top_card[3] ; sum[1]      ; 6.626 ; 6.626 ; 6.626 ; 6.626 ;
-; play_pile_top_card[3] ; sum[2]      ; 6.708 ; 6.708 ; 6.708 ; 6.708 ;
-; play_pile_top_card[3] ; sum[3]      ; 5.695 ; 5.695 ; 5.695 ; 5.695 ;
-; play_pile_top_card[3] ; sum[4]      ; 5.840 ; 5.840 ; 5.840 ; 5.840 ;
-; play_pile_top_card[3] ; sum[5]      ; 6.102 ; 6.102 ; 6.102 ; 6.102 ;
-; play_pile_top_card[4] ; legal_play  ; 6.147 ; 6.147 ; 6.147 ; 6.147 ;
-; play_pile_top_card[4] ; sum[1]      ; 6.669 ; 6.669 ; 6.669 ; 6.669 ;
-; play_pile_top_card[4] ; sum[2]      ; 6.751 ; 6.751 ; 6.751 ; 6.751 ;
-; play_pile_top_card[4] ; sum[3]      ; 6.808 ; 6.808 ; 6.808 ; 6.808 ;
-; play_pile_top_card[4] ; sum[4]      ; 5.589 ; 5.589 ; 5.589 ; 5.589 ;
-; play_pile_top_card[4] ; sum[5]      ; 6.145 ; 6.145 ; 6.145 ; 6.145 ;
-; play_pile_top_card[5] ; legal_play  ; 5.575 ; 6.601 ; 6.601 ; 5.575 ;
-; play_pile_top_card[5] ; sum[1]      ; 6.053 ; 6.053 ; 6.053 ; 6.053 ;
-; play_pile_top_card[5] ; sum[2]      ; 6.135 ; 6.135 ; 6.135 ; 6.135 ;
-; play_pile_top_card[5] ; sum[3]      ; 6.192 ; 6.192 ; 6.192 ; 6.192 ;
-; play_pile_top_card[5] ; sum[4]      ; 6.191 ; 6.191 ; 6.191 ; 6.191 ;
-; play_pile_top_card[5] ; sum[5]      ; 5.280 ;       ;       ; 5.280 ;
-+-----------------------+-------------+-------+-------+-------+-------+
-
-
-+-------------------------------------------------------------------------+
-; Setup Transfers                                                         ;
-+--------------+--------------+----------+----------+----------+----------+
-; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+--------------+--------------+----------+----------+----------+----------+
-; card_play[0] ; card_play[0] ; 32       ; 32       ; 32       ; 32       ;
-+--------------+--------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 5        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------+
-; Hold Transfers                                                          ;
-+--------------+--------------+----------+----------+----------+----------+
-; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+--------------+--------------+----------+----------+----------+----------+
-; card_play[0] ; card_play[0] ; 32       ; 32       ; 32       ; 32       ;
-+--------------+--------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 5        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -1254,10 +454,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 12    ; 12   ;
-; Unconstrained Input Port Paths  ; 78    ; 78   ;
-; Unconstrained Output Ports      ; 7     ; 7    ;
-; Unconstrained Output Port Paths ; 79    ; 79   ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 6     ; 6    ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
 +---------------------------------+-------+------+
 
 
@@ -1267,216 +467,56 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 15 18:57:29 2017
+    Info: Processing started: Thu Nov 16 15:49:36 2017
 Info: Command: quartus_sta Lab4 -c Lab4
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Lab4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name card_play[0] card_play[0]
-Warning (332125): Found combinational loop of 59 nodes
-    Warning (332126): Node "Add2~1|datab"
-    Warning (332126): Node "Add2~1|cout"
-    Warning (332126): Node "Add2~2|cin"
-    Warning (332126): Node "Add2~2|combout"
-    Warning (332126): Node "new_sum_int~9|datac"
-    Warning (332126): Node "new_sum_int~9|combout"
-    Warning (332126): Node "ace~1|datad"
-    Warning (332126): Node "ace~1|combout"
-    Warning (332126): Node "ace~3|dataa"
-    Warning (332126): Node "ace~3|combout"
-    Warning (332126): Node "ace~2|datab"
-    Warning (332126): Node "ace~2|combout"
-    Warning (332126): Node "ace~3|datab"
-    Warning (332126): Node "new_sum_int~7|dataa"
-    Warning (332126): Node "new_sum_int~7|combout"
-    Warning (332126): Node "new_sum_int[5]~12|dataa"
-    Warning (332126): Node "new_sum_int[5]~12|combout"
-    Warning (332126): Node "ace~0|datad"
-    Warning (332126): Node "ace~0|combout"
-    Warning (332126): Node "ace~1|dataa"
-    Warning (332126): Node "Add2~8|datad"
-    Warning (332126): Node "Add2~8|combout"
-    Warning (332126): Node "new_sum_int[5]~12|datac"
-    Warning (332126): Node "LessThan1~1|datad"
-    Warning (332126): Node "LessThan1~1|combout"
-    Warning (332126): Node "LessThan1~2|datab"
-    Warning (332126): Node "LessThan1~2|combout"
-    Warning (332126): Node "ace~0|datac"
-    Warning (332126): Node "ace~3|datad"
-    Warning (332126): Node "new_sum_int~7|datab"
-    Warning (332126): Node "new_sum_int~11|datac"
-    Warning (332126): Node "new_sum_int~11|combout"
-    Warning (332126): Node "ace~0|dataa"
-    Warning (332126): Node "LessThan1~1|datac"
-    Warning (332126): Node "Add2~6|dataa"
-    Warning (332126): Node "Add2~6|cout"
-    Warning (332126): Node "Add2~8|cin"
-    Warning (332126): Node "Add2~6|combout"
-    Warning (332126): Node "new_sum_int~11|dataa"
-    Warning (332126): Node "LessThan1~2|datac"
-    Warning (332126): Node "new_sum_int~9|datab"
-    Warning (332126): Node "new_sum_int~10|datac"
-    Warning (332126): Node "new_sum_int~10|combout"
-    Warning (332126): Node "ace~1|datac"
-    Warning (332126): Node "Add2~4|datab"
-    Warning (332126): Node "Add2~4|cout"
-    Warning (332126): Node "Add2~6|cin"
-    Warning (332126): Node "Add2~4|combout"
-    Warning (332126): Node "new_sum_int~10|dataa"
-    Warning (332126): Node "LessThan1~2|datad"
-    Warning (332126): Node "new_sum_int~8|datac"
-    Warning (332126): Node "new_sum_int~8|combout"
-    Warning (332126): Node "new_sum_int~8|datab"
-    Warning (332126): Node "ace~1|datab"
-    Warning (332126): Node "LessThan1~1|datab"
-    Warning (332126): Node "LessThan1~1|dataa"
-    Warning (332126): Node "Add2~2|datab"
-    Warning (332126): Node "Add2~2|cout"
-    Warning (332126): Node "Add2~4|cin"
-Warning (332125): Found combinational loop of 22 nodes
-    Warning (332126): Node "new_card_value_int[0]~20|combout"
-    Warning (332126): Node "Equal0~0|datac"
-    Warning (332126): Node "Equal0~0|combout"
-    Warning (332126): Node "new_card_value_int[2]~22|datab"
-    Warning (332126): Node "new_card_value_int[2]~22|combout"
-    Warning (332126): Node "Equal0~0|dataa"
-    Warning (332126): Node "LessThan0~0|dataa"
-    Warning (332126): Node "LessThan0~0|combout"
-    Warning (332126): Node "new_card_value_int[0]~20|dataa"
-    Warning (332126): Node "new_card_value_int[2]~22|datac"
-    Warning (332126): Node "new_card_value_int[1]~21|datac"
-    Warning (332126): Node "new_card_value_int[1]~21|combout"
-    Warning (332126): Node "Equal0~0|datab"
-    Warning (332126): Node "LessThan0~0|datab"
-    Warning (332126): Node "new_card_value_int[3]~23|dataa"
-    Warning (332126): Node "new_card_value_int[3]~23|combout"
-    Warning (332126): Node "LessThan0~0|datad"
-    Warning (332126): Node "Equal0~0|datad"
-    Warning (332126): Node "new_card_value_int[1]~21|datab"
-    Warning (332126): Node "new_card_value_int[3]~23|datac"
-    Warning (332126): Node "new_card_value_int[0]~20|datab"
-    Warning (332126): Node "LessThan0~0|datac"
-Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: Add0~1  from: datac  to: combout
-    Info (332098): Cell: Add0~1  from: datad  to: combout
-    Info (332098): Cell: Add0~2  from: dataa  to: combout
-    Info (332098): Cell: Add0~2  from: datab  to: combout
-    Info (332098): Cell: Add0~2  from: datac  to: combout
-    Info (332098): Cell: Add0~2  from: datad  to: combout
-    Info (332098): Cell: Add0~3  from: datab  to: combout
-    Info (332098): Cell: Add0~3  from: datac  to: combout
-    Info (332098): Cell: Add0~3  from: datad  to: combout
-    Info (332098): Cell: Add1~0  from: datab  to: combout
-    Info (332098): Cell: Add1~2  from: cin  to: combout
-    Info (332098): Cell: Add1~2  from: datab  to: combout
-    Info (332098): Cell: Add1~4  from: cin  to: combout
-    Info (332098): Cell: Add1~4  from: datab  to: combout
-    Info (332098): Cell: Add1~6  from: cin  to: combout
-    Info (332098): Cell: Add1~6  from: datab  to: combout
-    Info (332098): Cell: Add1~8  from: cin  to: combout
-    Info (332098): From: ace~2|datac  to: new_sum_int~8|combout
-    Info (332098): From: ace~2|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_card_value_int[0]~20|datac  to: new_card_value_int[3]~23|combout
-    Info (332098): From: new_card_value_int[0]~20|datad  to: new_card_value_int[3]~23|combout
-    Info (332098): From: new_card_value_int[1]~21|datad  to: new_card_value_int[3]~23|combout
-    Info (332098): From: new_card_value_int[2]~22|datad  to: new_card_value_int[3]~23|combout
-    Info (332098): Cell: new_card_value_int[3]~13  from: datad  to: combout
-    Info (332098): Cell: new_card_value_int[3]~18  from: datad  to: combout
-    Info (332098): From: new_card_value_int[3]~23|datad  to: new_card_value_int[1]~21|combout
-    Info (332098): From: new_sum_int[5]~12|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~10|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~11|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~7|datac  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~7|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~8|datad  to: new_sum_int~10|combout
-    Info (332098): From: new_sum_int~9|datad  to: new_sum_int~8|combout
-    Info (332098): Cell: u1|inst4|inst1|inst2  from: datad  to: combout
-    Info (332098): Cell: u1|inst5|inst2|inst1~0  from: datad  to: combout
-    Info (332098): Cell: u1|inst|inst6|inst1  from: datad  to: combout
-    Info (332098): Cell: u1|inst|inst7|inst1~0  from: datad  to: combout
+    Info (332105): create_clock -period 1.000 -name clock clock
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -8.207
+Info (332146): Worst-case setup slack is 0.131
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -8.207        -8.207 card_play[0] 
-Info (332146): Worst-case hold slack is -23.584
+    Info (332119):     0.131         0.000 clock 
+Info (332146): Worst-case hold slack is 0.445
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):   -23.584       -23.584 card_play[0] 
+    Info (332119):     0.445         0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -22.471
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.631
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):   -22.471     -1261.807 card_play[0] 
+    Info (332119):    -1.631        -5.297 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: Add0~1  from: datac  to: combout
-    Info (332098): Cell: Add0~1  from: datad  to: combout
-    Info (332098): Cell: Add0~2  from: dataa  to: combout
-    Info (332098): Cell: Add0~2  from: datab  to: combout
-    Info (332098): Cell: Add0~2  from: datac  to: combout
-    Info (332098): Cell: Add0~2  from: datad  to: combout
-    Info (332098): Cell: Add0~3  from: datab  to: combout
-    Info (332098): Cell: Add0~3  from: datac  to: combout
-    Info (332098): Cell: Add0~3  from: datad  to: combout
-    Info (332098): Cell: Add1~0  from: datab  to: combout
-    Info (332098): Cell: Add1~2  from: cin  to: combout
-    Info (332098): Cell: Add1~2  from: datab  to: combout
-    Info (332098): Cell: Add1~4  from: cin  to: combout
-    Info (332098): Cell: Add1~4  from: datab  to: combout
-    Info (332098): Cell: Add1~6  from: cin  to: combout
-    Info (332098): Cell: Add1~6  from: datab  to: combout
-    Info (332098): Cell: Add1~8  from: cin  to: combout
-    Info (332098): From: ace~2|datac  to: new_sum_int~8|combout
-    Info (332098): From: ace~2|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_card_value_int[0]~20|datac  to: new_card_value_int[3]~23|combout
-    Info (332098): From: new_card_value_int[0]~20|datad  to: new_card_value_int[3]~23|combout
-    Info (332098): From: new_card_value_int[1]~21|datad  to: new_card_value_int[3]~23|combout
-    Info (332098): From: new_card_value_int[2]~22|datad  to: new_card_value_int[3]~23|combout
-    Info (332098): Cell: new_card_value_int[3]~13  from: datad  to: combout
-    Info (332098): Cell: new_card_value_int[3]~18  from: datad  to: combout
-    Info (332098): From: new_card_value_int[3]~23|datad  to: new_card_value_int[1]~21|combout
-    Info (332098): From: new_sum_int[5]~12|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~10|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~11|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~7|datac  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~7|datad  to: new_sum_int~8|combout
-    Info (332098): From: new_sum_int~8|datad  to: new_sum_int~10|combout
-    Info (332098): From: new_sum_int~9|datad  to: new_sum_int~8|combout
-    Info (332098): Cell: u1|inst4|inst1|inst2  from: datad  to: combout
-    Info (332098): Cell: u1|inst5|inst2|inst1~0  from: datad  to: combout
-    Info (332098): Cell: u1|inst|inst6|inst1  from: datad  to: combout
-    Info (332098): Cell: u1|inst|inst7|inst1~0  from: datad  to: combout
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.609
+Info (332146): Worst-case setup slack is 0.640
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -2.609        -2.609 card_play[0] 
-Info (332146): Worst-case hold slack is -8.284
+    Info (332119):     0.640         0.000 clock 
+Info (332146): Worst-case hold slack is 0.215
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -8.284        -8.284 card_play[0] 
+    Info (332119):     0.215         0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -7.594
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -7.594      -393.292 card_play[0] 
+    Info (332119):    -1.380        -4.380 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 88 warnings
-    Info: Peak virtual memory: 426 megabytes
-    Info: Processing ended: Wed Nov 15 18:57:30 2017
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 427 megabytes
+    Info: Processing ended: Thu Nov 16 15:49:37 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
