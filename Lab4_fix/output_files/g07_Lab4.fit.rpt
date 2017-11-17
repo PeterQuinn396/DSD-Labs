@@ -1,6 +1,6 @@
 Fitter report for g07_Lab4
-Thu Nov 16 18:49:08 2017
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Nov 16 20:58:01 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -57,26 +57,26 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Fitter Summary                                                                       ;
-+------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov 16 18:49:08 2017           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; g07_Lab4                                        ;
-; Top-level Entity Name              ; g07_testing                                     ;
-; Family                             ; Cyclone II                                      ;
-; Device                             ; EP2C20F484C7                                    ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 39 / 18,752 ( < 1 % )                           ;
-;     Total combinational functions  ; 39 / 18,752 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 0 / 18,752 ( 0 % )                              ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 19 / 315 ( 6 % )                                ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 239,616 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                  ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Fitter Summary                                                                  ;
++------------------------------------+--------------------------------------------+
+; Fitter Status                      ; Successful - Thu Nov 16 20:58:01 2017      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; g07_Lab4                                   ;
+; Top-level Entity Name              ; g07_testing                                ;
+; Family                             ; Cyclone II                                 ;
+; Device                             ; EP2C20F484C7                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 35 / 18,752 ( < 1 % )                      ;
+;     Total combinational functions  ; 35 / 18,752 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 0 / 18,752 ( 0 % )                         ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 19 / 315 ( 6 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 239,616 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -130,15 +130,21 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------------------+--------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -197,8 +203,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 62 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 62 ( 0.00 % )      ;
+;     -- Requested    ; 0 / 58 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 58 ( 0.00 % )      ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -221,7 +227,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 59      ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 55      ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -229,7 +235,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_files/g07_Lab4.pin.
+The pin-out file can be found in C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4_fix/output_files/g07_Lab4.pin.
 
 
 +---------------------------------------------------------------------+
@@ -237,20 +243,20 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 39 / 18,752 ( < 1 % ) ;
-;     -- Combinational with no register       ; 39                    ;
+; Total logic elements                        ; 35 / 18,752 ( < 1 % ) ;
+;     -- Combinational with no register       ; 35                    ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 0                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 24                    ;
-;     -- 3 input functions                    ; 9                     ;
-;     -- <=2 input functions                  ; 6                     ;
+;     -- 4 input functions                    ; 20                    ;
+;     -- 3 input functions                    ; 11                    ;
+;     -- <=2 input functions                  ; 4                     ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 34                    ;
-;     -- arithmetic mode                      ; 5                     ;
+;     -- normal mode                          ; 31                    ;
+;     -- arithmetic mode                      ; 4                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 0 / 19,649 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 18,752 ( 0 % )    ;
@@ -273,10 +279,10 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
-; Maximum fan-out                             ; 9                     ;
-; Highest non-global fan-out                  ; 9                     ;
-; Total fan-out                               ; 140                   ;
-; Average fan-out                             ; 2.30                  ;
+; Maximum fan-out                             ; 8                     ;
+; Highest non-global fan-out                  ; 8                     ;
+; Total fan-out                               ; 127                   ;
+; Average fan-out                             ; 2.23                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -289,20 +295,20 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 39 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 39                   ; 0                              ;
+; Total logic elements                        ; 35 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 35                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 24                   ; 0                              ;
-;     -- 3 input functions                    ; 9                    ; 0                              ;
-;     -- <=2 input functions                  ; 6                    ; 0                              ;
+;     -- 4 input functions                    ; 20                   ; 0                              ;
+;     -- 3 input functions                    ; 11                   ; 0                              ;
+;     -- <=2 input functions                  ; 4                    ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 34                   ; 0                              ;
-;     -- arithmetic mode                      ; 5                    ; 0                              ;
+;     -- normal mode                          ; 31                   ; 0                              ;
+;     -- arithmetic mode                      ; 4                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 0                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 18752 ( 0 % )    ; 0 / 18752 ( 0 % )              ;
@@ -322,7 +328,7 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 140                  ; 0                              ;
+;     -- Total Connections                    ; 127                  ; 0                              ;
 ;     -- Registered Connections               ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -355,18 +361,18 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 +-------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; old_sum[0]  ; C17   ; 4        ; 48           ; 27           ; 1           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; old_sum[1]  ; G12   ; 4        ; 31           ; 27           ; 3           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; old_sum[2]  ; A14   ; 4        ; 29           ; 27           ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; old_sum[3]  ; E14   ; 4        ; 35           ; 27           ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; old_sum[4]  ; AA10  ; 8        ; 22           ; 0            ; 0           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; old_sum[5]  ; W7    ; 8        ; 9            ; 0            ; 2           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; top_card[0] ; T6    ; 1        ; 0            ; 5            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; top_card[1] ; J1    ; 2        ; 0            ; 18           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; top_card[2] ; H14   ; 4        ; 42           ; 27           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; top_card[3] ; P3    ; 1        ; 0            ; 10           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; top_card[4] ; E7    ; 3        ; 5            ; 27           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; top_card[5] ; U2    ; 1        ; 0            ; 7            ; 1           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; old_sum[0]  ; D5    ; 2        ; 0            ; 24           ; 0           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; old_sum[1]  ; F20   ; 5        ; 50           ; 23           ; 0           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; old_sum[2]  ; F14   ; 4        ; 35           ; 27           ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; old_sum[3]  ; D4    ; 2        ; 0            ; 25           ; 3           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; old_sum[4]  ; G8    ; 3        ; 7            ; 27           ; 0           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; old_sum[5]  ; H15   ; 4        ; 44           ; 27           ; 1           ; 6                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; top_card[0] ; V1    ; 1        ; 0            ; 6            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; top_card[1] ; AA5   ; 8        ; 3            ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; top_card[2] ; R6    ; 1        ; 0            ; 7            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; top_card[3] ; T7    ; 8        ; 5            ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; top_card[4] ; V2    ; 1        ; 0            ; 6            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; top_card[5] ; T3    ; 1        ; 0            ; 5            ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -375,30 +381,30 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; legal_play ; H1    ; 2        ; 0            ; 19           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; new_sum[0] ; A17   ; 4        ; 37           ; 27           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; new_sum[1] ; H4    ; 2        ; 0            ; 21           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; new_sum[2] ; J4    ; 2        ; 0            ; 18           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; new_sum[3] ; J2    ; 2        ; 0            ; 18           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; new_sum[4] ; A5    ; 3        ; 3            ; 27           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; new_sum[5] ; H3    ; 2        ; 0            ; 19           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; legal_play ; R5    ; 1        ; 0            ; 7            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; new_sum[0] ; T1    ; 1        ; 0            ; 8            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; new_sum[1] ; Y7    ; 8        ; 5            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; new_sum[2] ; Y3    ; 1        ; 0            ; 3            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; new_sum[3] ; T2    ; 1        ; 0            ; 8            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; new_sum[4] ; T5    ; 1        ; 0            ; 6            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; new_sum[5] ; U1    ; 1        ; 0            ; 7            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
-+-----------------------------------------------------------+
-; I/O Bank Usage                                            ;
-+----------+-----------------+---------------+--------------+
-; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
-+----------+-----------------+---------------+--------------+
-; 1        ; 3 / 41 ( 7 % )  ; 3.3V          ; --           ;
-; 2        ; 8 / 33 ( 24 % ) ; 3.3V          ; --           ;
-; 3        ; 2 / 43 ( 5 % )  ; 3.3V          ; --           ;
-; 4        ; 6 / 40 ( 15 % ) ; 3.3V          ; --           ;
-; 5        ; 0 / 39 ( 0 % )  ; 3.3V          ; --           ;
-; 6        ; 1 / 36 ( 3 % )  ; 3.3V          ; --           ;
-; 7        ; 0 / 40 ( 0 % )  ; 3.3V          ; --           ;
-; 8        ; 2 / 43 ( 5 % )  ; 3.3V          ; --           ;
-+----------+-----------------+---------------+--------------+
++------------------------------------------------------------+
+; I/O Bank Usage                                             ;
++----------+------------------+---------------+--------------+
+; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
++----------+------------------+---------------+--------------+
+; 1        ; 10 / 41 ( 24 % ) ; 3.3V          ; --           ;
+; 2        ; 4 / 33 ( 12 % )  ; 3.3V          ; --           ;
+; 3        ; 1 / 43 ( 2 % )   ; 3.3V          ; --           ;
+; 4        ; 2 / 40 ( 5 % )   ; 3.3V          ; --           ;
+; 5        ; 1 / 39 ( 3 % )   ; 3.3V          ; --           ;
+; 6        ; 1 / 36 ( 3 % )   ; 3.3V          ; --           ;
+; 7        ; 0 / 40 ( 0 % )   ; 3.3V          ; --           ;
+; 8        ; 3 / 43 ( 7 % )   ; 3.3V          ; --           ;
++----------+------------------+---------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -410,7 +416,7 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; A2       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A3       ; 325        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A4       ; 324        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A5       ; 322        ; 3        ; new_sum[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A5       ; 322        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A6       ; 320        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A7       ; 306        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A8       ; 304        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -419,10 +425,10 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; A11      ; 287        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A12      ; 283        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A13      ; 281        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A14      ; 279        ; 4        ; old_sum[2]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A14      ; 279        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A15      ; 273        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A16      ; 271        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A17      ; 265        ; 4        ; new_sum[0]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A17      ; 265        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A18      ; 251        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A19      ; 249        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A20      ; 247        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -432,12 +438,12 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; AA2      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA3      ; 82         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA4      ; 85         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA5      ; 89         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AA5      ; 89         ; 8        ; top_card[1]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA6      ; 97         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA7      ; 103        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA8      ; 111        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA9      ; 114        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA10     ; 120        ; 8        ; old_sum[4]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA10     ; 120        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA11     ; 122        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA12     ; 128        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA13     ; 130        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -510,7 +516,7 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; C14      ; 260        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C15      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C16      ; 254        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; C17      ; 245        ; 4        ; old_sum[0]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C17      ; 245        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C18      ; 244        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C19      ; 238        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; C20      ; 239        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -519,8 +525,8 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; D1       ; 14         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D2       ; 15         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D3       ; 2          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; D4       ; 3          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; D5       ; 4          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; D4       ; 3          ; 2        ; old_sum[3]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D5       ; 4          ; 2        ; old_sum[0]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; D6       ; 5          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D7       ; 311        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D8       ; 309        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -544,14 +550,14 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; E4       ; 7          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E5       ;            ;          ; VCCD_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; E6       ;            ;          ; VCCA_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; E7       ; 316        ; 3        ; top_card[4]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E7       ; 316        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E8       ; 308        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E9       ; 301        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E10      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E11      ; 288        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E12      ; 285        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; E13      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; E14      ; 266        ; 4        ; old_sum[3]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E14      ; 266        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E15      ; 256        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E16      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E17      ;            ;          ; GND_PLL2                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -573,13 +579,13 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; F11      ; 294        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F12      ; 276        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F13      ; 269        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F14      ; 268        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F14      ; 268        ; 4        ; old_sum[2]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F15      ; 262        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F16      ;            ;          ; VCCA_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; F17      ;            ;          ; VCCD_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; F18      ;            ;          ; GND_PLL2                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F19      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; F20      ; 235        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; F20      ; 235        ; 5        ; old_sum[1]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F21      ; 223        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F22      ; 224        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G1       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -589,11 +595,11 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; G5       ; 12         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G6       ; 11         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G7       ; 317        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G8       ; 313        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G8       ; 313        ; 3        ; old_sum[4]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; G10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G11      ; 291        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G12      ; 277        ; 4        ; old_sum[1]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G12      ; 277        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G14      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; G15      ; 261        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -604,10 +610,10 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; G20      ; 233        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; G21      ; 221        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G22      ; 222        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H1       ; 24         ; 2        ; legal_play                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H1       ; 24         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H2       ; 25         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H3       ; 27         ; 2        ; new_sum[5]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; H4       ; 17         ; 2        ; new_sum[1]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H3       ; 27         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; H4       ; 17         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H5       ; 18         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H6       ; 19         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H7       ; 318        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -617,8 +623,8 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; H11      ; 290        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H12      ; 274        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H13      ; 263        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H14      ; 257        ; 4        ; top_card[2]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; H15      ; 253        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; H14      ; 257        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; H15      ; 253        ; 4        ; old_sum[5]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H16      ; 219        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H17      ; 226        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H18      ; 225        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -626,10 +632,10 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; H20      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H21      ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; H22      ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; J1       ; 29         ; 2        ; top_card[1]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J2       ; 30         ; 2        ; new_sum[3]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J1       ; 29         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; J2       ; 30         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J3       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; J4       ; 28         ; 2        ; new_sum[2]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J4       ; 28         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J5       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J6       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J7       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -738,7 +744,7 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; N22      ; 200        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P1       ; 47         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P2       ; 48         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; P3       ; 50         ; 1        ; top_card[3]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P3       ; 50         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P4       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P5       ; 55         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P6       ; 56         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -762,8 +768,8 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; R2       ; 58         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R3       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R4       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; R5       ; 63         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; R6       ; 64         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; R5       ; 63         ; 1        ; legal_play                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R6       ; 64         ; 1        ; top_card[2]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R7       ; 54         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R8       ; 53         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R9       ; 109        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -780,13 +786,13 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; R20      ; 192        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; R21      ; 190        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R22      ; 191        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T1       ; 59         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T2       ; 60         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T3       ; 69         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; T1       ; 59         ; 1        ; new_sum[0]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T2       ; 60         ; 1        ; new_sum[3]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T3       ; 69         ; 1        ; top_card[5]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T4       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; T5       ; 67         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T6       ; 68         ; 1        ; top_card[0]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T7       ; 91         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; T5       ; 67         ; 1        ; new_sum[4]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T6       ; 68         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; T7       ; 91         ; 8        ; top_card[3]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; T8       ; 90         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; T9       ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; T10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -802,8 +808,8 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; T20      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T21      ; 188        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T22      ; 189        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; U1       ; 61         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; U2       ; 62         ; 1        ; top_card[5]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U1       ; 61         ; 1        ; new_sum[5]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U2       ; 62         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U3       ; 70         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; U4       ; 80         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U5       ;            ;          ; GND_PLL1                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -824,8 +830,8 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; U20      ; 176        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; U21      ; 182        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U22      ; 183        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V1       ; 65         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V2       ; 66         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; V1       ; 65         ; 1        ; top_card[0]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V2       ; 66         ; 1        ; top_card[4]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V3       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V4       ; 81         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V5       ;            ;          ; GND_PLL1                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -852,7 +858,7 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; W4       ; 76         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W5       ; 79         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W6       ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; W7       ; 99         ; 8        ; old_sum[5]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; W7       ; 99         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W8       ; 100        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W9       ; 105        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -870,11 +876,11 @@ The pin-out file can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_fi
 ; W22      ; 175        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y1       ; 73         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y2       ; 74         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; Y3       ; 77         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; Y3       ; 77         ; 1        ; new_sum[2]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y4       ; 78         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y5       ; 86         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y6       ; 87         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y7       ; 93         ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; Y7       ; 93         ; 8        ; new_sum[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y8       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y9       ; 104        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y10      ; 112        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -931,27 +937,23 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
-+-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                              ; Library Name ;
-+-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------+--------------+
-; |g07_testing                      ; 39 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 39 (0)       ; 0 (0)             ; 0 (0)            ; |g07_testing                                                                     ; work         ;
-;    |g07_rules:inst|               ; 39 (27)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 39 (27)      ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst                                                      ; work         ;
-;       |g07_Modulo_13:u1|          ; 12 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1                                     ; work         ;
-;          |g07_adder:inst3|        ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3                     ; work         ;
-;             |g07_fullAdder:inst2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst2 ; work         ;
-;          |g07_adder:inst4|        ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4                     ; work         ;
-;             |g07_fullAdder:inst1| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1 ; work         ;
-;          |g07_adder:inst5|        ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5                     ; work         ;
-;             |g07_fullAdder:inst1| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1 ; work         ;
-;             |g07_fullAdder:inst2| ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2 ; work         ;
-;             |g07_fullAdder:inst|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst  ; work         ;
-;          |g07_adder:inst|         ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst                      ; work         ;
-;             |g07_fullAdder:inst5| ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5  ; work         ;
-;             |g07_fullAdder:inst6| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6  ; work         ;
-;             |g07_fullAdder:inst7| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7  ; work         ;
-+-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                  ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                 ; Library Name ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------+--------------+
+; |g07_testing                      ; 35 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 35 (0)       ; 0 (0)             ; 0 (0)            ; |g07_testing                                                                        ;              ;
+;    |g07_rules_v2:inst|            ; 35 (27)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (27)      ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst                                                      ;              ;
+;       |g07_Modulo_13:u1|          ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1                                     ;              ;
+;          |g07_adder:inst5|        ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5                     ;              ;
+;             |g07_fullAdder:inst1| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1 ;              ;
+;             |g07_fullAdder:inst2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2 ;              ;
+;             |g07_fullAdder:inst|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst  ;              ;
+;          |g07_adder:inst|         ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst                      ;              ;
+;             |g07_fullAdder:inst5| ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5  ;              ;
+;             |g07_fullAdder:inst6| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6  ;              ;
+;             |g07_fullAdder:inst7| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |g07_testing|g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7  ;              ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -967,144 +969,140 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; new_sum[2]  ; Output   ; --            ; --            ; --                    ; --  ;
 ; new_sum[1]  ; Output   ; --            ; --            ; --                    ; --  ;
 ; new_sum[0]  ; Output   ; --            ; --            ; --                    ; --  ;
-; old_sum[1]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; top_card[5] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; old_sum[1]  ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; old_sum[5]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; old_sum[4]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; old_sum[2]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; old_sum[0]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; old_sum[3]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; top_card[3] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; top_card[2] ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; top_card[1] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; old_sum[0]  ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; old_sum[3]  ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; top_card[1] ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; top_card[0] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; top_card[4] ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; top_card[5] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; top_card[2] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; top_card[3] ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; top_card[4] ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 +-------------+----------+---------------+---------------+-----------------------+-----+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                                   ;
-+------------------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                                ; Pad To Core Index ; Setting ;
-+------------------------------------------------------------------------------------+-------------------+---------+
-; old_sum[1]                                                                         ;                   ;         ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 0                 ; 6       ;
-;      - g07_rules:inst|Add0~0                                                       ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - g07_rules:inst|Add0~2                                                       ; 0                 ; 6       ;
-; old_sum[5]                                                                         ;                   ;         ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 1                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 1                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7|inst1~0  ; 1                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1|inst2   ; 1                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 1                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst2|inst1~0 ; 1                 ; 6       ;
-;      - g07_rules:inst|Add0~3                                                       ; 1                 ; 6       ;
-; old_sum[4]                                                                         ;                   ;         ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7|inst1~0  ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6|inst1    ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1|inst2   ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst|inst     ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst2|inst1~0 ; 0                 ; 6       ;
-;      - g07_rules:inst|Add0~3                                                       ; 0                 ; 6       ;
-; old_sum[2]                                                                         ;                   ;         ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~2  ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1   ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst4~0 ; 0                 ; 6       ;
-; old_sum[0]                                                                         ;                   ;         ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~2  ; 0                 ; 6       ;
-;      - g07_rules:inst|Add0~0                                                       ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1|inst4~0 ; 0                 ; 6       ;
-;      - g07_rules:inst|Add0~2                                                       ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst|inst     ; 0                 ; 6       ;
-; old_sum[3]                                                                         ;                   ;         ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 0                 ; 6       ;
-;      - g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 0                 ; 6       ;
-;      - g07_rules:inst|Add0~3                                                       ; 0                 ; 6       ;
-; top_card[3]                                                                        ;                   ;         ;
-;      - g07_rules:inst|test_new_sum_int[3]~4                                        ; 0                 ; 6       ;
-; top_card[2]                                                                        ;                   ;         ;
-;      - g07_rules:inst|test_new_sum_int[2]~2                                        ; 0                 ; 6       ;
-; top_card[1]                                                                        ;                   ;         ;
-;      - g07_rules:inst|test_new_sum_int[1]~0                                        ; 1                 ; 6       ;
-; top_card[0]                                                                        ;                   ;         ;
-;      - g07_rules:inst|sum[0]~0                                                     ; 0                 ; 6       ;
-; top_card[4]                                                                        ;                   ;         ;
-;      - g07_rules:inst|test_new_sum_int[4]~6                                        ; 1                 ; 6       ;
-; top_card[5]                                                                        ;                   ;         ;
-;      - g07_rules:inst|sum[4]~2                                                     ; 1                 ; 6       ;
-;      - g07_rules:inst|sum[5]~3                                                     ; 1                 ; 6       ;
-;      - g07_rules:inst|sum[4]~4                                                     ; 1                 ; 6       ;
-+------------------------------------------------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                      ;
++---------------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                                   ; Pad To Core Index ; Setting ;
++---------------------------------------------------------------------------------------+-------------------+---------+
+; top_card[5]                                                                           ;                   ;         ;
+;      - g07_rules_v2:inst|legal_play~0                                                 ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|sum[5]~0                                                     ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|sum[4]~1                                                     ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|sum[3]~2                                                     ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|sum[2]~4                                                     ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|sum[1]~5                                                     ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|sum[0]~6                                                     ; 0                 ; 6       ;
+; old_sum[1]                                                                            ;                   ;         ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~0                                                       ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1|inst4~0 ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~1                                                       ; 0                 ; 6       ;
+; old_sum[5]                                                                            ;                   ;         ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7|inst1~0  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~1                                                       ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~4                                                       ; 0                 ; 6       ;
+; old_sum[4]                                                                            ;                   ;         ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7|inst1~0  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6|inst1    ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~2                                                       ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~4                                                       ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst|inst     ; 0                 ; 6       ;
+; old_sum[2]                                                                            ;                   ;         ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~2  ; 1                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 1                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~4                                                       ; 1                 ; 6       ;
+; old_sum[0]                                                                            ;                   ;         ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~2  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~0                                                       ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1|inst4~0 ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~2                                                       ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst|inst     ; 0                 ; 6       ;
+; old_sum[3]                                                                            ;                   ;         ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 0                 ; 6       ;
+;      - g07_rules_v2:inst|Add0~3                                                       ; 0                 ; 6       ;
+; top_card[1]                                                                           ;                   ;         ;
+;      - g07_rules_v2:inst|test_new_sum_int[1]~2                                        ; 0                 ; 6       ;
+; top_card[0]                                                                           ;                   ;         ;
+;      - g07_rules_v2:inst|test_new_sum_int[0]~0                                        ; 0                 ; 6       ;
+; top_card[2]                                                                           ;                   ;         ;
+;      - g07_rules_v2:inst|test_new_sum_int[2]~4                                        ; 1                 ; 6       ;
+; top_card[3]                                                                           ;                   ;         ;
+;      - g07_rules_v2:inst|test_new_sum_int[3]~6                                        ; 0                 ; 6       ;
+; top_card[4]                                                                           ;                   ;         ;
+;      - g07_rules_v2:inst|test_new_sum_int[4]~8                                        ; 1                 ; 6       ;
++---------------------------------------------------------------------------------------+-------------------+---------+
 
 
-+---------------------------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                                       ;
-+-----------------------------------------------------------------------------+---------+
-; Name                                                                        ; Fan-Out ;
-+-----------------------------------------------------------------------------+---------+
-; old_sum[4]                                                                  ; 9       ;
-; old_sum[5]                                                                  ; 7       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~2  ; 7       ;
-; old_sum[0]                                                                  ; 5       ;
-; old_sum[1]                                                                  ; 5       ;
-; g07_rules:inst|test_new_sum_int[1]~0                                        ; 5       ;
-; old_sum[2]                                                                  ; 4       ;
-; g07_rules:inst|LessThan1~1                                                  ; 4       ;
-; g07_rules:inst|Add0~4                                                       ; 4       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst|inst     ; 4       ;
-; g07_rules:inst|Add0~2                                                       ; 4       ;
-; g07_rules:inst|Add0~1                                                       ; 4       ;
-; g07_rules:inst|test_new_sum_int[4]~6                                        ; 4       ;
-; g07_rules:inst|test_new_sum_int[3]~4                                        ; 4       ;
-; g07_rules:inst|test_new_sum_int[2]~2                                        ; 4       ;
-; top_card[5]                                                                 ; 3       ;
-; old_sum[3]                                                                  ; 3       ;
-; g07_rules:inst|sum[4]~4                                                     ; 3       ;
-; g07_rules:inst|Equal1~0                                                     ; 3       ;
-; g07_rules:inst|LessThan1~0                                                  ; 3       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1|inst2   ; 3       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1|inst4~0 ; 3       ;
-; g07_rules:inst|Add0~0                                                       ; 3       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6|inst1    ; 3       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7|inst1~0  ; 3       ;
-; g07_rules:inst|sum[4]~2                                                     ; 2       ;
-; g07_rules:inst|Add0~3                                                       ; 2       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst4~0 ; 2       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1   ; 2       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst2|inst1~0 ; 2       ;
-; top_card[4]                                                                 ; 1       ;
-; top_card[0]                                                                 ; 1       ;
-; top_card[1]                                                                 ; 1       ;
-; top_card[2]                                                                 ; 1       ;
-; top_card[3]                                                                 ; 1       ;
-; g07_rules:inst|legal_play~4                                                 ; 1       ;
-; g07_rules:inst|sum[1]~8                                                     ; 1       ;
-; g07_rules:inst|sum[2]~7                                                     ; 1       ;
-; g07_rules:inst|sum[3]~6                                                     ; 1       ;
-; g07_rules:inst|sum[4]~5                                                     ; 1       ;
-; g07_rules:inst|Add2~0                                                       ; 1       ;
-; g07_rules:inst|sum[5]~3                                                     ; 1       ;
-; g07_rules:inst|new_card_value_int[0]~3                                      ; 1       ;
-; g07_rules:inst|new_card_value_int[1]~2                                      ; 1       ;
-; g07_rules:inst|new_card_value_int[2]~1                                      ; 1       ;
-; g07_rules:inst|new_card_value_int[3]~0                                      ; 1       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 1       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 1       ;
-; g07_rules:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 1       ;
-; g07_rules:inst|Add1~0                                                       ; 1       ;
-; g07_rules:inst|test_new_sum_int[4]~7                                        ; 1       ;
-; g07_rules:inst|test_new_sum_int[3]~5                                        ; 1       ;
-; g07_rules:inst|test_new_sum_int[2]~3                                        ; 1       ;
-; g07_rules:inst|test_new_sum_int[1]~1                                        ; 1       ;
-; g07_rules:inst|sum[0]~1                                                     ; 1       ;
-; g07_rules:inst|sum[0]~0                                                     ; 1       ;
-+-----------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                          ;
++--------------------------------------------------------------------------------+---------+
+; Name                                                                           ; Fan-Out ;
++--------------------------------------------------------------------------------+---------+
+; old_sum[4]                                                                     ; 8       ;
+; top_card[5]                                                                    ; 7       ;
+; old_sum[5]                                                                     ; 6       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~2  ; 6       ;
+; g07_rules_v2:inst|test_new_sum_int[3]~6                                        ; 6       ;
+; g07_rules_v2:inst|test_new_sum_int[1]~2                                        ; 6       ;
+; old_sum[0]                                                                     ; 5       ;
+; old_sum[1]                                                                     ; 5       ;
+; g07_rules_v2:inst|test_new_sum_int[4]~8                                        ; 5       ;
+; g07_rules_v2:inst|test_new_sum_int[2]~4                                        ; 5       ;
+; g07_rules_v2:inst|LessThan1~1                                                  ; 4       ;
+; g07_rules_v2:inst|Add0~6                                                       ; 4       ;
+; g07_rules_v2:inst|Add0~5                                                       ; 4       ;
+; g07_rules_v2:inst|Add0~0                                                       ; 4       ;
+; old_sum[3]                                                                     ; 3       ;
+; old_sum[2]                                                                     ; 3       ;
+; g07_rules_v2:inst|LessThan1~0                                                  ; 3       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst|inst     ; 3       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2|inst1~0 ; 3       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1|inst4~0 ; 3       ;
+; g07_rules_v2:inst|Add0~2                                                       ; 2       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6|inst1    ; 2       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7|inst1~0  ; 2       ;
+; top_card[4]                                                                    ; 1       ;
+; top_card[3]                                                                    ; 1       ;
+; top_card[2]                                                                    ; 1       ;
+; top_card[0]                                                                    ; 1       ;
+; top_card[1]                                                                    ; 1       ;
+; g07_rules_v2:inst|sum[0]~6                                                     ; 1       ;
+; g07_rules_v2:inst|sum[1]~5                                                     ; 1       ;
+; g07_rules_v2:inst|sum[2]~4                                                     ; 1       ;
+; g07_rules_v2:inst|sum[3]~3                                                     ; 1       ;
+; g07_rules_v2:inst|sum[3]~2                                                     ; 1       ;
+; g07_rules_v2:inst|sum[4]~1                                                     ; 1       ;
+; g07_rules_v2:inst|Add2~0                                                       ; 1       ;
+; g07_rules_v2:inst|sum[5]~0                                                     ; 1       ;
+; g07_rules_v2:inst|legal_play~0                                                 ; 1       ;
+; g07_rules_v2:inst|new_card_value_int[3]~3                                      ; 1       ;
+; g07_rules_v2:inst|new_card_value_int[2]~2                                      ; 1       ;
+; g07_rules_v2:inst|new_card_value_int[0]~1                                      ; 1       ;
+; g07_rules_v2:inst|new_card_value_int[1]~0                                      ; 1       ;
+; g07_rules_v2:inst|Add0~4                                                       ; 1       ;
+; g07_rules_v2:inst|Add0~3                                                       ; 1       ;
+; g07_rules_v2:inst|Add0~1                                                       ; 1       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~1  ; 1       ;
+; g07_rules_v2:inst|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5|inst4~0  ; 1       ;
+; g07_rules_v2:inst|test_new_sum_int[3]~7                                        ; 1       ;
+; g07_rules_v2:inst|test_new_sum_int[2]~5                                        ; 1       ;
+; g07_rules_v2:inst|test_new_sum_int[1]~3                                        ; 1       ;
+; g07_rules_v2:inst|test_new_sum_int[0]~1                                        ; 1       ;
+; g07_rules_v2:inst|test_new_sum_int[0]~0                                        ; 1       ;
++--------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -1112,29 +1110,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 35 / 54,004 ( < 1 % ) ;
-; C16 interconnects           ; 11 / 2,100 ( < 1 % )  ;
-; C4 interconnects            ; 27 / 36,000 ( < 1 % ) ;
-; Direct links                ; 4 / 54,004 ( < 1 % )  ;
+; Block interconnects         ; 30 / 54,004 ( < 1 % ) ;
+; C16 interconnects           ; 2 / 2,100 ( < 1 % )   ;
+; C4 interconnects            ; 37 / 36,000 ( < 1 % ) ;
+; Direct links                ; 2 / 54,004 ( < 1 % )  ;
 ; Global clocks               ; 0 / 16 ( 0 % )        ;
-; Local interconnects         ; 21 / 18,752 ( < 1 % ) ;
-; R24 interconnects           ; 11 / 1,900 ( < 1 % )  ;
-; R4 interconnects            ; 26 / 46,920 ( < 1 % ) ;
+; Local interconnects         ; 20 / 18,752 ( < 1 % ) ;
+; R24 interconnects           ; 7 / 1,900 ( < 1 % )   ;
+; R4 interconnects            ; 28 / 46,920 ( < 1 % ) ;
 +-----------------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 13.00) ; Number of LABs  (Total = 3) ;
+; Number of Logic Elements  (Average = 11.67) ; Number of LABs  (Total = 3) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
+; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
+; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
@@ -1142,24 +1140,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 2                           ;
+; 15                                          ; 1                           ;
+; 16                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 13.00) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced  (Average = 11.67) ; Number of LABs  (Total = 3) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
+; 4                                            ; 1                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 0                           ;
-; 7                                            ; 1                           ;
+; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
@@ -1167,45 +1165,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
 ; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 2                           ;
+; 15                                           ; 1                           ;
+; 16                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 6.67) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced Out  (Average = 5.00) ; Number of LABs  (Total = 3) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
+; 4                                               ; 2                           ;
 ; 5                                               ; 0                           ;
-; 6                                               ; 1                           ;
-; 7                                               ; 2                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 8.67) ; Number of LABs  (Total = 3) ;
+; Number of Distinct Inputs  (Average = 6.67) ; Number of LABs  (Total = 3) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
+; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 1                           ;
+; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 1                           ;
+; 10                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1241,7 +1237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device EP2C20F484C7 for design "g07_Lab4"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1263,18 +1259,18 @@ Critical Warning (169085): No exact pin location assignment(s) for 19 pins of 19
     Info (169086): Pin new_sum[2] not assigned to an exact location on the device
     Info (169086): Pin new_sum[1] not assigned to an exact location on the device
     Info (169086): Pin new_sum[0] not assigned to an exact location on the device
+    Info (169086): Pin top_card[5] not assigned to an exact location on the device
     Info (169086): Pin old_sum[1] not assigned to an exact location on the device
     Info (169086): Pin old_sum[5] not assigned to an exact location on the device
     Info (169086): Pin old_sum[4] not assigned to an exact location on the device
     Info (169086): Pin old_sum[2] not assigned to an exact location on the device
     Info (169086): Pin old_sum[0] not assigned to an exact location on the device
     Info (169086): Pin old_sum[3] not assigned to an exact location on the device
-    Info (169086): Pin top_card[3] not assigned to an exact location on the device
-    Info (169086): Pin top_card[2] not assigned to an exact location on the device
     Info (169086): Pin top_card[1] not assigned to an exact location on the device
     Info (169086): Pin top_card[0] not assigned to an exact location on the device
+    Info (169086): Pin top_card[2] not assigned to an exact location on the device
+    Info (169086): Pin top_card[3] not assigned to an exact location on the device
     Info (169086): Pin top_card[4] not assigned to an exact location on the device
-    Info (169086): Pin top_card[5] not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'g07_Lab4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1339,7 +1335,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "request_deal_btn" is assigned to location or region, but does not exist in design
     Warning (15706): Node "reset_btn" is assigned to location or region, but does not exist in design
     Warning (15706): Node "rled" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1347,12 +1343,12 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y14 to location X11_Y27
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y0 to location X11_Y13
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 7 output pins without output pin load capacitance assignment
     Info (306007): Pin "legal_play" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1365,20 +1361,20 @@ Warning (306006): Found 7 output pins without output pin load capacitance assign
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_files/g07_Lab4.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 732 megabytes
-    Info: Processing ended: Thu Nov 16 18:49:08 2017
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info (144001): Generated suppressed messages file C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4_fix/output_files/g07_Lab4.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 1139 megabytes
+    Info: Processing ended: Thu Nov 16 20:58:01 2017
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in K:/Documents/GitHub/DSD-Labs/Lab4_fix/output_files/g07_Lab4.fit.smsg.
+The suppressed messages can be found in C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4_fix/output_files/g07_Lab4.fit.smsg.
 
 

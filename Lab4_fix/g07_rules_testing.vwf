@@ -182,7 +182,7 @@ SIGNAL("legal_play")
 	PARENT = "";
 }
 
-SIGNAL("top_card")
+SIGNAL("new_card")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -192,64 +192,64 @@ SIGNAL("top_card")
 	PARENT = "";
 }
 
-SIGNAL("top_card[5]")
+SIGNAL("new_card[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "top_card";
+	PARENT = "new_card";
 }
 
-SIGNAL("top_card[4]")
+SIGNAL("new_card[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "top_card";
+	PARENT = "new_card";
 }
 
-SIGNAL("top_card[3]")
+SIGNAL("new_card[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "top_card";
+	PARENT = "new_card";
 }
 
-SIGNAL("top_card[2]")
+SIGNAL("new_card[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "top_card";
+	PARENT = "new_card";
 }
 
-SIGNAL("top_card[1]")
+SIGNAL("new_card[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "top_card";
+	PARENT = "new_card";
 }
 
-SIGNAL("top_card[0]")
+SIGNAL("new_card[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "top_card";
+	PARENT = "new_card";
 }
 
 TRANSITION_LIST("old_sum[5]")
@@ -257,7 +257,8 @@ TRANSITION_LIST("old_sum[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 3000.0;
+		LEVEL 1 FOR 2440.0;
+		LEVEL 0 FOR 560.0;
 	}
 }
 
@@ -275,7 +276,7 @@ TRANSITION_LIST("old_sum[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 3000.0;
+		LEVEL 1 FOR 3000.0;
 	}
 }
 
@@ -284,7 +285,8 @@ TRANSITION_LIST("old_sum[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 3000.0;
+		LEVEL 1 FOR 2440.0;
+		LEVEL 0 FOR 560.0;
 	}
 }
 
@@ -293,7 +295,8 @@ TRANSITION_LIST("old_sum[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 3000.0;
+		LEVEL 1 FOR 2440.0;
+		LEVEL 0 FOR 560.0;
 	}
 }
 
@@ -302,9 +305,9 @@ TRANSITION_LIST("old_sum[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1280.0;
-		LEVEL 1 FOR 1120.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 1 FOR 2440.0;
+		LEVEL 0 FOR 260.0;
+		LEVEL 1 FOR 300.0;
 	}
 }
 
@@ -372,7 +375,7 @@ TRANSITION_LIST("legal_play")
 	}
 }
 
-TRANSITION_LIST("top_card[5]")
+TRANSITION_LIST("new_card[5]")
 {
 	NODE
 	{
@@ -381,7 +384,7 @@ TRANSITION_LIST("top_card[5]")
 	}
 }
 
-TRANSITION_LIST("top_card[4]")
+TRANSITION_LIST("new_card[4]")
 {
 	NODE
 	{
@@ -391,7 +394,7 @@ TRANSITION_LIST("top_card[4]")
 	}
 }
 
-TRANSITION_LIST("top_card[3]")
+TRANSITION_LIST("new_card[3]")
 {
 	NODE
 	{
@@ -407,7 +410,7 @@ TRANSITION_LIST("top_card[3]")
 	}
 }
 
-TRANSITION_LIST("top_card[2]")
+TRANSITION_LIST("new_card[2]")
 {
 	NODE
 	{
@@ -423,7 +426,7 @@ TRANSITION_LIST("top_card[2]")
 	}
 }
 
-TRANSITION_LIST("top_card[1]")
+TRANSITION_LIST("new_card[1]")
 {
 	NODE
 	{
@@ -438,7 +441,7 @@ TRANSITION_LIST("top_card[1]")
 	}
 }
 
-TRANSITION_LIST("top_card[0]")
+TRANSITION_LIST("new_card[0]")
 {
 	NODE
 	{
@@ -454,7 +457,7 @@ TRANSITION_LIST("top_card[0]")
 
 DISPLAY_LINE
 {
-	CHANNEL = "top_card";
+	CHANNEL = "new_card";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 0;
@@ -464,7 +467,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "top_card[5]";
+	CHANNEL = "new_card[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 1;
@@ -474,7 +477,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "top_card[4]";
+	CHANNEL = "new_card[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 2;
@@ -484,7 +487,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "top_card[3]";
+	CHANNEL = "new_card[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 3;
@@ -494,7 +497,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "top_card[2]";
+	CHANNEL = "new_card[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 4;
@@ -504,7 +507,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "top_card[1]";
+	CHANNEL = "new_card[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 5;
@@ -514,7 +517,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "top_card[0]";
+	CHANNEL = "new_card[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 6;
@@ -526,7 +529,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "old_sum";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 0;
 	CHILDREN = 8, 9, 10, 11, 12, 13;
@@ -536,7 +539,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "old_sum[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
 	PARENT = 7;
@@ -546,7 +549,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "old_sum[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
 	PARENT = 7;
@@ -556,7 +559,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "old_sum[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
 	PARENT = 7;
@@ -566,7 +569,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "old_sum[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
 	PARENT = 7;
@@ -576,7 +579,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "old_sum[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
 	PARENT = 7;
@@ -586,7 +589,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "old_sum[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
 	PARENT = 7;

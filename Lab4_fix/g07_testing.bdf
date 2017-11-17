@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 216 192 384 208)
+	(rect 224 208 392 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "top_card[5..0]" (rect 5 0 74 12)(font "Arial" ))
+	(text "old_sum[5..0]" (rect 5 0 72 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 216 240 384 256)
+	(rect 224 248 392 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "old_sum[5..0]" (rect 5 0 73 12)(font "Arial" ))
+	(text "new_card[5..0]" (rect 5 0 77 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -84,9 +84,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 472 200 704 280)
+	(rect 480 200 712 280)
 	(text "g07_rules" (rect 5 0 52 12)(font "Arial" ))
-	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -105,14 +105,14 @@ applicable agreement for further details.
 		(pt 232 32)
 		(output)
 		(text "legal_play" (rect 0 0 49 12)(font "Arial" ))
-		(text "legal_play" (rect 170 27 211 39)(font "Arial" ))
+		(text "legal_play" (rect 170 27 219 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32))
 	)
 	(port
 		(pt 232 48)
 		(output)
 		(text "sum[5..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "sum[5..0]" (rect 172 43 211 55)(font "Arial" ))
+		(text "sum[5..0]" (rect 172 43 219 55)(font "Arial" ))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
 	(drawing
@@ -120,30 +120,35 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 704 232)
 	(pt 736 232)
+	(pt 712 232)
 )
 (connector
-	(pt 736 232)
 	(pt 736 216)
+	(pt 736 232)
 )
 (connector
-	(pt 704 248)
 	(pt 744 248)
+	(pt 712 248)
 	(bus)
 )
 (connector
-	(pt 472 248)
-	(pt 384 248)
+	(pt 480 232)
+	(pt 392 232)
 	(bus)
 )
 (connector
-	(pt 472 232)
-	(pt 384 232)
+	(pt 392 232)
+	(pt 392 216)
 	(bus)
 )
 (connector
-	(pt 384 232)
-	(pt 384 200)
+	(pt 480 248)
+	(pt 392 248)
+	(bus)
+)
+(connector
+	(pt 392 248)
+	(pt 392 256)
 	(bus)
 )
