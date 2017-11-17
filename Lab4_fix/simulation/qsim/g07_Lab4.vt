@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/16/2017 16:58:14"
+// Generated on "11/16/2017 18:49:31"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g07_testing
 // 
@@ -145,6 +145,7 @@ end
 initial
 begin
 	legal_play_expected = 1'bX;
+	legal_play_expected = #999000 1'b0;
 end 
 // generate trigger
 always @(legal_play_expected or legal_play or new_sum_expected or new_sum)
@@ -258,7 +259,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1000000;
+#3000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -295,39 +296,45 @@ end
 initial
 begin
 	top_card[4] = 1'b0;
-	top_card[4] = #800000 1'b1;
+	top_card[4] = #1600000 1'b1;
 end 
 // top_card[ 3 ]
 initial
 begin
 	top_card[3] = 1'b0;
-	top_card[3] = #400000 1'b1;
-	top_card[3] = #400000 1'b0;
+	top_card[3] = #800000 1'b1;
+	top_card[3] = #800000 1'b0;
+	top_card[3] = #800000 1'b1;
 end 
 // top_card[ 2 ]
 initial
 begin
-	repeat(2)
+	repeat(3)
 	begin
 		top_card[2] = 1'b0;
-		top_card[2] = #200000 1'b1;
-		# 200000;
+		top_card[2] = #400000 1'b1;
+		# 400000;
 	end
 	top_card[2] = 1'b0;
+	top_card[2] = #400000 1'b1;
 end 
 // top_card[ 1 ]
-always
+initial
 begin
+	repeat(7)
+	begin
+		top_card[1] = 1'b0;
+		top_card[1] = #200000 1'b1;
+		# 200000;
+	end
 	top_card[1] = 1'b0;
-	top_card[1] = #100000 1'b1;
-	#100000;
 end 
 // top_card[ 0 ]
 always
 begin
 	top_card[0] = 1'b0;
-	top_card[0] = #50000 1'b1;
-	#50000;
+	top_card[0] = #100000 1'b1;
+	#100000;
 end 
 // old_sum[ 5 ]
 initial
@@ -348,25 +355,18 @@ end
 initial
 begin
 	old_sum[2] = 1'b0;
-	old_sum[2] = #800000 1'b1;
 end 
 // old_sum[ 1 ]
 initial
 begin
 	old_sum[1] = 1'b0;
-	old_sum[1] = #400000 1'b1;
-	old_sum[1] = #400000 1'b0;
 end 
 // old_sum[ 0 ]
 initial
 begin
-	repeat(2)
-	begin
-		old_sum[0] = 1'b0;
-		old_sum[0] = #200000 1'b1;
-		# 200000;
-	end
 	old_sum[0] = 1'b0;
+	old_sum[0] = #1280000 1'b1;
+	old_sum[0] = #1120000 1'b0;
 end 
 
 g07_testing_vlg_sample_tst tb_sample (

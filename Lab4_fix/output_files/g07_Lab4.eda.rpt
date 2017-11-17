@@ -1,6 +1,6 @@
 EDA Netlist Writer report for g07_Lab4
-Thu Nov 16 16:58:15 2017
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Thu Nov 16 18:49:32 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov 16 16:58:15 2017 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov 16 18:49:32 2017 ;
 ; Revision Name             ; g07_Lab4                              ;
 ; Top-level Entity Name     ; g07_testing                           ;
 ; Family                    ; Cyclone II                            ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                       ;
-+--------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                  ;
-+--------------------------------------------------------------------------------------------------+
-; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4_fix/simulation/modelsim/g07_Lab4.vo ;
-+--------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Simulation Generated Files                                            ;
++-----------------------------------------------------------------------+
+; Generated Files                                                       ;
++-----------------------------------------------------------------------+
+; K:/Documents/GitHub/DSD-Labs/Lab4_fix/simulation/modelsim/g07_Lab4.vo ;
++-----------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -79,14 +79,13 @@ applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Nov 16 16:58:15 2017
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Nov 16 18:49:32 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog g07_Lab4 -c g07_Lab4
-Info (119006): Selected device EP2C20F484C7 for design "g07_Lab4"
-Info (204019): Generated file g07_Lab4.vo in folder "C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab4_fix/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file g07_Lab4.vo in folder "K:/Documents/GitHub/DSD-Labs/Lab4_fix/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 422 megabytes
-    Info: Processing ended: Thu Nov 16 16:58:15 2017
+    Info: Peak virtual memory: 406 megabytes
+    Info: Processing ended: Thu Nov 16 18:49:32 2017
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 

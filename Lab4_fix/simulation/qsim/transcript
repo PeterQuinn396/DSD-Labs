@@ -16,13 +16,17 @@
 # vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.g07_testing_vlg_vec_tst 
 # Loading work.g07_testing_vlg_vec_tst
 # Loading work.g07_testing
+# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading work.g07_testing_vlg_sample_tst
 # Loading work.g07_testing_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ** Error: (vsim-3601) Iteration limit reached at time 800 ns.
-# 
+# ERROR! Vector Mismatch for output port legal_play :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : g07_Lab4.vt(267)
+#    Time: 3 us  Iteration: 0  Instance: /g07_testing_vlg_vec_tst/tb_out

@@ -26,25 +26,25 @@ play_pile_top_card[1] => Add1.IN9
 play_pile_top_card[2] => Add1.IN8
 play_pile_top_card[3] => Add1.IN7
 play_pile_top_card[4] => Add1.IN6
-play_pile_top_card[5] => legal_play~0.DATAA
-play_pile_top_card[5] => new_sum_int~0.OUTPUTSELECT
-play_pile_top_card[5] => new_sum_int~1.OUTPUTSELECT
-play_pile_top_card[5] => new_sum_int~2.OUTPUTSELECT
-play_pile_top_card[5] => new_sum_int~3.OUTPUTSELECT
-play_pile_top_card[5] => new_ace~0.DATAB
+play_pile_top_card[5] => legal_play.DATAA
+play_pile_top_card[5] => new_sum_int.OUTPUTSELECT
+play_pile_top_card[5] => new_sum_int.OUTPUTSELECT
+play_pile_top_card[5] => new_sum_int.OUTPUTSELECT
+play_pile_top_card[5] => new_sum_int.OUTPUTSELECT
+play_pile_top_card[5] => new_ace.DATAB
 card_play[0] => g07_Modulo_13:u1.A[0]
 card_play[1] => g07_Modulo_13:u1.A[1]
 card_play[2] => g07_Modulo_13:u1.A[2]
 card_play[3] => g07_Modulo_13:u1.A[3]
 card_play[4] => g07_Modulo_13:u1.A[4]
 card_play[5] => g07_Modulo_13:u1.A[5]
-legal_play <= legal_play~1.DB_MAX_OUTPUT_PORT_TYPE
+legal_play <= legal_play.DB_MAX_OUTPUT_PORT_TYPE
 sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-sum[1] <= new_sum_int~11.DB_MAX_OUTPUT_PORT_TYPE
-sum[2] <= new_sum_int~10.DB_MAX_OUTPUT_PORT_TYPE
-sum[3] <= new_sum_int~9.DB_MAX_OUTPUT_PORT_TYPE
-sum[4] <= new_sum_int~8.DB_MAX_OUTPUT_PORT_TYPE
-sum[5] <= new_ace~1.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= new_sum_int.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= new_sum_int.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= new_sum_int.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= new_sum_int.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= new_ace.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g07_testing|g07_rules:inst|g07_Modulo_13:u1
