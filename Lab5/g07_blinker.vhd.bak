@@ -1,0 +1,13 @@
+library ieee; 
+use ieee.std_logic_1164.all;
+library lpm;
+use lpm.lpm_components.all;
+
+entity g07_blinker is
+
+port (blink_en: in std_logic;
+		blink_sig: out std_logic
+		);
+
+end g07_blinker;
+
