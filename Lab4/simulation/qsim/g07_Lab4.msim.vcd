@@ -1,0 +1,1028 @@
+$comment
+	File created using the following command:
+		vcd file g07_Lab4.msim.vcd -direction
+$end
+$date
+	Thu Nov 23 15:50:10 2017
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module g07_testing_vlg_vec_tst $end
+$var reg 6 ! new_card [5:0] $end
+$var reg 6 " old_sum [5:0] $end
+$var wire 1 # legal_play $end
+$var wire 1 $ new_sum [5] $end
+$var wire 1 % new_sum [4] $end
+$var wire 1 & new_sum [3] $end
+$var wire 1 ' new_sum [2] $end
+$var wire 1 ( new_sum [1] $end
+$var wire 1 ) new_sum [0] $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 inst1|Add0~2_combout $end
+$var wire 1 2 inst1|u1|inst3|inst2|inst1~0_combout $end
+$var wire 1 3 inst1|u1|inst5|inst2|inst1~combout $end
+$var wire 1 4 inst1|u1|inst5|inst2|inst4~0_combout $end
+$var wire 1 5 inst1|Add0~5_combout $end
+$var wire 1 6 inst1|Add0~6_combout $end
+$var wire 1 7 inst1|new_card_value_int[3]~0_combout $end
+$var wire 1 8 inst1|new_card_value_int[2]~1_combout $end
+$var wire 1 9 inst1|new_card_value_int[1]~2_combout $end
+$var wire 1 : inst1|new_card_value_int[0]~3_combout $end
+$var wire 1 ; inst1|test_new_sum_int[0]~1 $end
+$var wire 1 < inst1|test_new_sum_int[1]~3 $end
+$var wire 1 = inst1|test_new_sum_int[2]~5 $end
+$var wire 1 > inst1|test_new_sum_int[3]~7 $end
+$var wire 1 ? inst1|test_new_sum_int[4]~8_combout $end
+$var wire 1 @ inst1|test_new_sum_int[4]~9 $end
+$var wire 1 A inst1|Add1~0_combout $end
+$var wire 1 B inst1|test_new_sum_int[2]~4_combout $end
+$var wire 1 C inst1|test_new_sum_int[3]~6_combout $end
+$var wire 1 D inst1|LessThan1~1_combout $end
+$var wire 1 E inst1|u1|inst|inst5|inst4~0_combout $end
+$var wire 1 F inst1|u1|inst|inst5|inst4~1_combout $end
+$var wire 1 G inst1|u1|inst|inst5|inst4~2_combout $end
+$var wire 1 H inst1|u1|inst|inst6|inst1~combout $end
+$var wire 1 I inst1|u1|inst5|inst1|inst4~0_combout $end
+$var wire 1 J inst1|u1|inst4|inst1|inst2~combout $end
+$var wire 1 K inst1|Add0~7_combout $end
+$var wire 1 L inst1|Add0~3_combout $end
+$var wire 1 M inst1|u1|inst|inst7|inst1~0_combout $end
+$var wire 1 N inst1|Add0~4_combout $end
+$var wire 1 O inst1|u1|inst5|inst|inst~combout $end
+$var wire 1 P inst1|Equal1~0_combout $end
+$var wire 1 Q inst1|sum[4]~4_combout $end
+$var wire 1 R inst1|legal_play~4_combout $end
+$var wire 1 S inst1|LessThan1~0_combout $end
+$var wire 1 T inst1|sum[5]~5_combout $end
+$var wire 1 U inst1|Add2~0_combout $end
+$var wire 1 V inst1|sum[4]~6_combout $end
+$var wire 1 W inst1|sum[4]~12_combout $end
+$var wire 1 X inst1|test_new_sum_int[1]~2_combout $end
+$var wire 1 Y inst1|sum[3]~7_combout $end
+$var wire 1 Z inst1|sum[3]~8_combout $end
+$var wire 1 [ inst1|sum[2]~13_combout $end
+$var wire 1 \ inst1|sum[2]~9_combout $end
+$var wire 1 ] inst1|sum[1]~10_combout $end
+$var wire 1 ^ inst1|test_new_sum_int[0]~0_combout $end
+$var wire 1 _ inst1|sum[0]~11_combout $end
+$var wire 1 ` old_sum~combout [5] $end
+$var wire 1 a old_sum~combout [4] $end
+$var wire 1 b old_sum~combout [3] $end
+$var wire 1 c old_sum~combout [2] $end
+$var wire 1 d old_sum~combout [1] $end
+$var wire 1 e old_sum~combout [0] $end
+$var wire 1 f new_card~combout [5] $end
+$var wire 1 g new_card~combout [4] $end
+$var wire 1 h new_card~combout [3] $end
+$var wire 1 i new_card~combout [2] $end
+$var wire 1 j new_card~combout [1] $end
+$var wire 1 k new_card~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 !
+b110000 "
+1#
+1)
+0(
+1'
+0&
+1%
+1$
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+14
+05
+16
+07
+18
+09
+1:
+0;
+1<
+0=
+1>
+1?
+0@
+0A
+1B
+0C
+1D
+0E
+0F
+0G
+0H
+1I
+0J
+0K
+0L
+0M
+1N
+0O
+0P
+0Q
+1R
+0S
+1T
+1U
+0V
+1W
+0X
+1Y
+0Z
+0[
+1\
+0]
+1^
+1_
+0e
+0d
+0c
+0b
+1a
+1`
+0k
+0j
+1i
+0h
+0g
+0f
+$end
+#200000
+b101 !
+1k
+0*
+1O
+0N
+0:
+19
+0^
+1X
+0_
+1]
+1[
+0D
+0]
+1Z
+0W
+0T
+0)
+1(
+0(
+1&
+0%
+0$
+#400000
+b1 !
+b0 !
+0k
+0i
+1*
+0O
+1N
+1K
+13
+1:
+09
+1L
+08
+1^
+0X
+1P
+19
+17
+0B
+1_
+1]
+0Y
+0U
+1D
+1T
+1X
+1C
+0\
+1W
+0[
+1U
+0D
+1)
+1(
+1$
+1V
+0]
+0Z
+0W
+0'
+1%
+1W
+0(
+0&
+0%
+1%
+#800000
+b100 !
+1i
+0*
+0K
+03
+0L
+18
+0P
+09
+07
+1B
+1[
+0T
+0X
+0C
+1\
+1]
+0[
+1Y
+1D
+0V
+0$
+0]
+1T
+1'
+1(
+0(
+1$
+#920000
+b10000 "
+b0 "
+b1000 "
+b1001 "
+1e
+1b
+0a
+0`
+1*
+1;
+0^
+1C
+0?
+1[
+0T
+1Q
+1X
+0_
+1Z
+1V
+0D
+0W
+1S
+0$
+1]
+0)
+1&
+0%
+1(
+#1000000
+b1011 "
+b101 !
+b1010 "
+1k
+0e
+1d
+0*
+1O
+0N
+0;
+1^
+0<
+0X
+0:
+19
+1<
+1X
+1_
+1=
+0B
+0]
+0^
+0<
+0X
+0=
+1B
+1]
+0>
+0C
+0\
+1)
+0(
+0_
+1=
+0B
+0]
+1D
+1>
+1C
+1\
+1?
+0Z
+1(
+0'
+0>
+0C
+0\
+0U
+0D
+1Z
+1W
+0?
+0S
+0)
+0(
+1'
+0&
+1?
+1D
+1_
+1]
+1\
+0W
+1S
+0'
+1&
+1%
+1W
+0S
+0_
+0]
+0\
+0Z
+1)
+1(
+1'
+0%
+1%
+0)
+0(
+0'
+0&
+#1100000
+b1011 "
+1e
+1*
+1^
+1_
+1)
+#1200000
+b111 !
+b1111 "
+b1101 "
+b110 !
+b1100 "
+0e
+0d
+1c
+0k
+1j
+0*
+0^
+1<
+1X
+1B
+0O
+0_
+0B
+1]
+1U
+0D
+1\
+1:
+1D
+1_
+1Z
+0R
+1^
+0)
+1(
+1'
+0\
+0Z
+1R
+1)
+1&
+0#
+0'
+0&
+1#
+#1300000
+b1101 "
+1e
+1*
+1;
+0^
+0<
+0X
+0_
+1B
+0]
+0U
+0)
+1\
+1U
+0(
+1'
+#1400000
+b1111 "
+b111 !
+b1110 "
+1k
+0e
+1d
+0*
+1O
+1N
+11
+0;
+1^
+1X
+0:
+09
+1L
+08
+06
+0X
+1_
+1]
+0D
+0^
+1<
+1X
+17
+0B
+1D
+1Z
+0R
+1)
+1(
+0_
+0=
+1B
+1C
+0\
+0Z
+1R
+1&
+0#
+0C
+1\
+0D
+1Z
+0)
+0'
+0&
+1#
+1_
+0R
+1'
+1&
+1)
+0#
+#1500000
+b1111 "
+1e
+1*
+1^
+#1600000
+b1111 !
+b1011 !
+b11111 "
+b10111 "
+b1001 !
+b10011 "
+b10001 "
+b1000 !
+b10000 "
+0e
+0d
+0c
+0b
+1a
+0k
+0j
+0i
+1h
+0*
+0^
+0X
+0B
+1>
+1C
+1@
+0?
+0O
+01
+1E
+1K
+13
+15
+0U
+0@
+1?
+1A
+0W
+1S
+1R
+1:
+0A
+1W
+0S
+0R
+0_
+0]
+0\
+1^
+0%
+1#
+1_
+1]
+1\
+1%
+0#
+0)
+0(
+0'
+1)
+1(
+1'
+#1700000
+b10001 "
+1e
+1*
+1;
+0^
+1X
+1U
+#1800000
+b10011 "
+b1001 !
+b10010 "
+1k
+0e
+1d
+0*
+1O
+0N
+0;
+1^
+0<
+0X
+0:
+19
+1<
+1X
+1B
+0U
+0^
+0<
+0X
+0B
+1U
+1B
+0U
+1U
+#1900000
+b10011 "
+1e
+1*
+1^
+#2000000
+b1011 !
+b10111 "
+b10101 "
+b1010 !
+b10100 "
+0e
+0d
+1c
+0k
+1j
+0*
+0^
+1<
+1X
+1=
+0B
+0O
+1F
+0E
+0=
+1B
+0>
+0C
+1>
+1C
+1@
+0?
+0@
+1?
+1A
+0W
+1S
+1R
+0A
+1W
+0S
+0R
+0_
+0%
+1#
+1_
+1%
+0#
+0)
+1)
+#2100000
+b10101 "
+1e
+1*
+1^
+#2200000
+b10111 "
+b1011 !
+b10110 "
+1k
+0e
+1d
+0*
+1O
+1N
+11
+0^
+0<
+0X
+09
+0L
+1=
+0B
+1<
+1X
+19
+0>
+0C
+0U
+0=
+1B
+1U
+1D
+0<
+0X
+1@
+0?
+1>
+1C
+0_
+0]
+0Z
+0W
+1R
+1=
+0B
+1A
+1S
+0@
+1?
+1Z
+0D
+0>
+0C
+0\
+0U
+0S
+0)
+0(
+0&
+0%
+1#
+0A
+1W
+0R
+1_
+1]
+1\
+1@
+0?
+1&
+0'
+0W
+1S
+1R
+1D
+1A
+1%
+0#
+1)
+1(
+1'
+0_
+0]
+0\
+0Z
+0S
+0D
+0%
+1#
+1_
+1]
+1\
+1Z
+1W
+0R
+0)
+0(
+0'
+0&
+1)
+1(
+1'
+1&
+1%
+0#
+#2300000
+b10111 "
+1e
+1*
+1^
+#2400000
+b1111 !
+b11111 "
+b1101 !
+b11011 "
+b11001 "
+b1100 !
+b11000 "
+0e
+0d
+0c
+1b
+0k
+0j
+1i
+0*
+0^
+1<
+1X
+0=
+1B
+1C
+0O
+1G
+01
+0F
+1E
+0K
+03
+0B
+1U
+0C
+1O
+1K
+1H
+05
+12
+0G
+1L
+0I
+11
+18
+16
+13
+0O
+0K
+0H
+15
+02
+1P
+1:
+0L
+08
+06
+1B
+1I
+01
+0Q
+1^
+0P
+0:
+0B
+03
+0]
+1R
+1Q
+0^
+1]
+0R
+0(
+1#
+1(
+0#
+#2500000
+b11001 "
+1e
+1*
+1^
+#2600000
+b11011 "
+b1101 !
+b11010 "
+1k
+0e
+1d
+0*
+1O
+0N
+1G
+0^
+0<
+0X
+0O
+1K
+1H
+05
+12
+1B
+0U
+1L
+1N
+18
+16
+13
+1U
+1P
+1:
+1=
+0B
+08
+0Q
+1^
+1C
+0U
+0=
+1B
+0Y
+1R
+0C
+0[
+1U
+0Z
+1Y
+0\
+1#
+1Z
+0&
+0'
+1&
+#2700000
+b11011 "
+1e
+1*
+1;
+0^
+1X
+0_
+0]
+1[
+0)
+1\
+0(
+1'
+#2800000
+b1111 !
+b11111 "
+b11101 "
+b1110 !
+b11100 "
+0e
+0d
+1c
+0k
+1j
+0*
+0;
+1^
+0X
+1=
+0B
+1O
+0N
+0G
+1F
+0E
+1<
+1X
+1_
+1]
+0Y
+0U
+1C
+0P
+0:
+07
+0O
+0K
+0H
+15
+02
+1G
+0=
+1B
+0]
+1U
+0Z
+1Q
+0^
+0C
+1:
+0L
+06
+03
+1O
+1K
+1H
+05
+12
+1)
+1(
+1>
+1C
+1Y
+1]
+0R
+1^
+0:
+17
+18
+16
+1L
+13
+0(
+0&
+0@
+1?
+1Z
+0^
+0>
+0C
+1=
+0B
+07
+08
+1(
+0#
+0A
+1@
+0?
+0=
+1B
+1&
+0W
+1S
+1R
+1A
+1>
+1C
+0_
+1W
+0S
+0R
+0@
+1?
+0%
+1#
+1_
+0A
+0)
+1%
+0#
+1)
+#2900000
+b11101 "
+1e
+1*
+1^
+#3000000
