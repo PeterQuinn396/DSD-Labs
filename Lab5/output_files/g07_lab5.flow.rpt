@@ -1,5 +1,5 @@
 Flow report for g07_lab5
-Mon Nov 27 13:33:44 2017
+Mon Nov 27 19:15:28 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon Nov 27 13:33:44 2017     ;
+; Flow Status                        ; Successful - Mon Nov 27 19:15:28 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; g07_lab5                                   ;
-; Top-level Entity Name              ; g07_lab5                                   ;
+; Top-level Entity Name              ; g07_lab5_testbed                           ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C20F484C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 1,006                                      ;
+;     Total combinational functions  ; 952                                        ;
+;     Dedicated logic registers      ; 541                                        ;
+; Total registers                    ; 541                                        ;
+; Total pins                         ; 42                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 3,328                                      ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -64,27 +64,43 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/27/2017 13:33:42 ;
+; Start date & time ; 11/27/2017 19:14:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g07_lab5            ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 198660151397250.151180762202244 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++-------------------------------------+---------------------------------------+---------------+------------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name      ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 53447162514629.151182809810696        ; --            ; --               ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --               ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --               ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                          ; --            ; --               ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                          ; --            ; --               ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                           ; --            ; --               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_constant_test.bsf                 ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_constant_test.cmp                 ; --            ; --               ; --             ;
+; MISC_FILE                           ; ../Lab3/lpm_constantINIT.bsf          ; --            ; --               ; --             ;
+; MISC_FILE                           ; ../Lab3/lpm_constantINIT.cmp          ; --            ; --               ; --             ;
+; MISC_FILE                           ; ../Lab3/lpm_counter3.bsf              ; --            ; --               ; --             ;
+; MISC_FILE                           ; ../Lab3/lpm_counter3.cmp              ; --            ; --               ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; g07_lab5_testbed ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; g07_lab5_testbed ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; g07_lab5_testbed ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --               ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --               ; --             ;
+; TOP_LEVEL_ENTITY                    ; g07_lab5_testbed                      ; g07_lab5      ; --               ; --             ;
++-------------------------------------+---------------------------------------+---------------+------------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -92,8 +108,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 518 MB              ; 00:00:02                           ;
-; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 583 MB              ; 00:00:21                           ;
+; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -102,7 +118,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; Peter-Surface    ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-N267BTG  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

@@ -1,0 +1,437 @@
+$comment
+	File created using the following command:
+		vcd file g07_lab5.msim.vcd -direction
+$end
+$date
+	Mon Nov 27 18:12:57 2017
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module g07_lab5_testbed_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " en_p $end
+$var reg 1 # request_deal $end
+$var reg 1 $ reset $end
+$var wire 1 % deal $end
+$var wire 1 & legal_play $end
+$var wire 1 ' p_new_sum [5] $end
+$var wire 1 ( p_new_sum [4] $end
+$var wire 1 ) p_new_sum [3] $end
+$var wire 1 * p_new_sum [2] $end
+$var wire 1 + p_new_sum [1] $end
+$var wire 1 , p_new_sum [0] $end
+$var wire 1 - p_sum [5] $end
+$var wire 1 . p_sum [4] $end
+$var wire 1 / p_sum [3] $end
+$var wire 1 0 p_sum [2] $end
+$var wire 1 1 p_sum [1] $end
+$var wire 1 2 p_sum [0] $end
+$var wire 1 3 sampler $end
+$scope module i1 $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : clk~combout $end
+$var wire 1 ; request_deal~combout $end
+$var wire 1 < inst1|Selector0~0_combout $end
+$var wire 1 = reset~combout $end
+$var wire 1 > inst1|state.WAIT_LOW~regout $end
+$var wire 1 ? inst1|Selector1~0_combout $end
+$var wire 1 @ inst1|state.WAIT_HIGH~regout $end
+$var wire 1 A inst1|Selector2~0_combout $end
+$var wire 1 B inst1|state.ENABLE_STACK~regout $end
+$var wire 1 C en_p~combout $end
+$var wire 1 D inst|Add1~2_combout $end
+$var wire 1 E inst|Add1~0_combout $end
+$var wire 1 F inst|new_sum_int~2_combout $end
+$var wire 1 G inst|new_sum_int~1_combout $end
+$var wire 1 H inst|Add1~1_combout $end
+$var wire 1 I inst|new_sum_int~0_combout $end
+$var wire 1 J inst2|dffs [5] $end
+$var wire 1 K inst2|dffs [4] $end
+$var wire 1 L inst2|dffs [3] $end
+$var wire 1 M inst2|dffs [2] $end
+$var wire 1 N inst2|dffs [1] $end
+$var wire 1 O inst2|dffs [0] $end
+$var wire 1 P inst|old_sum_int [4] $end
+$var wire 1 Q inst|old_sum_int [3] $end
+$var wire 1 R inst|old_sum_int [2] $end
+$var wire 1 S inst|old_sum_int [1] $end
+$var wire 1 T inst|old_sum_int [0] $end
+$var wire 1 U inst|new_sum_int [5] $end
+$var wire 1 V inst|new_sum_int [4] $end
+$var wire 1 W inst|new_sum_int [3] $end
+$var wire 1 X inst|new_sum_int [2] $end
+$var wire 1 Y inst|new_sum_int [1] $end
+$var wire 1 Z inst|new_sum_int [0] $end
+$var wire 1 [ inst|test_new_sum_int [5] $end
+$var wire 1 \ inst|test_new_sum_int [4] $end
+$var wire 1 ] inst|test_new_sum_int [3] $end
+$var wire 1 ^ inst|test_new_sum_int [2] $end
+$var wire 1 _ inst|test_new_sum_int [1] $end
+$var wire 1 ` inst|test_new_sum_int [0] $end
+$var wire 1 a inst|old_sum [5] $end
+$var wire 1 b inst|old_sum [4] $end
+$var wire 1 c inst|old_sum [3] $end
+$var wire 1 d inst|old_sum [2] $end
+$var wire 1 e inst|old_sum [1] $end
+$var wire 1 f inst|old_sum [0] $end
+$var wire 1 g inst|new_card_value_int [3] $end
+$var wire 1 h inst|new_card_value_int [2] $end
+$var wire 1 i inst|new_card_value_int [1] $end
+$var wire 1 j inst|new_card_value_int [0] $end
+$var wire 1 k inst|new_card_value_int_raw [3] $end
+$var wire 1 l inst|new_card_value_int_raw [2] $end
+$var wire 1 m inst|new_card_value_int_raw [1] $end
+$var wire 1 n inst|new_card_value_int_raw [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+x#
+0$
+0%
+0&
+0,
+0+
+0*
+0)
+0(
+0'
+02
+01
+00
+0/
+0.
+0-
+x3
+04
+15
+x6
+17
+18
+19
+0:
+x;
+x<
+0=
+0>
+x?
+0@
+0A
+0B
+1C
+0D
+0E
+0F
+0G
+0H
+0I
+0O
+zN
+zM
+0L
+0K
+zJ
+0T
+zS
+zR
+0Q
+0P
+0Z
+zY
+zX
+0W
+0V
+zU
+0`
+z_
+z^
+0]
+0\
+0[
+0f
+ze
+zd
+0c
+0b
+za
+zj
+zi
+zh
+0g
+zn
+zm
+zl
+0k
+$end
+#20000
+1!
+1:
+03
+1k
+x@
+x>
+xA
+#40000
+0!
+0:
+13
+#60000
+1!
+1:
+03
+1g
+xB
+1D
+x%
+#80000
+0!
+0:
+13
+#100000
+1!
+1:
+03
+1]
+1G
+#120000
+0!
+0:
+13
+#140000
+1!
+1:
+03
+1W
+1)
+#160000
+0!
+0:
+13
+#180000
+1!
+1:
+03
+1L
+1/
+#200000
+0!
+0:
+13
+#220000
+1!
+1:
+03
+1c
+#240000
+0!
+0:
+13
+#260000
+1!
+1:
+03
+1Q
+1E
+0D
+#280000
+0!
+0:
+13
+#300000
+1!
+1:
+03
+1\
+0]
+1I
+0G
+#320000
+0!
+0:
+13
+#340000
+1!
+1:
+03
+1V
+0W
+1(
+0)
+#360000
+0!
+0:
+13
+#380000
+1!
+1:
+03
+0L
+1K
+0/
+1.
+#400000
+0!
+0:
+13
+#420000
+1!
+1:
+03
+0c
+1b
+#440000
+0!
+0:
+13
+#460000
+1!
+1:
+03
+0Q
+1P
+1D
+#480000
+0!
+0:
+13
+#500000
+1!
+1:
+03
+1]
+1G
+1F
+#520000
+0!
+0:
+13
+#540000
+1!
+1:
+03
+1W
+1Z
+1)
+1,
+1+
+1*
+#560000
+0!
+0:
+13
+#580000
+1!
+1:
+03
+1L
+1O
+1/
+12
+11
+10
+#600000
+0!
+0:
+13
+#620000
+1!
+1:
+03
+1c
+1f
+#640000
+0!
+0:
+13
+#660000
+1!
+1:
+03
+1Q
+1T
+1H
+0E
+0D
+#680000
+0!
+0:
+13
+#700000
+1!
+1:
+03
+1[
+1`
+0\
+0]
+#720000
+0!
+0:
+13
+#740000
+1!
+1:
+03
+#760000
+0!
+0:
+13
+#780000
+1!
+1:
+03
+#800000
+0"
+0!
+0C
+0:
+13
+#820000
+1!
+1:
+03
+#840000
+0!
+0:
+13
+#860000
+1!
+1:
+03
+#880000
+0!
+0:
+13
+#900000
+1!
+1:
+03
+#920000
+0!
+0:
+13
+#940000
+1!
+1:
+03
+#960000
+0!
+0:
+13
+#980000
+1!
+1:
+03
+#1000000

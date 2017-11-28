@@ -39,8 +39,6 @@ USE ieee.std_logic_1164.all;
 LIBRARY altera_mf;
 USE altera_mf.all;
 
-ENTITY LUT IS
-	PORT
 	(
 		address		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
 		clock		: IN STD_LOGIC  := '1';

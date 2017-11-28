@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g07_lab5
+set_global_assignment -name TOP_LEVEL_ENTITY g07_lab5_testbed
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:41:01  NOVEMBER 27, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.0
@@ -46,11 +46,80 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name VHDL_FILE g07_controller_FSM.vhd
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/lab5_testing.vwf"
+set_global_assignment -name VHDL_FILE ../Lab4/lpm_divide10.vhd
+set_global_assignment -name VHDL_FILE ../Lab2/LUT.vhd
+set_global_assignment -name BDF_FILE ../Lab3/g07_stack52.bdf
+set_global_assignment -name BDF_FILE ../Lab3/g07_debouncer.bdf
+set_global_assignment -name BDF_FILE ../Lab1/g07_Modulo_13.bdf
+set_global_assignment -name BDF_FILE ../Lab1/g07_fullAdder.bdf
+set_global_assignment -name BDF_FILE ../Lab1/g07_comp7.bdf
+set_global_assignment -name BDF_FILE ../Lab1/g07_adder.bdf
+set_global_assignment -name VHDL_FILE ../Lab4/g07_rules.vhd
+set_global_assignment -name VHDL_FILE ../Lab4/g07_dealer_FSM.vhd
+set_global_assignment -name VHDL_FILE g07_controller_FSM.vhd
 set_global_assignment -name VHDL_FILE g07_blinker.vhd
+set_global_assignment -name BDF_FILE g07_lab5_testbed.bdf
+set_global_assignment -name QIP_FILE lpm_constant_test.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE lab5_testing.vwf
+set_global_assignment -name QIP_FILE ../Lab3/lpm_constantINIT.qip
+set_global_assignment -name QIP_FILE ../Lab3/lpm_counter3.qip
+set_global_assignment -name VHDL_FILE ../Lab2/g07_RANDU.vhd
+set_global_assignment -name VHDL_FILE ../Lab2/g07_pop_enable.vhd
+set_global_assignment -name VHDL_FILE ../Lab2/g07_7_segment_decoder.vhd
+set_global_assignment -name VHDL_FILE ../Lab1/lpm_mux_MODE.vhd
+set_global_assignment -name VHDL_FILE ../Lab2/add32.vhd
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_mux4.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_mux4.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_mux2.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_mux2.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_mux_valueSelect.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_mux_valueSelect.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_divide0.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_divide0.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_counter3.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_counter3.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_counter_stack.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_counter_stack.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_counter_bounce1.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_counter_bounce1.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_counter_bounce.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_counter_bounce.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constantPOP.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constantPOP.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constantINIT.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constantINIT.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constant42_fix.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constant42_fix.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constant0.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constant0.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constant_PUSH.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constant_PUSH.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constant_POP.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constant_POP.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constant_NOOP.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constant_NOOP.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_constant_INIT.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_constant_INIT.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_compare199999.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_compare199999.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_compare52.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_compare52.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_compare0.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_compare0.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_compare_bounce0.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_compare_bounce0.cmp
+set_global_assignment -name VHDL_FILE ../Lab3/lpm_compare_bounce.vhd
+set_global_assignment -name SOURCE_FILE ../Lab3/lpm_compare_bounce.cmp
+set_global_assignment -name SOURCE_FILE lpm_constant_test.cmp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
