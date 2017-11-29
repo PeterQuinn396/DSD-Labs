@@ -1,19 +1,7 @@
 
-State Machine - |g07_lab5_testbed|g07_dealer_FSM:inst4|state
-Name state.ENABLE_STACK state.WAIT_HIGH state.WAIT_LOW 
-state.WAIT_LOW 0 0 0 
-state.WAIT_HIGH 0 1 1 
-state.ENABLE_STACK 1 0 1 
-
-State Machine - |g07_lab5_testbed|g07_controller_FSM:inst29|state
-Name state.DEALER_WON state.PLAYER_WON state.DEALER_TURN state.PLAYER_CHOOSE state.PLAYER_HIT state.PLAYER_CARD_2 state.PLAYER_CARD_1 state.DEALER_CARD_2 state.DEALER_CARD_1 state.RESET 
-state.RESET 0 0 0 0 0 0 0 0 0 0 
-state.DEALER_CARD_1 0 0 0 0 0 0 0 0 1 1 
-state.DEALER_CARD_2 0 0 0 0 0 0 0 1 0 1 
-state.PLAYER_CARD_1 0 0 0 0 0 0 1 0 0 1 
-state.PLAYER_CARD_2 0 0 0 0 0 1 0 0 0 1 
-state.PLAYER_HIT 0 0 0 0 1 0 0 0 0 1 
-state.PLAYER_CHOOSE 0 0 0 1 0 0 0 0 0 1 
-state.DEALER_TURN 0 0 1 0 0 0 0 0 0 1 
-state.PLAYER_WON 0 1 0 0 0 0 0 0 0 1 
-state.DEALER_WON 1 0 0 0 0 0 0 0 0 1 
+State Machine - |g07_computer_FSM|state
+Name state.END_TURN state.DRAW state.CP_TURN state.WAIT_TURN 
+state.WAIT_TURN 0 0 0 0 
+state.CP_TURN 0 0 1 1 
+state.DRAW 0 1 0 1 
+state.END_TURN 1 0 0 1 
