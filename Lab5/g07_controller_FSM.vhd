@@ -16,7 +16,7 @@ end g07_controller_FSM;
 
 architecture g07_controller_FSM_arch of g07_controller_FSM is
 	TYPE state_signal IS (RESET, DEALER_CARD_1, DEALER_CARD_2, PLAYER_CARD_1, 
-	PLAYER_CARD_2, PLAYER_HIT, PLAYER_CHOOSE, DEALER_TURN, PLAYER_WON, DEALER_WON);
+	PLAYER_CARD_2, PLAYER_HIT, PLAYER_CHOOSE, DEALER_TURN, PLAYER_WON, DEALER_WON, ENDGAME);
 	signal state: state_signal;
 	signal vec_changed: std_logic;
 	signal p_sum_last: std_logic_vector (4 downto 0);
@@ -96,11 +96,17 @@ begin
 				end if;
 				
 			when DEALER_WON =>
-				state <= RESET; --go back to reset after doing the dealer won outputs
+				state <= ENDGAME; --go back to reset after doing the dealer won outputs
 			
 			when PLAYER_WON =>
-				state <= RESET; --go back to reset after doing the player own outputs
+				state <= ENDGAME; --go back to reset after doing the player own outputs
 					
+			when ENDGAME =>
+				if hit = '0' then  --wait for press of hit button (active low)
+					state <= RESET;
+				end if;
+				
+			
 			end case;
 			
 			--always update these at the end to make sure they are current for when we go to a

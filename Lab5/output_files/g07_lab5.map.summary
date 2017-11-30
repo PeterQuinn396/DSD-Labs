@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Nov 29 16:05:19 2017
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Thu Nov 30 13:28:24 2017
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : g07_lab5
 Top-level Entity Name : g07_computer_FSM
 Family : Cyclone II
-Total logic elements : 6
-    Total combinational functions : 6
-    Dedicated logic registers : 3
-Total registers : 3
-Total pins : 12
+Total logic elements : 15
+    Total combinational functions : 10
+    Dedicated logic registers : 9
+Total registers : 9
+Total pins : 11
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
