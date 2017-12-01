@@ -1,7 +1,0 @@
-
-State Machine - |g07_computer_FSM|state
-Name state.END_TURN state.DRAW state.CP_TURN state.WAIT_TURN 
-state.WAIT_TURN 0 0 0 0 
-state.CP_TURN 0 0 1 1 
-state.DRAW 0 1 0 1 
-state.END_TURN 1 0 0 1 
