@@ -201,6 +201,15 @@ begin
 				p_won <= '0';
 				d_won <= '1';
 				
+			when ENDGAME =>
+			
+				init <= '0';
+				en_p <= '0';
+				en_d <= '0';
+				d_turn <= '0';
+				p_won <= '0';
+				d_won <= '0';
+				
 		end case;
 	end process;	
 end architecture;
