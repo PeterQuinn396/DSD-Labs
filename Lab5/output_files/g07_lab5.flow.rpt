@@ -1,5 +1,5 @@
 Flow report for g07_lab5
-Thu Nov 30 13:28:24 2017
+Fri Dec 01 09:43:51 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 30 13:28:24 2017      ;
+; Flow Status                        ; Successful - Fri Dec 01 09:43:51 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; g07_lab5                                   ;
 ; Top-level Entity Name              ; g07_computer_FSM                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2017 13:28:21 ;
+; Start date & time ; 12/01/2017 09:43:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g07_lab5            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+------------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name      ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 198660151397250.151206650102536       ; --            ; --               ; --             ;
+; COMPILER_SIGNATURE_ID               ; 53447162514629.151213942209284        ; --            ; --               ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                   ; --            ; --               ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --               ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --               ; --             ;
@@ -83,6 +83,12 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; LPM_CONSTANT                          ; --            ; --               ; --             ;
 ; IP_TOOL_NAME                        ; LPM_CONSTANT                          ; --            ; --               ; --             ;
 ; IP_TOOL_NAME                        ; LPM_COUNTER                           ; --            ; --               ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                           ; --            ; --               ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                           ; --            ; --               ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                               ; --            ; --               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --               ; --             ;
@@ -94,6 +100,12 @@ applicable agreement for further details.
 ; MISC_FILE                           ; ../Lab3/lpm_constantINIT.cmp          ; --            ; --               ; --             ;
 ; MISC_FILE                           ; ../Lab3/lpm_counter3.bsf              ; --            ; --               ; --             ;
 ; MISC_FILE                           ; ../Lab3/lpm_counter3.cmp              ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_counter9.bsf                      ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_counter9.cmp                      ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_add_sub_scores.bsf                ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_add_sub_scores.cmp                ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_mux_displays.bsf                  ; --            ; --               ; --             ;
+; MISC_FILE                           ; lpm_mux_displays.cmp                  ; --            ; --               ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; g07_computer_FSM ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; g07_computer_FSM ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; g07_computer_FSM ; Top            ;
@@ -109,8 +121,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 540 MB              ; 00:00:02                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 537 MB              ; 00:00:04                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,7 +131,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; Peter-Surface    ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-N267BTG  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

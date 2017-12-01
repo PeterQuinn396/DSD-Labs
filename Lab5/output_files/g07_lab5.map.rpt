@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g07_lab5
-Thu Nov 30 13:28:24 2017
+Fri Dec 01 09:43:51 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 30 13:28:24 2017      ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 01 09:43:51 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; g07_lab5                                   ;
 ; Top-level Entity Name              ; g07_computer_FSM                           ;
@@ -151,7 +151,7 @@ applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -167,7 +167,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                      ; Library ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
-; g07_computer_FSM.vhd             ; yes             ; User VHDL File  ; C:/Users/peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/g07_computer_FSM.vhd ;         ;
+; g07_computer_FSM.vhd             ; yes             ; User VHDL File  ; C:/Users/Peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/g07_computer_FSM.vhd ;         ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
 
 
@@ -253,7 +253,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -263,9 +263,9 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Nov 30 13:28:21 2017
+    Info: Processing started: Fri Dec 01 09:43:41 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g07_lab5 -c g07_lab5
-Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file ../Lab4/lpm_divide10.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file /users/peter/onedrive/documents/mcgill 5/dsd/dsd-labs/lab2/lut.vhd
     Info (12022): Found design unit 1: lut-SYN
@@ -376,6 +376,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file g07_computer_fsm.vhd
     Info (12022): Found design unit 1: g07_computer_FSM-g07_computer_FSM_arc
     Info (12023): Found entity 1: g07_computer_FSM
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_counter9.vhd
+    Info (12022): Found design unit 1: lpm_counter9-SYN
+    Info (12023): Found entity 1: lpm_counter9
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_add_sub_scores.vhd
+    Info (12022): Found design unit 1: lpm_add_sub_scores-SYN
+    Info (12023): Found entity 1: lpm_add_sub_scores
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux_displays.vhd
+    Info (12022): Found design unit 1: lpm_mux_displays-SYN
+    Info (12023): Found entity 1: lpm_mux_displays
 Info (12127): Elaborating entity "g07_computer_FSM" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -386,9 +395,9 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 15 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 547 megabytes
-    Info: Processing ended: Thu Nov 30 13:28:24 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 537 megabytes
+    Info: Processing ended: Fri Dec 01 09:43:51 2017
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:04
 
 
