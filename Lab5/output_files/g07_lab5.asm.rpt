@@ -1,6 +1,6 @@
 Assembler report for g07_lab5
-Thu Nov 30 13:02:06 2017
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Fri Dec 01 16:59:10 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/output_files/g07_lab5.sof
-  6. Assembler Device Options: C:/Users/peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/output_files/g07_lab5.pof
+  5. Assembler Device Options: D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/output_files/g07_lab5.sof
+  6. Assembler Device Options: D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/output_files/g07_lab5.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 30 13:02:06 2017 ;
+; Assembler Status      ; Successful - Fri Dec 01 16:59:10 2017 ;
 ; Revision Name         ; g07_lab5                              ;
-; Top-level Entity Name ; g07_computer_FSM                      ;
+; Top-level Entity Name ; g07_lab5_testbed                      ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C20F484C7                          ;
 +-----------------------+---------------------------------------+
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                              ;
-+----------------------------------------------------------------------------------------+
-; File Name                                                                              ;
-+----------------------------------------------------------------------------------------+
-; C:/Users/peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/output_files/g07_lab5.sof ;
-; C:/Users/peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/output_files/g07_lab5.pof ;
-+----------------------------------------------------------------------------------------+
++--------------------------------------------------------------------+
+; Assembler Generated Files                                          ;
++--------------------------------------------------------------------+
+; File Name                                                          ;
++--------------------------------------------------------------------+
+; D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/output_files/g07_lab5.sof ;
+; D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/output_files/g07_lab5.pof ;
++--------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/output_files/g07_lab5.sof ;
-+----------------+-------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                         ;
-+----------------+-------------------------------------------------------------------------------------------------+
-; Device         ; EP2C20F484C7                                                                                    ;
-; JTAG usercode  ; 0x001B12BB                                                                                      ;
-; Checksum       ; 0x001B12BB                                                                                      ;
-+----------------+-------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/output_files/g07_lab5.sof ;
++----------------+-----------------------------------------------------------------------------+
+; Option         ; Setting                                                                     ;
++----------------+-----------------------------------------------------------------------------+
+; Device         ; EP2C20F484C7                                                                ;
+; JTAG usercode  ; 0x0029F57C                                                                  ;
+; Checksum       ; 0x0029F57C                                                                  ;
++----------------+-----------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/peter/OneDrive/Documents/McGill 5/DSD/DSD-Labs/Lab5/output_files/g07_lab5.pof ;
-+--------------------+---------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                     ;
-+--------------------+---------------------------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                                      ;
-; JTAG usercode      ; 0x00000000                                                                                  ;
-; Checksum           ; 0x1DD9CCC6                                                                                  ;
-; Compression Ratio  ; 3                                                                                           ;
-+--------------------+---------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/output_files/g07_lab5.pof ;
++--------------------+-------------------------------------------------------------------------+
+; Option             ; Setting                                                                 ;
++--------------------+-------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                  ;
+; JTAG usercode      ; 0x00000000                                                              ;
+; Checksum           ; 0x1DBD7072                                                              ;
+; Compression Ratio  ; 2                                                                       ;
++--------------------+-------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -116,15 +116,15 @@ applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Nov 30 13:02:03 2017
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Dec 01 16:59:02 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off g07_lab5 -c g07_lab5
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 462 megabytes
-    Info: Processing ended: Thu Nov 30 13:02:06 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 465 megabytes
+    Info: Processing ended: Fri Dec 01 16:59:11 2017
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:07
 
 

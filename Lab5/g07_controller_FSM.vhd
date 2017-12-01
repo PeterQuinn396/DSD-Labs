@@ -9,13 +9,13 @@ entity g07_controller_FSM is
 
 port (hit, stay, d_bust, p_bust, d_done, reset_sig, clock: in std_logic;
 		d_sum, p_sum: in std_logic_vector(4 downto 0);
-		en_p, en_d, p_won, d_won, init, d_turn: out std_logic
+		en_p, en_d, p_won, d_won, init, d_turn,p_turn, rand_init: out std_logic
 		);
 
 end g07_controller_FSM;
 
 architecture g07_controller_FSM_arch of g07_controller_FSM is
-	TYPE state_signal IS (RESET, DEALER_CARD_1, DEALER_CARD_2, PLAYER_CARD_1, 
+	TYPE state_signal IS (INIT_RAND,WAIT_RAND,RESET_DECK, DEALER_CARD_1, DEALER_CARD_2, PLAYER_CARD_1, 
 	PLAYER_CARD_2, PLAYER_HIT, PLAYER_CHOOSE, DEALER_TURN, PLAYER_WON, DEALER_WON, ENDGAME);
 	signal state: state_signal;
 	signal vec_changed: std_logic;
@@ -28,10 +28,19 @@ begin
 	update: process(clock,reset_sig)
 	begin
 		if reset_sig = '1' then
-			state <= RESET;
+			state <= INIT_RAND;
 		elsif clock'EVENT and clock = '1' then
 			case state is
-			when RESET => --initialize the stack (deck)
+			
+			when INIT_RAND => 
+					state <= WAIT_RAND;
+
+			when WAIT_RAND =>
+				if hit='1' then
+					state<=RESET_DECK;
+				end if;
+			
+			when RESET_DECK => --initialize the stack (deck)
 				if counter = 2 then --wait 2 clock cycles for stack to completly initialize (delay due to POP_EN)
 					counter <= 0;
 					state <= PLAYER_CARD_1;
@@ -68,10 +77,10 @@ begin
 		
 				
 			when PLAYER_CHOOSE =>
-				--wait for player to press hit or stay button, which are active low
-				if hit='0' then 
+				
+				if hit='1' then 
 					state <= PLAYER_HIT;
-				elsif stay='0' then 
+				elsif stay='1' then 
 					state <= DEALER_TURN;
 				end if;		
 	
@@ -102,8 +111,8 @@ begin
 				state <= ENDGAME; --go back to reset after doing the player own outputs
 					
 			when ENDGAME =>
-				if hit = '0' then  --wait for press of hit button (active low)
-					state <= RESET;
+				if hit = '1' then  --wait for press of hit button (active low)
+					state <= RESET_DECK;
 				end if;
 				
 			
@@ -119,97 +128,57 @@ begin
 	
 	output_logic: process(state,clock)
 	begin
+	
+		init <= '0';
+		en_p <= '0';
+		en_d <= '0';
+		d_turn <= '0';
+		p_won <= '0';
+		d_won <= '0';
+		p_turn <= '0';
+		rand_init<='0';
+		
 		case state is
+			
+			when INIT_RAND =>
+				rand_init<='1';
 				
-			when RESET => 
+			when RESET_DECK => 
 				init <= '1';
-				en_p <= '0';
-				en_d <= '0';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
 				
 			when DEALER_CARD_1=>
-				init <= '0';
-				en_p <= '0';
 				en_d <= '1';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
 			
 			when DEALER_CARD_2=> 	
-				init <= '0';
-				en_p <= '0';
 				en_d <= '1';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
 								
 			when PLAYER_CARD_1 =>		
-				init <= '0';
 				en_p <= '1';
-				en_d <= '0';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
 			
 			when PLAYER_CARD_2 => 
-				init <= '0';
 				en_p <= '1';
-				en_d <= '0';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
 				
 			when PLAYER_CHOOSE => 
-				init <= '0';
-				en_p <= '0';
-				en_d <= '0';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
+				p_turn <= '1';
 			
 			when PLAYER_HIT => 
-				init <= '0';
 				en_p <= '1';
-				en_d <= '0';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
-			
+				
 			when DEALER_TURN =>
-				init <= '0';
-				en_p <= '0';
-				en_d <= '0';
 				d_turn <= '1';
-				p_won <= '0';
-				d_won <= '0';
-			
+				
 			when PLAYER_WON => 
-				init <= '0';
-				en_p <= '0';
-				en_d <= '0';
-				d_turn <= '0';
 				p_won <= '1';
-				d_won <= '0';
 			
 			when DEALER_WON => 
-				init <= '0';
-				en_p <= '0';
-				en_d <= '0';
-				d_turn <= '0';
-				p_won <= '0';
+		
 				d_won <= '1';
 				
 			when ENDGAME =>
+			 --all zero
+			 when WAIT_RAND =>
+			 --do nothing
 			
-				init <= '0';
-				en_p <= '0';
-				en_d <= '0';
-				d_turn <= '0';
-				p_won <= '0';
-				d_won <= '0';
-				
 		end case;
 	end process;	
 end architecture;
