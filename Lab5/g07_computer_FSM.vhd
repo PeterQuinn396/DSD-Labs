@@ -23,19 +23,21 @@ architecture g07_computer_FSM_arc of g07_computer_FSM is
 begin
 	update: process(clk,reset_all)
 	begin
-	old_sum_int <= to_integer(unsigned(dealer_sum(4 downto 0)));
+	
 		if reset_all = '1' then
 			state <= WAIT_TURN;
 			old_sum_last <= "000000";
 		elsif clk'EVENT and clk = '1' then
+			
 			case state is
 			when WAIT_TURN =>
 				if dealer_turn = '1' then state<=CP_TURN; end if;
 			when CP_TURN=>
+				old_sum_int <= to_integer(unsigned(dealer_sum(4 downto 0))); --get the old sum as an int
 				if (old_sum_int > 16) then state<=END_TURN;
-				else state<= DRAW;
+				else state <= DRAW;
 				end if;
-			when DRAW=>
+			when DRAW =>
 				vec_changed <= or_reduce(old_sum_last xor dealer_sum);
 				if vec_changed = '1' then --wait until the sum changes
 					state <= CP_TURN;
@@ -43,7 +45,9 @@ begin
 			when END_TURN=>
 				state<= WAIT_TURN;
 			end case;
-		old_sum_last <= dealer_sum;
+			
+			old_sum_last <= dealer_sum;
+			
 		end if;
 	end process;
 	output_logic: process(state,clk)

@@ -1696,56 +1696,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -184 1408 40 1520)
-	(text "g07_computer_FSM" (rect 5 0 102 12)(font "Arial" ))
-	(text "inst21" (rect 8 96 37 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "dealer_turn" (rect 0 0 54 12)(font "Arial" ))
-		(text "dealer_turn" (rect 21 27 75 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 43 35 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "reset_all" (rect 0 0 41 12)(font "Arial" ))
-		(text "reset_all" (rect 21 59 62 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "dealer_sum[5..0]" (rect 0 0 82 12)(font "Arial" ))
-		(text "dealer_sum[5..0]" (rect 21 75 103 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 224 32)
-		(output)
-		(text "dealer_done" (rect 0 0 59 12)(font "Arial" ))
-		(text "dealer_done" (rect 154 27 213 39)(font "Arial" ))
-		(line (pt 224 32)(pt 208 32))
-	)
-	(port
-		(pt 224 48)
-		(output)
-		(text "request_card" (rect 0 0 63 12)(font "Arial" ))
-		(text "request_card" (rect 150 43 213 55)(font "Arial" ))
-		(line (pt 224 48)(pt 208 48))
-	)
-	(drawing
-		(rectangle (rect 16 16 208 96))
-	)
-)
-(symbol
 	(rect 184 1632 248 1680)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst25" (rect 3 37 32 49)(font "Arial" ))
@@ -3331,6 +3281,56 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 184 96))
 	)
 )
+(symbol
+	(rect -184 1408 40 1520)
+	(text "g07_computer_FSM" (rect 5 0 102 12)(font "Arial" ))
+	(text "inst21" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "dealer_turn" (rect 0 0 54 12)(font "Arial" ))
+		(text "dealer_turn" (rect 21 27 75 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 43 35 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "reset_all" (rect 0 0 41 12)(font "Arial" ))
+		(text "reset_all" (rect 21 59 62 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "dealer_sum[5..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "dealer_sum[5..0]" (rect 21 75 103 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "dealer_done" (rect 0 0 59 12)(font "Arial" ))
+		(text "dealer_done" (rect 154 27 203 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "request_card" (rect 0 0 63 12)(font "Arial" ))
+		(text "request_card" (rect 150 43 203 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
 (connector
 	(pt 608 2056)
 	(pt 608 1936)
@@ -3491,11 +3491,6 @@ applicable agreement for further details.
 	(text "clk" (rect 512 1784 526 1796)(font "Arial" ))
 	(pt 504 1800)
 	(pt 528 1800)
-)
-(connector
-	(text "en_d" (rect 504 1800 527 1812)(font "Arial" ))
-	(pt 504 1816)
-	(pt 528 1816)
 )
 (connector
 	(text "en_p" (rect 192 1592 215 1604)(font "Arial" ))
@@ -4550,11 +4545,6 @@ applicable agreement for further details.
 	(pt 160 1824)
 )
 (connector
-	(text "game_over" (rect 168 1824 223 1836)(font "Arial" ))
-	(pt 176 1840)
-	(pt 160 1840)
-)
-(connector
 	(pt 344 1640)
 	(pt 344 1656)
 )
@@ -4562,11 +4552,6 @@ applicable agreement for further details.
 	(text "reset" (rect 160 1632 184 1644)(font "Arial" ))
 	(pt 184 1648)
 	(pt 152 1648)
-)
-(connector
-	(text "game_over" (rect 160 1648 215 1660)(font "Arial" ))
-	(pt 184 1664)
-	(pt 152 1664)
 )
 (connector
 	(text "switch[1..0]" (rect -663 1488 -607 1500)(font "Arial" ))
@@ -4717,10 +4702,6 @@ applicable agreement for further details.
 	(pt -224 1472)
 )
 (connector
-	(pt 208 1784)
-	(pt 256 1784)
-)
-(connector
 	(text "en_d" (rect 128 1760 151 1772)(font "Arial" ))
 	(pt 144 1776)
 	(pt 120 1776)
@@ -4778,6 +4759,32 @@ applicable agreement for further details.
 	(pt 344 1656)
 	(pt 536 1656)
 )
+(connector
+	(text "init" (rect 160 1648 174 1660)(font "Arial" ))
+	(pt 184 1664)
+	(pt 152 1664)
+)
+(connector
+	(text "init" (rect 168 1824 182 1836)(font "Arial" ))
+	(pt 176 1840)
+	(pt 160 1840)
+)
+(connector
+	(pt 528 1816)
+	(pt 240 1816)
+)
+(connector
+	(pt 240 1816)
+	(pt 240 1784)
+)
+(connector
+	(pt 208 1784)
+	(pt 240 1784)
+)
+(connector
+	(pt 240 1784)
+	(pt 256 1784)
+)
 (junction (pt 608 2056))
 (junction (pt 464 1584))
 (junction (pt 464 1768))
@@ -4787,6 +4794,7 @@ applicable agreement for further details.
 (junction (pt 1968 1384))
 (junction (pt 344 1656))
 (junction (pt 344 1832))
+(junction (pt 240 1784))
 (text "Random Number Generator" (rect 88 1904 242 1918)(font "Arial" (font_size 8)))
 (text "Card Display" (rect 1088 1600 1159 1614)(font "Arial" (font_size 8)))
 (text "Card Dealing" (rect -456 1640 -385 1654)(font "Arial" (font_size 8)))

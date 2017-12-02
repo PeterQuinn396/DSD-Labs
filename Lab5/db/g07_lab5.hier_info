@@ -4,8 +4,6 @@ clk => lpm_counter3:inst30.clock
 clk => g07_debouncer:inst10.clk
 clk => g07_debouncer:inst19.clk
 clk => g07_rules:inst58.clock
-clk => inst_60p.CLK
-clk => lpm_counter3:inst31.clock
 clk => g07_debouncer:inst_4.clk
 clk => LPM_FF:inst_7.clock
 clk => g07_computer_FSM:inst21.clk
@@ -17,6 +15,8 @@ clk => LPM_FF:inst24.clock
 clk => g07_rules:inst.clock
 clk => LPM_FF:inst2.clock
 clk => g07_controller_FSM:inst56.clock
+clk => inst_60p.CLK
+clk => lpm_counter3:inst31.clock
 clk => g07_blinker:inst63.clock
 clk => g07_blinker:inst1.clock
 clk => lpm_counter9:inst_7z.clock
@@ -1724,61 +1724,6 @@ Cin => inst2.IN1
 Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g07_lab5_testbed|lpm_counter3:inst31
-aclr => lpm_counter:LPM_COUNTER_component.aclr
-clock => lpm_counter:LPM_COUNTER_component.clock
-cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-
-
-|g07_lab5_testbed|lpm_counter3:inst31|lpm_counter:LPM_COUNTER_component
-clock => cntr_fni:auto_generated.clock
-clk_en => ~NO_FANOUT~
-cnt_en => cntr_fni:auto_generated.cnt_en
-updown => ~NO_FANOUT~
-aclr => cntr_fni:auto_generated.aclr
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sconst => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-data[0] => ~NO_FANOUT~
-data[1] => ~NO_FANOUT~
-cin => ~NO_FANOUT~
-q[0] <= cntr_fni:auto_generated.q[0]
-q[1] <= cntr_fni:auto_generated.q[1]
-cout <= <GND>
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
-
-
-|g07_lab5_testbed|lpm_counter3:inst31|lpm_counter:LPM_COUNTER_component|cntr_fni:auto_generated
-aclr => counter_reg_bit1a[1].ACLR
-aclr => counter_reg_bit1a[0].ACLR
-clock => counter_reg_bit1a[1].CLK
-clock => counter_reg_bit1a[0].CLK
-cnt_en => _.IN1
-q[0] <= counter_reg_bit1a[0].REGOUT
-q[1] <= counter_reg_bit1a[1].REGOUT
-
-
 |g07_lab5_testbed|g07_debouncer:inst_4
 sig <= inst.DB_MAX_OUTPUT_PORT_TYPE
 clk => lpm_counter_bounce1:inst6.clock
@@ -2196,6 +2141,11 @@ dealer_turn => state.OUTPUTSELECT
 dealer_turn => state.OUTPUTSELECT
 dealer_turn => state.OUTPUTSELECT
 clk => vec_changed.CLK
+clk => old_sum_int[0].CLK
+clk => old_sum_int[1].CLK
+clk => old_sum_int[2].CLK
+clk => old_sum_int[3].CLK
+clk => old_sum_int[4].CLK
 clk => old_sum_last[0].CLK
 clk => old_sum_last[1].CLK
 clk => old_sum_last[2].CLK
@@ -2210,22 +2160,27 @@ reset_all => old_sum_last[3].ACLR
 reset_all => old_sum_last[4].ACLR
 reset_all => old_sum_last[5].ACLR
 reset_all => state~7.DATAIN
+reset_all => old_sum_int[4].ENA
+reset_all => old_sum_int[3].ENA
+reset_all => old_sum_int[2].ENA
+reset_all => old_sum_int[1].ENA
+reset_all => old_sum_int[0].ENA
 reset_all => vec_changed.ENA
 dealer_sum[0] => vec_changed.IN1
+dealer_sum[0] => old_sum_int.DATAB
 dealer_sum[0] => old_sum_last[0].DATAIN
-dealer_sum[0] => LessThan0.IN10
 dealer_sum[1] => vec_changed.IN1
+dealer_sum[1] => old_sum_int.DATAB
 dealer_sum[1] => old_sum_last[1].DATAIN
-dealer_sum[1] => LessThan0.IN9
 dealer_sum[2] => vec_changed.IN1
+dealer_sum[2] => old_sum_int.DATAB
 dealer_sum[2] => old_sum_last[2].DATAIN
-dealer_sum[2] => LessThan0.IN8
 dealer_sum[3] => vec_changed.IN1
+dealer_sum[3] => old_sum_int.DATAB
 dealer_sum[3] => old_sum_last[3].DATAIN
-dealer_sum[3] => LessThan0.IN7
 dealer_sum[4] => vec_changed.IN1
+dealer_sum[4] => old_sum_int.DATAB
 dealer_sum[4] => old_sum_last[4].DATAIN
-dealer_sum[4] => LessThan0.IN6
 dealer_sum[5] => vec_changed.IN1
 dealer_sum[5] => old_sum_last[5].DATAIN
 dealer_done <= dealer_done.DB_MAX_OUTPUT_PORT_TYPE
@@ -17319,6 +17274,61 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g07_lab5_testbed|lpm_counter3:inst31
+aclr => lpm_counter:LPM_COUNTER_component.aclr
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+
+
+|g07_lab5_testbed|lpm_counter3:inst31|lpm_counter:LPM_COUNTER_component
+clock => cntr_fni:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_fni:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => cntr_fni:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_fni:auto_generated.q[0]
+q[1] <= cntr_fni:auto_generated.q[1]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|g07_lab5_testbed|lpm_counter3:inst31|lpm_counter:LPM_COUNTER_component|cntr_fni:auto_generated
+aclr => counter_reg_bit1a[1].ACLR
+aclr => counter_reg_bit1a[0].ACLR
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
 
 
 |g07_lab5_testbed|g07_blinker:inst63
