@@ -28,12 +28,12 @@ begin
 			state <= WAIT_TURN;
 			old_sum_last <= "000000";
 		elsif clk'EVENT and clk = '1' then
-			
+			old_sum_int <= to_integer(unsigned(dealer_sum(4 downto 0))); --get the old sum as an int
 			case state is
 			when WAIT_TURN =>
 				if dealer_turn = '1' then state<=CP_TURN; end if;
 			when CP_TURN=>
-				old_sum_int <= to_integer(unsigned(dealer_sum(4 downto 0))); --get the old sum as an int
+				
 				if (old_sum_int > 16) then state<=END_TURN;
 				else state <= DRAW;
 				end if;

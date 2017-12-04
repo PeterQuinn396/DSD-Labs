@@ -8,9 +8,11 @@ entity g07_rules is
 
 port (play_pile_top_card: in std_logic_vector(5 downto 0);
 		card_play: in std_logic_vector(5 downto 0);
-		legal_play: out std_logic;
-		sum: out std_logic_vector(5 downto 0);
-		clock, enable,reset: in std_logic);
+		clk,reset,en:in std_logic;
+		bust: out std_logic;
+		sum: out std_logic_vector(5 downto 0));
+		
+		
 
 end g07_rules;
 
@@ -50,16 +52,17 @@ process (new_card_value,new_card_suit)
 begin
 
 if reset='1' then 
-new_sum_int<=0;
-legal_play<='1';
-new_ace <= '0';
+	new_sum_int<=0;
+	bust<='0';
+	new_ace<='0';
+	
+elsif clk'EVENT and clk='1' then 
 
-elsif clock'EVENT and clock='1' and enable = '1' then 
 old_sum<=play_pile_top_card(5 downto 0); --grab the old sum
 old_ace<=old_sum(5); --check if we had an ace from a past hand
 
 new_card_value_int_raw <= (to_integer(unsigned(new_card_value(3 downto 0)))+1); --add 1 to the card value to correct it  
-old_sum_int <= to_integer(unsigned(old_sum(4 downto 0))); -- convert to intgers to make life easier
+old_sum_int <= to_integer(unsigned(old_sum(4 downto 0))); -- convert to integers to make life easier
 
 if (new_card_value_int_raw > 10) then 
 	new_card_value_int<=10; --correct for face value cards
@@ -72,7 +75,7 @@ test_new_sum_int <= new_card_value_int+old_sum_int; --compute the new sum
 
  --check if the play is legal
 if (test_new_sum_int < 22) then --see if our sum is legal as is
-	legal_play <= '1';
+	bust <= '0';
 	new_sum_int<=test_new_sum_int;
 	if (new_card_value_int=11) then new_ace<='1'; --check if we got an new ace
 		else new_ace<=old_ace;
@@ -80,17 +83,18 @@ if (test_new_sum_int < 22) then --see if our sum is legal as is
 
 elsif (new_card_value_int=11) then --check for a new ace, so we can fix our sum
 	new_sum_int<=test_new_sum_int-10;
-	legal_play<='1';
+	bust<='0';
 	new_ace<=old_ace;
 	
 elsif (old_ace='1') then --check for an old ace
 	new_sum_int<=test_new_sum_int-10;
-	legal_play<='1';
+	bust<='0';
 	new_ace<='0'; --remove the ace
 		
 else 
-	legal_play<='0'; --no aces and over 21, so illegal play
+	bust<='1'; --no aces and over 21, so illegal play
 	new_ace<=old_ace;
+	new_sum_int<=test_new_sum_int;
 end if;
 end if;
 

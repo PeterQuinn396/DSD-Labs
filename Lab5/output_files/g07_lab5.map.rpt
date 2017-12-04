@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g07_lab5
-Sat Dec 02 09:56:55 2017
+Sun Dec 03 20:49:05 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -18,153 +18,153 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
  10. State Machine - |g07_lab5_testbed|g07_blinker:inst1|state
  11. State Machine - |g07_lab5_testbed|g07_blinker:inst63|state
  12. State Machine - |g07_lab5_testbed|g07_dealer_FSM:inst_4h|state
- 13. State Machine - |g07_lab5_testbed|g07_computer_FSM:inst21|state
- 14. State Machine - |g07_lab5_testbed|g07_dealer_FSM:inst_12r|state
- 15. State Machine - |g07_lab5_testbed|g07_controller_FSM:inst56|state
+ 13. State Machine - |g07_lab5_testbed|g07_dealer_FSM:inst_12r|state
+ 14. State Machine - |g07_lab5_testbed|g07_computer_FSM:inst21|state
+ 15. State Machine - |g07_lab5_testbed|g07_controller_FSM:inst93|state
  16. Registers Removed During Synthesis
  17. General Register Statistics
- 18. Inverted Register Statistics
- 19. Multiplexer Restructuring Statistics (Restructuring Performed)
- 20. Source assignments for g07_stack52:inst13|g07_pop_enable:inst104a|LUT:lut1|altsyncram:altsyncram_component|altsyncram_7q71:auto_generated
- 21. Parameter Settings for User Entity Instance: lpm_counter3:inst30|lpm_counter:LPM_COUNTER_component
- 22. Parameter Settings for User Entity Instance: g07_debouncer:inst10|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component
- 23. Parameter Settings for User Entity Instance: g07_debouncer:inst10|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component
- 24. Parameter Settings for User Entity Instance: g07_debouncer:inst19|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component
- 25. Parameter Settings for User Entity Instance: g07_debouncer:inst19|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component
- 26. Parameter Settings for User Entity Instance: g07_debouncer:inst_4|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component
- 27. Parameter Settings for User Entity Instance: g07_debouncer:inst_4|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for g07_stack52:inst13|g07_pop_enable:inst104a|LUT:lut1|altsyncram:altsyncram_component|altsyncram_7q71:auto_generated
+ 20. Parameter Settings for User Entity Instance: lpm_counter3:inst30|lpm_counter:LPM_COUNTER_component
+ 21. Parameter Settings for User Entity Instance: g07_debouncer:inst10|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component
+ 22. Parameter Settings for User Entity Instance: g07_debouncer:inst10|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component
+ 23. Parameter Settings for User Entity Instance: g07_debouncer:inst19|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component
+ 24. Parameter Settings for User Entity Instance: g07_debouncer:inst19|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component
+ 25. Parameter Settings for User Entity Instance: g07_debouncer:inst_4|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component
+ 26. Parameter Settings for User Entity Instance: g07_debouncer:inst_4|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component
+ 27. Parameter Settings for User Entity Instance: LPM_FF:inst3
  28. Parameter Settings for User Entity Instance: LPM_FF:inst_7
- 29. Parameter Settings for User Entity Instance: LPM_FF:inst3
- 30. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_compare52:inst17|lpm_compare:LPM_COMPARE_component
- 31. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_counter_stack:inst83|lpm_counter:LPM_COUNTER_component
- 32. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux2:inst64|LPM_MUX:LPM_MUX_component
- 33. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_NOOP:inst_1|lpm_constant:LPM_CONSTANT_component
- 34. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux4:inst65|LPM_MUX:LPM_MUX_component
- 35. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux2:inst59|LPM_MUX:LPM_MUX_component
- 36. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_PUSH:inst96|lpm_constant:LPM_CONSTANT_component
- 37. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux2:inst60|LPM_MUX:LPM_MUX_component
- 38. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_compare0:inst1|lpm_compare:LPM_COMPARE_component
- 39. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_POP:inst95|lpm_constant:LPM_CONSTANT_component
- 40. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_INIT:inst98|lpm_constant:LPM_CONSTANT_component
- 41. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux_valueSelect:inst78|LPM_MUX:LPM_MUX_component
- 42. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst10
- 43. Parameter Settings for User Entity Instance: g07_stack52:inst13|g07_pop_enable:inst104a|LUT:lut1|altsyncram:altsyncram_component
- 44. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst18
- 45. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst2
- 46. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst105
- 47. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst3
- 48. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst19
- 49. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst20
- 50. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst106
- 51. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst4
- 52. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst21
- 53. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst5
- 54. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst107
- 55. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst24
- 56. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst22
- 57. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst6
- 58. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst108
- 59. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst7
- 60. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst23
- 61. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst28
- 62. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst109
- 63. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst8
- 64. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst25
- 65. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst9
- 66. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst110
- 67. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst32
- 68. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst26
- 69. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst_0
- 70. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst111
- 71. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst11
- 72. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst27
- 73. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst36
- 74. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst112
- 75. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst12
- 76. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst29
- 77. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst13
- 78. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst113
- 79. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst40
- 80. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst30
- 81. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst14
- 82. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst114
- 83. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst15
- 84. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst31
- 85. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst44
- 86. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst115
- 87. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst16
- 88. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst33
- 89. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst45
- 90. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst116
- 91. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst49
- 92. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst34
- 93. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst50
- 94. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst117
- 95. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst51
- 96. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst35
- 97. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst55
- 98. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst118
- 99. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst56
-100. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst37
-101. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst57
-102. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst119
-103. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst61
-104. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst38
-105. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst62
-106. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst120
-107. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst63
-108. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst39
-109. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst67
-110. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst121
-111. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst68
-112. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst41
-113. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst69
-114. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst122
-115. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst73
-116. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst42
-117. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst74
-118. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst123
-119. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst75
-120. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst43
-121. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst79
-122. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst124
-123. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst80
-124. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst46
-125. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst81
-126. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst125
-127. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst85
-128. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst47
-129. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst86
-130. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst126
-131. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst87
-132. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst48
-133. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst91
-134. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst127
-135. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst92
-136. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst52
-137. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst93
-138. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst128
-139. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst97
-140. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst53
-141. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst99
-142. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst129
-143. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst100
-144. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst54
-145. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst101
-146. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst58
-147. Parameter Settings for User Entity Instance: lpm_divide0:inst_6a|lpm_divide:LPM_DIVIDE_component
-148. Parameter Settings for User Entity Instance: LPM_FF:inst24
-149. Parameter Settings for User Entity Instance: g07_RANDU:inst7|add32:u1|lpm_add_sub:LPM_ADD_SUB_component
-150. Parameter Settings for User Entity Instance: g07_RANDU:inst7|add32:u2|lpm_add_sub:LPM_ADD_SUB_component
-151. Parameter Settings for User Entity Instance: lpm_mux_MODE:inst20|LPM_MUX:LPM_MUX_component
-152. Parameter Settings for User Entity Instance: lpm_constantPOP:inst22|lpm_constant:LPM_CONSTANT_component
-153. Parameter Settings for User Entity Instance: lpm_constantINIT:inst26|lpm_constant:LPM_CONSTANT_component
-154. Parameter Settings for User Entity Instance: LPM_FF:inst2
-155. Parameter Settings for User Entity Instance: lpm_counter3:inst31|lpm_counter:LPM_COUNTER_component
-156. Parameter Settings for User Entity Instance: lpm_mux_displays:inst_59|LPM_MUX:LPM_MUX_component
-157. Parameter Settings for User Entity Instance: lpm_counter9:inst_7z|lpm_counter:LPM_COUNTER_component
-158. Parameter Settings for User Entity Instance: lpm_divide10:inst45|lpm_divide:LPM_DIVIDE_component
-159. Parameter Settings for User Entity Instance: lpm_constant0:inst44|lpm_constant:LPM_CONSTANT_component
+ 29. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_compare52:inst17|lpm_compare:LPM_COMPARE_component
+ 30. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_counter_stack:inst83|lpm_counter:LPM_COUNTER_component
+ 31. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux2:inst64|LPM_MUX:LPM_MUX_component
+ 32. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_NOOP:inst_1|lpm_constant:LPM_CONSTANT_component
+ 33. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux4:inst65|LPM_MUX:LPM_MUX_component
+ 34. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux2:inst59|LPM_MUX:LPM_MUX_component
+ 35. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_PUSH:inst96|lpm_constant:LPM_CONSTANT_component
+ 36. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux2:inst60|LPM_MUX:LPM_MUX_component
+ 37. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_compare0:inst1|lpm_compare:LPM_COMPARE_component
+ 38. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_POP:inst95|lpm_constant:LPM_CONSTANT_component
+ 39. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_constant_INIT:inst98|lpm_constant:LPM_CONSTANT_component
+ 40. Parameter Settings for User Entity Instance: g07_stack52:inst13|lpm_mux_valueSelect:inst78|LPM_MUX:LPM_MUX_component
+ 41. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst10
+ 42. Parameter Settings for User Entity Instance: g07_stack52:inst13|g07_pop_enable:inst104a|LUT:lut1|altsyncram:altsyncram_component
+ 43. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst18
+ 44. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst2
+ 45. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst105
+ 46. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst3
+ 47. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst19
+ 48. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst20
+ 49. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst106
+ 50. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst4
+ 51. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst21
+ 52. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst5
+ 53. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst107
+ 54. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst24
+ 55. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst22
+ 56. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst6
+ 57. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst108
+ 58. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst7
+ 59. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst23
+ 60. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst28
+ 61. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst109
+ 62. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst8
+ 63. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst25
+ 64. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst9
+ 65. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst110
+ 66. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst32
+ 67. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst26
+ 68. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst_0
+ 69. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst111
+ 70. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst11
+ 71. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst27
+ 72. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst36
+ 73. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst112
+ 74. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst12
+ 75. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst29
+ 76. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst13
+ 77. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst113
+ 78. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst40
+ 79. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst30
+ 80. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst14
+ 81. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst114
+ 82. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst15
+ 83. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst31
+ 84. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst44
+ 85. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst115
+ 86. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst16
+ 87. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst33
+ 88. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst45
+ 89. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst116
+ 90. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst49
+ 91. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst34
+ 92. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst50
+ 93. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst117
+ 94. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst51
+ 95. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst35
+ 96. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst55
+ 97. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst118
+ 98. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst56
+ 99. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst37
+100. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst57
+101. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst119
+102. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst61
+103. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst38
+104. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst62
+105. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst120
+106. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst63
+107. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst39
+108. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst67
+109. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst121
+110. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst68
+111. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst41
+112. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst69
+113. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst122
+114. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst73
+115. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst42
+116. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst74
+117. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst123
+118. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst75
+119. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst43
+120. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst79
+121. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst124
+122. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst80
+123. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst46
+124. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst81
+125. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst125
+126. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst85
+127. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst47
+128. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst86
+129. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst126
+130. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst87
+131. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst48
+132. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst91
+133. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst127
+134. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst92
+135. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst52
+136. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst93
+137. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst128
+138. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst97
+139. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst53
+140. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst99
+141. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst129
+142. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst100
+143. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst54
+144. Parameter Settings for User Entity Instance: g07_stack52:inst13|LPM_FF:inst101
+145. Parameter Settings for User Entity Instance: g07_stack52:inst13|BUSMUX:inst58
+146. Parameter Settings for User Entity Instance: lpm_divide0:inst_6a|lpm_divide:LPM_DIVIDE_component
+147. Parameter Settings for User Entity Instance: LPM_FF:inst24
+148. Parameter Settings for User Entity Instance: g07_RANDU:inst7|add32:u1|lpm_add_sub:LPM_ADD_SUB_component
+149. Parameter Settings for User Entity Instance: g07_RANDU:inst7|add32:u2|lpm_add_sub:LPM_ADD_SUB_component
+150. Parameter Settings for User Entity Instance: lpm_mux_MODE:inst20|LPM_MUX:LPM_MUX_component
+151. Parameter Settings for User Entity Instance: lpm_constantPOP:inst22|lpm_constant:LPM_CONSTANT_component
+152. Parameter Settings for User Entity Instance: lpm_constantINIT:inst26|lpm_constant:LPM_CONSTANT_component
+153. Parameter Settings for User Entity Instance: LPM_FF:inst2
+154. Parameter Settings for User Entity Instance: lpm_counter3:inst31|lpm_counter:LPM_COUNTER_component
+155. Parameter Settings for User Entity Instance: lpm_mux_displays:inst_59|LPM_MUX:LPM_MUX_component
+156. Parameter Settings for User Entity Instance: lpm_counter9:inst_7z|lpm_counter:LPM_COUNTER_component
+157. Parameter Settings for User Entity Instance: lpm_divide10:inst45|lpm_divide:LPM_DIVIDE_component
+158. Parameter Settings for User Entity Instance: lpm_constant0:inst44|lpm_constant:LPM_CONSTANT_component
+159. Parameter Settings for User Entity Instance: LPM_FF:inst_8
 160. Parameter Settings for User Entity Instance: lpm_mux_displays:inst60|LPM_MUX:LPM_MUX_component
 161. Parameter Settings for User Entity Instance: lpm_counter9:inst6|lpm_counter:LPM_COUNTER_component
 162. Parameter Settings for User Entity Instance: lpm_mux_displays:inst61|LPM_MUX:LPM_MUX_component
@@ -206,15 +206,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 02 09:56:55 2017      ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 03 20:49:05 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; g07_lab5                                   ;
 ; Top-level Entity Name              ; g07_lab5_testbed                           ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 1,260                                      ;
-;     Total combinational functions  ; 1,191                                      ;
-;     Dedicated logic registers      ; 627                                        ;
-; Total registers                    ; 627                                        ;
+; Total logic elements               ; 1,279                                      ;
+;     Total combinational functions  ; 1,207                                      ;
+;     Dedicated logic registers      ; 629                                        ;
+; Total registers                    ; 629                                        ;
 ; Total pins                         ; 44                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 3,328                                      ;
@@ -435,28 +435,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,260 ;
+; Estimated Total logic elements              ; 1,279 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1191  ;
+; Total combinational functions               ; 1207  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 479   ;
-;     -- 3 input functions                    ; 486   ;
-;     -- <=2 input functions                  ; 226   ;
+;     -- 4 input functions                    ; 493   ;
+;     -- 3 input functions                    ; 487   ;
+;     -- <=2 input functions                  ; 227   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 979   ;
+;     -- normal mode                          ; 995   ;
 ;     -- arithmetic mode                      ; 212   ;
 ;                                             ;       ;
-; Total registers                             ; 627   ;
-;     -- Dedicated logic registers            ; 627   ;
+; Total registers                             ; 629   ;
+;     -- Dedicated logic registers            ; 629   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 44    ;
 ; Total memory bits                           ; 3328  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 679   ;
-; Total fan-out                               ; 7097  ;
+; Maximum fan-out                             ; 681   ;
+; Total fan-out                               ; 7159  ;
 ; Average fan-out                             ; 3.71  ;
 +---------------------------------------------+-------+
 
@@ -466,7 +466,7 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                   ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g07_lab5_testbed                               ; 1191 (10)         ; 627 (1)      ; 3328        ; 0            ; 0       ; 0         ; 44   ; 0            ; |g07_lab5_testbed                                                                                                                                     ;              ;
+; |g07_lab5_testbed                               ; 1207 (13)         ; 629 (5)      ; 3328        ; 0            ; 0       ; 0         ; 44   ; 0            ; |g07_lab5_testbed                                                                                                                                     ;              ;
 ;    |g07_7_segment_decoder:inst15|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_7_segment_decoder:inst15                                                                                                        ;              ;
 ;    |g07_7_segment_decoder:inst39|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_7_segment_decoder:inst39                                                                                                        ;              ;
 ;    |g07_7_segment_decoder:inst43|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_7_segment_decoder:inst43                                                                                                        ;              ;
@@ -494,10 +494,10 @@ applicable agreement for further details.
 ;             |add_sub_plh:auto_generated|        ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_RANDU:inst7|add32:u2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_plh:auto_generated                                               ;              ;
 ;    |g07_blinker:inst1|                          ; 49 (49)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_blinker:inst1                                                                                                                   ;              ;
 ;    |g07_blinker:inst63|                         ; 49 (49)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_blinker:inst63                                                                                                                  ;              ;
-;    |g07_computer_FSM:inst21|                    ; 12 (12)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_computer_FSM:inst21                                                                                                             ;              ;
-;    |g07_controller_FSM:inst56|                  ; 48 (48)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_controller_FSM:inst56                                                                                                           ;              ;
-;    |g07_dealer_FSM:inst_12r|                    ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_dealer_FSM:inst_12r                                                                                                             ;              ;
-;    |g07_dealer_FSM:inst_4h|                     ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_dealer_FSM:inst_4h                                                                                                              ;              ;
+;    |g07_computer_FSM:inst21|                    ; 11 (11)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_computer_FSM:inst21                                                                                                             ;              ;
+;    |g07_controller_FSM:inst93|                  ; 59 (59)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_controller_FSM:inst93                                                                                                           ;              ;
+;    |g07_dealer_FSM:inst_12r|                    ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_dealer_FSM:inst_12r                                                                                                             ;              ;
+;    |g07_dealer_FSM:inst_4h|                     ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_dealer_FSM:inst_4h                                                                                                              ;              ;
 ;    |g07_debouncer:inst10|                       ; 41 (1)            ; 25 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_debouncer:inst10                                                                                                                ;              ;
 ;       |lpm_compare_bounce0:inst1|               ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_debouncer:inst10|lpm_compare_bounce0:inst1                                                                                      ;              ;
 ;          |lpm_compare:LPM_COMPARE_component|    ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_debouncer:inst10|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component                                                    ;              ;
@@ -522,9 +522,22 @@ applicable agreement for further details.
 ;          |lpm_counter:LPM_COUNTER_component|    ; 35 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_debouncer:inst_4|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component                                                    ;              ;
 ;             |cntr_lkl:auto_generated|           ; 35 (27)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_debouncer:inst_4|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component|cntr_lkl:auto_generated                            ;              ;
 ;                |cmpr_qdc:cmpr2|                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_debouncer:inst_4|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component|cntr_lkl:auto_generated|cmpr_qdc:cmpr2             ;              ;
-;    |g07_rules:inst58|                           ; 23 (23)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst58                                                                                                                    ;              ;
-;    |g07_rules:inst|                             ; 26 (26)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst                                                                                                                      ;              ;
-;    |g07_stack52:inst13|                         ; 584 (0)           ; 320 (2)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13                                                                                                                  ;              ;
+;    |g07_rules:inst69|                           ; 36 (25)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69                                                                                                                    ;              ;
+;       |g07_Modulo_13:u1|                        ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1                                                                                                   ;              ;
+;          |g07_adder:inst3|                      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst3                                                                                   ;              ;
+;             |g07_fullAdder:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst3|g07_fullAdder:inst2                                                               ;              ;
+;          |g07_adder:inst4|                      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst4                                                                                   ;              ;
+;             |g07_fullAdder:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst4|g07_fullAdder:inst1                                                               ;              ;
+;          |g07_adder:inst5|                      ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst5                                                                                   ;              ;
+;             |g07_fullAdder:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst1                                                               ;              ;
+;             |g07_fullAdder:inst2|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst2                                                               ;              ;
+;             |g07_fullAdder:inst|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst                                                                ;              ;
+;          |g07_adder:inst|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst                                                                                    ;              ;
+;             |g07_fullAdder:inst5|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst5                                                                ;              ;
+;             |g07_fullAdder:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst6                                                                ;              ;
+;             |g07_fullAdder:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst|g07_fullAdder:inst7                                                                ;              ;
+;    |g07_rules:inst|                             ; 15 (15)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_rules:inst                                                                                                                      ;              ;
+;    |g07_stack52:inst13|                         ; 585 (0)           ; 320 (2)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13                                                                                                                  ;              ;
 ;       |busmux:inst105|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|busmux:inst105                                                                                                   ;              ;
 ;          |lpm_mux:$00000|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|busmux:inst105|lpm_mux:$00000                                                                                    ;              ;
 ;             |mux_qmc:auto_generated|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|busmux:inst105|lpm_mux:$00000|mux_qmc:auto_generated                                                             ;              ;
@@ -746,9 +759,9 @@ applicable agreement for further details.
 ;       |lpm_mux2:inst64|                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux2:inst64                                                                                                  ;              ;
 ;          |lpm_mux:LPM_MUX_component|            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux2:inst64|lpm_mux:LPM_MUX_component                                                                        ;              ;
 ;             |mux_83e:auto_generated|            ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux2:inst64|lpm_mux:LPM_MUX_component|mux_83e:auto_generated                                                 ;              ;
-;       |lpm_mux_valueSelect:inst78|              ; 256 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux_valueSelect:inst78                                                                                       ;              ;
-;          |lpm_mux:LPM_MUX_component|            ; 256 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux_valueSelect:inst78|lpm_mux:LPM_MUX_component                                                             ;              ;
-;             |mux_v4e:auto_generated|            ; 256 (256)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux_valueSelect:inst78|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                      ;              ;
+;       |lpm_mux_valueSelect:inst78|              ; 257 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux_valueSelect:inst78                                                                                       ;              ;
+;          |lpm_mux:LPM_MUX_component|            ; 257 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux_valueSelect:inst78|lpm_mux:LPM_MUX_component                                                             ;              ;
+;             |mux_v4e:auto_generated|            ; 257 (257)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|g07_stack52:inst13|lpm_mux_valueSelect:inst78|lpm_mux:LPM_MUX_component|mux_v4e:auto_generated                                      ;              ;
 ;    |lpm_add_sub_scores:inst54|                  ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_add_sub_scores:inst54                                                                                                           ;              ;
 ;       |lpm_add_sub:LPM_ADD_SUB_component|       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_add_sub_scores:inst54|lpm_add_sub:LPM_ADD_SUB_component                                                                         ;              ;
 ;          |add_sub_33i:auto_generated|           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_add_sub_scores:inst54|lpm_add_sub:LPM_ADD_SUB_component|add_sub_33i:auto_generated                                              ;              ;
@@ -793,6 +806,7 @@ applicable agreement for further details.
 ;    |lpm_ff:inst2|                               ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_ff:inst2                                                                                                                        ;              ;
 ;    |lpm_ff:inst3|                               ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_ff:inst3                                                                                                                        ;              ;
 ;    |lpm_ff:inst_7|                              ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_ff:inst_7                                                                                                                       ;              ;
+;    |lpm_ff:inst_8|                              ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_ff:inst_8                                                                                                                       ;              ;
 ;    |lpm_mux_displays:inst60|                    ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_mux_displays:inst60                                                                                                             ;              ;
 ;       |lpm_mux:LPM_MUX_component|               ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_mux_displays:inst60|lpm_mux:LPM_MUX_component                                                                                   ;              ;
 ;          |mux_93e:auto_generated|               ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g07_lab5_testbed|lpm_mux_displays:inst60|lpm_mux:LPM_MUX_component|mux_93e:auto_generated                                                            ;              ;
@@ -905,6 +919,18 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
++----------------------------------------------------------------------------+
+; State Machine - |g07_lab5_testbed|g07_dealer_FSM:inst_12r|state            ;
++--------------------+--------------------+-----------------+----------------+
+; Name               ; state.ENABLE_STACK ; state.WAIT_HIGH ; state.WAIT_LOW ;
++--------------------+--------------------+-----------------+----------------+
+; state.WAIT_LOW     ; 0                  ; 0               ; 0              ;
+; state.WAIT_HIGH    ; 0                  ; 1               ; 1              ;
+; state.ENABLE_STACK ; 1                  ; 0               ; 1              ;
++--------------------+--------------------+-----------------+----------------+
+
+
+Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------+
 ; State Machine - |g07_lab5_testbed|g07_computer_FSM:inst21|state                 ;
 +-----------------+----------------+------------+---------------+-----------------+
@@ -918,49 +944,52 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------+
-; State Machine - |g07_lab5_testbed|g07_dealer_FSM:inst_12r|state            ;
-+--------------------+--------------------+-----------------+----------------+
-; Name               ; state.ENABLE_STACK ; state.WAIT_HIGH ; state.WAIT_LOW ;
-+--------------------+--------------------+-----------------+----------------+
-; state.WAIT_LOW     ; 0                  ; 0               ; 0              ;
-; state.WAIT_HIGH    ; 0                  ; 1               ; 1              ;
-; state.ENABLE_STACK ; 1                  ; 0               ; 1              ;
-+--------------------+--------------------+-----------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |g07_lab5_testbed|g07_controller_FSM:inst93|state                                                                                                                                                                                                                                                                  ;
++-----------------------+-----------------------+------------------+---------------+------------------+------------------+-------------------+---------------------+------------------+---------------------+---------------------+---------------------+---------------------+------------------+-----------------+-----------------+
+; Name                  ; state.LOAD_FIRST_CARD ; state.RESET_WAIT ; state.ENDGAME ; state.DEALER_WON ; state.PLAYER_WON ; state.DEALER_TURN ; state.PLAYER_CHOOSE ; state.PLAYER_HIT ; state.PLAYER_CARD_2 ; state.PLAYER_CARD_1 ; state.DEALER_CARD_2 ; state.DEALER_CARD_1 ; state.RESET_DECK ; state.WAIT_RAND ; state.INIT_RAND ;
++-----------------------+-----------------------+------------------+---------------+------------------+------------------+-------------------+---------------------+------------------+---------------------+---------------------+---------------------+---------------------+------------------+-----------------+-----------------+
+; state.INIT_RAND       ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 0               ;
+; state.WAIT_RAND       ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 1               ; 1               ;
+; state.RESET_DECK      ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 1                ; 0               ; 1               ;
+; state.DEALER_CARD_1   ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 1                   ; 0                ; 0               ; 1               ;
+; state.DEALER_CARD_2   ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 1                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.PLAYER_CARD_1   ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 1                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.PLAYER_CARD_2   ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 1                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.PLAYER_HIT      ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 1                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.PLAYER_CHOOSE   ; 0                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 1                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.DEALER_TURN     ; 0                     ; 0                ; 0             ; 0                ; 0                ; 1                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.PLAYER_WON      ; 0                     ; 0                ; 0             ; 0                ; 1                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.DEALER_WON      ; 0                     ; 0                ; 0             ; 1                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.ENDGAME         ; 0                     ; 0                ; 1             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.RESET_WAIT      ; 0                     ; 1                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
+; state.LOAD_FIRST_CARD ; 1                     ; 0                ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
++-----------------------+-----------------------+------------------+---------------+------------------+------------------+-------------------+---------------------+------------------+---------------------+---------------------+---------------------+---------------------+------------------+-----------------+-----------------+
 
 
-Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |g07_lab5_testbed|g07_controller_FSM:inst56|state                                                                                                                                                                                                                     ;
-+---------------------+---------------+------------------+------------------+-------------------+---------------------+------------------+---------------------+---------------------+---------------------+---------------------+------------------+-----------------+-----------------+
-; Name                ; state.ENDGAME ; state.DEALER_WON ; state.PLAYER_WON ; state.DEALER_TURN ; state.PLAYER_CHOOSE ; state.PLAYER_HIT ; state.PLAYER_CARD_2 ; state.PLAYER_CARD_1 ; state.DEALER_CARD_2 ; state.DEALER_CARD_1 ; state.RESET_DECK ; state.WAIT_RAND ; state.INIT_RAND ;
-+---------------------+---------------+------------------+------------------+-------------------+---------------------+------------------+---------------------+---------------------+---------------------+---------------------+------------------+-----------------+-----------------+
-; state.INIT_RAND     ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 0               ;
-; state.WAIT_RAND     ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 1               ; 1               ;
-; state.RESET_DECK    ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 1                ; 0               ; 1               ;
-; state.DEALER_CARD_1 ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 1                   ; 0                ; 0               ; 1               ;
-; state.DEALER_CARD_2 ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 1                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.PLAYER_CARD_1 ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 1                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.PLAYER_CARD_2 ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 1                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.PLAYER_HIT    ; 0             ; 0                ; 0                ; 0                 ; 0                   ; 1                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.PLAYER_CHOOSE ; 0             ; 0                ; 0                ; 0                 ; 1                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.DEALER_TURN   ; 0             ; 0                ; 0                ; 1                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.PLAYER_WON    ; 0             ; 0                ; 1                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.DEALER_WON    ; 0             ; 1                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-; state.ENDGAME       ; 1             ; 0                ; 0                ; 0                 ; 0                   ; 0                ; 0                   ; 0                   ; 0                   ; 0                   ; 0                ; 0               ; 1               ;
-+---------------------+---------------+------------------+------------------+-------------------+---------------------+------------------+---------------------+---------------------+---------------------+---------------------+------------------+-----------------+-----------------+
-
-
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; lpm_ff:inst24|dffs[31]                 ; Stuck at GND due to stuck port data_in ;
-; g07_stack52:inst13|inst89              ; Merged with g07_stack52:inst13|inst90  ;
-; g07_dealer_FSM:inst_12r|state.WAIT_LOW ; Lost fanout                            ;
-; Total Number of Removed Registers = 3  ;                                        ;
-+----------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                  ;
++--------------------------------------------+--------------------------------------------------------+
+; Register name                              ; Reason for Removal                                     ;
++--------------------------------------------+--------------------------------------------------------+
+; lpm_ff:inst24|dffs[31]                     ; Stuck at GND due to stuck port data_in                 ;
+; g07_controller_FSM:inst93|d_sum_last[4]    ; Merged with g07_computer_FSM:inst21|old_sum_int[4]     ;
+; g07_controller_FSM:inst93|d_sum_last[3]    ; Merged with g07_computer_FSM:inst21|old_sum_int[3]     ;
+; g07_controller_FSM:inst93|d_sum_last[2]    ; Merged with g07_computer_FSM:inst21|old_sum_int[2]     ;
+; g07_controller_FSM:inst93|d_sum_last[1]    ; Merged with g07_computer_FSM:inst21|old_sum_int[1]     ;
+; g07_controller_FSM:inst93|d_sum_last[0]    ; Merged with g07_computer_FSM:inst21|old_sum_int[0]     ;
+; g07_rules:inst69|new_card_value_int_raw[0] ; Merged with g07_rules:inst|new_card_value_int_raw[0]   ;
+; g07_stack52:inst13|inst89                  ; Merged with g07_stack52:inst13|inst90                  ;
+; g07_rules:inst|new_card_value_int_raw[3]   ; Merged with g07_rules:inst69|new_card_value_int_raw[3] ;
+; g07_rules:inst|new_card_value_int_raw[2]   ; Merged with g07_rules:inst69|new_card_value_int_raw[2] ;
+; g07_rules:inst|new_card_value_int_raw[1]   ; Merged with g07_rules:inst69|new_card_value_int_raw[1] ;
+; g07_rules:inst|new_card_value_int[3]       ; Merged with g07_rules:inst69|new_card_value_int[3]     ;
+; g07_rules:inst|new_card_value_int[2]       ; Merged with g07_rules:inst69|new_card_value_int[2]     ;
+; g07_rules:inst|new_card_value_int[1]       ; Merged with g07_rules:inst69|new_card_value_int[1]     ;
+; g07_rules:inst|new_card_value_int[0]       ; Merged with g07_rules:inst69|new_card_value_int[0]     ;
+; g07_dealer_FSM:inst_4h|state.WAIT_LOW      ; Lost fanout                                            ;
+; Total Number of Removed Registers = 16     ;                                                        ;
++--------------------------------------------+--------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -968,25 +997,14 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 627   ;
+; Total registers                              ; 629   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 421   ;
-; Number of registers using Asynchronous Clear ; 399   ;
+; Number of registers using Asynchronous Clear ; 409   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 557   ;
+; Number of registers using Clock Enable       ; 544   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; g07_rules:inst|legal_play              ; 6       ;
-; g07_rules:inst58|legal_play            ; 1       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -994,15 +1012,16 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |g07_lab5_testbed|g07_blinker:inst1|count[14]            ;
-; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |g07_lab5_testbed|g07_blinker:inst63|count[0]            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst|new_card_value_int[0]   ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst58|new_card_value_int[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst|new_sum_int[3]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst58|new_sum_int[3]        ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |g07_lab5_testbed|g07_blinker:inst1|count[2]             ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |g07_lab5_testbed|g07_blinker:inst63|count[1]            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst69|new_card_value_int[1] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst|new_card_value_int[1]   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst69|new_sum_int[3]        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g07_lab5_testbed|g07_rules:inst|new_sum_int[2]          ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |g07_lab5_testbed|g07_controller_FSM:inst93|counter[2]   ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |g07_lab5_testbed|g07_computer_FSM:inst21|Selector3      ;
-; 12:1               ; 5 bits    ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |g07_lab5_testbed|g07_controller_FSM:inst56|Selector5    ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 6 LEs                ; 10 LEs                 ; No         ; |g07_lab5_testbed|g07_controller_FSM:inst56|Selector1    ;
+; 17:1               ; 7 bits    ; 77 LEs        ; 42 LEs               ; 35 LEs                 ; No         ; |g07_lab5_testbed|g07_controller_FSM:inst93|Selector14   ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; No         ; |g07_lab5_testbed|g07_controller_FSM:inst93|Selector12   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
@@ -1195,25 +1214,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_FF:inst_7 ;
-+------------------------+------------+----------------------+
-; Parameter Name         ; Value      ; Type                 ;
-+------------------------+------------+----------------------+
-; LPM_WIDTH              ; 6          ; Untyped              ;
-; LPM_AVALUE             ; UNUSED     ; Untyped              ;
-; LPM_SVALUE             ; UNUSED     ; Untyped              ;
-; LPM_FFTYPE             ; DFF        ; Untyped              ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped              ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
-+------------------------+------------+----------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: LPM_FF:inst3 ;
 +------------------------+------------+---------------------+
@@ -1230,6 +1230,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE        ;
 ; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE      ;
 +------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_FF:inst_7 ;
++------------------------+------------+----------------------+
+; Parameter Name         ; Value      ; Type                 ;
++------------------------+------------+----------------------+
+; LPM_WIDTH              ; 6          ; Untyped              ;
+; LPM_AVALUE             ; UNUSED     ; Untyped              ;
+; LPM_SVALUE             ; UNUSED     ; Untyped              ;
+; LPM_FFTYPE             ; DFF        ; Untyped              ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped              ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
++------------------------+------------+----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3295,6 +3314,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_FF:inst_8 ;
++------------------------+------------+----------------------+
+; Parameter Name         ; Value      ; Type                 ;
++------------------------+------------+----------------------+
+; LPM_WIDTH              ; 6          ; Untyped              ;
+; LPM_AVALUE             ; UNUSED     ; Untyped              ;
+; LPM_SVALUE             ; UNUSED     ; Untyped              ;
+; LPM_FFTYPE             ; DFF        ; Untyped              ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped              ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
++------------------------+------------+----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: lpm_mux_displays:inst60|LPM_MUX:LPM_MUX_component ;
 +------------------------+------------+----------------------------------------------------------+
@@ -3559,7 +3597,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -3569,7 +3607,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Dec 02 09:56:45 2017
+    Info: Processing started: Sun Dec 03 20:48:37 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g07_lab5 -c g07_lab5
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /users/peter/documents/github/dsd-labs/lab4/lpm_divide10.vhd
@@ -3698,6 +3736,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux
     Info (12022): Found design unit 1: lpm_mux_displays-SYN
     Info (12023): Found entity 1: lpm_mux_displays
 Info (12127): Elaborating entity "g07_lab5_testbed" for the top level hierarchy
+Warning (275011): Block or symbol "lpm_counter3" of instance "inst30" overlaps another block or symbol
 Warning (275011): Block or symbol "g07_dealer_FSM" of instance "inst_4h" overlaps another block or symbol
 Info (12128): Elaborating entity "lpm_counter3" for hierarchy "lpm_counter3:inst30"
 Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter3:inst30|lpm_counter:LPM_COUNTER_component"
@@ -3710,7 +3749,7 @@ Info (12133): Instantiated megafunction "lpm_counter3:inst30|lpm_counter:LPM_COU
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_fni.tdf
     Info (12023): Found entity 1: cntr_fni
 Info (12128): Elaborating entity "cntr_fni" for hierarchy "lpm_counter3:inst30|lpm_counter:LPM_COUNTER_component|cntr_fni:auto_generated"
-Info (12128): Elaborating entity "g07_controller_FSM" for hierarchy "g07_controller_FSM:inst56"
+Info (12128): Elaborating entity "g07_controller_FSM" for hierarchy "g07_controller_FSM:inst93"
 Info (12128): Elaborating entity "g07_debouncer" for hierarchy "g07_debouncer:inst10"
 Info (12128): Elaborating entity "lpm_compare_bounce0" for hierarchy "g07_debouncer:inst10|lpm_compare_bounce0:inst1"
 Info (12128): Elaborating entity "lpm_compare" for hierarchy "g07_debouncer:inst10|lpm_compare_bounce0:inst1|lpm_compare:LPM_COMPARE_component"
@@ -3739,20 +3778,19 @@ Info (12128): Elaborating entity "cntr_lkl" for hierarchy "g07_debouncer:inst10|
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_qdc.tdf
     Info (12023): Found entity 1: cmpr_qdc
 Info (12128): Elaborating entity "cmpr_qdc" for hierarchy "g07_debouncer:inst10|lpm_counter_bounce1:inst6|lpm_counter:LPM_COUNTER_component|cntr_lkl:auto_generated|cmpr_qdc:cmpr2"
-Info (12128): Elaborating entity "g07_rules" for hierarchy "g07_rules:inst58"
-Warning (10036): Verilog HDL or VHDL warning at g07_rules.vhd(30): object "new_card_suit" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at g07_rules.vhd(52): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g07_rules.vhd(57): signal "clock" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g07_rules.vhd(57): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "g07_Modulo_13" for hierarchy "g07_rules:inst58|g07_Modulo_13:u1"
-Info (12128): Elaborating entity "g07_adder" for hierarchy "g07_rules:inst58|g07_Modulo_13:u1|g07_adder:inst5"
-Info (12128): Elaborating entity "g07_fullAdder" for hierarchy "g07_rules:inst58|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst7"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst_7"
-Info (12130): Elaborated megafunction instantiation "LPM_FF:inst_7"
-Info (12133): Instantiated megafunction "LPM_FF:inst_7" with the following parameter:
+Info (12128): Elaborating entity "g07_rules" for hierarchy "g07_rules:inst69"
+Warning (10036): Verilog HDL or VHDL warning at g07_rules.vhd(32): object "new_card_suit" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(54): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g07_rules.vhd(59): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "g07_Modulo_13" for hierarchy "g07_rules:inst69|g07_Modulo_13:u1"
+Info (12128): Elaborating entity "g07_adder" for hierarchy "g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst5"
+Info (12128): Elaborating entity "g07_fullAdder" for hierarchy "g07_rules:inst69|g07_Modulo_13:u1|g07_adder:inst5|g07_fullAdder:inst7"
+Info (12128): Elaborating entity "g07_computer_FSM" for hierarchy "g07_computer_FSM:inst21"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst3"
+Info (12130): Elaborated megafunction instantiation "LPM_FF:inst3"
+Info (12133): Instantiated megafunction "LPM_FF:inst3" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12128): Elaborating entity "g07_dealer_FSM" for hierarchy "g07_dealer_FSM:inst_12r"
-Info (12128): Elaborating entity "g07_computer_FSM" for hierarchy "g07_computer_FSM:inst21"
 Info (12128): Elaborating entity "g07_stack52" for hierarchy "g07_stack52:inst13"
 Warning (275083): Bus "data12[5..0]" found using same base name as "data1", which might lead to a name conflict.
 Warning (275083): Bus "data13[5..0]" found using same base name as "data1", which might lead to a name conflict.
@@ -4752,20 +4790,18 @@ Info (12133): Instantiated megafunction "lpm_add_sub_scores:inst54|lpm_add_sub:L
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_33i.tdf
     Info (12023): Found entity 1: add_sub_33i
 Info (12128): Elaborating entity "add_sub_33i" for hierarchy "lpm_add_sub_scores:inst54|lpm_add_sub:LPM_ADD_SUB_component|add_sub_33i:auto_generated"
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1364 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1379 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 1268 logic cells
+    Info (21061): Implemented 1283 logic cells
     Info (21064): Implemented 52 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 254 warnings
-    Info: Peak virtual memory: 593 megabytes
-    Info: Processing ended: Sat Dec 02 09:56:55 2017
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 587 megabytes
+    Info: Processing ended: Sun Dec 03 20:49:06 2017
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:27
 
 
