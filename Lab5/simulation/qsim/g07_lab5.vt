@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/01/2017 14:28:58"
+// Generated on "12/04/2017 15:17:52"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g07_computer_FSM
 // 
@@ -30,18 +30,20 @@ module g07_computer_FSM_vlg_sample_tst(
 	clk,
 	dealer_sum,
 	dealer_turn,
+	new_card,
 	reset_all,
 	sampler_tx
 );
 input  clk;
 input [5:0] dealer_sum;
 input  dealer_turn;
+input [5:0] new_card;
 input  reset_all;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(clk or dealer_sum or dealer_turn or reset_all)
+always @(clk or dealer_sum or dealer_turn or new_card or reset_all)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -61,23 +63,29 @@ assign sampler_tx = sample;
 endmodule
 
 module g07_computer_FSM_vlg_check_tst (
+	add_card_to_hand,
 	dealer_done,
 	request_card,
 	sampler_rx
 );
+input  add_card_to_hand;
 input  dealer_done;
 input  request_card;
 input sampler_rx;
 
+reg  add_card_to_hand_expected;
 reg  dealer_done_expected;
 reg  request_card_expected;
 
+reg  add_card_to_hand_prev;
 reg  dealer_done_prev;
 reg  request_card_prev;
 
+reg  add_card_to_hand_expected_prev;
 reg  dealer_done_expected_prev;
 reg  request_card_expected_prev;
 
+reg  last_add_card_to_hand_exp;
 reg  last_dealer_done_exp;
 reg  last_request_card_exp;
 
@@ -86,7 +94,7 @@ reg trigger;
 integer i;
 integer nummismatches;
 
-reg [1:2] on_first_change ;
+reg [1:3] on_first_change ;
 
 
 initial
@@ -94,13 +102,14 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 2'b1;
+on_first_change = 3'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
+	add_card_to_hand_prev = add_card_to_hand;
 	dealer_done_prev = dealer_done;
 	request_card_prev = request_card;
 end
@@ -109,6 +118,7 @@ end
 
 always @(trigger)
 begin
+	add_card_to_hand_expected_prev = add_card_to_hand_expected;
 	dealer_done_expected_prev = dealer_done_expected;
 	request_card_expected_prev = request_card_expected;
 end
@@ -126,8 +136,14 @@ initial
 begin
 	request_card_expected = 1'bX;
 end 
+
+// expected add_card_to_hand
+initial
+begin
+	add_card_to_hand_expected = 1'bX;
+end 
 // generate trigger
-always @(dealer_done_expected or dealer_done or request_card_expected or request_card)
+always @(add_card_to_hand_expected or add_card_to_hand or dealer_done_expected or dealer_done or request_card_expected or request_card)
 begin
 	trigger <= ~trigger;
 end
@@ -137,33 +153,46 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected dealer_done = %b | expected request_card = %b | ",dealer_done_expected_prev,request_card_expected_prev);
-	$display("| real dealer_done = %b | real request_card = %b | ",dealer_done_prev,request_card_prev);
+	$display("| expected add_card_to_hand = %b | expected dealer_done = %b | expected request_card = %b | ",add_card_to_hand_expected_prev,dealer_done_expected_prev,request_card_expected_prev);
+	$display("| real add_card_to_hand = %b | real dealer_done = %b | real request_card = %b | ",add_card_to_hand_prev,dealer_done_prev,request_card_prev);
 `endif
+	if (
+		( add_card_to_hand_expected_prev !== 1'bx ) && ( add_card_to_hand_prev !== add_card_to_hand_expected_prev )
+		&& ((add_card_to_hand_expected_prev !== last_add_card_to_hand_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port add_card_to_hand :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", add_card_to_hand_expected_prev);
+		$display ("     Real value = %b", add_card_to_hand_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_add_card_to_hand_exp = add_card_to_hand_expected_prev;
+	end
 	if (
 		( dealer_done_expected_prev !== 1'bx ) && ( dealer_done_prev !== dealer_done_expected_prev )
 		&& ((dealer_done_expected_prev !== last_dealer_done_exp) ||
-			on_first_change[1])
+			on_first_change[2])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port dealer_done :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", dealer_done_expected_prev);
 		$display ("     Real value = %b", dealer_done_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
+		on_first_change[2] = 1'b0;
 		last_dealer_done_exp = dealer_done_expected_prev;
 	end
 	if (
 		( request_card_expected_prev !== 1'bx ) && ( request_card_prev !== request_card_expected_prev )
 		&& ((request_card_expected_prev !== last_request_card_exp) ||
-			on_first_change[2])
+			on_first_change[3])
 	)
 	begin
 		$display ("ERROR! Vector Mismatch for output port request_card :: @time = %t",  $realtime);
 		$display ("     Expected value = %b", request_card_expected_prev);
 		$display ("     Real value = %b", request_card_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
+		on_first_change[3] = 1'b0;
 		last_request_card_exp = request_card_expected_prev;
 	end
 
@@ -188,8 +217,10 @@ module g07_computer_FSM_vlg_vec_tst();
 reg clk;
 reg [5:0] dealer_sum;
 reg dealer_turn;
+reg [5:0] new_card;
 reg reset_all;
 // wires                                               
+wire add_card_to_hand;
 wire dealer_done;
 wire request_card;
 
@@ -198,10 +229,12 @@ wire sampler;
 // assign statements (if any)                          
 g07_computer_FSM i1 (
 // port map - connection between master ports and signals/registers   
+	.add_card_to_hand(add_card_to_hand),
 	.clk(clk),
 	.dealer_done(dealer_done),
 	.dealer_sum(dealer_sum),
 	.dealer_turn(dealer_turn),
+	.new_card(new_card),
 	.request_card(request_card),
 	.reset_all(reset_all)
 );
@@ -220,8 +253,6 @@ begin
 	dealer_turn = 1'b0;
 	dealer_turn = #40000 1'b1;
 	dealer_turn = #70000 1'b0;
-	dealer_turn = #290000 1'b1;
-	dealer_turn = #30000 1'b0;
 end 
 
 // reset_all
@@ -238,52 +269,86 @@ end
 initial
 begin
 	dealer_sum[4] = 1'b0;
-	dealer_sum[4] = #300000 1'b1;
+	dealer_sum[4] = #250000 1'b1;
+	dealer_sum[4] = #230000 1'b0;
 end 
 // dealer_sum[ 3 ]
 initial
 begin
 	dealer_sum[3] = 1'b1;
-	dealer_sum[3] = #300000 1'b0;
-	dealer_sum[3] = #400000 1'b1;
+	dealer_sum[3] = #250000 1'b0;
+	dealer_sum[3] = #230000 1'b1;
 end 
 // dealer_sum[ 2 ]
 initial
 begin
 	dealer_sum[2] = 1'b0;
-	# 100000;
-	repeat(2)
-	begin
-		dealer_sum[2] = 1'b1;
-		dealer_sum[2] = #200000 1'b0;
-		# 200000;
-	end
-	dealer_sum[2] = 1'b1;
+	dealer_sum[2] = #250000 1'b1;
+	dealer_sum[2] = #230000 1'b0;
 end 
 // dealer_sum[ 1 ]
-always
+initial
 begin
 	dealer_sum[1] = 1'b1;
-	dealer_sum[1] = #100000 1'b0;
-	#100000;
+	dealer_sum[1] = #250000 1'b0;
+	dealer_sum[1] = #230000 1'b1;
 end 
 // dealer_sum[ 0 ]
-always
+initial
 begin
 	dealer_sum[0] = 1'b0;
-	dealer_sum[0] = #50000 1'b1;
-	#50000;
+end 
+// new_card[ 5 ]
+initial
+begin
+	new_card[5] = 1'b0;
+end 
+// new_card[ 4 ]
+initial
+begin
+	new_card[4] = 1'b0;
+end 
+// new_card[ 3 ]
+initial
+begin
+	new_card[3] = 1'b1;
+end 
+// new_card[ 2 ]
+initial
+begin
+	new_card[2] = 1'b0;
+	new_card[2] = #400000 1'b1;
+end 
+// new_card[ 1 ]
+initial
+begin
+	new_card[1] = 1'b1;
+	new_card[1] = #400000 1'b0;
+	new_card[1] = #400000 1'b1;
+end 
+// new_card[ 0 ]
+initial
+begin
+	repeat(2)
+	begin
+		new_card[0] = 1'b0;
+		new_card[0] = #200000 1'b1;
+		# 200000;
+	end
+	new_card[0] = 1'b0;
 end 
 
 g07_computer_FSM_vlg_sample_tst tb_sample (
 	.clk(clk),
 	.dealer_sum(dealer_sum),
 	.dealer_turn(dealer_turn),
+	.new_card(new_card),
 	.reset_all(reset_all),
 	.sampler_tx(sampler)
 );
 
 g07_computer_FSM_vlg_check_tst tb_out(
+	.add_card_to_hand(add_card_to_hand),
 	.dealer_done(dealer_done),
 	.request_card(request_card),
 	.sampler_rx(sampler)

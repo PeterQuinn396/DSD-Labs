@@ -5,6 +5,7 @@ entity g07_computer_FSM_vlg_sample_tst is
         clk             : in     vl_logic;
         dealer_sum      : in     vl_logic_vector(5 downto 0);
         dealer_turn     : in     vl_logic;
+        new_card        : in     vl_logic_vector(5 downto 0);
         reset_all       : in     vl_logic;
         sampler_tx      : out    vl_logic
     );
