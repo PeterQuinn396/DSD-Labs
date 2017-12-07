@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/04/2017 15:17:52"
+// Generated on "12/06/2017 21:18:00"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    g07_computer_FSM
 // 
@@ -253,12 +253,16 @@ begin
 	dealer_turn = 1'b0;
 	dealer_turn = #40000 1'b1;
 	dealer_turn = #70000 1'b0;
+	dealer_turn = #80000 1'b1;
+	dealer_turn = #70000 1'b0;
 end 
 
 // reset_all
 initial
 begin
 	reset_all = 1'b0;
+	reset_all = #150000 1'b1;
+	reset_all = #60000 1'b0;
 end 
 // dealer_sum[ 5 ]
 initial
@@ -269,34 +273,36 @@ end
 initial
 begin
 	dealer_sum[4] = 1'b0;
-	dealer_sum[4] = #250000 1'b1;
-	dealer_sum[4] = #230000 1'b0;
+	dealer_sum[4] = #200000 1'b1;
+	dealer_sum[4] = #310000 1'b0;
 end 
 // dealer_sum[ 3 ]
 initial
 begin
 	dealer_sum[3] = 1'b1;
-	dealer_sum[3] = #250000 1'b0;
-	dealer_sum[3] = #230000 1'b1;
+	dealer_sum[3] = #200000 1'b0;
+	dealer_sum[3] = #310000 1'b1;
 end 
 // dealer_sum[ 2 ]
 initial
 begin
 	dealer_sum[2] = 1'b0;
-	dealer_sum[2] = #250000 1'b1;
-	dealer_sum[2] = #230000 1'b0;
+	dealer_sum[2] = #310000 1'b1;
+	dealer_sum[2] = #200000 1'b0;
 end 
 // dealer_sum[ 1 ]
 initial
 begin
 	dealer_sum[1] = 1'b1;
-	dealer_sum[1] = #250000 1'b0;
-	dealer_sum[1] = #230000 1'b1;
+	dealer_sum[1] = #200000 1'b0;
+	dealer_sum[1] = #110000 1'b1;
 end 
 // dealer_sum[ 0 ]
 initial
 begin
 	dealer_sum[0] = 1'b0;
+	dealer_sum[0] = #310000 1'b1;
+	dealer_sum[0] = #200000 1'b0;
 end 
 // new_card[ 5 ]
 initial
@@ -312,30 +318,32 @@ end
 initial
 begin
 	new_card[3] = 1'b1;
+	new_card[3] = #130000 1'b0;
+	new_card[3] = #470000 1'b1;
 end 
 // new_card[ 2 ]
 initial
 begin
 	new_card[2] = 1'b0;
-	new_card[2] = #400000 1'b1;
+	new_card[2] = #130000 1'b1;
 end 
 // new_card[ 1 ]
 initial
 begin
 	new_card[1] = 1'b1;
-	new_card[1] = #400000 1'b0;
-	new_card[1] = #400000 1'b1;
+	new_card[1] = #130000 1'b0;
+	new_card[1] = #140000 1'b1;
+	new_card[1] = #330000 1'b0;
+	new_card[1] = #200000 1'b1;
 end 
 // new_card[ 0 ]
 initial
 begin
-	repeat(2)
-	begin
-		new_card[0] = 1'b0;
-		new_card[0] = #200000 1'b1;
-		# 200000;
-	end
 	new_card[0] = 1'b0;
+	new_card[0] = #130000 1'b1;
+	new_card[0] = #140000 1'b0;
+	new_card[0] = #330000 1'b1;
+	new_card[0] = #200000 1'b0;
 end 
 
 g07_computer_FSM_vlg_sample_tst tb_sample (

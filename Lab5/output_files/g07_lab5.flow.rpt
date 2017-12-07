@@ -1,5 +1,5 @@
 Flow report for g07_lab5
-Mon Dec 04 15:17:57 2017
+Wed Dec 06 21:18:01 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Dec 04 15:17:57 2017           ;
+; Flow Status                        ; Successful - Wed Dec 06 21:18:01 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; g07_lab5                                        ;
 ; Top-level Entity Name              ; g07_computer_FSM                                ;
@@ -140,7 +140,27 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 458 MB              ; 00:00:04                           ;
 ; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 462 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 458 MB              ; 00:00:04                           ;
-; Total                     ; 00:02:03     ; --                      ; --                  ; 00:01:47                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; Total                     ; 00:02:12     ; --                      ; --                  ; 00:02:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -168,6 +188,26 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; GarethPeters     ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; GarethPeters     ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; GarethPeters     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Gareth-PC        ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -192,6 +232,26 @@ quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
 quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=D:/Gareth/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5 --vector_source=K:/Documents/GitHub/DSD-Labs/Lab5/g07_computer_FSM_waveform.vwf --testbench_file=./simulation/qsim/g07_lab5.vt
 quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog g07_lab5 -c g07_lab5
 
 

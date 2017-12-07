@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "12/04/2017 15:17:57"
+// DATE "12/06/2017 21:18:00"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -119,9 +119,9 @@ wire \old_sum_int[4]~feeder_combout ;
 wire \Selector3~0_combout ;
 wire \state.END_TURN~regout ;
 wire [5:0] \dealer_sum~combout ;
+wire [5:0] \new_card~combout ;
 wire [5:0] old_sum_last;
 wire [4:0] old_sum_int;
-wire [5:0] \new_card~combout ;
 wire [5:0] last_card;
 
 

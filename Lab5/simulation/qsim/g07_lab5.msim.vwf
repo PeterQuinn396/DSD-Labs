@@ -722,6 +722,66 @@ SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|dealer_sum~combout[0]")
 	PARENT = "";
 }
 
+SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -823,66 +883,6 @@ SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[1]")
 }
 
 SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1074,9 +1074,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|dealer_sum[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 520.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 310.0;
+		LEVEL 0 FOR 490.0;
 	}
 }
 
@@ -1085,9 +1085,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|dealer_sum[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 230.0;
-		LEVEL 1 FOR 520.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 310.0;
+		LEVEL 1 FOR 490.0;
 	}
 }
 
@@ -1096,9 +1096,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|dealer_sum[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 520.0;
+		LEVEL 0 FOR 310.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 490.0;
 	}
 }
 
@@ -1107,9 +1107,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|dealer_sum[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 230.0;
-		LEVEL 1 FOR 520.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 690.0;
 	}
 }
 
@@ -1118,7 +1118,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|dealer_sum[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 310.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 490.0;
 	}
 }
 
@@ -1129,7 +1131,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|dealer_turn")
 		REPEAT = 1;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 890.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 740.0;
 	}
 }
 
@@ -1156,7 +1160,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|new_card[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 130.0;
+		LEVEL 0 FOR 470.0;
+		LEVEL 1 FOR 400.0;
 	}
 }
 
@@ -1165,8 +1171,8 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|new_card[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 600.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 870.0;
 	}
 }
 
@@ -1175,8 +1181,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|new_card[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 130.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 330.0;
+		LEVEL 0 FOR 200.0;
 		LEVEL 1 FOR 200.0;
 	}
 }
@@ -1186,9 +1194,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|new_card[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 330.0;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 200.0;
 	}
@@ -1199,7 +1207,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|reset_all")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 790.0;
 	}
 }
 
@@ -1209,9 +1219,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|add_card_to_hand")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.25;
-		LEVEL 0 FOR 232.9;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 702.85;
+		LEVEL 0 FOR 272.9;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 642.85;
 	}
 }
 
@@ -1221,9 +1231,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|dealer_done")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.273;
-		LEVEL 0 FOR 312.9;
+		LEVEL 0 FOR 372.9;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 662.827;
+		LEVEL 0 FOR 602.827;
 	}
 }
 
@@ -1234,8 +1244,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|request_card")
 		REPEAT = 1;
 		LEVEL X FOR 4.281;
 		LEVEL 0 FOR 72.9;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 762.819;
+		LEVEL 1 FOR 79.97;
+		LEVEL 0 FOR 100.03;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 722.819;
 	}
 }
 
@@ -1417,11 +1429,11 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~9_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 6.037;
-		LEVEL 0 FOR 250.633;
+		LEVEL 0 FOR 200.633;
+		LEVEL 1 FOR 26.999;
+		LEVEL 0 FOR 283.001;
 		LEVEL 1 FOR 16.999;
-		LEVEL 0 FOR 213.001;
-		LEVEL 1 FOR 6.999;
-		LEVEL 0 FOR 506.331;
+		LEVEL 0 FOR 466.331;
 	}
 }
 
@@ -1431,9 +1443,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~10_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.373;
-		LEVEL 0 FOR 255.766;
-		LEVEL 1 FOR 16.999;
-		LEVEL 0 FOR 725.862;
+		LEVEL 0 FOR 152.892;
+		LEVEL 1 FOR 99.753;
+		LEVEL 0 FOR 745.982;
 	}
 }
 
@@ -1443,9 +1455,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[4]~feeder_combout"
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.421;
-		LEVEL 0 FOR 250.863;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 513.716;
+		LEVEL 0 FOR 200.863;
+		LEVEL 1 FOR 310.0;
+		LEVEL 0 FOR 483.716;
 	}
 }
 
@@ -1681,7 +1693,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|reset_all~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 151.026;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 788.974;
 	}
 }
 
@@ -1691,7 +1705,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|reset_all~clkctrl_outclk")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 0.238;
-		LEVEL 0 FOR 999.762;
+		LEVEL 0 FOR 151.026;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 788.736;
 	}
 }
 
@@ -1701,9 +1717,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|state.DRAW~regout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 232.9;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 706.857;
+		LEVEL 0 FOR 272.9;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 646.857;
 	}
 }
 
@@ -1713,7 +1729,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~5_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.06;
-		LEVEL 0 FOR 998.94;
+		LEVEL 0 FOR 315.562;
+		LEVEL 1 FOR 16.878;
+		LEVEL 0 FOR 666.5;
 	}
 }
 
@@ -1723,9 +1741,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~6_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.529;
-		LEVEL 0 FOR 255.091;
-		LEVEL 1 FOR 16.88;
-		LEVEL 0 FOR 726.5;
+		LEVEL 0 FOR 315.091;
+		LEVEL 1 FOR 17.349;
+		LEVEL 0 FOR 666.031;
 	}
 }
 
@@ -1735,9 +1753,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~7_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.061;
-		LEVEL 0 FOR 255.775;
+		LEVEL 0 FOR 315.775;
 		LEVEL 1 FOR 16.664;
-		LEVEL 0 FOR 726.5;
+		LEVEL 0 FOR 666.5;
 	}
 }
 
@@ -1747,9 +1765,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~8_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.525;
-		LEVEL 0 FOR 255.4;
-		LEVEL 1 FOR 17.039;
-		LEVEL 0 FOR 726.036;
+		LEVEL 0 FOR 315.775;
+		LEVEL 1 FOR 16.664;
+		LEVEL 0 FOR 666.036;
 	}
 }
 
@@ -1759,9 +1777,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|last_card[0]~feeder_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.673;
-		LEVEL 0 FOR 200.843;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 130.843;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 330.0;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 193.484;
 	}
@@ -1774,12 +1792,12 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~1_combout")
 		REPEAT = 1;
 		LEVEL X FOR 5.81;
 		LEVEL 1 FOR 7.691;
-		LEVEL 0 FOR 193.371;
-		LEVEL 1 FOR 6.799;
-		LEVEL 0 FOR 192.972;
+		LEVEL 0 FOR 123.142;
+		LEVEL 1 FOR 17.028;
+		LEVEL 0 FOR 122.972;
+		LEVEL 1 FOR 17.028;
+		LEVEL 0 FOR 312.972;
 		LEVEL 1 FOR 7.028;
-		LEVEL 0 FOR 193.201;
-		LEVEL 1 FOR 6.799;
 		LEVEL 0 FOR 192.972;
 		LEVEL 1 FOR 7.028;
 		LEVEL 0 FOR 186.329;
@@ -1793,7 +1811,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|LessThan0~0_combout")
 		REPEAT = 1;
 		LEVEL X FOR 0.833;
 		LEVEL 1 FOR 12.667;
-		LEVEL 0 FOR 986.5;
+		LEVEL 0 FOR 220.174;
+		LEVEL 1 FOR 99.826;
+		LEVEL 0 FOR 666.5;
 	}
 }
 
@@ -1804,7 +1824,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|dealer_turn~combout")
 		REPEAT = 1;
 		LEVEL 0 FOR 40.873;
 		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 889.127;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 739.127;
 	}
 }
 
@@ -1815,8 +1837,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector0~0_combout")
 		REPEAT = 1;
 		LEVEL X FOR 5.706;
 		LEVEL 0 FOR 40.873;
-		LEVEL 1 FOR 267.626;
-		LEVEL 0 FOR 685.795;
+		LEVEL 1 FOR 106.892;
+		LEVEL 0 FOR 43.108;
+		LEVEL 1 FOR 177.626;
+		LEVEL 0 FOR 625.795;
 	}
 }
 
@@ -1827,8 +1851,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|state.WAIT_TURN~regout")
 		REPEAT = 1;
 		LEVEL X FOR 0.243;
 		LEVEL 0 FOR 52.9;
-		LEVEL 1 FOR 280.0;
-		LEVEL 0 FOR 666.857;
+		LEVEL 1 FOR 99.97;
+		LEVEL 0 FOR 80.03;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 606.857;
 	}
 }
 
@@ -1839,8 +1865,8 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector4~0_combout")
 		REPEAT = 1;
 		LEVEL X FOR 0.98;
 		LEVEL 0 FOR 72.9;
-		LEVEL 1 FOR 140.344;
-		LEVEL 0 FOR 785.776;
+		LEVEL 1 FOR 79.97;
+		LEVEL 0 FOR 846.15;
 	}
 }
 
@@ -1851,8 +1877,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector4~1_combout")
 		REPEAT = 1;
 		LEVEL X FOR 1.675;
 		LEVEL 0 FOR 52.88;
-		LEVEL 1 FOR 160.364;
-		LEVEL 0 FOR 785.081;
+		LEVEL 1 FOR 99.99;
+		LEVEL 0 FOR 79.992;
+		LEVEL 1 FOR 20.018;
+		LEVEL 0 FOR 745.445;
 	}
 }
 
@@ -1863,8 +1891,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|state.LOAD_CARD~regout")
 		REPEAT = 1;
 		LEVEL X FOR 0.243;
 		LEVEL 0 FOR 72.9;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 766.857;
+		LEVEL 1 FOR 79.97;
+		LEVEL 0 FOR 100.03;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 726.857;
 	}
 }
 
@@ -1875,8 +1905,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~0_combout")
 		REPEAT = 1;
 		LEVEL X FOR 0.933;
 		LEVEL 0 FOR 72.9;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 766.167;
+		LEVEL 1 FOR 79.97;
+		LEVEL 0 FOR 100.03;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 726.167;
 	}
 }
 
@@ -1886,8 +1918,8 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|last_card[2]~feeder_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.406;
-		LEVEL 0 FOR 400.843;
-		LEVEL 1 FOR 593.751;
+		LEVEL 0 FOR 130.843;
+		LEVEL 1 FOR 863.751;
 	}
 }
 
@@ -1898,9 +1930,11 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~2_combout")
 		REPEAT = 1;
 		LEVEL X FOR 6.03;
 		LEVEL 1 FOR 7.471;
-		LEVEL 0 FOR 393.412;
-		LEVEL 1 FOR 6.765;
-		LEVEL 0 FOR 586.322;
+		LEVEL 0 FOR 123.372;
+		LEVEL 1 FOR 16.805;
+		LEVEL 0 FOR 453.195;
+		LEVEL 1 FOR 6.628;
+		LEVEL 0 FOR 386.499;
 	}
 }
 
@@ -1910,9 +1944,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~4_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.549;
-		LEVEL 0 FOR 206.149;
-		LEVEL 1 FOR 6.799;
-		LEVEL 0 FOR 785.503;
+		LEVEL 0 FOR 135.92;
+		LEVEL 1 FOR 17.028;
+		LEVEL 0 FOR 845.503;
 	}
 }
 
@@ -1922,11 +1956,11 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector5~11_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 2.269;
-		LEVEL 0 FOR 206.149;
-		LEVEL 1 FOR 6.799;
-		LEVEL 0 FOR 42.218;
-		LEVEL 1 FOR 17.561;
-		LEVEL 0 FOR 725.004;
+		LEVEL 0 FOR 135.92;
+		LEVEL 1 FOR 116.687;
+		LEVEL 0 FOR 62.559;
+		LEVEL 1 FOR 17.349;
+		LEVEL 0 FOR 665.216;
 	}
 }
 
@@ -1935,11 +1969,11 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|vec_changed~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 213.142;
+		LEVEL 0 FOR 153.142;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 706.858;
+		LEVEL 0 FOR 646.858;
 	}
 }
 
@@ -1949,9 +1983,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|state.DRAW~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.143;
-		LEVEL 0 FOR 212.875;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 725.982;
+		LEVEL 0 FOR 252.737;
+		LEVEL 1 FOR 80.138;
+		LEVEL 0 FOR 665.982;
 	}
 }
 
@@ -1963,9 +1997,11 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector1~1_combout")
 		LEVEL X FOR 6.093;
 		LEVEL 1 FOR 40.873;
 		LEVEL 0 FOR 6.876;
-		LEVEL 1 FOR 180.175;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 705.983;
+		LEVEL 1 FOR 143.124;
+		LEVEL 0 FOR 36.876;
+		LEVEL 1 FOR 40.175;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 645.983;
 	}
 }
 
@@ -1977,9 +2013,11 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector1~2_combout")
 		LEVEL X FOR 6.566;
 		LEVEL 0 FOR 40.873;
 		LEVEL 1 FOR 6.876;
-		LEVEL 0 FOR 220.338;
+		LEVEL 0 FOR 143.124;
+		LEVEL 1 FOR 36.876;
+		LEVEL 0 FOR 100.338;
 		LEVEL 1 FOR 19.837;
-		LEVEL 0 FOR 705.51;
+		LEVEL 0 FOR 645.51;
 	}
 }
 
@@ -1991,9 +2029,11 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|state.CP_TURN~regout")
 		LEVEL X FOR 0.243;
 		LEVEL 0 FOR 52.9;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 220.0;
+		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 686.857;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 626.857;
 	}
 }
 
@@ -2003,9 +2043,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[4]~feeder_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.417;
-		LEVEL 0 FOR 250.863;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 513.72;
+		LEVEL 0 FOR 200.863;
+		LEVEL 1 FOR 310.0;
+		LEVEL 0 FOR 483.72;
 	}
 }
 
@@ -2015,9 +2055,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|Selector3~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 0.913;
-		LEVEL 0 FOR 293.639;
+		LEVEL 0 FOR 353.639;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 685.448;
+		LEVEL 0 FOR 625.448;
 	}
 }
 
@@ -2027,9 +2067,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|state.END_TURN~regout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 312.9;
+		LEVEL 0 FOR 372.9;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 666.857;
+		LEVEL 0 FOR 606.857;
 	}
 }
 
@@ -2047,9 +2087,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|dealer_sum~combout[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.863;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 519.137;
+		LEVEL 0 FOR 200.863;
+		LEVEL 1 FOR 310.0;
+		LEVEL 0 FOR 489.137;
 	}
 }
 
@@ -2058,9 +2098,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|dealer_sum~combout[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 250.833;
-		LEVEL 0 FOR 230.0;
-		LEVEL 1 FOR 519.167;
+		LEVEL 1 FOR 200.833;
+		LEVEL 0 FOR 310.0;
+		LEVEL 1 FOR 489.167;
 	}
 }
 
@@ -2069,9 +2109,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|dealer_sum~combout[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.833;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 519.167;
+		LEVEL 0 FOR 310.833;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 489.167;
 	}
 }
 
@@ -2080,9 +2120,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|dealer_sum~combout[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 250.833;
-		LEVEL 0 FOR 230.0;
-		LEVEL 1 FOR 519.167;
+		LEVEL 1 FOR 200.833;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 689.167;
 	}
 }
 
@@ -2091,132 +2131,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|dealer_sum~combout[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 999.757;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 272.899;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 12.899;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 272.899;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 12.899;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 0.243;
-		LEVEL 0 FOR 999.757;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 273.142;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 13.142;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 273.142;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 13.142;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 506.858;
-	}
-}
-
-TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 310.833;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 489.167;
 	}
 }
 
@@ -2243,7 +2160,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 130.843;
+		LEVEL 0 FOR 470.0;
+		LEVEL 1 FOR 399.157;
 	}
 }
 
@@ -2252,8 +2171,8 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 400.843;
-		LEVEL 1 FOR 599.157;
+		LEVEL 0 FOR 130.843;
+		LEVEL 1 FOR 869.157;
 	}
 }
 
@@ -2262,8 +2181,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 400.833;
-		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 130.833;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 330.0;
+		LEVEL 0 FOR 200.0;
 		LEVEL 1 FOR 199.167;
 	}
 }
@@ -2273,11 +2194,140 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 200.843;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 130.843;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 330.0;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 199.157;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.243;
+		LEVEL 0 FOR 999.757;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.243;
+		LEVEL 0 FOR 232.899;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 466.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.243;
+		LEVEL 0 FOR 12.899;
+		LEVEL 1 FOR 139.97;
+		LEVEL 0 FOR 380.03;
+		LEVEL 1 FOR 466.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.243;
+		LEVEL 0 FOR 332.899;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 466.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.243;
+		LEVEL 0 FOR 12.899;
+		LEVEL 1 FOR 139.97;
+		LEVEL 0 FOR 180.03;
+		LEVEL 1 FOR 666.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 0.243;
+		LEVEL 0 FOR 332.899;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 466.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 233.142;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 466.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 13.142;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 466.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 333.142;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 466.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 13.142;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 666.858;
+	}
+}
+
+TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 333.142;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 466.858;
 	}
 }
 
@@ -2305,7 +2355,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|last_card[3]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 13.143;
-		LEVEL 1 FOR 986.857;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 460.0;
+		LEVEL 1 FOR 386.857;
 	}
 }
 
@@ -2314,8 +2366,8 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|last_card[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 413.143;
-		LEVEL 1 FOR 586.857;
+		LEVEL 0 FOR 153.143;
+		LEVEL 1 FOR 846.857;
 	}
 }
 
@@ -2325,8 +2377,10 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|last_card[1]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 13.143;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 200.0;
 		LEVEL 1 FOR 186.857;
 	}
 }
@@ -2336,9 +2390,9 @@ TRANSITION_LIST("g07_computer_FSM_vlg_vec_tst|i1|last_card[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 213.143;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 153.143;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 320.0;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 186.857;
 	}
@@ -2981,7 +3035,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[5]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -2990,7 +3044,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[4]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -2999,7 +3053,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[3]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -3008,7 +3062,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[2]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -3017,7 +3071,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[1]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -3026,7 +3080,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[0]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -3035,7 +3089,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[4]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -3044,7 +3098,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[3]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -3053,7 +3107,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[2]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -3062,7 +3116,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[1]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -3071,7 +3125,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[0]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -3080,7 +3134,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[5]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_last[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -3089,7 +3143,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[4]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -3098,7 +3152,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[3]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -3107,7 +3161,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[2]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -3116,7 +3170,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[1]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -3125,7 +3179,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|new_card~combout[0]";
+	CHANNEL = "g07_computer_FSM_vlg_vec_tst|i1|old_sum_int[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;

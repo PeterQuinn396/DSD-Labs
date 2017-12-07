@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\Peter\OneDrive\Documents\McGill 5\DSD\DSD-Labs\Lab5\simulation\qsim
 vg07_computer_FSM
-Z1 !s100 Ncz6PM>ATLRf4>ik;i;_[3
-Z2 IEW@0dkMMIg[1C;G<YLXAg2
+Z1 !s100 J1oM8ZOPfQf=E0bC9<3bY0
+Z2 I`k6BFOR>21_D4YR>bAKDF0
 Z3 V4:41SjjQbmGVo1D@0h6Z10
-Z4 dD:\Gareth\Documents\GitHub\DSD-Labs\Lab5\simulation\qsim
-Z5 w1512418677
+Z4 dK:\Documents\GitHub\DSD-Labs\Lab5\simulation\qsim
+Z5 w1512613081
 Z6 8g07_lab5.vo
 Z7 Fg07_lab5.vo
 L0 31
@@ -20,7 +20,7 @@ Z10 o-work work -O0
 Z11 ng07_computer_@f@s@m
 !i10b 1
 !s85 0
-Z12 !s108 1512418681.395000
+Z12 !s108 1512613081.713000
 Z13 !s107 g07_lab5.vo|
 !s101 -O0
 vg07_computer_FSM_vlg_check_tst
@@ -29,7 +29,7 @@ Z14 !s100 EhiccO`Z64:a2fOK44VGK1
 Z15 IELWi[_?ZHkm3=4EW4oHW73
 Z16 VO2N;>c]52`6GTJWB]kAQ41
 R4
-Z17 w1512418673
+Z17 w1512613080
 Z18 8g07_lab5.vt
 Z19 Fg07_lab5.vt
 L0 65
@@ -37,7 +37,7 @@ R8
 r1
 !s85 0
 31
-Z20 !s108 1512418681.791000
+Z20 !s108 1512613081.872000
 Z21 !s107 g07_lab5.vt|
 Z22 !s90 -work|work|g07_lab5.vt|
 !s101 -O0
@@ -65,8 +65,8 @@ R10
 Z27 ng07_computer_@f@s@m_vlg_sample_tst
 vg07_computer_FSM_vlg_vec_tst
 !i10b 1
-!s100 4IMX[D5>YjHk3m::OSS5c1
-IBi9NGMVG[4UhTCX;eOE0T3
+!s100 0OjEG;8M@W5hBE<fgB;o90
+I=LHeCX^SVO;Fb[:b22Oe83
 Z28 VF2mH3OVC:_@^7Qg0NQ`W>1
 R4
 R17
